@@ -1,13 +1,16 @@
-// Phase 4 — Plotly-based spectrum plot with reversed axes and peak hover/click.
-// Placeholder scaffold.
 "use client";
 
-export interface SpectrumPlotProps {
-  kind: "ir" | "hnmr" | "cnmr" | "dept" | "ms";
-  data: unknown;
-  onPeakClick?: (peakId: string) => void;
-}
+import dynamic from "next/dynamic";
 
-export function SpectrumPlot(_props: SpectrumPlotProps) {
-  return null;
-}
+const SpectrumPlotInner = dynamic(() => import("./SpectrumPlotInner"), {
+  ssr: false,
+  loading: () => (
+    <div className="flex h-[320px] w-full items-center justify-center rounded border border-neutral-200 bg-neutral-50 text-sm text-neutral-500">
+      Loading plot…
+    </div>
+  ),
+});
+
+export { SpectrumPlotInner as _SpectrumPlotInner };
+export const SpectrumPlot = SpectrumPlotInner;
+export type { SpectrumPlotInnerProps as SpectrumPlotProps, SpectrumKind } from "./SpectrumPlotInner";
