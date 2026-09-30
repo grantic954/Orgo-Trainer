@@ -17,6 +17,9 @@
   },
   "dependencies": {
     "@rdkit/rdkit": "^2026.3.6",
+    "ketcher-core": "^3.18.0",
+    "ketcher-react": "^3.18.0",
+    "ketcher-standalone": "^3.18.0",
     "next": "16.3.8",
     "react": "19.2.8",
     "react-dom": "19.2.8"
