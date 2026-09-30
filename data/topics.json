@@ -1,0 +1,25 @@
+{
+  "$schema": "./topics.schema.json",
+  "topics": [
+    { "id": "ir", "name": "IR spectroscopy", "prereqs": [] },
+    { "id": "ms", "name": "Mass spectrometry", "prereqs": [] },
+    { "id": "hnmr", "name": "¹H NMR", "prereqs": [] },
+    { "id": "cnmr", "name": "¹³C NMR + DEPT", "prereqs": ["hnmr"] },
+    { "id": "structure-id", "name": "Combined structure determination", "prereqs": ["ir", "ms", "hnmr", "cnmr"] },
+    { "id": "conjugation", "name": "Conjugated systems (Diels–Alder, 1,2 vs 1,4)", "prereqs": [] },
+    { "id": "aromaticity", "name": "Aromaticity (Hückel, MO)", "prereqs": [] },
+    { "id": "eas", "name": "Electrophilic aromatic substitution", "prereqs": ["aromaticity"] },
+    { "id": "snar", "name": "SNAr and benzyne", "prereqs": ["aromaticity"] },
+    { "id": "side-chain", "name": "Side-chain / benzylic reactions", "prereqs": ["eas"] },
+    { "id": "alcohols-ethers", "name": "Alcohols, phenols, ethers, epoxides, thiols", "prereqs": [] },
+    { "id": "carbonyls", "name": "Aldehydes & ketones", "prereqs": [] },
+    { "id": "carboxylic-acids", "name": "Carboxylic acids", "prereqs": ["carbonyls"] },
+    { "id": "acid-derivatives", "name": "Acid derivatives", "prereqs": ["carboxylic-acids"] },
+    { "id": "alpha-carbon", "name": "Alpha-carbon chemistry (enolates, aldol, Claisen, Michael)", "prereqs": ["carbonyls"] },
+    { "id": "amines", "name": "Amines", "prereqs": [] },
+    { "id": "carbohydrates", "name": "Carbohydrates", "prereqs": ["alcohols-ethers"], "optional": true },
+    { "id": "amino-acids", "name": "Amino acids & peptides", "prereqs": ["acid-derivatives", "amines"], "optional": true },
+    { "id": "pericyclic", "name": "Pericyclic reactions", "prereqs": ["conjugation"], "optional": true },
+    { "id": "synthesis", "name": "Multistep synthesis & retrosynthesis", "prereqs": ["carbonyls", "eas", "alpha-carbon"] }
+  ]
+}

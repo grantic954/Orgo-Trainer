@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Orgo 2 Trainer
 
-## Getting Started
+Personal Organic Chemistry 2 practice app: structure drawing (Ketcher), deterministic grading (RDKit), generated IR / ¹H NMR / ¹³C NMR + DEPT / MS spectra, and an AI tutor with a tiered hint ladder.
 
-First, run the development server:
+Full plan lives in [`CLAUDE.md`](./CLAUDE.md).
+
+## Phase status
+
+- [x] **Phase 0** — Scaffold (Next.js + TS + Tailwind, Vitest + Playwright, §11 file skeleton).
+- [ ] Phase 1 — Chemistry core (RDKit.js, `StructureView`, `grade.ts`).
+- [ ] Phase 2 — Drawing (Ketcher `StructureEditor`).
+- [ ] Phase 3 — Question engine + MCQ + trap detector + seed questions.
+- [ ] Phase 4 — Spectra (IR, ¹H, ¹³C+DEPT, MS) and `/sandbox`.
+- [ ] Phase 5 — AI tutor (`/api/tutor`, hint ladder, `<mol>` rendering).
+- [ ] Phase 6 — Progress + SRS + dashboard + modes.
+- [ ] Phase 7 — Content expansion + template generator.
+- [ ] Phase 8 — Mechanisms.
+- [ ] Phase 9 — Extras + deploy.
+
+## Getting started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+cp .env.example .env.local        # paste your ANTHROPIC_API_KEY when Phase 5 lands
+npm run dev                       # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Commands
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Command | What it does |
+|---|---|
+| `npm run dev` | Next.js dev server (Turbopack) |
+| `npm run build` | Production build |
+| `npm run lint` | ESLint |
+| `npm test` | Vitest unit tests + question-bank validator |
+| `npm run test:watch` | Vitest in watch mode |
+| `npm run test:ui` | Vitest browser UI |
+| `npm run e2e` | Playwright E2E tests |
+| `npm run validate` | Validate `data/questions/*.json` with RDKit |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Engineering rules (see §2 of CLAUDE.md)
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Grading is deterministic — RDKit, never the LLM.
+2. Every question file is validated (`npm run validate`) in CI.
+3. LLM-generated SMILES are always parsed by RDKit before use.
+4. `ANTHROPIC_API_KEY` stays server-side.
+5. Heavy chem libs (Ketcher, RDKit WASM) are lazy-loaded.
+6. Grader and spectrum generators get unit tests before UI.
+7. Mobile works for MCQ + spectra; drawing is desktop-first.

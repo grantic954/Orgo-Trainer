@@ -1,0 +1,14 @@
+{
+  "traps": [
+    { "id": "stereo-ignored", "name": "Stereo ignored", "note": "Connectivity is right, stereochemistry is wrong." },
+    { "id": "regio-wrong", "name": "Wrong regiochemistry", "note": "Same formula and groups, wrong position." },
+    { "id": "rearrangement-ignored", "name": "Rearrangement ignored", "note": "Carbocation rearrangement was expected." },
+    { "id": "over-reaction", "name": "Over-reacted", "note": "Went further than the reagent allows (e.g., DIBAL to alcohol)." },
+    { "id": "under-reaction", "name": "Under-reacted", "note": "Stopped short (e.g., Grignard added once to an ester)." },
+    { "id": "workup-missing", "name": "Workup missing", "note": "Product still shows an alkoxide/charge that acidic workup would remove." },
+    { "id": "wrong-enolate", "name": "Wrong enolate", "note": "Kinetic vs thermodynamic alkylation site swapped." },
+    { "id": "fc-deactivated", "name": "Friedel–Crafts on deactivated ring", "note": "FC alkylation/acylation fails on strongly deactivated rings." },
+    { "id": "acidic-proton-grignard", "name": "Grignard with acidic proton", "note": "OH / NH / COOH present — Grignard gets quenched." },
+    { "id": "wrong-director", "name": "Wrong directing effect", "note": "Placed the substituent as if the group had the opposite directing effect." }
+  ]
+}
