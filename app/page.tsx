@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 const PHASE_LINKS = [
+  { href: "/demo", label: "Structure Demo (10 molecules)", phase: "Phase 1" },
   { href: "/practice", label: "Practice", phase: "Phase 3" },
   { href: "/dashboard", label: "Dashboard", phase: "Phase 6" },
   { href: "/roadmap", label: "Reaction Roadmap", phase: "Phase 9" },

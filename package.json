@@ -12,9 +12,11 @@
     "test:ui": "vitest --ui",
     "e2e": "playwright test",
     "e2e:install": "playwright install",
-    "validate": "tsx scripts/validate-questions.ts"
+    "validate": "tsx scripts/validate-questions.ts",
+    "postinstall": "node scripts/copy-rdkit-wasm.mjs"
   },
   "dependencies": {
+    "@rdkit/rdkit": "^2026.3.6",
     "next": "16.3.8",
     "react": "19.2.8",
     "react-dom": "19.2.8"
