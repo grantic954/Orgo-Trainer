@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 const SpectrumPlotInner = dynamic(() => import("./SpectrumPlotInner"), {
   ssr: false,
   loading: () => (
-    <div className="flex h-[320px] w-full items-center justify-center rounded border border-neutral-200 bg-neutral-50 text-sm text-neutral-500">
+    <div className="flex h-[380px] w-full items-center justify-center rounded border border-neutral-200 bg-neutral-50 text-sm text-neutral-500">
       Loading plot…
     </div>
   ),

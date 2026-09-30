@@ -109,21 +109,33 @@ export function computeIrFromBandHits(hits: IrBand[]): IrSpectrum {
 
 export async function computeIr(mol: Mol): Promise<IrSpectrum> {
   const rdkit = (await getRDKitEither()) as unknown as RDKitLike;
-  const hits: IrBand[] = [];
+  // Dedupe by group id: one Gaussian per functional-group class regardless
+  // of how many atoms match. A slight bump in intensity for additional
+  // matches keeps the visual cue that "this molecule has more C–H than that
+  // one" without letting sp3-CH swamp the plot.
+  const byGroup = new Map<string, IrBand>();
   for (const def of IR_TABLE) {
     const matches = matchAtoms(mol as MolWithMatches, rdkit, def.smarts);
-    for (const atoms of matches) {
-      hits.push({
-        peak: def.peak,
-        intensity: def.intensity,
-        width: def.width,
-        group: def.group,
-        label: def.label,
-        atomIndices: atoms,
-      });
+    if (matches.length === 0) continue;
+    const atomSet = new Set<number>();
+    for (const m of matches) for (const a of m) atomSet.add(a);
+    const existing = byGroup.get(def.group);
+    if (existing) {
+      for (const a of atomSet) existing.atomIndices.push(a);
+      continue;
     }
+    // Intensity boost caps at +50% for many matches; each match adds log2(1+n)*8.
+    const boost = Math.min(50, Math.log2(1 + matches.length) * 8);
+    byGroup.set(def.group, {
+      peak: def.peak,
+      intensity: Math.min(100, def.intensity + boost),
+      width: def.width,
+      group: def.group,
+      label: def.label,
+      atomIndices: [...atomSet],
+    });
   }
-  return computeIrFromBandHits(hits);
+  return computeIrFromBandHits([...byGroup.values()]);
 }
 
 export async function irForSmiles(smiles: string): Promise<IrSpectrum | null> {

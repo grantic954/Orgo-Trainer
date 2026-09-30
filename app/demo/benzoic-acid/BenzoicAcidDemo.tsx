@@ -6,6 +6,7 @@ import { StructureEditor } from "@/components/StructureEditor";
 import { StructureView } from "@/components/StructureView";
 import { grade, type GradeResult, type QuestionForGrading } from "@/lib/chem/grade";
 import { rdkitCanonicalizer } from "@/lib/chem/canonicalizer";
+import { toolsForQuestionType } from "@/lib/ketcher/allowlist";
 
 const QUESTION: QuestionForGrading = {
   id: "phase2-demo-benzoic-acid",
@@ -62,6 +63,7 @@ export function BenzoicAcidDemo() {
   return (
     <div className="flex flex-col gap-4">
       <StructureEditor
+        tools={toolsForQuestionType("draw_product")}
         onInit={(ketcher) => {
           ketcherRef.current = ketcher;
         }}

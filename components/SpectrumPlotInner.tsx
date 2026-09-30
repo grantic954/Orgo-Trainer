@@ -33,7 +33,7 @@ export default function SpectrumPlotInner({ data, onPeakClick, onPeakHover }: Sp
       layout={layout as unknown as never}
       config={{ displayModeBar: false, responsive: true } as unknown as never}
       useResizeHandler
-      style={{ width: "100%", height: "320px" }}
+      style={{ width: "100%", height: "380px" }}
       onClick={(evt: { points?: Array<{ customdata?: unknown; text?: string }> }) => {
         const p = evt.points?.[0];
         if (!p || !onPeakClick) return;
@@ -51,6 +51,14 @@ export default function SpectrumPlotInner({ data, onPeakClick, onPeakHover }: Sp
   );
 }
 
+const SHARED_LAYOUT = {
+  paper_bgcolor: "white",
+  plot_bgcolor: "white",
+  font: { family: "ui-sans-serif, system-ui, sans-serif", size: 12, color: "#111" },
+  showlegend: false,
+  hoverlabel: { bgcolor: "#111", font: { color: "#fff", size: 12 } },
+};
+
 function buildPlot(data: SpectrumData): { plotData: unknown[]; layout: Record<string, unknown> } {
   if (data.kind === "ir") {
     const s = data.spectrum;
@@ -60,44 +68,55 @@ function buildPlot(data: SpectrumData): { plotData: unknown[]; layout: Record<st
           x: s.xs,
           y: s.ys,
           mode: "lines",
-          line: { color: "#111", width: 1 },
-          hovertemplate: "%{x:.0f} cm⁻¹<br>%{y:.1f}% T<extra></extra>",
+          line: { color: "#111", width: 1.2 },
+          hovertemplate: "%{x:.0f} cm⁻¹ · %{y:.0f}% T<extra></extra>",
         },
-        // Peak markers with metadata for click/hover
         {
           x: s.bands.map((b) => b.peak),
-          y: s.bands.map(() => 0),
+          y: s.bands.map(() => 4),
           mode: "markers",
-          marker: { color: "rgba(0,0,255,0.35)", size: 6 },
+          marker: { color: "rgba(37,99,235,0.55)", size: 7 },
           text: s.bands.map((b) => b.label),
           customdata: s.bands.map((b) => ({ label: b.label, atomIndices: b.atomIndices })),
           hovertemplate: "%{text}<br>%{x} cm⁻¹<extra></extra>",
         },
       ],
       layout: {
-        margin: { l: 40, r: 20, t: 20, b: 40 },
-        xaxis: { title: { text: "wavenumber (cm⁻¹)" }, autorange: "reversed", range: [4000, 400] },
-        yaxis: { title: { text: "% transmittance" }, range: [0, 105] },
-        showlegend: false,
+        ...SHARED_LAYOUT,
+        margin: { l: 55, r: 20, t: 12, b: 48 },
+        xaxis: {
+          title: { text: "wavenumber (cm⁻¹)", standoff: 8 },
+          autorange: "reversed",
+          range: [4000, 400],
+          gridcolor: "#f1f5f9",
+          zeroline: false,
+        },
+        yaxis: {
+          title: { text: "% transmittance", standoff: 8 },
+          range: [-2, 105],
+          gridcolor: "#f1f5f9",
+          zeroline: false,
+        },
       },
     };
   }
   if (data.kind === "hnmr") {
     const s = data.spectrum;
+    const yMax = Math.max(1, ...s.ys) * 1.1;
     return {
       plotData: [
         {
           x: s.xs,
           y: s.ys,
           mode: "lines",
-          line: { color: "#111", width: 1 },
+          line: { color: "#111", width: 1.2 },
           hoverinfo: "skip",
         },
         {
           x: s.peaks.map((p) => p.shift),
-          y: s.peaks.map(() => 0),
+          y: s.peaks.map(() => yMax * 0.02),
           mode: "markers",
-          marker: { color: "rgba(220,0,0,0.6)", size: 8 },
+          marker: { color: "rgba(220,38,38,0.7)", size: 8 },
           text: s.peaks.map((p) => `${p.integration}H ${p.multiplicity} @ δ${p.shift}`),
           customdata: s.peaks.map((p) => ({
             label: `${p.integration}H ${p.multiplicity} δ${p.shift}${p.note ? ` (${p.note})` : ""}`,
@@ -107,10 +126,22 @@ function buildPlot(data: SpectrumData): { plotData: unknown[]; layout: Record<st
         },
       ],
       layout: {
-        margin: { l: 40, r: 20, t: 20, b: 40 },
-        xaxis: { title: { text: "δ (ppm)" }, autorange: "reversed", range: [12, 0] },
-        yaxis: { title: { text: "intensity" }, showticklabels: false },
-        showlegend: false,
+        ...SHARED_LAYOUT,
+        margin: { l: 55, r: 20, t: 12, b: 48 },
+        xaxis: {
+          title: { text: "δ (ppm)", standoff: 8 },
+          autorange: "reversed",
+          range: [12, 0],
+          gridcolor: "#f1f5f9",
+          zeroline: false,
+        },
+        yaxis: {
+          title: { text: "intensity", standoff: 8 },
+          range: [0, yMax],
+          showticklabels: false,
+          gridcolor: "#f1f5f9",
+          zeroline: false,
+        },
       },
     };
   }
@@ -120,29 +151,48 @@ function buildPlot(data: SpectrumData): { plotData: unknown[]; layout: Record<st
       plotData: [
         {
           x: s.peaks.map((p) => p.shift),
-          y: s.peaks.map((p) => (p.dept135 === 0 ? 0.8 : 1)),
-          text: s.peaks.map((p) => `δ${p.shift} · H${p.hCount}`),
+          y: s.peaks.map(() => 1),
+          text: s.peaks.map((p) => `δ${p.shift} · ${p.hCount}H`),
           customdata: s.peaks.map((p) => ({
             label: `¹³C δ${p.shift} (${p.hCount} H)`,
             atomIndices: p.atomIndices,
           })),
           type: "bar",
+          width: 1.8,
           marker: {
             color: s.peaks.map((p) => {
-              if (p.dept135 === -1) return "#0369a1"; // CH2 (down in DEPT-135)
-              if (p.dept135 === 1) return "#059669"; // CH/CH3
-              return "#525252"; // quaternary
+              if (p.dept135 === -1) return "#0369a1";
+              if (p.dept135 === 1) return "#059669";
+              return "#525252";
             }),
           },
           hovertemplate: "%{text}<extra></extra>",
         },
       ],
       layout: {
-        margin: { l: 40, r: 20, t: 30, b: 40 },
-        xaxis: { title: { text: "δ (ppm)" }, autorange: "reversed", range: [220, 0] },
-        yaxis: { visible: false, range: [0, 1.2] },
-        title: { text: "green: CH/CH₃  ·  blue: CH₂  ·  gray: quaternary", x: 0.02, font: { size: 10 } },
-        showlegend: false,
+        ...SHARED_LAYOUT,
+        margin: { l: 55, r: 20, t: 34, b: 48 },
+        xaxis: {
+          title: { text: "δ (ppm)", standoff: 8 },
+          autorange: "reversed",
+          range: [220, 0],
+          gridcolor: "#f1f5f9",
+          zeroline: false,
+        },
+        yaxis: { visible: false, range: [0, 1.15] },
+        annotations: [
+          {
+            text: "green: CH/CH₃ · blue: CH₂ · gray: quaternary",
+            showarrow: false,
+            x: 0.98,
+            y: 1.05,
+            xref: "paper",
+            yref: "paper",
+            font: { size: 10, color: "#6b7280" },
+            align: "right",
+            xanchor: "right",
+          },
+        ],
       },
     };
   }
@@ -156,16 +206,38 @@ function buildPlot(data: SpectrumData): { plotData: unknown[]; layout: Record<st
         text: s.peaks.map((p) => `${p.mz}: ${p.label}`),
         customdata: s.peaks.map((p) => ({ label: p.label, atomIndices: p.atomIndices })),
         type: "bar",
+        width: 0.9,
         marker: { color: "#111" },
         hovertemplate: "m/z %{x}: %{text}<extra></extra>",
       },
     ],
     layout: {
-      margin: { l: 40, r: 20, t: 30, b: 40 },
-      xaxis: { title: { text: "m/z" } },
-      yaxis: { title: { text: "relative intensity" } },
-      title: { text: `formula ${s.formula} · monoisotopic ${s.monoMass}`, x: 0.02, font: { size: 10 } },
-      showlegend: false,
+      ...SHARED_LAYOUT,
+      margin: { l: 55, r: 20, t: 34, b: 48 },
+      xaxis: {
+        title: { text: "m/z", standoff: 8 },
+        gridcolor: "#f1f5f9",
+        zeroline: false,
+      },
+      yaxis: {
+        title: { text: "relative intensity", standoff: 8 },
+        range: [0, 110],
+        gridcolor: "#f1f5f9",
+        zeroline: false,
+      },
+      annotations: [
+        {
+          text: `formula ${s.formula} · monoisotopic ${s.monoMass}`,
+          showarrow: false,
+          x: 0.98,
+          y: 1.05,
+          xref: "paper",
+          yref: "paper",
+          font: { size: 10, color: "#6b7280" },
+          align: "right",
+          xanchor: "right",
+        },
+      ],
     },
   };
 }

@@ -3,6 +3,7 @@
 "use client";
 
 import "ketcher-react/dist/index.css";
+import "./ketcher-overrides.css";
 
 import { useEffect, useMemo } from "react";
 import { Editor } from "ketcher-react";
@@ -31,7 +32,7 @@ export default function StructureEditorInner({
   }, []);
 
   return (
-    <div className="h-[520px] w-full overflow-hidden rounded border border-neutral-200 bg-white">
+    <div className="orgo-editor h-[520px] w-full overflow-hidden rounded border border-neutral-200 bg-white">
       <Editor
         staticResourcesUrl=""
         structServiceProvider={provider}

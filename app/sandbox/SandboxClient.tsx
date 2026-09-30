@@ -126,7 +126,7 @@ export function SandboxClient() {
 
 function PlotPlaceholder() {
   return (
-    <div className="flex h-[320px] items-center justify-center text-sm text-neutral-400">
+    <div className="flex h-[380px] items-center justify-center text-sm text-neutral-400">
       draw a structure to see this spectrum
     </div>
   );

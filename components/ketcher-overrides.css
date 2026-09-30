@@ -1,0 +1,47 @@
+/*
+ * Scoped CSS overrides that hide Ketcher's built-in top/left/right toolbars
+ * so only the canvas shows. Our own KetcherToolbar drives the editor.
+ *
+ * All selectors are scoped to `.orgo-editor` so they cannot leak outside of
+ * <StructureEditor>. When Ketcher upgrades, these class hooks may drift —
+ * search for `Ketcher` team's stable data-testid / role attributes first.
+ */
+
+.orgo-editor {
+  height: 100%;
+  width: 100%;
+}
+
+/* Hide the top toolbar (file / edit / arom / settings / help / etc.). */
+.orgo-editor .Ketcher-root [class*="TopToolbar-module_top"],
+.orgo-editor .Ketcher-root header,
+.orgo-editor .Ketcher-root [class*="TopToolbar-module_root"] {
+  display: none !important;
+}
+
+/* Hide the left-side tool rail (Select/Erase/Bond/Chain/Template/Atom). */
+.orgo-editor .Ketcher-root [class*="LeftToolbar-module_root"],
+.orgo-editor .Ketcher-root aside[class*="LeftToolbar"] {
+  display: none !important;
+}
+
+/* Hide the right-side atoms palette. */
+.orgo-editor .Ketcher-root [class*="RightToolbar-module_root"],
+.orgo-editor .Ketcher-root aside[class*="RightToolbar"] {
+  display: none !important;
+}
+
+/* Hide the bottom info strip. */
+.orgo-editor .Ketcher-root [class*="InfoPanel-module_root"] {
+  display: none !important;
+}
+
+/* Give the canvas the full width now that the rails are gone. */
+.orgo-editor .Ketcher-root [class*="Editor-module_editor"] {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.orgo-editor .Ketcher-root [class*="Editor-module_canvas"] {
+  width: 100% !important;
+  height: 100% !important;
+}

@@ -10,6 +10,7 @@ import {
   type QuestionForGrading,
 } from "@/lib/chem/grade";
 import { rdkitCanonicalizer } from "@/lib/chem/canonicalizer";
+import { toolsForQuestionType } from "@/lib/ketcher/allowlist";
 import type {
   Question,
   McqQuestion,
@@ -308,7 +309,10 @@ function DrawBody({
 
   return (
     <div className="flex flex-col gap-3">
-      <StructureEditor onInit={(k) => (ketcherRef.current = k)} />
+      <StructureEditor
+        tools={toolsForQuestionType(question.type)}
+        onInit={(k) => (ketcherRef.current = k)}
+      />
       <SubmitRow disabled={busy} onSubmit={submit} label={busy ? "Grading…" : "Submit"} />
       {result && (
         <VerdictBanner verdict={result.verdict} explanation={question.explanation}>
