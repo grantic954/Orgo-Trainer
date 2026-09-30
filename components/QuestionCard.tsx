@@ -4,6 +4,8 @@ import { useRef, useState } from "react";
 import type { Ketcher } from "ketcher-core";
 import { StructureEditor } from "@/components/StructureEditor";
 import { StructureView } from "@/components/StructureView";
+import { HintPanel } from "@/components/HintPanel";
+import { TutorChat } from "@/components/TutorChat";
 import {
   grade,
   type GradeResult,
@@ -11,6 +13,7 @@ import {
 } from "@/lib/chem/grade";
 import { rdkitCanonicalizer } from "@/lib/chem/canonicalizer";
 import { toolsForQuestionType } from "@/lib/ketcher/allowlist";
+import type { TutorRequest } from "@/lib/tutor/types";
 import type {
   Question,
   McqQuestion,
@@ -338,8 +341,43 @@ function DrawBody({
           </div>
         </details>
       )}
+
+      <HintPanel
+        question={tutorQuestion(question)}
+        attempt={tutorAttempt(result, submittedSmiles)}
+      />
+      <TutorChat
+        question={tutorQuestion(question)}
+        attempt={tutorAttempt(result, submittedSmiles)}
+      />
     </div>
   );
+}
+
+function tutorQuestion(q: StructureQuestion): TutorRequest["question"] {
+  return {
+    id: q.id,
+    prompt: q.prompt,
+    type: q.type,
+    reactants: q.reactants,
+    reagents: q.reagents,
+    correctAnswers: q.answers.map((a) => ({ smiles: a.smiles, label: a.label })),
+    concepts: q.concepts,
+    explanation: q.explanation,
+  };
+}
+
+function tutorAttempt(
+  result: GradeResult | null,
+  smiles: string,
+): TutorRequest["attempt"] {
+  if (!result || !smiles) return null;
+  return {
+    smiles,
+    verdict: result.verdict,
+    credit: result.credit,
+    diagnostics: result.diagnostics,
+  };
 }
 
 // ---- shared UI bits ------------------------------------------------------

@@ -11,7 +11,7 @@ Full plan lives in [`CLAUDE.md`](./CLAUDE.md).
 - [x] **Phase 2** — Drawing (Ketcher `StructureEditor`, benzoic-acid demo).
 - [x] **Phase 3** — Question engine + MCQ + trap detector + 30 seed questions.
 - [x] **Phase 4** — Spectra (IR, ¹H, ¹³C+DEPT, MS) and `/sandbox`.
-- [ ] Phase 5 — AI tutor (`/api/tutor`, hint ladder, `<mol>` rendering). ← next; needs `ANTHROPIC_API_KEY`.
+- [x] **Phase 5** — AI tutor (`/api/tutor`, hint ladder, `<mol>` rendering, HintPanel + TutorChat wired into QuestionCard).
 - [ ] Phase 6 — Progress + SRS + dashboard + modes.
 - [ ] Phase 7 — Content expansion + template generator.
 - [ ] Phase 8 — Mechanisms.

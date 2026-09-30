@@ -16,6 +16,7 @@
     "postinstall": "node scripts/copy-rdkit-wasm.mjs"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.130.0",
     "@rdkit/rdkit": "^2026.3.6",
     "ketcher-core": "^3.18.0",
     "ketcher-react": "^3.18.0",
