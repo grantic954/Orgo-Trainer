@@ -1,0 +1,13 @@
+{
+  "id": "carbonyls-006",
+  "topic": "carbonyls",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Predict the product of DIBAL-H (1 eq, −78 °C) on methyl benzoate (then workup).",
+  "reactants": ["COC(=O)c1ccccc1"],
+  "reagents": ["DIBAL-H (1 eq)", "-78 C", "H3O+"],
+  "answers": [{ "smiles": "O=Cc1ccccc1", "label": "benzaldehyde" }],
+  "traps": [{ "smiles": "OCc1ccccc1", "trap": "over-reaction", "note": "DIBAL at −78 °C with 1 eq stops at the aldehyde." }],
+  "concepts": ["DIBAL-H", "selective reduction"],
+  "explanation": "DIBAL-H at −78 °C forms a stable tetrahedral intermediate that only collapses to the aldehyde on workup."
+}

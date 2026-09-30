@@ -1,0 +1,13 @@
+{
+  "id": "eas-004",
+  "topic": "eas",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Predict the product of the Friedel–Crafts acylation of benzene with acetyl chloride.",
+  "reactants": ["c1ccccc1"],
+  "reagents": ["CH3COCl", "AlCl3"],
+  "answers": [{ "smiles": "CC(=O)c1ccccc1", "label": "acetophenone" }],
+  "traps": [{ "smiles": "CCc1ccccc1", "trap": "under-reaction", "note": "Reduction/alkylation product, not acylation." }],
+  "concepts": ["Friedel–Crafts acylation", "acylium ion"],
+  "explanation": "AlCl3 activates the acyl chloride to form an acylium ion, which attacks benzene."
+}

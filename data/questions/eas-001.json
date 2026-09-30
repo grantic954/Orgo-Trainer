@@ -1,0 +1,14 @@
+{
+  "id": "eas-001",
+  "topic": "eas",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Predict the major product of the bromination of anisole.",
+  "reactants": ["COc1ccccc1"],
+  "reagents": ["Br2", "FeBr3"],
+  "answers": [{ "smiles": "COc1ccc(Br)cc1", "label": "para-bromoanisole (major)" }],
+  "acceptable": [{ "smiles": "COc1ccccc1Br", "label": "ortho-bromoanisole (minor)", "credit": 0.5 }],
+  "traps": [{ "smiles": "COc1cccc(Br)c1", "trap": "wrong-director", "note": "OMe is an o/p director, not meta." }],
+  "concepts": ["ortho/para director", "activating group", "sterics"],
+  "explanation": "The methoxy group donates electron density via resonance to the ring, activating the ortho and para positions. Para dominates due to reduced steric strain."
+}

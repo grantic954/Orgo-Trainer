@@ -1,0 +1,13 @@
+{
+  "id": "eas-008",
+  "topic": "eas",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Predict the product of sulfonation of benzene.",
+  "reactants": ["c1ccccc1"],
+  "reagents": ["SO3", "H2SO4"],
+  "answers": [{ "smiles": "O=S(=O)(O)c1ccccc1", "label": "benzenesulfonic acid" }],
+  "traps": [{ "smiles": "O=S(=O)(O)c1ccc(S(=O)(=O)O)cc1", "trap": "over-reaction", "note": "Only one sulfonation under standard conditions." }],
+  "concepts": ["sulfonation", "reversibility"],
+  "explanation": "SO3/H2SO4 gives monosulfonated arene; SO3H is meta-directing for subsequent substitution."
+}

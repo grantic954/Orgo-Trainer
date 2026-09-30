@@ -1,0 +1,13 @@
+{
+  "id": "carbonyls-010",
+  "topic": "carbonyls",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Predict the product of benzaldehyde + methylamine under mild acid.",
+  "reactants": ["O=Cc1ccccc1", "NC"],
+  "reagents": ["H+ (cat)", "-H2O"],
+  "answers": [{ "smiles": "CN=Cc1ccccc1", "label": "N-methylbenzaldimine" }],
+  "traps": [{ "smiles": "CNCc1ccccc1", "trap": "over-reaction", "note": "That's the amine from reductive amination — no reductant here." }],
+  "concepts": ["imine formation", "1° amine + aldehyde"],
+  "explanation": "Primary amines and aldehydes condense (−H2O) to imines under mild acid."
+}

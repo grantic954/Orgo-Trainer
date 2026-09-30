@@ -1,0 +1,16 @@
+{
+  "id": "carbonyls-013",
+  "topic": "carbonyls",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "For 2-methylcyclohexanone, LDA at −78 °C gives which enolate?",
+  "reactants": ["O=C1CCCCC1C"],
+  "reagents": ["LDA", "-78 C"],
+  "options": [
+    { "id": "kin", "label": "The kinetic enolate — deprotonated at the less-substituted α-carbon.", "smiles": "OC1=CCCCC1C" },
+    { "id": "thermo", "label": "The thermodynamic enolate — deprotonated at the more-substituted α-carbon.", "smiles": "OC1=C(C)CCCC1" }
+  ],
+  "correctOptionId": "kin",
+  "concepts": ["kinetic vs thermodynamic enolate", "LDA"],
+  "explanation": "LDA is bulky and non-equilibrating at −78 °C; it removes the more accessible (less hindered) α-H, giving the less-substituted (kinetic) enolate."
+}

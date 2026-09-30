@@ -1,0 +1,13 @@
+{
+  "id": "carbonyls-014",
+  "topic": "carbonyls",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Predict the initial (β-hydroxy) product of the aldol reaction of acetaldehyde with itself under dilute base.",
+  "reactants": ["CC=O"],
+  "reagents": ["NaOH (dilute, cold)"],
+  "answers": [{ "smiles": "CC(O)CC=O", "label": "3-hydroxybutanal" }],
+  "traps": [{ "smiles": "CC=CC=O", "trap": "over-reaction", "note": "That's the dehydrated (crotonaldehyde) product — requires heat or stronger base." }],
+  "concepts": ["aldol", "β-hydroxy carbonyl"],
+  "explanation": "Under mild base and cold, aldol stops at the β-hydroxy aldehyde; heat drives E1cb dehydration to the α,β-unsaturated product."
+}

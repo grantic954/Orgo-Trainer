@@ -1,0 +1,13 @@
+{
+  "id": "carbonyls-009",
+  "topic": "carbonyls",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Predict the product of acetal formation from benzaldehyde and ethylene glycol (H+ cat, Dean–Stark).",
+  "reactants": ["O=Cc1ccccc1", "OCCO"],
+  "reagents": ["H+", "-H2O"],
+  "answers": [{ "smiles": "O1CCOC1c1ccccc1", "label": "2-phenyl-1,3-dioxolane" }],
+  "traps": [{ "smiles": "OCCOCc1ccccc1", "trap": "under-reaction", "note": "Hemiacetal only — a second condensation gives the acetal." }],
+  "concepts": ["acetal formation", "protecting group"],
+  "explanation": "Under acid catalysis with a diol and water removal, aldehydes form cyclic acetals — the standard carbonyl protecting group."
+}

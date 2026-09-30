@@ -1,0 +1,13 @@
+{
+  "id": "carbonyls-001",
+  "topic": "carbonyls",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Predict the product of MeMgBr + benzaldehyde (then H3O+ workup).",
+  "reactants": ["O=Cc1ccccc1"],
+  "reagents": ["CH3MgBr", "H3O+"],
+  "answers": [{ "smiles": "CC(O)c1ccccc1", "label": "1-phenylethanol" }],
+  "traps": [{ "smiles": "C[O-].[Mg+]c1ccccc1", "trap": "workup-missing", "note": "Aqueous workup protonates the alkoxide." }],
+  "concepts": ["Grignard addition", "workup"],
+  "explanation": "MeMgBr adds to the carbonyl carbon giving a magnesium alkoxide; acidic workup converts it to the neutral 2° alcohol."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "eas-005",
+  "topic": "eas",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "Why does Friedel–Crafts alkylation fail on nitrobenzene?",
+  "options": [
+    { "id": "a", "label": "The nitro group deactivates the ring too strongly for FC to proceed." },
+    { "id": "b", "label": "AlCl3 is destroyed by nitro groups." },
+    { "id": "c", "label": "Nitro is a poor leaving group." },
+    { "id": "d", "label": "The ring is aromatic and cannot react." }
+  ],
+  "correctOptionId": "a",
+  "concepts": ["Friedel–Crafts limitations", "deactivating groups"],
+  "explanation": "Strongly deactivated arenes (nitro, sulfonyl, carbonyl-attached, etc.) do not undergo FC alkylation or acylation."
+}

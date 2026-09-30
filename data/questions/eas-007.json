@@ -1,0 +1,14 @@
+{
+  "id": "eas-007",
+  "topic": "eas",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Predict the major product of chlorination of phenol.",
+  "reactants": ["Oc1ccccc1"],
+  "reagents": ["Cl2"],
+  "answers": [{ "smiles": "Oc1ccc(Cl)cc1", "label": "4-chlorophenol (major)" }],
+  "acceptable": [{ "smiles": "Oc1ccccc1Cl", "label": "2-chlorophenol", "credit": 0.5 }],
+  "traps": [{ "smiles": "Oc1cccc(Cl)c1", "trap": "wrong-director", "note": "OH is a strong o/p director." }],
+  "concepts": ["ortho/para director", "phenol activation"],
+  "explanation": "OH activates ortho/para strongly. Para predominates for steric reasons."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "carbonyls-015",
+  "topic": "carbonyls",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Predict the product of Wolff–Kishner reduction of acetophenone.",
+  "reactants": ["CC(=O)c1ccccc1"],
+  "reagents": ["H2NNH2", "KOH", "heat"],
+  "answers": [{ "smiles": "CCc1ccccc1", "label": "ethylbenzene" }],
+  "traps": [{ "smiles": "CC(O)c1ccccc1", "trap": "under-reaction", "note": "That's a simple reduction to the alcohol — Wolff–Kishner takes it all the way to CH2." }],
+  "concepts": ["Wolff–Kishner", "carbonyl to methylene"],
+  "explanation": "Hydrazone + strong base + heat expels N2 and reduces C=O to CH2."
+}

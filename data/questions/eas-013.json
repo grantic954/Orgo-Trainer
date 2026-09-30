@@ -1,0 +1,14 @@
+{
+  "id": "eas-013",
+  "topic": "eas",
+  "type": "draw_product",
+  "difficulty": 4,
+  "prompt": "Predict the major FC acylation product of anisole.",
+  "reactants": ["COc1ccccc1"],
+  "reagents": ["CH3COCl", "AlCl3"],
+  "answers": [{ "smiles": "COc1ccc(C(C)=O)cc1", "label": "4'-methoxyacetophenone (para)" }],
+  "acceptable": [{ "smiles": "COc1ccccc1C(C)=O", "label": "ortho isomer (minor)", "credit": 0.5 }],
+  "traps": [{ "smiles": "COc1cccc(C(C)=O)c1", "trap": "wrong-director", "note": "OMe is o/p, not meta." }],
+  "concepts": ["FC acylation", "ortho/para director"],
+  "explanation": "OMe activates o/p; para is preferred sterically. Unlike FC alkylation, acylation stops at monosubstitution because the ketone product is deactivated."
+}

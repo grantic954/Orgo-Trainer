@@ -1,0 +1,14 @@
+{
+  "id": "eas-015",
+  "topic": "eas",
+  "type": "draw_product",
+  "difficulty": 4,
+  "prompt": "Predict the major mononitration product of m-bromotoluene.",
+  "reactants": ["Cc1cccc(Br)c1"],
+  "reagents": ["HNO3", "H2SO4"],
+  "answers": [{ "smiles": "Cc1cc(Br)ccc1[N+](=O)[O-]", "label": "4-nitro-3-bromotoluene (para to methyl)" }],
+  "acceptable": [{ "smiles": "Cc1cc(Br)cc([N+](=O)[O-])c1", "label": "5-nitro isomer (ortho to methyl, meta to Br)", "credit": 0.5 }],
+  "traps": [{ "smiles": "Cc1cc(Br)c([N+](=O)[O-])cc1", "trap": "wrong-director", "note": "Both methyl (o/p) and Br (o/p, weakly deactivating) reinforce ortho/para to methyl, not this position." }],
+  "concepts": ["polysubstituted benzenes", "reinforcing directors"],
+  "explanation": "Methyl is a stronger activator/director than Br. Both are o/p directors, so their preferences reinforce and the position para to the stronger activator (methyl) is preferred."
+}

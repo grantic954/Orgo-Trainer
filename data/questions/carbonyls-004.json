@@ -1,0 +1,17 @@
+{
+  "id": "carbonyls-004",
+  "topic": "carbonyls",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "Which product forms when CH3MgBr is added to 4-hydroxybutan-2-one?",
+  "reactants": ["OCCC(C)=O"],
+  "reagents": ["CH3MgBr"],
+  "options": [
+    { "id": "add", "label": "1,3-butanediol (Grignard adds to the ketone)", "smiles": "CC(O)CCO" },
+    { "id": "protonated", "label": "CH4 + the alkoxide (Grignard is quenched by the OH)" },
+    { "id": "elim", "label": "An enone" }
+  ],
+  "correctOptionId": "protonated",
+  "concepts": ["Grignard with acidic proton", "protection"],
+  "explanation": "Free OH quenches the Grignard reagent before it can add — protect the OH first (e.g., as a silyl ether) or use hydride reagents."
+}

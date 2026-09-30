@@ -1,0 +1,12 @@
+{
+  "id": "carbonyls-005",
+  "topic": "carbonyls",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Predict the product of LiAlH4 on ethyl acetate (then workup).",
+  "reactants": ["CC(=O)OCC"],
+  "reagents": ["LiAlH4", "H3O+"],
+  "answers": [{ "smiles": "CCO", "label": "ethanol (from both ester carbons)" }],
+  "concepts": ["ester reduction", "LiAlH4"],
+  "explanation": "LiAlH4 reduces esters all the way to two alcohols — the acyl carbon becomes a primary alcohol, and the alkoxy group is released as its alcohol."
+}

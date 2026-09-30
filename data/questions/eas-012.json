@@ -1,0 +1,17 @@
+{
+  "id": "eas-012",
+  "topic": "eas",
+  "type": "reagent_fill",
+  "difficulty": 2,
+  "prompt": "Which reagents brominate benzene at the ring (EAS)?",
+  "reactants": ["c1ccccc1"],
+  "reagentChoices": [
+    { "id": "br2_febr3", "label": "Br2 / FeBr3" },
+    { "id": "br2_hv", "label": "Br2 / hν" },
+    { "id": "hbr", "label": "HBr" },
+    { "id": "nbs", "label": "NBS" }
+  ],
+  "correctReagentIds": ["br2_febr3"],
+  "concepts": ["EAS", "halogenation"],
+  "explanation": "FeBr3 (or AlBr3) generates Br+ for electrophilic aromatic substitution. Br2/hν or NBS are radical (benzylic) brominations, not ring EAS."
+}

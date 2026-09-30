@@ -1,0 +1,12 @@
+{
+  "id": "carbonyls-008",
+  "topic": "carbonyls",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Predict the product of the Wittig reaction of benzaldehyde with the ylide from CH3PPh3Br + n-BuLi.",
+  "reactants": ["O=Cc1ccccc1"],
+  "reagents": ["CH2=PPh3"],
+  "answers": [{ "smiles": "C=Cc1ccccc1", "label": "styrene" }],
+  "concepts": ["Wittig reaction", "alkene synthesis"],
+  "explanation": "The ylide's carbon attacks the carbonyl; the oxaphosphetane collapses to give an alkene and Ph3P=O."
+}

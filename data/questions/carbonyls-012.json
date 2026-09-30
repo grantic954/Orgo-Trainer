@@ -1,0 +1,16 @@
+{
+  "id": "carbonyls-012",
+  "topic": "carbonyls",
+  "type": "rank",
+  "difficulty": 3,
+  "prompt": "Rank these groups by Baeyer–Villiger migratory aptitude (lowest to highest).",
+  "items": [
+    { "id": "me", "label": "methyl" },
+    { "id": "pri", "label": "primary alkyl" },
+    { "id": "sec", "label": "secondary alkyl" },
+    { "id": "tbu", "label": "tertiary alkyl" }
+  ],
+  "correctOrder": ["me", "pri", "sec", "tbu"],
+  "concepts": ["Baeyer–Villiger", "migratory aptitude"],
+  "explanation": "Migratory aptitude increases with ability to stabilize positive character during the migration: 3° > 2° > 1° > methyl (H > all of these)."
+}

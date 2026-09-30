@@ -1,0 +1,16 @@
+{
+  "id": "eas-014",
+  "topic": "eas",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "Why is FC alkylation prone to polyalkylation but FC acylation is not?",
+  "options": [
+    { "id": "activation", "label": "Alkyl groups activate the ring; acyl groups deactivate it." },
+    { "id": "sterics", "label": "Acyl groups are always too bulky for a second substitution." },
+    { "id": "carbocation", "label": "Acylium ions do not rearrange, so only one addition occurs." },
+    { "id": "solvent", "label": "AlCl3 quenches the second FC step." }
+  ],
+  "correctOptionId": "activation",
+  "concepts": ["FC alkylation vs acylation", "polyalkylation"],
+  "explanation": "After the first alkylation, the alkyl group activates the ring so a second (and third) alkylation is faster than the first. Acyl groups deactivate the ring, so the mono-acyl arene is much less reactive than the starting benzene."
+}

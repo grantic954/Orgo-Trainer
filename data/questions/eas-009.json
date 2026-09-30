@@ -1,0 +1,13 @@
+{
+  "id": "eas-009",
+  "topic": "eas",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Predict the major product of bromination of benzoic acid.",
+  "reactants": ["OC(=O)c1ccccc1"],
+  "reagents": ["Br2", "FeBr3"],
+  "answers": [{ "smiles": "OC(=O)c1cccc(Br)c1", "label": "3-bromobenzoic acid (meta)" }],
+  "traps": [{ "smiles": "OC(=O)c1ccc(Br)cc1", "trap": "wrong-director", "note": "COOH is meta-directing." }],
+  "concepts": ["meta director", "carbonyl EWG"],
+  "explanation": "COOH withdraws electrons through resonance, deactivating ortho/para positions; substitution goes meta."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "eas-010",
+  "topic": "eas",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "For disubstituted benzenes with one activator and one deactivator, incoming electrophiles are directed by which group?",
+  "options": [
+    { "id": "act", "label": "The stronger activator." },
+    { "id": "deact", "label": "The stronger deactivator." },
+    { "id": "avg", "label": "The average of both effects." },
+    { "id": "meta", "label": "Always meta to both." }
+  ],
+  "correctOptionId": "act",
+  "concepts": ["polysubstituted benzenes", "directing rules"],
+  "explanation": "Activators dominate directing; the electrophile goes ortho/para to the stronger activator (usually avoiding positions between two groups)."
+}

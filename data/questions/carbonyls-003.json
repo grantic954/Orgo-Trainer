@@ -1,0 +1,13 @@
+{
+  "id": "carbonyls-003",
+  "topic": "carbonyls",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Predict the product of excess CH3MgBr + methyl benzoate (then workup).",
+  "reactants": ["COC(=O)c1ccccc1"],
+  "reagents": ["CH3MgBr (excess)", "H3O+"],
+  "answers": [{ "smiles": "CC(C)(O)c1ccccc1", "label": "2-phenyl-2-propanol" }],
+  "traps": [{ "smiles": "CC(=O)c1ccccc1", "trap": "under-reaction", "note": "The ketone intermediate is more reactive than the ester; a second equivalent adds." }],
+  "concepts": ["Grignard on ester", "double addition"],
+  "explanation": "Grignard on an ester adds twice: alkoxide → ketone → tertiary alkoxide; workup gives the 3° alcohol."
+}

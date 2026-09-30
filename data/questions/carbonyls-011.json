@@ -1,0 +1,13 @@
+{
+  "id": "carbonyls-011",
+  "topic": "carbonyls",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Predict the product of cyclohexanone + pyrrolidine (H+ cat, −H2O).",
+  "reactants": ["O=C1CCCCC1", "N1CCCC1"],
+  "reagents": ["H+ (cat)", "-H2O"],
+  "answers": [{ "smiles": "C1CCC(=CC1)N1CCCC1", "label": "1-(cyclohex-1-en-1-yl)pyrrolidine (enamine)" }],
+  "traps": [{ "smiles": "OC1(CCCCC1)N1CCCC1", "trap": "workup-missing", "note": "That's the hemiaminal — dehydrate to the enamine." }],
+  "concepts": ["enamine formation", "2° amine + ketone"],
+  "explanation": "Secondary amines can't form imines (no N-H) — instead they lose water from the α-carbon to give an enamine (Stork enamine chemistry starts here)."
+}

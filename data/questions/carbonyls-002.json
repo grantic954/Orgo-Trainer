@@ -1,0 +1,12 @@
+{
+  "id": "carbonyls-002",
+  "topic": "carbonyls",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Predict the product of EtMgBr + acetone (then aqueous workup).",
+  "reactants": ["CC(C)=O"],
+  "reagents": ["CH3CH2MgBr", "H3O+"],
+  "answers": [{ "smiles": "CCC(C)(C)O", "label": "2-methyl-2-butanol" }],
+  "concepts": ["Grignard on ketone", "tertiary alcohol"],
+  "explanation": "Grignard adds once to a ketone; workup yields a tertiary alcohol."
+}

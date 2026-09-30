@@ -1,0 +1,16 @@
+{
+  "id": "carbonyls-007",
+  "topic": "carbonyls",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "Which reagent selectively reduces an aldehyde in the presence of an ester?",
+  "options": [
+    { "id": "libh4", "label": "LiAlH4" },
+    { "id": "nabh4", "label": "NaBH4" },
+    { "id": "dibal", "label": "DIBAL-H (excess, rt)" },
+    { "id": "h2", "label": "H2 / Pd-C" }
+  ],
+  "correctOptionId": "nabh4",
+  "concepts": ["hydride selectivity", "NaBH4"],
+  "explanation": "NaBH4 reduces aldehydes/ketones but is too mild for esters. LiAlH4 reduces both. DIBAL excess would reduce both. H2/Pd-C reduces alkenes/alkynes preferentially."
+}

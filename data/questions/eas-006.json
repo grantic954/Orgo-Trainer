@@ -1,0 +1,16 @@
+{
+  "id": "eas-006",
+  "topic": "eas",
+  "type": "rank",
+  "difficulty": 3,
+  "prompt": "Rank these substrates by rate of EAS bromination (slowest to fastest).",
+  "items": [
+    { "id": "no2", "label": "Nitrobenzene" },
+    { "id": "ph", "label": "Benzene" },
+    { "id": "tol", "label": "Toluene" },
+    { "id": "an", "label": "Anisole" }
+  ],
+  "correctOrder": ["no2", "ph", "tol", "an"],
+  "concepts": ["EAS rate", "activators vs deactivators"],
+  "explanation": "Anisole (strong activator) > toluene (weak activator) > benzene > nitrobenzene (strong deactivator)."
+}
