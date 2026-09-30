@@ -7,11 +7,11 @@ Full plan lives in [`CLAUDE.md`](./CLAUDE.md).
 ## Phase status
 
 - [x] **Phase 0** — Scaffold (Next.js + TS + Tailwind, Vitest + Playwright, §11 file skeleton).
-- [ ] Phase 1 — Chemistry core (RDKit.js, `StructureView`, `grade.ts`).
-- [ ] Phase 2 — Drawing (Ketcher `StructureEditor`).
-- [ ] Phase 3 — Question engine + MCQ + trap detector + seed questions.
-- [ ] Phase 4 — Spectra (IR, ¹H, ¹³C+DEPT, MS) and `/sandbox`.
-- [ ] Phase 5 — AI tutor (`/api/tutor`, hint ladder, `<mol>` rendering).
+- [x] **Phase 1** — Chemistry core (RDKit.js, `StructureView`, `grade.ts`, 10-molecule demo).
+- [x] **Phase 2** — Drawing (Ketcher `StructureEditor`, benzoic-acid demo).
+- [x] **Phase 3** — Question engine + MCQ + trap detector + 30 seed questions.
+- [x] **Phase 4** — Spectra (IR, ¹H, ¹³C+DEPT, MS) and `/sandbox`.
+- [ ] Phase 5 — AI tutor (`/api/tutor`, hint ladder, `<mol>` rendering). ← next; needs `ANTHROPIC_API_KEY`.
 - [ ] Phase 6 — Progress + SRS + dashboard + modes.
 - [ ] Phase 7 — Content expansion + template generator.
 - [ ] Phase 8 — Mechanisms.
