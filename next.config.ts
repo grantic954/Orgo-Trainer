@@ -8,6 +8,12 @@ import type { NextConfig } from "next";
 const emptyShim = "./shims/empty.js";
 
 const nextConfig: NextConfig = {
+  // Ketcher-react maintains a module-scope singleton (`ketcherProvider`) that
+  // tracks every mounted Ketcher instance by id. React Strict Mode's dev-only
+  // double-mount creates orphan instance references the singleton can't
+  // resolve ("couldn't find ketcher instance N"). We disable strict mode so
+  // the drawing editor doesn't trip over its own async init on every reload.
+  reactStrictMode: false,
   turbopack: {
     resolveAlias: {
       jsdom: emptyShim,

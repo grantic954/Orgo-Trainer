@@ -56,7 +56,7 @@ const OTHER_TOOLS: ToolDef[] = [
 ];
 
 const SELECTION_TOOLS: ToolDef[] = [
-  { id: "hand", label: "👆", hint: "Pointer — click an atom or bond to select it (or drag for a box)" },
+  { id: "hand", label: "☝", hint: "Pointer — click to select; hold Space + drag to pan the canvas" },
   { id: "erase", label: "⌫", hint: "Erase" },
 ];
 

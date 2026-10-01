@@ -49,7 +49,9 @@ export function StructureEditor({
       />
       {!hideToolbar && (
         <p className="text-xs text-neutral-500">
-          Drag on the canvas to draw. <kbd className="rounded border px-1 font-mono text-[10px]">⌘/Ctrl+A</kbd> select all ·{" "}
+          Drag on the canvas to draw. Hold{" "}
+          <kbd className="rounded border px-1 font-mono text-[10px]">Space</kbd> + drag to pan ·{" "}
+          <kbd className="rounded border px-1 font-mono text-[10px]">⌘/Ctrl+A</kbd> select all ·{" "}
           <kbd className="rounded border px-1 font-mono text-[10px]">⌘/Ctrl+C/V</kbd> copy/paste ·{" "}
           <kbd className="rounded border px-1 font-mono text-[10px]">⌘/Ctrl+Z</kbd> undo
         </p>
