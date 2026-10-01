@@ -7,7 +7,7 @@
   "reactants": ["OCCC(C)=O"],
   "reagents": ["CH3MgBr"],
   "options": [
-    { "id": "add", "label": "1,3-butanediol (Grignard adds to the ketone)", "smiles": "CC(O)CCO" },
+    { "id": "add", "label": "1,3-butanediol (Grignard adds to the ketone)" },
     { "id": "protonated", "label": "CH4 + the alkoxide (Grignard is quenched by the OH)" },
     { "id": "elim", "label": "An enone" }
   ],

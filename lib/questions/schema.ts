@@ -74,7 +74,17 @@ export const McqQuestionSchema = BaseQuestionSchema.extend({
   type: z.literal("mcq"),
   options: z.array(McqOptionSchema).min(2),
   correctOptionId: NonEmptyString,
-});
+}).refine(
+  (q) => {
+    const withSmiles = q.options.filter((o) => typeof o.smiles === "string" && o.smiles.length > 0).length;
+    return withSmiles === 0 || withSmiles === q.options.length;
+  },
+  {
+    message:
+      "MCQ options must be all-structures or all-text (mixing a structure option with text-only options is confusing).",
+    path: ["options"],
+  },
+);
 
 export const RankQuestionSchema = BaseQuestionSchema.extend({
   type: z.literal("rank"),
