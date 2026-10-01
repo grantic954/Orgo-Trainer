@@ -1,10 +1,16 @@
 /*
- * Scoped CSS overrides that hide Ketcher's built-in top/left/right toolbars
- * so only the canvas shows. Our own KetcherToolbar drives the editor.
+ * Scoped CSS overrides that hide Ketcher's built-in top/left/right/bottom
+ * toolbars so only the canvas shows. Our own KetcherToolbar drives the editor.
+ *
+ * Ketcher uses a CSS grid layout:
+ *   "toolbar-top    toolbar-top    toolbar-top"
+ *   "toolbar-left   canvas         toolbar-right"
+ *   "toolbar-bottom toolbar-bottom toolbar-bottom"
  *
  * All selectors are scoped to `.orgo-editor` so they cannot leak outside of
- * <StructureEditor>. When Ketcher upgrades, these class hooks may drift —
- * search for `Ketcher` team's stable data-testid / role attributes first.
+ * <StructureEditor>. When Ketcher upgrades, the module class name prefixes
+ * (`App-module_...`) are the stable hook — the hash suffix changes per build
+ * but the prefix is semantic.
  */
 
 .orgo-editor {
@@ -12,36 +18,30 @@
   width: 100%;
 }
 
-/* Hide the top toolbar (file / edit / arom / settings / help / etc.). */
-.orgo-editor .Ketcher-root [class*="TopToolbar-module_top"],
-.orgo-editor .Ketcher-root header,
-.orgo-editor .Ketcher-root [class*="TopToolbar-module_root"] {
+/* Make sure the Ketcher root fills our container. */
+.orgo-editor .Ketcher-root,
+.orgo-editor .Ketcher-root [class*="App-module_app"] {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+/* Collapse the toolbar grid cells so the canvas occupies the full area. */
+.orgo-editor .Ketcher-root [class*="App-module_app"] {
+  grid-template-columns: 0 1fr 0 !important;
+  grid-template-rows: 0 1fr 0 !important;
+}
+
+/* Hide Ketcher's built-in top / left / right / bottom chrome. */
+.orgo-editor .Ketcher-root [class*="App-module_top"],
+.orgo-editor .Ketcher-root [class*="App-module_left"],
+.orgo-editor .Ketcher-root [class*="App-module_right"],
+.orgo-editor .Ketcher-root [class*="App-module_bottom"] {
   display: none !important;
 }
 
-/* Hide the left-side tool rail (Select/Erase/Bond/Chain/Template/Atom). */
-.orgo-editor .Ketcher-root [class*="LeftToolbar-module_root"],
-.orgo-editor .Ketcher-root aside[class*="LeftToolbar"] {
-  display: none !important;
-}
-
-/* Hide the right-side atoms palette. */
-.orgo-editor .Ketcher-root [class*="RightToolbar-module_root"],
-.orgo-editor .Ketcher-root aside[class*="RightToolbar"] {
-  display: none !important;
-}
-
-/* Hide the bottom info strip. */
-.orgo-editor .Ketcher-root [class*="InfoPanel-module_root"] {
-  display: none !important;
-}
-
-/* Give the canvas the full width now that the rails are gone. */
-.orgo-editor .Ketcher-root [class*="Editor-module_editor"] {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-.orgo-editor .Ketcher-root [class*="Editor-module_canvas"] {
+/* Ensure the canvas cell fills its grid area. */
+.orgo-editor .Ketcher-root [class*="App-module_canvas"],
+.orgo-editor .Ketcher-root [class*="StructEditor-module_canvas"] {
   width: 100% !important;
   height: 100% !important;
 }
