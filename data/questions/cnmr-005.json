@@ -1,0 +1,10 @@
+{
+  "id": "cnmr-005",
+  "topic": "cnmr",
+  "type": "count",
+  "difficulty": 2,
+  "prompt": "How many ¹³C signals does 2-butanone (CH₃COCH₂CH₃) show?",
+  "answer": 4,
+  "concepts": ["signal counting"],
+  "explanation": "All four carbons are in different environments: CH₃-C=O, C=O, CH₂, CH₃. No symmetry."
+}

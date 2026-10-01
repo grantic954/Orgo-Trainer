@@ -1,0 +1,12 @@
+{
+  "id": "snar-001",
+  "topic": "snar",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Predict the SNAr product of 1-chloro-2,4-dinitrobenzene + NaOMe.",
+  "reactants": ["COc1ccc([N+](=O)[O-])cc1[N+](=O)[O-].[Cl]"],
+  "reagents": ["NaOMe"],
+  "answers": [{ "smiles": "COc1ccc([N+](=O)[O-])cc1[N+](=O)[O-]", "label": "2,4-dinitroanisole" }],
+  "concepts": ["SNAr", "Meisenheimer complex"],
+  "explanation": "With strong EWGs ortho/para to the leaving group, addition–elimination SNAr proceeds via a Meisenheimer intermediate; chloride leaves and methoxide takes its place."
+}

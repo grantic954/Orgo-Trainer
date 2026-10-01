@@ -1,0 +1,16 @@
+{
+  "id": "conjugation-005",
+  "topic": "conjugation",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "Why is allylic halide SN1 much faster than a comparable alkyl halide?",
+  "options": [
+    { "id": "res", "label": "The resulting carbocation is resonance-stabilized (allyl cation)." },
+    { "id": "hyper", "label": "Hyperconjugation is stronger in allyl." },
+    { "id": "ster", "label": "Allyl halides are less sterically hindered." },
+    { "id": "polar", "label": "The C–X bond is more polar." }
+  ],
+  "correctOptionId": "res",
+  "concepts": ["allylic cation", "resonance"],
+  "explanation": "The allyl cation delocalizes positive charge across two carbons; the transition state is lower in energy than for a simple secondary cation."
+}

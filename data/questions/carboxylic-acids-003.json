@@ -1,0 +1,16 @@
+{
+  "id": "carboxylic-acids-003",
+  "topic": "carboxylic-acids",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "Why is a carboxylic acid much more acidic than an alcohol?",
+  "options": [
+    { "id": "res", "label": "The conjugate base (carboxylate) is resonance-stabilized across both oxygens." },
+    { "id": "sterics", "label": "COOH is smaller than ROH." },
+    { "id": "ind", "label": "The sp² C–O is a stronger inductive donor." },
+    { "id": "polar", "label": "Water solvates COOH better than ROH." }
+  ],
+  "correctOptionId": "res",
+  "concepts": ["carboxylic acid acidity", "resonance"],
+  "explanation": "Carboxylate's negative charge is delocalized over two equivalent oxygens — much more stable than an alkoxide."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "hnmr-001",
+  "topic": "hnmr",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "Which proton is MOST deshielded (highest δ, ppm)?",
+  "options": [
+    { "id": "ald", "label": "Aldehyde H (R–CHO)" },
+    { "id": "arom", "label": "Aromatic H" },
+    { "id": "vinyl", "label": "Vinyl H (C=C–H)" },
+    { "id": "alpha_co", "label": "α-carbonyl CH" }
+  ],
+  "correctOptionId": "ald",
+  "concepts": ["chemical shift", "deshielding"],
+  "explanation": "Aldehyde H is typically δ 9–10, higher than aromatic (7–8), vinyl (5–6), or α-carbonyl (2–3)."
+}

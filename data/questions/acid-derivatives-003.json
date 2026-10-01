@@ -1,0 +1,13 @@
+{
+  "id": "acid-derivatives-003",
+  "topic": "acid-derivatives",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Saponification: ethyl acetate + NaOH, heat. Draw the organic product.",
+  "reactants": ["CCOC(C)=O"],
+  "reagents": ["NaOH", "H2O", "heat"],
+  "answers": [{ "smiles": "CC(=O)[O-]", "label": "acetate (as sodium acetate)" }],
+  "acceptable": [{ "smiles": "CC(=O)O", "label": "acetic acid (after acidic workup)", "credit": 0.75 }],
+  "concepts": ["saponification", "basic hydrolysis"],
+  "explanation": "Under base, the ester is cleaved to carboxylate + alcohol (irreversible — deprotonation shifts equilibrium)."
+}

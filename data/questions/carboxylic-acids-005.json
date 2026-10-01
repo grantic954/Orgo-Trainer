@@ -1,0 +1,15 @@
+{
+  "id": "carboxylic-acids-005",
+  "topic": "carboxylic-acids",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "To make a COOH from a 1° alkyl halide, you can go through a nitrile:",
+  "options": [
+    { "id": "cn_then_hyd", "label": "R-X → R-CN (NaCN, SN2) → R-COOH (H₃O⁺ hydrolysis)" },
+    { "id": "oh", "label": "R-X → R-OH → R-COOH (needs strong oxidant)" },
+    { "id": "co", "label": "R-X → R-CHO → R-COOH" }
+  ],
+  "correctOptionId": "cn_then_hyd",
+  "concepts": ["chain extension via nitrile"],
+  "explanation": "SN2 with CN⁻ gives R–CN (adds a C to the chain), then acidic hydrolysis gives R–COOH."
+}

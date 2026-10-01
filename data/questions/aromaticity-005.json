@@ -1,0 +1,16 @@
+{
+  "id": "aromaticity-005",
+  "topic": "aromaticity",
+  "type": "rank",
+  "difficulty": 3,
+  "prompt": "Rank by basicity (least → most basic):",
+  "items": [
+    { "id": "pyrrole", "label": "Pyrrole (lone pair in π system)" },
+    { "id": "aniline", "label": "Aniline (lone pair partial π donation)" },
+    { "id": "pyridine", "label": "Pyridine (sp² lone pair, in plane)" },
+    { "id": "pip", "label": "Piperidine (sp³ amine, fully localized lone pair)" }
+  ],
+  "correctOrder": ["pyrrole", "aniline", "pyridine", "pip"],
+  "concepts": ["basicity", "lone pair availability"],
+  "explanation": "Pyrrole's lone pair is in the aromatic π system — unavailable. Aniline partially donates. Pyridine's lone pair is in an sp² orbital in the plane. Piperidine's sp³ lone pair is fully localized → most basic."
+}

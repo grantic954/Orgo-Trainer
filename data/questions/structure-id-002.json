@@ -1,0 +1,16 @@
+{
+  "id": "structure-id-002",
+  "topic": "structure-id",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "Degree of unsaturation (DoU) formula for CₐHᵦNᵧOᵨ (no halogens) is:",
+  "options": [
+    { "id": "a", "label": "(2a + 2 − b + γ) / 2" },
+    { "id": "b", "label": "(a + b − γ) / 2" },
+    { "id": "c", "label": "2a − b + γ" },
+    { "id": "d", "label": "a − b + γ + ρ" }
+  ],
+  "correctOptionId": "a",
+  "concepts": ["degree of unsaturation"],
+  "explanation": "Each ring or π bond adds 1 DoU. Nitrogen adds +1 (one more H expected), halogen subtracts 1 (replaces an H), oxygen is neutral."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "alcohols-ethers-005",
+  "topic": "alcohols-ethers",
+  "type": "rank",
+  "difficulty": 3,
+  "prompt": "Rank these alcohols by acidity (least → most acidic, lowest → highest pKa in reverse):",
+  "items": [
+    { "id": "tert", "label": "tert-butanol (sterically shielded)" },
+    { "id": "etoh", "label": "Ethanol" },
+    { "id": "cf3ch2oh", "label": "2,2,2-trifluoroethanol (CF₃-CH₂OH)" },
+    { "id": "phenol", "label": "Phenol" }
+  ],
+  "correctOrder": ["tert", "etoh", "cf3ch2oh", "phenol"],
+  "concepts": ["alcohol acidity", "resonance", "induction"],
+  "explanation": "tert-Butanol (pKa ~18) < ethanol (16) < CF₃CH₂OH (12, inductive EWG) < phenol (10, resonance-stabilized phenoxide)."
+}

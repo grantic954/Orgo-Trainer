@@ -1,0 +1,16 @@
+{
+  "id": "synthesis-005",
+  "topic": "synthesis",
+  "type": "mcq",
+  "difficulty": 4,
+  "prompt": "Protection: you want to run a Grignard reaction on a substrate with both a ketone and a free OH. What should you do first?",
+  "options": [
+    { "id": "silyl", "label": "Protect the OH as a silyl ether (TBS-Cl, imidazole), run Grignard, deprotect (TBAF)." },
+    { "id": "protect_co", "label": "Protect the C=O as an acetal, run Grignard on the alcohol." },
+    { "id": "nothing", "label": "Nothing — Grignard tolerates free OH." },
+    { "id": "destroy", "label": "Oxidize the OH to a ketone first." }
+  ],
+  "correctOptionId": "silyl",
+  "concepts": ["protecting groups", "Grignard incompatibility"],
+  "explanation": "Grignard reagents are strong bases AND nucleophiles — a free O–H will protonate them. Silyl protection masks the OH as an inert ether, then TBAF removes it after."
+}

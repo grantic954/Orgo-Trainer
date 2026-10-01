@@ -1,0 +1,16 @@
+{
+  "id": "cnmr-001",
+  "topic": "cnmr",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "Which ¹³C chemical shift range is diagnostic of a ketone carbonyl?",
+  "options": [
+    { "id": "a", "label": "190–215 ppm" },
+    { "id": "b", "label": "165–175 ppm (ester/COOH)" },
+    { "id": "c", "label": "110–160 ppm (aromatic/alkene)" },
+    { "id": "d", "label": "0–50 ppm (sp³)" }
+  ],
+  "correctOptionId": "a",
+  "concepts": ["¹³C shift ranges"],
+  "explanation": "Ketone C=O resonates ~195–215. Esters/acids are lower (~170), amides lower still (~168)."
+}

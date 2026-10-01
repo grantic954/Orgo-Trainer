@@ -1,0 +1,16 @@
+{
+  "id": "synthesis-002",
+  "topic": "synthesis",
+  "type": "mcq",
+  "difficulty": 4,
+  "prompt": "Target: 2-phenyl-2-butanol. Which disconnection is best?",
+  "options": [
+    { "id": "grig1", "label": "PhMgBr + 2-butanone" },
+    { "id": "grig2", "label": "CH₃CH₂MgBr + acetophenone (PhCOCH₃)" },
+    { "id": "either", "label": "Either Grignard route (A) or (B) works" },
+    { "id": "fc", "label": "Friedel–Crafts of benzene + 2-butanol" }
+  ],
+  "correctOptionId": "either",
+  "concepts": ["Grignard retrosynthesis"],
+  "explanation": "2-phenyl-2-butanol is a tertiary alcohol with Ph, Me, Et branches. Either Grignard route adds the correct branch across the C=O."
+}

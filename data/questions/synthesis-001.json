@@ -1,0 +1,16 @@
+{
+  "id": "synthesis-001",
+  "topic": "synthesis",
+  "type": "mcq",
+  "difficulty": 4,
+  "prompt": "Best route to make 1-phenyl-1-propanone (propiophenone) from benzene?",
+  "options": [
+    { "id": "fc_acyl", "label": "Friedel–Crafts acylation with propanoyl chloride + AlCl₃" },
+    { "id": "fc_alk", "label": "Friedel–Crafts alkylation with propyl chloride + oxidation (gives polyalkylation / rearrangement)" },
+    { "id": "grignard", "label": "PhMgBr + propanoic acid" },
+    { "id": "wittig", "label": "Wittig on benzaldehyde" }
+  ],
+  "correctOptionId": "fc_acyl",
+  "concepts": ["Friedel–Crafts acylation", "ketone synthesis"],
+  "explanation": "Friedel–Crafts acylation is the clean route (no polyacylation; no carbocation rearrangements). FC alkylation with n-propyl chloride would rearrange to isopropyl."
+}

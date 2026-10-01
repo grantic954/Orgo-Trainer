@@ -1,0 +1,16 @@
+{
+  "id": "synthesis-004",
+  "topic": "synthesis",
+  "type": "mcq",
+  "difficulty": 4,
+  "prompt": "Target: cis-3-hexene. Starting from 1-butyne, which reduction gives Z-alkene cleanly?",
+  "options": [
+    { "id": "lindlar", "label": "H₂ / Lindlar catalyst (poisoned Pd/CaCO₃/quinoline)" },
+    { "id": "naq", "label": "Na / NH₃(l) (gives trans)" },
+    { "id": "h2pd", "label": "H₂ / Pd (over-reduces to alkane)" },
+    { "id": "lah", "label": "LiAlH₄" }
+  ],
+  "correctOptionId": "lindlar",
+  "concepts": ["alkyne reduction", "stereoselectivity"],
+  "explanation": "Lindlar (poisoned Pd) stops at the Z-alkene; Na/NH₃(l) gives E; H₂/Pd goes all the way to alkane."
+}

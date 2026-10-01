@@ -1,0 +1,16 @@
+{
+  "id": "hnmr-005",
+  "topic": "hnmr",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "Two protons on the same sp³ carbon that are not equivalent (e.g., CH₂ next to a stereocenter) are called…",
+  "options": [
+    { "id": "dia", "label": "Diastereotopic" },
+    { "id": "homo", "label": "Homotopic" },
+    { "id": "enant", "label": "Enantiotopic" },
+    { "id": "iso", "label": "Isotopic" }
+  ],
+  "correctOptionId": "dia",
+  "concepts": ["diastereotopic protons", "stereocenters"],
+  "explanation": "Diastereotopic protons are chemically distinct and can show different shifts and J-couplings — they split into an AB pattern."
+}

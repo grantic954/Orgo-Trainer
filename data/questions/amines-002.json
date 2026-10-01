@@ -1,0 +1,13 @@
+{
+  "id": "amines-002",
+  "topic": "amines",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Reductive amination: benzaldehyde + methylamine + NaBH₃CN. Draw the product.",
+  "reactants": ["O=Cc1ccccc1", "NC"],
+  "reagents": ["NaBH3CN", "mild acid"],
+  "answers": [{ "smiles": "CNCc1ccccc1", "label": "N-methylbenzylamine" }],
+  "traps": [{ "smiles": "CN=Cc1ccccc1", "trap": "under-reaction", "note": "The imine is the intermediate; NaBH3CN reduces it to the 2° amine." }],
+  "concepts": ["reductive amination"],
+  "explanation": "Amine + aldehyde form an iminium ion in situ; NaBH₃CN selectively reduces iminium (not aldehyde) at mildly acidic pH → secondary amine."
+}

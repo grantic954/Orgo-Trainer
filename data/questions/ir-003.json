@@ -1,0 +1,17 @@
+{
+  "id": "ir-003",
+  "topic": "ir",
+  "type": "rank",
+  "difficulty": 3,
+  "prompt": "Rank these carbonyls by increasing C=O IR frequency (lowest → highest).",
+  "items": [
+    { "id": "amide", "label": "Amide (RCONR₂)" },
+    { "id": "ketone", "label": "Ketone" },
+    { "id": "aldehyde", "label": "Aldehyde" },
+    { "id": "ester", "label": "Ester" },
+    { "id": "acyl_chloride", "label": "Acyl chloride" }
+  ],
+  "correctOrder": ["amide", "ketone", "aldehyde", "ester", "acyl_chloride"],
+  "concepts": ["C=O frequency", "inductive vs resonance"],
+  "explanation": "Amide ~1680 (strong N lone-pair donation lowers C=O order) < ketone 1715 < aldehyde 1725 < ester 1735 < acyl chloride ~1800 (strong inductive EWG, no resonance donation)."
+}

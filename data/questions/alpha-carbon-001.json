@@ -1,0 +1,16 @@
+{
+  "id": "alpha-carbon-001",
+  "topic": "alpha-carbon",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "The α-hydrogen of a ketone has pKa ~20. Why is it so much more acidic than a comparable sp³ C–H (pKa ~50)?",
+  "options": [
+    { "id": "enol", "label": "The resulting enolate is resonance-stabilized by the adjacent C=O." },
+    { "id": "ind", "label": "The α-C is more electronegative." },
+    { "id": "sterics", "label": "α-C has less steric strain." },
+    { "id": "hyper", "label": "Hyperconjugation stabilizes the anion." }
+  ],
+  "correctOptionId": "enol",
+  "concepts": ["α-H acidity", "enolate"],
+  "explanation": "Deprotonation gives an enolate; the negative charge delocalizes onto the carbonyl oxygen via resonance, which is a huge stabilizing effect."
+}

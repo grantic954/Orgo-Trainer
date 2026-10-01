@@ -1,0 +1,12 @@
+{
+  "id": "side-chain-004",
+  "topic": "side-chain",
+  "type": "draw_product",
+  "difficulty": 4,
+  "prompt": "Sandmeyer reaction: aniline → chlorobenzene via diazonium. Draw the final product.",
+  "reactants": ["Nc1ccccc1"],
+  "reagents": ["NaNO2", "HCl (0 C)", "CuCl"],
+  "answers": [{ "smiles": "Clc1ccccc1", "label": "chlorobenzene" }],
+  "concepts": ["diazonium", "Sandmeyer"],
+  "explanation": "ArNH₂ → ArN₂⁺ (NaNO₂/HCl, 0 °C) → ArCl with CuCl (Sandmeyer). ArN₂⁺ also goes to Br (CuBr), CN (CuCN), or OH (H₂O/heat)."
+}

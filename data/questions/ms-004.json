@@ -1,0 +1,16 @@
+{
+  "id": "ms-004",
+  "topic": "ms",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "An alcohol frequently loses 18 from M⁺. What neutral is lost?",
+  "options": [
+    { "id": "water", "label": "H₂O" },
+    { "id": "methyl", "label": "CH₃" },
+    { "id": "co", "label": "CO" },
+    { "id": "nh3", "label": "NH₃" }
+  ],
+  "correctOptionId": "water",
+  "concepts": ["dehydration in MS", "alcohols"],
+  "explanation": "Alcohols characteristically lose H₂O (18 Da) under EI, often concurrent with an alkene fragment."
+}

@@ -1,0 +1,12 @@
+{
+  "id": "carboxylic-acids-004",
+  "topic": "carboxylic-acids",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Reduce acetic acid to ethanol. Give the product of LiAlH₄ + CH₃COOH (then workup).",
+  "reactants": ["CC(=O)O"],
+  "reagents": ["LiAlH4", "H3O+"],
+  "answers": [{ "smiles": "CCO", "label": "ethanol" }],
+  "concepts": ["COOH reduction", "LiAlH4"],
+  "explanation": "LiAlH₄ reduces COOH all the way to a 1° alcohol (NaBH₄ and DIBAL-H cannot)."
+}

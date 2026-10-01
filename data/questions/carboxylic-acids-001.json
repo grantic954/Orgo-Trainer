@@ -1,0 +1,16 @@
+{
+  "id": "carboxylic-acids-001",
+  "topic": "carboxylic-acids",
+  "type": "rank",
+  "difficulty": 2,
+  "prompt": "Rank by acidity (least → most acidic):",
+  "items": [
+    { "id": "etoh", "label": "Ethanol (pKa ~16)" },
+    { "id": "phenol", "label": "Phenol (pKa ~10)" },
+    { "id": "acoh", "label": "Acetic acid (pKa ~4.8)" },
+    { "id": "clacoh", "label": "Trichloroacetic acid (pKa ~0.7)" }
+  ],
+  "correctOrder": ["etoh", "phenol", "acoh", "clacoh"],
+  "concepts": ["acidity", "inductive EWG"],
+  "explanation": "Alcohol < phenol (resonance) < carboxylic acid (resonance + induction) < trichloro acid (α-EWGs stabilize carboxylate further)."
+}

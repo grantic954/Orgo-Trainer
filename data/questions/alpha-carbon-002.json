@@ -1,0 +1,16 @@
+{
+  "id": "alpha-carbon-002",
+  "topic": "alpha-carbon",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "2,4-pentanedione (acac) has pKa ~9. Why is it dramatically more acidic than acetone (pKa ~20)?",
+  "options": [
+    { "id": "two_ewg", "label": "Deprotonation gives an enolate stabilized by TWO flanking carbonyls." },
+    { "id": "res", "label": "Only one C=O stabilizes." },
+    { "id": "ind", "label": "The sp² C is inductively acidic." },
+    { "id": "aromatic", "label": "The enolate is aromatic." }
+  ],
+  "correctOptionId": "two_ewg",
+  "concepts": ["1,3-dicarbonyl acidity"],
+  "explanation": "1,3-dicarbonyls have α-H between two C=O groups; the enolate is doubly resonance-stabilized."
+}

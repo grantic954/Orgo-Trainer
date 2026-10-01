@@ -1,0 +1,12 @@
+{
+  "id": "acid-derivatives-002",
+  "topic": "acid-derivatives",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Fischer esterification: acetic acid + ethanol + H⁺. Draw the product.",
+  "reactants": ["CC(=O)O", "CCO"],
+  "reagents": ["H2SO4 (cat)", "heat"],
+  "answers": [{ "smiles": "CCOC(C)=O", "label": "ethyl acetate" }],
+  "concepts": ["Fischer esterification"],
+  "explanation": "Equilibrium reaction; drive forward with excess alcohol or by removing water (Dean–Stark)."
+}

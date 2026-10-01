@@ -1,0 +1,12 @@
+{
+  "id": "side-chain-002",
+  "topic": "side-chain",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Predict the product of KMnO₄ (hot) on p-nitrotoluene.",
+  "reactants": ["Cc1ccc([N+](=O)[O-])cc1"],
+  "reagents": ["KMnO4", "heat", "H3O+"],
+  "answers": [{ "smiles": "OC(=O)c1ccc([N+](=O)[O-])cc1", "label": "4-nitrobenzoic acid" }],
+  "concepts": ["benzylic oxidation"],
+  "explanation": "Hot KMnO₄ oxidizes benzylic C–H all the way to a benzoic acid (if any H's are present on the benzylic carbon)."
+}

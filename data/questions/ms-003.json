@@ -1,0 +1,16 @@
+{
+  "id": "ms-003",
+  "topic": "ms",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "A molecule shows a strong peak at m/z = 91 characteristic of an alkyl-substituted benzene. What cation does this correspond to?",
+  "options": [
+    { "id": "trop", "label": "Tropylium cation (C₇H₇⁺)" },
+    { "id": "phen", "label": "Phenyl cation (C₆H₅⁺)" },
+    { "id": "benzyl_rad", "label": "Benzyl radical" },
+    { "id": "co", "label": "Acylium ion" }
+  ],
+  "correctOptionId": "trop",
+  "concepts": ["benzylic fragmentation", "tropylium"],
+  "explanation": "Benzyl cations rearrange to the aromatic (6π) tropylium cation at m/z 91 — exceptionally stable, hence the prominent peak."
+}

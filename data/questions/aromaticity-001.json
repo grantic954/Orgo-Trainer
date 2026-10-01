@@ -1,0 +1,16 @@
+{
+  "id": "aromaticity-001",
+  "topic": "aromaticity",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "Hückel's rule requires how many π electrons for aromaticity?",
+  "options": [
+    { "id": "a", "label": "4n + 2 (where n = 0, 1, 2, ...)" },
+    { "id": "b", "label": "4n" },
+    { "id": "c", "label": "An even number, any count" },
+    { "id": "d", "label": "6 only" }
+  ],
+  "correctOptionId": "a",
+  "concepts": ["Hückel's rule", "aromaticity"],
+  "explanation": "4n+2 π electrons in a planar, cyclic, fully conjugated system → aromatic. 4n = antiaromatic."
+}

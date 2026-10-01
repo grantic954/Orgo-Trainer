@@ -1,0 +1,16 @@
+{
+  "id": "ir-005",
+  "topic": "ir",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "An α,β-unsaturated ketone (enone) has its C=O band around 1685 cm⁻¹. Why is it lower than a regular ketone (~1715 cm⁻¹)?",
+  "options": [
+    { "id": "res", "label": "Conjugation delocalizes the C=O π bond, lowering its force constant." },
+    { "id": "ind", "label": "The sp² CH is more electron-donating than sp³." },
+    { "id": "steric", "label": "Steric crowding lowers the frequency." },
+    { "id": "mass", "label": "The reduced mass of C=O is larger." }
+  ],
+  "correctOptionId": "res",
+  "concepts": ["conjugation", "C=O frequency"],
+  "explanation": "Conjugation lowers the effective C=O bond order via resonance delocalization, which drops the stretching frequency by ~30 cm⁻¹."
+}

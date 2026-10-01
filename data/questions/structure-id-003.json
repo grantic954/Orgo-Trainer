@@ -1,0 +1,10 @@
+{
+  "id": "structure-id-003",
+  "topic": "structure-id",
+  "type": "count",
+  "difficulty": 2,
+  "prompt": "Compute the degree of unsaturation of C₇H₈O (common solvent).",
+  "answer": 4,
+  "concepts": ["DoU", "aromaticity"],
+  "explanation": "(2·7 + 2 − 8) / 2 = 4 → one benzene ring (3π + 1 ring = 4 DoU), consistent with cresol / benzyl alcohol."
+}

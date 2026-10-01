@@ -1,0 +1,16 @@
+{
+  "id": "amines-004",
+  "topic": "amines",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "Hofmann elimination of a quaternary ammonium hydroxide typically gives:",
+  "options": [
+    { "id": "less", "label": "The LESS substituted alkene (anti-Zaitsev)" },
+    { "id": "more", "label": "The MORE substituted alkene (Zaitsev)" },
+    { "id": "alcohol", "label": "An alcohol" },
+    { "id": "enol", "label": "An enamine" }
+  ],
+  "correctOptionId": "less",
+  "concepts": ["Hofmann elimination"],
+  "explanation": "Bulky NMe₃⁺ leaving group means the base abstracts the most accessible (least hindered) β-H → Hofmann (anti-Zaitsev) alkene."
+}

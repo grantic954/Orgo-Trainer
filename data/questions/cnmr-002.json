@@ -1,0 +1,16 @@
+{
+  "id": "cnmr-002",
+  "topic": "cnmr",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "In DEPT-135, a CH₂ carbon appears as:",
+  "options": [
+    { "id": "down", "label": "A peak pointing DOWN" },
+    { "id": "up", "label": "A peak pointing UP" },
+    { "id": "none", "label": "No peak (invisible)" },
+    { "id": "doublet", "label": "A split doublet" }
+  ],
+  "correctOptionId": "down",
+  "concepts": ["DEPT-135"],
+  "explanation": "In DEPT-135: CH and CH₃ point UP, CH₂ points DOWN, quaternary C is invisible."
+}

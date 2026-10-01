@@ -1,0 +1,15 @@
+{
+  "id": "snar-004",
+  "topic": "snar",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "4-bromotoluene + NaNH₂/NH₃ gives a mixture of 3- and 4-aminotoluenes. What does this tell you?",
+  "options": [
+    { "id": "benzyne", "label": "The reaction goes through a benzyne intermediate; nucleophile adds at either of the two sp carbons." },
+    { "id": "snar", "label": "SNAr with activation by methyl." },
+    { "id": "sn1", "label": "SN1 at the aromatic ring." }
+  ],
+  "correctOptionId": "benzyne",
+  "concepts": ["benzyne regiochemistry"],
+  "explanation": "The benzyne intermediate from 4-bromotoluene has sp-hybridized carbons at positions 3 and 4 of the original ring; NH₃ attacks either, giving a mix of 3- and 4-aminotoluenes."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "side-chain-005",
+  "topic": "side-chain",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "Which pair of reagents converts a ketone to the corresponding methylene (CH₂) without touching an acid-sensitive group?",
+  "options": [
+    { "id": "wk", "label": "Wolff–Kishner: H₂NNH₂, KOH, heat (basic conditions)" },
+    { "id": "cl", "label": "Clemmensen: Zn(Hg), HCl (acidic — not good for acid-sensitive)" },
+    { "id": "lah", "label": "LiAlH₄ then H₂O" },
+    { "id": "h2pd", "label": "H₂ / Pd" }
+  ],
+  "correctOptionId": "wk",
+  "concepts": ["Wolff–Kishner vs Clemmensen"],
+  "explanation": "Both WK and Clemmensen reduce C=O → CH₂. WK (basic) spares acid-sensitive substrates; Clemmensen (strong acid) spares base-sensitive substrates."
+}

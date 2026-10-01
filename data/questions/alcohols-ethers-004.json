@@ -1,0 +1,13 @@
+{
+  "id": "alcohols-ethers-004",
+  "topic": "alcohols-ethers",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Epoxide ring opening: propylene oxide + CH₃O⁻. Draw the major product (basic conditions, attack at less hindered carbon).",
+  "reactants": ["CC1CO1", "CO"],
+  "reagents": ["NaOMe"],
+  "answers": [{ "smiles": "CC(O)COC", "label": "1-methoxy-2-propanol (attack at terminal CH₂)" }],
+  "traps": [{ "smiles": "CC(OC)CO", "trap": "regio-wrong", "note": "Under acid, attack goes to more substituted; under base, to less hindered." }],
+  "concepts": ["epoxide opening", "regioselectivity"],
+  "explanation": "Under BASIC conditions, nucleophile attacks the LESS substituted carbon (SN2-like). Under ACIDIC conditions, attack happens at the MORE substituted carbon (carbocation-like)."
+}

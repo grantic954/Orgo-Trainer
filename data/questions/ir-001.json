@@ -1,0 +1,16 @@
+{
+  "id": "ir-001",
+  "topic": "ir",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "A compound shows a strong, broad IR absorption at ~3300 cm⁻¹ and a sharp band at ~1050 cm⁻¹. Which functional group is present?",
+  "options": [
+    { "id": "a", "label": "Alcohol (O–H + C–O)" },
+    { "id": "b", "label": "Carboxylic acid (O–H very broad + C=O)" },
+    { "id": "c", "label": "Primary amine (two N–H)" },
+    { "id": "d", "label": "Ester (C=O + C–O)" }
+  ],
+  "correctOptionId": "a",
+  "concepts": ["IR interpretation", "O–H", "C–O"],
+  "explanation": "A broad band at ~3300 (O–H) with a C–O at ~1050 is diagnostic of a 1°/2° alcohol. COOH's O–H is much broader (2500–3300) with a C=O. Esters lack O–H."
+}

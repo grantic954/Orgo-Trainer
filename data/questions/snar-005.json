@@ -1,0 +1,16 @@
+{
+  "id": "snar-005",
+  "topic": "snar",
+  "type": "rank",
+  "difficulty": 3,
+  "prompt": "Rank these aryl halides by SNAr reactivity (slowest → fastest) with NaOMe.",
+  "items": [
+    { "id": "a", "label": "chlorobenzene (no EWG)" },
+    { "id": "b", "label": "4-nitrochlorobenzene" },
+    { "id": "c", "label": "2,4-dinitrochlorobenzene" },
+    { "id": "d", "label": "2,4,6-trinitrochlorobenzene" }
+  ],
+  "correctOrder": ["a", "b", "c", "d"],
+  "concepts": ["SNAr", "EWG stabilization"],
+  "explanation": "More EWGs ortho/para to the leaving group → more stabilization of the Meisenheimer intermediate → faster SNAr. Chlorobenzene with no EWG is essentially inert."
+}

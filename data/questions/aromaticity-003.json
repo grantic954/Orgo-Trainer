@@ -1,0 +1,16 @@
+{
+  "id": "aromaticity-003",
+  "topic": "aromaticity",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "Pyrrole's nitrogen contributes how many π electrons to the aromatic ring?",
+  "options": [
+    { "id": "two", "label": "2 (lone pair in the p orbital)" },
+    { "id": "one", "label": "1 (one electron from a lone pair)" },
+    { "id": "zero", "label": "0 (nitrogen is just a substituent)" },
+    { "id": "three", "label": "3" }
+  ],
+  "correctOptionId": "two",
+  "concepts": ["heteroaromatics", "lone pair π participation"],
+  "explanation": "Pyrrole's N lone pair sits in a p orbital perpendicular to the ring, contributing 2 electrons to make a 6π aromatic system. The N–H is in the plane and not involved."
+}

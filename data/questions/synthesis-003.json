@@ -1,0 +1,15 @@
+{
+  "id": "synthesis-003",
+  "topic": "synthesis",
+  "type": "mcq",
+  "difficulty": 4,
+  "prompt": "You need to install a meta-bromo on acetophenone. Which order of operations works?",
+  "options": [
+    { "id": "fc_then_br", "label": "Friedel–Crafts acylation of benzene (acetyl chloride/AlCl₃), THEN Br₂/FeBr₃ (ketone directs meta)." },
+    { "id": "br_then_fc", "label": "Br₂/FeBr₃ on benzene first, then FC acylation (works but Br is o/p director — not meta)." },
+    { "id": "simul", "label": "Simultaneous addition" }
+  ],
+  "correctOptionId": "fc_then_br",
+  "concepts": ["multistep sequencing", "meta direction"],
+  "explanation": "Install the deactivating/meta-directing group (acyl) first; the ketone then directs incoming Br to the meta position."
+}

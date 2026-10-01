@@ -1,0 +1,15 @@
+{
+  "id": "amines-005",
+  "topic": "amines",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "A diazonium salt (ArN₂⁺) can be used to install which groups? (pick the FULL list)",
+  "options": [
+    { "id": "all", "label": "Cl (CuCl), Br (CuBr), CN (CuCN), OH (H₂O/heat), H (H₃PO₂), F (HBF₄/Δ)" },
+    { "id": "halo_only", "label": "Only Cl and Br" },
+    { "id": "oh_only", "label": "Only OH" }
+  ],
+  "correctOptionId": "all",
+  "concepts": ["diazonium", "Sandmeyer", "Schiemann"],
+  "explanation": "Diazonium salts are enormously versatile: Sandmeyer (Cu-based: Cl/Br/CN), Schiemann (F via ArN₂⁺BF₄⁻ then heat), reduction with H₃PO₂ (H replacement), and H₂O/heat for OH."
+}

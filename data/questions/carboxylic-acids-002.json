@@ -1,0 +1,13 @@
+{
+  "id": "carboxylic-acids-002",
+  "topic": "carboxylic-acids",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Oxidation of 1-butanol by Jones reagent (CrO₃/H₂SO₄). Draw the product.",
+  "reactants": ["CCCCO"],
+  "reagents": ["CrO3", "H2SO4"],
+  "answers": [{ "smiles": "CCCC(=O)O", "label": "butanoic acid" }],
+  "traps": [{ "smiles": "CCCC=O", "trap": "under-reaction", "note": "Jones oxidizes all the way to COOH; use PCC to stop at aldehyde." }],
+  "concepts": ["Jones oxidation"],
+  "explanation": "Chromic acid oxidizes 1° alcohols all the way to carboxylic acids (aqueous conditions reoxidize the aldehyde)."
+}

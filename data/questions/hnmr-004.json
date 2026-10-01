@@ -1,0 +1,10 @@
+{
+  "id": "hnmr-004",
+  "topic": "hnmr",
+  "type": "count",
+  "difficulty": 3,
+  "prompt": "How many distinct ¹H NMR signals does para-xylene (1,4-dimethylbenzene) give?",
+  "answer": 2,
+  "concepts": ["symmetry", "signal counting"],
+  "explanation": "Molecular C₂ symmetry makes both methyl groups equivalent and all four aromatic H equivalent → 2 signals (δ ~2.3 singlet, 3H × 2; δ ~7.0 singlet, 2H × 2)."
+}

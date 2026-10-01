@@ -1,0 +1,15 @@
+{
+  "id": "ir-002",
+  "topic": "ir",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "A ketone and an aldehyde of the same substitution pattern. Which C=O absorbs at higher wavenumber?",
+  "options": [
+    { "id": "a", "label": "Aldehyde (~1725 cm⁻¹)" },
+    { "id": "b", "label": "Ketone (~1715 cm⁻¹)" },
+    { "id": "c", "label": "They are the same." }
+  ],
+  "correctOptionId": "a",
+  "concepts": ["C=O frequency", "substitution"],
+  "explanation": "Aldehydes absorb slightly higher than ketones; adding alkyl groups to the carbonyl lowers the C=O stretch by donating electron density."
+}

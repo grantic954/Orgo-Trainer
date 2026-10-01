@@ -1,0 +1,13 @@
+{
+  "id": "side-chain-001",
+  "topic": "side-chain",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Predict the product of benzylic bromination of toluene with NBS and a radical initiator.",
+  "reactants": ["Cc1ccccc1"],
+  "reagents": ["NBS", "hν or AIBN"],
+  "answers": [{ "smiles": "BrCc1ccccc1", "label": "benzyl bromide" }],
+  "traps": [{ "smiles": "Cc1ccc(Br)cc1", "trap": "wrong-director", "note": "NBS/radical conditions do benzylic (not ring) bromination." }],
+  "concepts": ["benzylic bromination", "NBS", "radical"],
+  "explanation": "NBS supplies a low concentration of Br₂ and generates benzylic radicals (stabilized by the ring); H on the benzylic CH₃ is abstracted, Br⁻ captures the radical."
+}

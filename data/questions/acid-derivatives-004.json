@@ -1,0 +1,13 @@
+{
+  "id": "acid-derivatives-004",
+  "topic": "acid-derivatives",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Nitrile hydrolysis: CH₃CH₂CN + H₂O/H₂SO₄, heat. Draw the product.",
+  "reactants": ["CCC#N"],
+  "reagents": ["H2SO4", "H2O", "heat"],
+  "answers": [{ "smiles": "CCC(=O)O", "label": "propanoic acid" }],
+  "traps": [{ "smiles": "CCC(=O)N", "trap": "under-reaction", "note": "Acidic conditions take the amide intermediate all the way to COOH." }],
+  "concepts": ["nitrile hydrolysis"],
+  "explanation": "R–CN + H₂O under strong acid (or base) goes through an amide and ultimately to R–COOH."
+}

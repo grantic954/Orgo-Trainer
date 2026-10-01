@@ -1,0 +1,15 @@
+{
+  "id": "alpha-carbon-005",
+  "topic": "alpha-carbon",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "Michael addition: an enolate + an α,β-unsaturated carbonyl adds how?",
+  "options": [
+    { "id": "beta", "label": "1,4-addition (conjugate addition) at the β-carbon" },
+    { "id": "alpha", "label": "1,2-addition at the C=O" },
+    { "id": "end", "label": "Enolate adds and then enolate shifts to the γ-carbon" }
+  ],
+  "correctOptionId": "beta",
+  "concepts": ["Michael addition", "1,4-conjugate addition"],
+  "explanation": "Soft nucleophiles (enolates) prefer 1,4-addition to α,β-unsaturated carbonyls because the β-carbon is the soft electrophilic site."
+}

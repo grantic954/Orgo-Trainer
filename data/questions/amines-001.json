@@ -1,0 +1,16 @@
+{
+  "id": "amines-001",
+  "topic": "amines",
+  "type": "rank",
+  "difficulty": 2,
+  "prompt": "Rank by basicity in water (least → most basic):",
+  "items": [
+    { "id": "pyrrole", "label": "Pyrrole (lone pair in π ring)" },
+    { "id": "aniline", "label": "Aniline (lone pair partially delocalized)" },
+    { "id": "nh3", "label": "Ammonia" },
+    { "id": "et2nh", "label": "Diethylamine (2° alkyl amine)" }
+  ],
+  "correctOrder": ["pyrrole", "aniline", "nh3", "et2nh"],
+  "concepts": ["amine basicity", "lone pair availability"],
+  "explanation": "Alkyl amines are most basic (inductive donation + lone pair available); ammonia next; aniline much less basic (lone pair delocalizes into ring); pyrrole essentially non-basic."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "hnmr-003",
+  "topic": "hnmr",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "An OH proton often appears as a broad singlet. Why doesn't it couple to neighboring CH?",
+  "options": [
+    { "id": "exchange", "label": "Rapid proton exchange averages the OH environment faster than NMR timescale resolves coupling." },
+    { "id": "weak", "label": "The O–H bond is too weak to couple." },
+    { "id": "distance", "label": "O–H protons are too far from CH to couple." },
+    { "id": "frequency", "label": "OH protons resonate at a frequency outside the NMR window." }
+  ],
+  "correctOptionId": "exchange",
+  "concepts": ["exchangeable protons", "OH coupling"],
+  "explanation": "OH/NH protons exchange rapidly (acid/base catalyzed) and lose J-coupling with adjacent H — hence broad singlets."
+}

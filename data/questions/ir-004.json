@@ -1,0 +1,16 @@
+{
+  "id": "ir-004",
+  "topic": "ir",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "An IR spectrum shows a sharp band at ~2250 cm⁻¹. Which functional group is responsible?",
+  "options": [
+    { "id": "nitrile", "label": "Nitrile (C≡N)" },
+    { "id": "alkyne", "label": "Terminal alkyne (C≡C, ~2100 cm⁻¹)" },
+    { "id": "co", "label": "Ketone (C=O)" },
+    { "id": "oh", "label": "O–H" }
+  ],
+  "correctOptionId": "nitrile",
+  "concepts": ["C≡N", "triple-bond region"],
+  "explanation": "Nitriles absorb ~2250 (sharp). Terminal alkynes are lower (~2100) and weaker. Carbonyls are 1700–1800."
+}

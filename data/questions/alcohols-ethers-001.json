@@ -1,0 +1,13 @@
+{
+  "id": "alcohols-ethers-001",
+  "topic": "alcohols-ethers",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Predict the product of acid-catalyzed hydration (water + H₂SO₄) of propene.",
+  "reactants": ["CC=C"],
+  "reagents": ["H2O", "H2SO4"],
+  "answers": [{ "smiles": "CC(C)O", "label": "2-propanol (Markovnikov)" }],
+  "traps": [{ "smiles": "CCCO", "trap": "wrong-director", "note": "H+ gives Markovnikov; OH on more substituted carbon." }],
+  "concepts": ["Markovnikov", "acid-catalyzed hydration"],
+  "explanation": "H⁺ protonates to give the more stable 2° carbocation; H₂O attacks there → 2-propanol."
+}

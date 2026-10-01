@@ -1,0 +1,13 @@
+{
+  "id": "alcohols-ethers-003",
+  "topic": "alcohols-ethers",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Williamson ether synthesis: NaOCH₃ + 1-bromobutane. Draw the product.",
+  "reactants": ["CCCCBr", "CO"],
+  "reagents": ["NaOMe"],
+  "answers": [{ "smiles": "CCCCOC", "label": "methyl butyl ether" }],
+  "traps": [{ "smiles": "CCCC", "trap": "wrong-director", "note": "This is reduction; Williamson is SN2 of alkoxide + alkyl halide." }],
+  "concepts": ["Williamson ether", "SN2"],
+  "explanation": "Alkoxide (RO⁻) attacks a primary alkyl halide in SN2 to form the ether. Use the primary halide when there's a choice (SN2 wants 1°)."
+}

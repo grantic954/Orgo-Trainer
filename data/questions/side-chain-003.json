@@ -1,0 +1,12 @@
+{
+  "id": "side-chain-003",
+  "topic": "side-chain",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Reduce nitrobenzene to aniline (give the product).",
+  "reactants": ["O=[N+]([O-])c1ccccc1"],
+  "reagents": ["Sn", "HCl", "then NaOH"],
+  "answers": [{ "smiles": "Nc1ccccc1", "label": "aniline" }],
+  "concepts": ["nitro reduction"],
+  "explanation": "Sn/HCl (or Fe/HCl, Zn/HCl, H₂/Pt) reduces ArNO₂ → ArNH₂. Basic workup liberates the free amine."
+}

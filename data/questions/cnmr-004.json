@@ -1,0 +1,16 @@
+{
+  "id": "cnmr-004",
+  "topic": "cnmr",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "DEPT-90 shows peaks ONLY for which carbons?",
+  "options": [
+    { "id": "ch", "label": "CH (methine) carbons" },
+    { "id": "ch2", "label": "CH₂ carbons" },
+    { "id": "ch3", "label": "CH₃ carbons" },
+    { "id": "quat", "label": "Quaternary carbons" }
+  ],
+  "correctOptionId": "ch",
+  "concepts": ["DEPT-90"],
+  "explanation": "DEPT-90 isolates CH signals; all other carbons are nulled out."
+}

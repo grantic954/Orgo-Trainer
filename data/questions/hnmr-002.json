@@ -1,0 +1,16 @@
+{
+  "id": "hnmr-002",
+  "topic": "hnmr",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "Ethyl acetate (CH₃COOCH₂CH₃) has how many ¹H NMR signals, and what are their multiplicities?",
+  "options": [
+    { "id": "a", "label": "3 signals: singlet (3H), quartet (2H), triplet (3H)" },
+    { "id": "b", "label": "2 signals: singlet, quartet" },
+    { "id": "c", "label": "4 signals: all singlets" },
+    { "id": "d", "label": "3 signals: all triplets" }
+  ],
+  "correctOptionId": "a",
+  "concepts": ["n+1 rule", "signal counting"],
+  "explanation": "Acetyl methyl (no neighbors) = singlet, OCH₂ coupled to CH₃ (n=3) = quartet, terminal CH₃ coupled to CH₂ (n=2) = triplet."
+}

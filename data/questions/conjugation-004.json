@@ -1,0 +1,16 @@
+{
+  "id": "conjugation-004",
+  "topic": "conjugation",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "In the Diels–Alder endo rule, the EWG substituent of the dienophile prefers to be:",
+  "options": [
+    { "id": "endo", "label": "Endo (tucked under the diene π system)" },
+    { "id": "exo", "label": "Exo (pointed away from the diene)" },
+    { "id": "equal", "label": "Equal mixture" },
+    { "id": "no_rule", "label": "The rule only applies to carbonyls" }
+  ],
+  "correctOptionId": "endo",
+  "concepts": ["endo rule", "secondary orbital interactions"],
+  "explanation": "Secondary orbital overlap in the transition state favors the endo arrangement. Exo is more sterically favored but kinetically slower."
+}

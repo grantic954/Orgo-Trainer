@@ -1,0 +1,12 @@
+{
+  "id": "alpha-carbon-004",
+  "topic": "alpha-carbon",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Claisen condensation: 2 eq ethyl acetate + NaOEt. Draw the β-ketoester product.",
+  "reactants": ["CCOC(C)=O"],
+  "reagents": ["NaOEt", "then H3O+"],
+  "answers": [{ "smiles": "CCOC(=O)CC(C)=O", "label": "ethyl acetoacetate" }],
+  "concepts": ["Claisen condensation"],
+  "explanation": "Enolate of ester attacks another ester's C=O; alkoxide (OEt) leaves. Final deprotonation of the acidic α-H drives the equilibrium."
+}

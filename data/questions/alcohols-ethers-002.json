@@ -1,0 +1,13 @@
+{
+  "id": "alcohols-ethers-002",
+  "topic": "alcohols-ethers",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Oxidation of 1-butanol with PCC (mild). Draw the product.",
+  "reactants": ["CCCCO"],
+  "reagents": ["PCC"],
+  "answers": [{ "smiles": "CCCC=O", "label": "butanal" }],
+  "traps": [{ "smiles": "CCCC(=O)O", "trap": "over-reaction", "note": "PCC stops at the aldehyde; chromic acid goes to COOH." }],
+  "concepts": ["PCC", "selective oxidation"],
+  "explanation": "PCC oxidizes 1° alcohols → aldehydes (stops at aldehyde because of anhydrous conditions)."
+}

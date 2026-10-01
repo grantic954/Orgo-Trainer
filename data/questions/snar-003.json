@@ -1,0 +1,16 @@
+{
+  "id": "snar-003",
+  "topic": "snar",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "The benzyne mechanism (elimination–addition) requires:",
+  "options": [
+    { "id": "strong_base", "label": "A very strong base (e.g., NaNH₂) and no activating EWGs" },
+    { "id": "ewg", "label": "Strong EWGs ortho/para" },
+    { "id": "radicals", "label": "A radical initiator" },
+    { "id": "weak_base", "label": "Weak base + protic solvent" }
+  ],
+  "correctOptionId": "strong_base",
+  "concepts": ["benzyne", "elimination–addition"],
+  "explanation": "Benzyne requires deprotonation ortho to the halide (strong base, e.g. NaNH₂) to form the benzyne triple-bond-ish intermediate, which is then attacked by a nucleophile at either carbon."
+}

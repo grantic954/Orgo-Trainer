@@ -1,0 +1,12 @@
+{
+  "id": "amines-003",
+  "topic": "amines",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Gabriel synthesis: potassium phthalimide + benzyl bromide → ?  then NH₂NH₂ cleaves the phthalimide. Draw the final primary amine.",
+  "reactants": ["O=C1OC(=O)c2ccccc21", "BrCc1ccccc1"],
+  "reagents": ["K-phthalimide (SN2)", "then NH2NH2"],
+  "answers": [{ "smiles": "NCc1ccccc1", "label": "benzylamine (primary amine)" }],
+  "concepts": ["Gabriel synthesis"],
+  "explanation": "Phthalimide anion is a protected NH₂⁻ equivalent for SN2; hydrazine cleaves the phthalimide to release the pure 1° amine."
+}

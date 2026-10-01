@@ -1,0 +1,16 @@
+{
+  "id": "conjugation-003",
+  "topic": "conjugation",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "Which diene is MOST reactive in a Diels–Alder reaction?",
+  "options": [
+    { "id": "a", "label": "s-cis 2,3-dimethyl-1,3-butadiene (locked / rotamer favorable, EDG)" },
+    { "id": "b", "label": "s-trans 1,3-butadiene" },
+    { "id": "c", "label": "1,3-cyclohexadiene (locked s-cis)" },
+    { "id": "d", "label": "isolated 1,4-pentadiene (not conjugated)" }
+  ],
+  "correctOptionId": "c",
+  "concepts": ["Diels–Alder", "s-cis conformation"],
+  "explanation": "A diene must achieve s-cis to react; cyclic dienes locked s-cis (cyclopentadiene, cyclohexadiene) are especially reactive. 1,4-pentadiene is not conjugated and cannot do a Diels–Alder."
+}

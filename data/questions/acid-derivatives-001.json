@@ -1,0 +1,16 @@
+{
+  "id": "acid-derivatives-001",
+  "topic": "acid-derivatives",
+  "type": "rank",
+  "difficulty": 3,
+  "prompt": "Rank these acyl derivatives by reactivity in nucleophilic acyl substitution (least → most reactive):",
+  "items": [
+    { "id": "amide", "label": "Amide" },
+    { "id": "ester", "label": "Ester" },
+    { "id": "anhydride", "label": "Anhydride" },
+    { "id": "acyl_chloride", "label": "Acyl chloride" }
+  ],
+  "correctOrder": ["amide", "ester", "anhydride", "acyl_chloride"],
+  "concepts": ["reactivity ladder", "leaving group ability"],
+  "explanation": "Reactivity ladder: amide < ester < anhydride < acyl chloride. The ability to lose the leaving group (Cl⁻ > OC(=O)R > OR > NR₂) determines reactivity."
+}

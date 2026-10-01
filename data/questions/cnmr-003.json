@@ -1,0 +1,10 @@
+{
+  "id": "cnmr-003",
+  "topic": "cnmr",
+  "type": "count",
+  "difficulty": 3,
+  "prompt": "How many distinct ¹³C signals does para-xylene (1,4-dimethylbenzene) give?",
+  "answer": 3,
+  "concepts": ["symmetry"],
+  "explanation": "By symmetry: the two methyls are equivalent, the two ipso aromatic carbons are equivalent, and the four ortho/meta aromatic carbons are equivalent → 3 signals."
+}

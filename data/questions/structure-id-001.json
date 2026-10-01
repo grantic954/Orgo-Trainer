@@ -1,0 +1,16 @@
+{
+  "id": "structure-id-001",
+  "topic": "structure-id",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "A compound with formula C₄H₈O shows: IR 1715 cm⁻¹ (strong), no O–H; ¹H NMR 2.1 ppm (s, 3H), 2.5 ppm (q, 2H), 1.0 ppm (t, 3H). Identify it.",
+  "options": [
+    { "id": "mek", "label": "2-butanone (methyl ethyl ketone)", "smiles": "CCC(C)=O" },
+    { "id": "but", "label": "butanal", "smiles": "CCCC=O" },
+    { "id": "but_ol", "label": "2-buten-1-ol", "smiles": "CC=CCO" },
+    { "id": "thf", "label": "tetrahydrofuran", "smiles": "C1CCOC1" }
+  ],
+  "correctOptionId": "mek",
+  "concepts": ["structure determination", "IR + NMR"],
+  "explanation": "IR 1715 (ketone C=O), no O–H rules out alcohol. The methyl singlet (α to C=O), ethyl quartet+triplet pattern, and absence of an aldehyde H (δ ~9.7) nail it as 2-butanone."
+}

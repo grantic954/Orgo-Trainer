@@ -1,0 +1,15 @@
+{
+  "id": "acid-derivatives-005",
+  "topic": "acid-derivatives",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "You need an amide RC(=O)NR'₂. Starting from a carboxylic acid, what is the best route?",
+  "options": [
+    { "id": "acyl_cl", "label": "Convert COOH → acyl chloride (SOCl₂), then add amine (acyl chloride + 2 eq R₂NH)" },
+    { "id": "ester", "label": "Make the ester first, then displace OR with NR₂ (slow)" },
+    { "id": "direct_hot", "label": "Mix COOH + amine, heat strongly (forms ammonium salt first; needs very high T)" }
+  ],
+  "correctOptionId": "acyl_cl",
+  "concepts": ["amide synthesis", "activation"],
+  "explanation": "Acyl chlorides react quickly with amines (one eq consumes product HCl); COOH + amine first forms a salt and needs harsh conditions."
+}

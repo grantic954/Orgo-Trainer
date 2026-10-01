@@ -1,0 +1,16 @@
+{
+  "id": "aromaticity-002",
+  "topic": "aromaticity",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "Which species is aromatic?",
+  "options": [
+    { "id": "cyclopentadienyl", "label": "Cyclopentadienyl anion (6π, planar, cyclic)", "smiles": "[cH-]1cccc1" },
+    { "id": "cyclobutadiene", "label": "Cyclobutadiene (4π)", "smiles": "C1=CC=C1" },
+    { "id": "cyclopentadiene", "label": "Cyclopentadiene (sp³ breaks conjugation)", "smiles": "C1=CC=CC1" },
+    { "id": "cyclooctatet", "label": "1,3,5,7-cyclooctatetraene (tub-shaped, non-planar)", "smiles": "C1=CC=CC=CC=C1" }
+  ],
+  "correctOptionId": "cyclopentadienyl",
+  "concepts": ["Hückel's rule", "aromatic ions"],
+  "explanation": "Cyclopentadienyl anion has 6π electrons in a planar, fully-conjugated cyclic system — aromatic. Cyclobutadiene has 4π (antiaromatic); cyclopentadiene has an sp³ carbon; COT is non-planar."
+}
