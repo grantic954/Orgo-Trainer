@@ -56,9 +56,7 @@ const OTHER_TOOLS: ToolDef[] = [
 ];
 
 const SELECTION_TOOLS: ToolDef[] = [
-  { id: "select-rect", label: "▭", hint: "Rectangle select (drag)" },
-  { id: "select-fragment", label: "⬡", hint: "Fragment select — click a molecule to select the whole thing" },
-  { id: "hand", label: "✋", hint: "Pan the canvas (drag to scroll)" },
+  { id: "hand", label: "👆", hint: "Pointer — click an atom or bond to select it (or drag for a box)" },
   { id: "erase", label: "⌫", hint: "Erase" },
 ];
 
@@ -140,13 +138,13 @@ function TemplateSection({
               title={t.name}
               aria-label={t.name}
               onClick={() => onClick(t.id)}
-              className={`flex h-14 w-14 items-center justify-center rounded border p-0.5 transition ${
+              className={`flex h-8 w-8 items-center justify-center rounded border p-0 transition ${
                 isActive
                   ? "border-blue-500 bg-blue-50"
                   : "border-neutral-200 bg-white hover:bg-neutral-100"
               }`}
             >
-              {smiles ? <StructureView smiles={smiles} width={50} height={46} /> : t.name}
+              {smiles ? <StructureView smiles={smiles} width={28} height={26} /> : t.name}
             </button>
           );
         })}

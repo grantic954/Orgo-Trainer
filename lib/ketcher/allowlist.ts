@@ -23,7 +23,7 @@ const OTHER_CHARGES: ToolId[] = ["charge-plus", "charge-minus"];
 const OTHER_LONE_PAIR: ToolId[] = ["lone-pair"];
 const OTHER_MECH: ToolId[] = ["reaction-arrow"];
 
-const SELECTION: ToolId[] = ["select-rect", "select-fragment", "hand", "erase"];
+const SELECTION: ToolId[] = ["hand", "erase"];
 
 export function toolsForQuestionType(type: QuestionType): Set<ToolId> {
   const s = new Set<ToolId>([...RINGS, ...SELECTION]);

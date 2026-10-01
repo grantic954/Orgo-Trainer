@@ -14,8 +14,7 @@ function ed(k: Ketcher): EditorAny {
 export type ToolId =
   | "select-rect"
   | "select-lasso"
-  | "select-fragment" // click an atom to select the whole molecule it belongs to
-  | "hand"            // pan the canvas (drag to move the view)
+  | "hand"            // pointer: click an atom/bond to select one, drag empty space for a selection box
   | "erase"
   | "chain"          // draw a variable-length chain (click + drag)
   | "bond-single"
@@ -74,15 +73,11 @@ export async function activateTool(k: Ketcher, id: ToolId): Promise<void> {
     case "select-lasso":
       e.tool("select", "lasso");
       return;
-    case "select-fragment":
-      // Click an atom → selects the entire connected fragment it belongs to.
-      // Useful for picking up and moving / deleting / re-labeling a whole
-      // molecule.
-      e.tool("select", "fragment");
-      return;
     case "hand":
-      // Pan the canvas by dragging. Does not modify the structure.
-      e.tool("hand");
+      // Mouse-pointer tool: click an atom/bond to select it; drag empty
+      // space to draw a selection box over multiple items. Backed by
+      // Ketcher's standard rectangle-select, which handles both.
+      e.tool("select", "rectangle");
       return;
     case "erase":
       e.tool("eraser", 1);
