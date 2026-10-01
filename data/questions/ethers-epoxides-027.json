@@ -1,0 +1,12 @@
+{
+  "id": "ethers-epoxides-027",
+  "topic": "ethers-epoxides",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Williamson ether synthesis of 1-methoxy-2-methylpropane: sodium methoxide (NaOMe) + 1-bromo-2-methylpropane. Draw the product.",
+  "reactants": ["CC(C)CBr", "CO"],
+  "reagents": ["NaOMe"],
+  "answers": [{ "smiles": "COCC(C)C", "label": "isobutyl methyl ether" }],
+  "concepts": ["Williamson", "primary halide required"],
+  "explanation": "Alkoxide + 1° alkyl halide is clean SN2. If you tried the alternative (NaO-iBu + MeBr), it would also work, but with 2°/3° halides E2 would dominate — Williamson needs the halide primary."
+}

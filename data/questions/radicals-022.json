@@ -1,0 +1,12 @@
+{
+  "id": "radicals-022",
+  "topic": "radicals",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Monochlorination of methane with Cl₂ / hν. Draw the product.",
+  "reactants": ["C"],
+  "reagents": ["Cl2", "hν"],
+  "answers": [{ "smiles": "CCl", "label": "chloromethane (methyl chloride)" }],
+  "concepts": ["radical halogenation", "chain mechanism"],
+  "explanation": "Classic initiation (Cl₂ → 2 Cl•), propagation (Cl• + CH₄ → HCl + CH₃•; CH₃• + Cl₂ → CH₃Cl + Cl•), termination. Monochlorination requires excess methane to prevent over-halogenation."
+}

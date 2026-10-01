@@ -1,0 +1,13 @@
+{
+  "id": "ethers-epoxides-029",
+  "topic": "ethers-epoxides",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Epoxidation of (E)-2-butene with mCPBA. Draw the product (stereochemistry matters).",
+  "reactants": ["C/C=C/C"],
+  "reagents": ["mCPBA", "CH2Cl2"],
+  "answers": [{ "smiles": "C[C@@H]1O[C@@H]1C", "label": "trans-2,3-epoxybutane" }],
+  "acceptable": [{ "smiles": "CC1OC1C", "label": "connectivity correct, no stereo", "credit": 0.5 }],
+  "concepts": ["mCPBA stereospecificity"],
+  "explanation": "mCPBA delivers O to one face of the alkene in a concerted syn fashion. An E-alkene gives a trans-epoxide (the two methyls on opposite faces of the ring); a Z-alkene gives cis."
+}

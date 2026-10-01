@@ -1,0 +1,11 @@
+{
+  "id": "hnmr-008",
+  "topic": "hnmr",
+  "type": "count",
+  "difficulty": 3,
+  "prompt": "How many distinct ¹H NMR signals does 1,4-dimethylbenzene (p-xylene) give?",
+  "reactants": ["Cc1ccc(C)cc1"],
+  "answer": 2,
+  "concepts": ["symmetry", "aromatic signals"],
+  "explanation": "C₂ symmetry: both methyl groups are equivalent (singlet, ~δ 2.3). All four aromatic H are equivalent (singlet, ~δ 7.0). Only 2 signals."
+}

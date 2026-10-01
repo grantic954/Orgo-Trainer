@@ -1,0 +1,12 @@
+{
+  "id": "carboxylic-acids-015",
+  "topic": "carboxylic-acids",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Saponification: ethyl benzoate + NaOH (aq.), heat; then acidic workup. Draw the organic product.",
+  "reactants": ["CCOC(=O)c1ccccc1"],
+  "reagents": ["NaOH, H2O, heat", "then H3O+"],
+  "answers": [{ "smiles": "OC(=O)c1ccccc1", "label": "benzoic acid" }],
+  "concepts": ["saponification"],
+  "explanation": "Ester + hydroxide → carboxylate + alcohol (irreversible — resonance-stabilized carboxylate anion is the thermodynamic sink). Acidic workup protonates to free carboxylic acid. Also makes ethanol as byproduct."
+}

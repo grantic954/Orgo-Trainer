@@ -1,0 +1,12 @@
+{
+  "id": "carboxylic-acids-012",
+  "topic": "carboxylic-acids",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Acyl chloride formation + amide coupling: propanoic acid → acyl chloride (SOCl2); then add dimethylamine (Me2NH). Draw the amide.",
+  "reactants": ["CCC(=O)O", "CNC"],
+  "reagents": ["SOCl2", "then (CH3)2NH"],
+  "answers": [{ "smiles": "CCC(=O)N(C)C", "label": "N,N-dimethylpropanamide" }],
+  "concepts": ["acyl chloride intermediate"],
+  "explanation": "RCOOH → RCOCl is activation (Cl⁻ is a much better LG than OH⁻). Amine then displaces Cl. Direct COOH + amine wouldn't work (would make the ammonium carboxylate salt, no coupling)."
+}

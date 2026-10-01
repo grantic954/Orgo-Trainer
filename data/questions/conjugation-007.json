@@ -1,0 +1,12 @@
+{
+  "id": "conjugation-007",
+  "topic": "conjugation",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Diels-Alder: 1,3-butadiene + methyl vinyl ketone (CH₂=CH-COCH₃), heat. Draw the Diels-Alder adduct.",
+  "reactants": ["C=CC=C", "C=CC(C)=O"],
+  "reagents": ["heat"],
+  "answers": [{ "smiles": "CC(=O)C1CCC=CC1", "label": "4-acetyl-cyclohexene (EWG-ortho/para preference)" }],
+  "concepts": ["Diels-Alder with EWG dienophile"],
+  "explanation": "The EWG (acetyl) activates the dienophile by lowering its LUMO. The product is a cyclohexene with the acetyl group adjacent to the new ring (ortho/para to the double bond in the ring)."
+}

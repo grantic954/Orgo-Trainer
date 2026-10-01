@@ -1,0 +1,12 @@
+{
+  "id": "alpha-carbon-008",
+  "topic": "alpha-carbon",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "α-Halogenation (HVZ-style for ketones): acetone + Br2, cat. HCl. Draw the mono-α-bromo product.",
+  "reactants": ["CC(C)=O"],
+  "reagents": ["Br2", "HCl (cat)"],
+  "answers": [{ "smiles": "CC(=O)CBr", "label": "bromoacetone (1-bromo-2-propanone)" }],
+  "concepts": ["α-halogenation acid-catalyzed"],
+  "explanation": "Under acid, enol tautomerizes slowly then reacts with Br2 → α-bromo ketone. Each α-bromination makes the next one SLOWER (EWG destabilizes further enolization), so stops at monobromination. Under BASE, each halogenation is FASTER (anion stabilization) → poly-halogenation (haloform reaction)."
+}

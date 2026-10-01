@@ -1,0 +1,13 @@
+{
+  "id": "ethers-epoxides-030",
+  "topic": "ethers-epoxides",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Acidic ring-opening of 2-methyl-1,2-epoxypropane (methyl-substituted epoxide) with H2O / H2SO4. Draw the diol product.",
+  "reactants": ["CC1(C)CO1"],
+  "reagents": ["H2O", "H2SO4 (cat)"],
+  "answers": [{ "smiles": "CC(C)(O)CO", "label": "2-methyl-1,2-propanediol (water attacked the 3° C under acid conditions)" }],
+  "traps": [{ "smiles": "CC(C)(CO)O", "trap": "regio-wrong", "note": "Under acid, attack goes to the MORE substituted C (carbocation-like character); under base, to the LESS substituted." }],
+  "concepts": ["acid epoxide opening", "Markovnikov-like regio"],
+  "explanation": "Protonated epoxide develops cation character at the more substituted (3°) carbon. H2O attacks there in a cation-like SN1 fashion. The result: OH on the originally-substituted carbon = tertiary alcohol end + primary alcohol end."
+}

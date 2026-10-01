@@ -1,0 +1,13 @@
+{
+  "id": "radicals-023",
+  "topic": "radicals",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "NBS/hν allylic bromination of 1-butene. There are TWO possible allylic positions — draw the MAJOR product (allyl radical attack at terminal C gives this).",
+  "reactants": ["CCC=C"],
+  "reagents": ["NBS", "CCl4", "hν"],
+  "answers": [{ "smiles": "CC=CCBr", "label": "1-bromo-2-butene (via allyl radical captured at terminal C, giving the internal alkene)" }],
+  "acceptable": [{ "smiles": "CC(Br)C=C", "label": "3-bromo-1-butene (same radical, captured at the other end)", "credit": 0.75 }],
+  "concepts": ["allylic radical resonance", "regiochemistry"],
+  "explanation": "The allyl radical is resonance-stabilized: •CH₂-CH=CH-CH₃ ↔ CH₂=CH-CH•-CH₃. Br• captures at either end, giving 1-bromo-2-butene (more stable internal alkene) as the major product and 3-bromo-1-butene as a minor one."
+}

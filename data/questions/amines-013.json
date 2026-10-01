@@ -1,0 +1,12 @@
+{
+  "id": "amines-013",
+  "topic": "amines",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Diazonium chemistry: aniline → diazonium salt (NaNO2 / HCl, 0 °C); then CuBr. Draw the product.",
+  "reactants": ["Nc1ccccc1"],
+  "reagents": ["NaNO2 / HCl, 0 °C", "then CuBr (Sandmeyer)"],
+  "answers": [{ "smiles": "Brc1ccccc1", "label": "bromobenzene" }],
+  "concepts": ["Sandmeyer reaction"],
+  "explanation": "Primary aromatic amine → N2+ diazonium at 0 °C (stable only cold). CuBr catalyzes replacement of N2 with Br (loss of N2 gas). CuCl → ArCl, CuCN → ArCN. The Sandmeyer family lets you install groups that EAS can't do directly."
+}

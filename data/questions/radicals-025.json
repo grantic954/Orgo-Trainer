@@ -1,0 +1,13 @@
+{
+  "id": "radicals-025",
+  "topic": "radicals",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Benzylic bromination of ethylbenzene with NBS/hν. Draw the major product.",
+  "reactants": ["CCc1ccccc1"],
+  "reagents": ["NBS", "CCl4", "hν"],
+  "answers": [{ "smiles": "CC(Br)c1ccccc1", "label": "(1-bromoethyl)benzene" }],
+  "traps": [{ "smiles": "BrCCc1ccccc1", "trap": "regio-wrong", "note": "Br goes benzylic (most stable radical), not terminal." }],
+  "concepts": ["benzylic bromination"],
+  "explanation": "The benzylic C–H is weakest (~90 kcal/mol vs ~100 for other sp³ C–H) because the resulting benzyl radical is heavily resonance-stabilized by the ring. NBS/hν selectively abstracts there."
+}

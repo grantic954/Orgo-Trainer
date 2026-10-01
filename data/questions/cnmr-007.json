@@ -1,0 +1,11 @@
+{
+  "id": "cnmr-007",
+  "topic": "cnmr",
+  "type": "count",
+  "difficulty": 3,
+  "prompt": "How many ¹³C signals does 3-methylpentane give?",
+  "reactants": ["CCC(C)CC"],
+  "answer": 4,
+  "concepts": ["molecular symmetry", "equivalent 13C"],
+  "explanation": "Mirror symmetry through the central methine makes the two terminal CH3 equivalent and the two CH2 equivalent. Four distinct carbons: terminal CH3 (×2), CH2 (×2), central CH, branch CH3. Four signals."
+}

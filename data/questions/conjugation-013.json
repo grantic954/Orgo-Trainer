@@ -1,0 +1,16 @@
+{
+  "id": "conjugation-013",
+  "topic": "conjugation",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "An unknown absorbs at λmax = 217 nm (ε ≈ 20,000). What is it most likely to be?",
+  "options": [
+    { "id": "a", "label": "An isolated C=C (λmax < 190 nm, too short wavelength)" },
+    { "id": "b", "label": "A conjugated diene (λmax ~215 nm is textbook for 1,3-butadiene)" },
+    { "id": "c", "label": "An aromatic ring (λmax ~255 nm, more structure)" },
+    { "id": "d", "label": "A saturated ketone (λmax ~280 nm, low ε)" }
+  ],
+  "correctOptionId": "b",
+  "concepts": ["UV-Vis of conjugated systems"],
+  "explanation": "Conjugated dienes absorb strongly at 210-230 nm (π→π* for the lowered-energy excited state). Isolated alkenes are below 190 nm. Benzene is ~255 nm with fine structure. Simple carbonyls are weak at 280 nm (n→π*)."
+}

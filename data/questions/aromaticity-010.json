@@ -1,0 +1,17 @@
+{
+  "id": "aromaticity-010",
+  "topic": "aromaticity",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "Cyclooctatetraene (C8H8) is NOT aromatic. Why?",
+  "reactants": ["C1=CC=CC=CC=C1"],
+  "options": [
+    { "id": "a", "label": "8 π e⁻ is 4n (n=2) — would be antiaromatic IF planar" },
+    { "id": "b", "label": "It's non-planar (tub shape) → avoids antiaromaticity by just being non-aromatic" },
+    { "id": "c", "label": "Both A and B are the key points" },
+    { "id": "d", "label": "It isn't cyclic" }
+  ],
+  "correctOptionId": "c",
+  "concepts": ["antiaromaticity avoidance", "non-planar"],
+  "explanation": "If COT were planar, it would be antiaromatic (4n π with n=2). It adopts a non-planar tub conformation to avoid that destabilization, becoming simply non-aromatic (localized alkenes). However, the DIANION C8H8²⁻ has 10 π e⁻ (n=2 for 4n+2), goes planar, and IS aromatic."
+}

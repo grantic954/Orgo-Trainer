@@ -1,0 +1,13 @@
+{
+  "id": "ethers-epoxides-028",
+  "topic": "ethers-epoxides",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Alkoxymercuration-demercuration: 2-methylpropene + methanol, Hg(OAc)2; then NaBH4. Draw the Markovnikov ether.",
+  "reactants": ["CC(C)=C"],
+  "reagents": ["Hg(OAc)2, MeOH", "then NaBH4"],
+  "answers": [{ "smiles": "COC(C)(C)C", "label": "tert-butyl methyl ether (MTBE)" }],
+  "traps": [{ "smiles": "CC(C)COC", "trap": "wrong-director", "note": "Markovnikov: OMe on more substituted (3°) carbon." }],
+  "concepts": ["alkoxymercuration", "Markovnikov ether"],
+  "explanation": "Methanol attacks the mercurinium at the more substituted carbon (where positive character is highest), giving tert-butyl methyl ether. Williamson can't make this cleanly (3° RX + NaOMe → E2); alkoxymercuration is the preferred route to 3° ethers."
+}

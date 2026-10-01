@@ -1,0 +1,12 @@
+{
+  "id": "alcohols-phenols-035",
+  "topic": "alcohols-phenols",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Williamson ether synthesis of 2-butanol: deprotonate with NaH, then add benzyl bromide (PhCH2Br). Draw the ether product.",
+  "reactants": ["CCC(C)O", "BrCc1ccccc1"],
+  "reagents": ["NaH", "then PhCH2Br"],
+  "answers": [{ "smiles": "CCC(C)OCc1ccccc1", "label": "benzyl sec-butyl ether" }],
+  "concepts": ["Williamson", "benzyl halide SN2"],
+  "explanation": "NaH deprotonates 2-butanol to the alkoxide. Benzyl bromide is an excellent SN2 substrate (resonance-stabilized TS). Clean O-alkylation gives the mixed ether."
+}

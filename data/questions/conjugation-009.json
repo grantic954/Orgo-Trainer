@@ -1,0 +1,12 @@
+{
+  "id": "conjugation-009",
+  "topic": "conjugation",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Same 1,3-butadiene + 1 eq HBr, but at 40 °C (thermodynamic conditions). Draw the MAJOR (1,4-addition) product.",
+  "reactants": ["C=CC=C"],
+  "reagents": ["HBr (1 eq)", "40 °C"],
+  "answers": [{ "smiles": "CC=CCBr", "label": "1-bromo-2-butene (1,4 product — thermodynamic)" }],
+  "concepts": ["1,2 vs 1,4 addition", "thermodynamic control"],
+  "explanation": "Higher temp = reversible addition = system equilibrates to the more stable product. The internal alkene (disubstituted) wins over the terminal alkene (monosubstituted). This is the 1,4-product."
+}

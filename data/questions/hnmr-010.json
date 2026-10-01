@@ -1,0 +1,18 @@
+{
+  "id": "hnmr-010",
+  "topic": "hnmr",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "An aromatic compound shows ¹H NMR: δ 2.3 (s, 3H), δ 7.1 (m, 4H). The IR shows no C=O. Which compound is it?",
+  "spectrumFromSmiles": "Cc1ccccc1",
+  "spectraKinds": ["hnmr"],
+  "options": [
+    { "id": "toluene", "label": "Toluene", "smiles": "Cc1ccccc1" },
+    { "id": "acetophenone", "label": "Acetophenone (would show C=O in IR)", "smiles": "CC(=O)c1ccccc1" },
+    { "id": "xylene", "label": "p-xylene (only 2 methyls would show, but singlet aromatic)", "smiles": "Cc1ccc(C)cc1" },
+    { "id": "phenol", "label": "Phenol (δ 2.3 isn't phenol OH)", "smiles": "Oc1ccccc1" }
+  ],
+  "correctOptionId": "toluene",
+  "concepts": ["NMR shift interpretation"],
+  "explanation": "Methyl singlet at 2.3 (benzylic CH3 of toluene) + 5 aromatic H in the 7.0-7.3 range. Note the small integration ratio and the absence of OH/C=O signals rules out phenol and the carbonyl-containing options. Benzene has no CH3; p-xylene would show 2:4 ratio instead of 3:5."
+}

@@ -1,0 +1,12 @@
+{
+  "id": "alpha-carbon-006",
+  "topic": "alpha-carbon",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Aldol condensation (crossed): benzaldehyde + acetone, NaOH, heat. Draw the α,β-unsaturated ketone product (dehydrated aldol = enone).",
+  "reactants": ["O=Cc1ccccc1", "CC(C)=O"],
+  "reagents": ["NaOH, heat"],
+  "answers": [{ "smiles": "CC(=O)/C=C/c1ccccc1", "label": "(E)-4-phenyl-3-buten-2-one (benzalacetone)" }],
+  "concepts": ["crossed aldol", "dehydration to enone"],
+  "explanation": "Benzaldehyde has no α-H → can only be the electrophile. Acetone's enolate attacks → β-hydroxy ketone, which dehydrates under heat (E1cb) to give the conjugated enone. Textbook crossed aldol — one partner lacks α-H to avoid self-aldol."
+}

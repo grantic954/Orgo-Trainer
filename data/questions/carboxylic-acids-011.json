@@ -1,0 +1,12 @@
+{
+  "id": "carboxylic-acids-011",
+  "topic": "carboxylic-acids",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Fischer esterification: butanoic acid + methanol, cat. H2SO4. Draw the ester.",
+  "reactants": ["CCCC(=O)O", "CO"],
+  "reagents": ["H2SO4 (cat)"],
+  "answers": [{ "smiles": "CCCC(=O)OC", "label": "methyl butanoate" }],
+  "concepts": ["Fischer esterification"],
+  "explanation": "Equilibrium reaction (acid + alcohol ⇌ ester + water). Driven forward by excess alcohol or by removing water (Dean-Stark). Mechanism: protonate C=O → nucleophilic addition of MeOH → proton shuffle → lose water → deprotonate."
+}

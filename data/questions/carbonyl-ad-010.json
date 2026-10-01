@@ -1,0 +1,12 @@
+{
+  "id": "carbonyl-ad-010",
+  "topic": "carbonyl-ad",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Reductive amination: cyclopentanone + benzylamine (PhCH2NH2) with NaBH3CN, cat. AcOH. Draw the amine product.",
+  "reactants": ["O=C1CCCC1", "NCc1ccccc1"],
+  "reagents": ["NaBH3CN", "AcOH (cat)"],
+  "answers": [{ "smiles": "C1(NCc2ccccc2)CCCC1", "label": "N-benzylcyclopentanamine" }],
+  "concepts": ["reductive amination"],
+  "explanation": "Primary amine + ketone → iminium (under mild acid), which NaBH3CN selectively reduces (over the starting ketone) to the amine. This is the preferred route to secondary amines — one-pot and clean."
+}

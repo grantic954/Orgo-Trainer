@@ -1,0 +1,12 @@
+{
+  "id": "alpha-carbon-010",
+  "topic": "alpha-carbon",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Michael addition: diethyl malonate (CH2(COOEt)2) + methyl vinyl ketone (CH2=CH-COCH3), NaOEt (cat.). Draw the Michael adduct.",
+  "reactants": ["CCOC(=O)CC(=O)OCC", "C=CC(C)=O"],
+  "reagents": ["NaOEt (cat.)"],
+  "answers": [{ "smiles": "CCOC(=O)C(CCC(C)=O)C(=O)OCC", "label": "1,5-dicarbonyl Michael adduct" }],
+  "concepts": ["Michael 1,4-addition"],
+  "explanation": "Soft nucleophile (malonate enolate, stable because flanked by two esters) does 1,4-conjugate addition to the enone — attacks the β-C of the α,β-unsaturated system rather than the carbonyl C. Gives a 1,5-dicarbonyl product."
+}

@@ -1,0 +1,17 @@
+{
+  "id": "amines-011",
+  "topic": "amines",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "Rank by basicity (strongest base first):",
+  "reactants": ["CCN", "Nc1ccccc1", "CC(=O)N", "c1cc[nH]c1"],
+  "options": [
+    { "id": "a", "label": "ethylamine > aniline > pyrrole > acetamide" },
+    { "id": "b", "label": "pyrrole > ethylamine > aniline > acetamide" },
+    { "id": "c", "label": "aniline > ethylamine > acetamide > pyrrole" },
+    { "id": "d", "label": "acetamide > ethylamine > aniline > pyrrole" }
+  ],
+  "correctOptionId": "a",
+  "concepts": ["basicity ranking of amines"],
+  "explanation": "pKaH values: ethylamine 10.8 (sp³, lone pair free), aniline 4.6 (lone pair diluted into ring), pyrrole -3.8 (lone pair in aromatic system; protonating destroys aromaticity), acetamide -0.5 (lone pair delocalized into C=O; protonation goes on O not N). Alkyl amines > aryl > amides ≈ pyrrole."
+}

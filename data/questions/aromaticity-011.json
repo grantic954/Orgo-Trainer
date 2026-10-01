@@ -1,0 +1,17 @@
+{
+  "id": "aromaticity-011",
+  "topic": "aromaticity",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "Rank by acidity (strongest acid first):",
+  "reactants": ["Oc1ccccc1", "CCO", "CC(=O)O", "Oc1ccc([N+](=O)[O-])cc1"],
+  "options": [
+    { "id": "a", "label": "acetic acid > 4-nitrophenol > phenol > ethanol" },
+    { "id": "b", "label": "4-nitrophenol > acetic acid > phenol > ethanol" },
+    { "id": "c", "label": "phenol > 4-nitrophenol > acetic acid > ethanol" },
+    { "id": "d", "label": "acetic acid > phenol > 4-nitrophenol > ethanol" }
+  ],
+  "correctOptionId": "a",
+  "concepts": ["acidity ranking of phenols/alcohols/acids"],
+  "explanation": "pKa values: acetic acid 4.76, 4-nitrophenol 7.15, phenol 10, ethanol 16. The NO₂ group pulls charge off the phenoxide via resonance into the para position, bringing phenol down from 10 → 7. But carboxylate (acetate) resonance between two O's is still stronger stabilization than phenoxide."
+}

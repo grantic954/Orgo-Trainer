@@ -1,0 +1,12 @@
+{
+  "id": "carbonyl-ad-007",
+  "topic": "carbonyl-ad",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Acetal formation: propanal + 2 eq ethylene glycol (HOCH2CH2OH), cat. H2SO4, remove water. Draw the cyclic acetal.",
+  "reactants": ["CCC=O", "OCCO"],
+  "reagents": ["H2SO4 (cat)", "-H2O"],
+  "answers": [{ "smiles": "CCC1OCCO1", "label": "2-ethyl-1,3-dioxolane" }],
+  "concepts": ["cyclic acetal", "protecting group"],
+  "explanation": "Two alcohol O's replace the carbonyl O: the aldehyde C has now bonded to both O's of the diol, forming a 5-membered dioxolane ring. Reversible under acid (water removal drives it forward). Common protecting group for aldehydes/ketones."
+}

@@ -1,0 +1,11 @@
+{
+  "id": "cnmr-006",
+  "topic": "cnmr",
+  "type": "count",
+  "difficulty": 3,
+  "prompt": "How many ¹³C NMR signals does 1,4-dichlorobenzene give?",
+  "reactants": ["Clc1ccc(Cl)cc1"],
+  "answer": 2,
+  "concepts": ["symmetry", "aromatic 13C"],
+  "explanation": "C2v symmetry: the two ipso (C-Cl) carbons are equivalent; the four ortho/meta aromatic carbons are equivalent. Only 2 distinct carbons. (The high symmetry is why para-disubstituted benzenes are easy to identify by ¹³C.)"
+}

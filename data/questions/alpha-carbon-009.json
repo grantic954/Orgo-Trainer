@@ -1,0 +1,15 @@
+{
+  "id": "alpha-carbon-009",
+  "topic": "alpha-carbon",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Haloform reaction: 2-butanone + excess Br2, NaOH. Draw the organic products (two).",
+  "reactants": ["CCC(C)=O"],
+  "reagents": ["Br2 excess", "NaOH"],
+  "answers": [{ "smiles": "CCC(=O)[O-]", "label": "propanoate (after loss of CHBr3)" }],
+  "acceptable": [
+    { "smiles": "CCC(=O)O", "label": "propanoic acid (neutral form)", "credit": 1 }
+  ],
+  "concepts": ["haloform reaction", "methyl ketone test"],
+  "explanation": "Methyl ketones (R-CO-CH3) undergo tri-α-halogenation on the methyl side (each halogenation makes the α-H more acidic). The CBr3⁻ leaves as a stable leaving group when hydroxide attacks the C=O → carboxylate + CHBr3 (bromoform). This is the iodoform test when I2 is used (yellow CHI3 precipitates)."
+}

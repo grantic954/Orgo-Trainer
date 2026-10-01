@@ -1,0 +1,11 @@
+{
+  "id": "hnmr-007",
+  "topic": "hnmr",
+  "type": "count",
+  "difficulty": 2,
+  "prompt": "How many distinct ¹H NMR signals does bromoethane (CH₃CH₂Br) give?",
+  "reactants": ["CCBr"],
+  "answer": 2,
+  "concepts": ["signal counting", "n+1 rule"],
+  "explanation": "Two environments: CH₃ (3H, triplet from CH₂ neighbors) and CH₂Br (2H, quartet from CH₃ neighbors). δ ~1.7 (triplet) and δ ~3.5 (quartet, deshielded by Br)."
+}

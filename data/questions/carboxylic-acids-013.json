@@ -1,0 +1,12 @@
+{
+  "id": "carboxylic-acids-013",
+  "topic": "carboxylic-acids",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "LAH reduction of methyl benzoate; then H3O+. Draw the product.",
+  "reactants": ["COC(=O)c1ccccc1"],
+  "reagents": ["LiAlH4", "then H3O+"],
+  "answers": [{ "smiles": "OCc1ccccc1", "label": "benzyl alcohol" }],
+  "concepts": ["ester → 1° alcohol with LAH"],
+  "explanation": "LAH reduces esters all the way to 1° alcohols (two hydride additions). Also gives MeOH as byproduct from the OR half. For partial reduction to the aldehyde, DIBAL-H at -78 °C is used."
+}

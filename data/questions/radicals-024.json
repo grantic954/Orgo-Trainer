@@ -1,0 +1,13 @@
+{
+  "id": "radicals-024",
+  "topic": "radicals",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Anti-Markovnikov addition of HBr to 2-methyl-2-butene using peroxides (radical conditions). Draw the alkyl bromide.",
+  "reactants": ["CC=C(C)C"],
+  "reagents": ["HBr", "ROOR peroxide", "hν"],
+  "answers": [{ "smiles": "CC(Br)C(C)C", "label": "2-bromo-3-methylbutane (anti-Markovnikov; Br on LESS substituted alkene C)" }],
+  "traps": [{ "smiles": "CCC(Br)(C)C", "trap": "wrong-director", "note": "Without peroxides HBr adds Markovnikov; peroxides flip it anti-Markovnikov." }],
+  "concepts": ["anti-Markovnikov HBr", "radical regiochemistry"],
+  "explanation": "Peroxides initiate: Br• adds to the LESS substituted carbon (giving the more stable tertiary carbon radical as intermediate), then abstracts H from HBr. Net: Br on the originally less substituted alkene C."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "amines-012",
+  "topic": "amines",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Hofmann elimination: trimethyl(butyl)ammonium hydroxide (CH3CH2CH2CH2-N⁺Me3 OH⁻), heat. Draw the alkene product.",
+  "reactants": ["CCCC[N+](C)(C)C.[OH-]"],
+  "reagents": ["heat"],
+  "answers": [{ "smiles": "C=CCC", "label": "1-butene (Hofmann: LESS substituted alkene)" }],
+  "traps": [{ "smiles": "CC=CC", "trap": "regio-wrong", "note": "Hofmann prefers LESS substituted alkene (bulky NMe3 forces anti-periplanar at the less-hindered β-H)." }],
+  "concepts": ["Hofmann elimination", "anti-Zaitsev"],
+  "explanation": "E2 from quaternary ammonium with -OH: steric bulk of NMe3 and leaving-group preference make the TS go through the less hindered β-H → terminal (less substituted) alkene wins. Opposite of Zaitsev for small halides."
+}

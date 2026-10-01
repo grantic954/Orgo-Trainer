@@ -1,0 +1,18 @@
+{
+  "id": "hnmr-009",
+  "topic": "hnmr",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "A compound shows ¹H NMR: δ 2.0 (s, 3H), δ 2.5 (q, 2H), δ 1.1 (t, 3H). Which compound fits?",
+  "spectrumFromSmiles": "CCC(C)=O",
+  "spectraKinds": ["hnmr"],
+  "options": [
+    { "id": "mek", "label": "2-butanone (CH3-CO-CH2CH3)", "smiles": "CCC(C)=O" },
+    { "id": "etoac", "label": "ethyl acetate (CH3-CO-O-CH2CH3)", "smiles": "CCOC(C)=O" },
+    { "id": "propanal", "label": "propanal", "smiles": "CCC=O" },
+    { "id": "propanol", "label": "1-propanol", "smiles": "CCCO" }
+  ],
+  "correctOptionId": "mek",
+  "concepts": ["NMR identification from shift/multiplicity"],
+  "explanation": "CH3 singlet at 2.0 = methyl α to C=O. Quartet (2H) at 2.5 = CH2 α to C=O. Triplet (3H) at 1.1 = terminal CH3. The pattern fits 2-butanone (CH3COCH2CH3). Ethyl acetate's OCH2 would be at δ ~4.1, not 2.5."
+}

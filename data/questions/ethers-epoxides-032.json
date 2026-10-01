@@ -1,0 +1,17 @@
+{
+  "id": "ethers-epoxides-032",
+  "topic": "ethers-epoxides",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "Rank by rate of ring-opening with hydroxide (fastest → slowest):",
+  "reactants": ["C1CO1", "CC1CO1", "CC1(C)CO1"],
+  "options": [
+    { "id": "a", "label": "ethylene oxide > methyloxirane > 2,2-dimethyloxirane (steric hindrance slows it down)" },
+    { "id": "b", "label": "2,2-dimethyloxirane > methyloxirane > ethylene oxide" },
+    { "id": "c", "label": "All about the same" },
+    { "id": "d", "label": "Methyloxirane fastest" }
+  ],
+  "correctOptionId": "a",
+  "concepts": ["steric effects on SN2 epoxide opening"],
+  "explanation": "Under base, Nu attacks the less hindered C via SN2-like TS. Adding methyl groups increases steric hindrance → slower reaction. Under acid, the trend reverses (the more substituted C bears more + character and attacks faster)."
+}

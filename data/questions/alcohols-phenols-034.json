@@ -1,0 +1,17 @@
+{
+  "id": "alcohols-phenols-034",
+  "topic": "alcohols-phenols",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "Which alcohol is MOST ACIDIC (lowest pKa)?",
+  "reactants": ["CCO", "OCC(F)(F)F", "Oc1ccccc1", "OCCO"],
+  "options": [
+    { "id": "etoh", "label": "Ethanol (pKa ≈ 16)" },
+    { "id": "cf3ch2oh", "label": "2,2,2-trifluoroethanol (pKa ≈ 12.4)" },
+    { "id": "phenol", "label": "Phenol (pKa ≈ 10)" },
+    { "id": "diol", "label": "Ethylene glycol (pKa ≈ 15)" }
+  ],
+  "correctOptionId": "phenol",
+  "concepts": ["acidity ranking", "resonance vs induction"],
+  "explanation": "Phenol wins because its conjugate base (phenoxide) delocalizes the negative charge over the aromatic ring (resonance stabilization). CF3CH2OH's EWG (induction only) is strong but doesn't match resonance. Ethylene glycol and ethanol are closer in pKa — one extra OH slightly stabilizes the alkoxide."
+}

@@ -1,0 +1,17 @@
+{
+  "id": "aromaticity-007",
+  "topic": "aromaticity",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "Which of these heterocycles is aromatic?",
+  "reactants": ["c1cc[nH]c1", "c1ccoc1", "C1CCNC1"],
+  "options": [
+    { "id": "pyrrole", "label": "Pyrrole only (the N lone pair goes into the aromatic ring)" },
+    { "id": "furan", "label": "Furan only" },
+    { "id": "both", "label": "Both pyrrole and furan are aromatic" },
+    { "id": "neither", "label": "Neither — only all-C rings count" }
+  ],
+  "correctOptionId": "both",
+  "concepts": ["aromatic heterocycles", "lone pair participation"],
+  "explanation": "Pyrrole: N lone pair goes into the ring (p-orbital) to complete 6 π e⁻. Furan: one O lone pair goes in; the other stays in-plane (sp²). Both are aromatic. Pyridine is also aromatic (N lone pair in-plane, N contributes 1 π e⁻ from the double bond). Pyrrolidine (saturated) is NOT aromatic."
+}

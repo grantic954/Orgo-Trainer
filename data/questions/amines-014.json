@@ -1,0 +1,17 @@
+{
+  "id": "amines-014",
+  "topic": "amines",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "Compared to cyclohexylamine (pKaH ~10.6), which amine is MOST BASIC?",
+  "reactants": ["NC1CCCCC1", "NC1CCCCC1[N+](=O)[O-]", "N(C)C1CCCCC1", "Nc1ccccc1"],
+  "options": [
+    { "id": "a", "label": "N-methylcyclohexylamine (adds +I from methyl → slightly more basic)" },
+    { "id": "b", "label": "4-nitrocyclohexylamine (nitro is inductively withdrawing → LESS basic)" },
+    { "id": "c", "label": "Aniline (resonance delocalizes lone pair → MUCH less basic)" },
+    { "id": "d", "label": "Diisopropylamine (very bulky — slightly less basic though has 2 alkyls)" }
+  ],
+  "correctOptionId": "a",
+  "concepts": ["basicity trends"],
+  "explanation": "Adding one alkyl group to N increases basicity in solution (inductive donation + solvation of RNH2 ⇌ R2NH about even). Nitro groups kill basicity (strongly EWG). Aryl amines are much less basic than aliphatic (resonance with ring)."
+}

@@ -1,0 +1,12 @@
+{
+  "id": "amines-010",
+  "topic": "amines",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Gabriel synthesis of butylamine: potassium phthalimide + 1-bromobutane, then hydrazine (NH2NH2). Draw the amine product.",
+  "reactants": ["O=C1c2ccccc2C(=O)N1[K]", "CCCCBr"],
+  "reagents": ["SN2", "then NH2NH2"],
+  "answers": [{ "smiles": "CCCCN", "label": "1-butanamine (butylamine)" }],
+  "concepts": ["Gabriel synthesis", "clean 1° amine"],
+  "explanation": "The phthalimide N is acidic (two EWG C=O's) → deprotonated by K+ to make N-nucleophile that does SN2 on R-X. Hydrazine then cleaves off the phthalyl group, releasing a clean 1° amine (never over-alkylates — the trick of this method)."
+}

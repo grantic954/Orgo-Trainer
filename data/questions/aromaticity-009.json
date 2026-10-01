@@ -1,0 +1,17 @@
+{
+  "id": "aromaticity-009",
+  "topic": "aromaticity",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "Which pyridine N behaves most like a BASE?",
+  "reactants": ["c1ccncc1", "c1cc[nH]c1", "c1ccc(N)cc1"],
+  "options": [
+    { "id": "pyr", "label": "Pyridine (N lone pair in-plane sp² — available!)" },
+    { "id": "pyrrole", "label": "Pyrrole (N lone pair in the ring — tied up in aromaticity)" },
+    { "id": "aniline", "label": "Aniline (N lone pair delocalized into ring — weakened)" },
+    { "id": "equal", "label": "All equally basic" }
+  ],
+  "correctOptionId": "pyr",
+  "concepts": ["lone pair geometry", "basicity"],
+  "explanation": "Pyridine N: lone pair is in an sp² orbital in the plane of the ring, NOT part of the aromatic π system. Fully available to accept H⁺ (pKaH ~5.2). Pyrrole N uses its lone pair for aromaticity — protonating it destroys aromaticity (pKaH ~ -3.8!). Aniline's lone pair is diluted into the ring (pKaH ~4.6)."
+}

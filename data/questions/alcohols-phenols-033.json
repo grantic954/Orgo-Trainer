@@ -1,0 +1,12 @@
+{
+  "id": "alcohols-phenols-033",
+  "topic": "alcohols-phenols",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Grignard chain extension: 1-butanol → 1-bromobutane (HBr) → butylmagnesium bromide; then add formaldehyde (HCHO) and workup. Draw the final alcohol (one carbon added).",
+  "reactants": ["CCCCO"],
+  "reagents": ["HBr", "then Mg", "then HCHO", "then H3O+"],
+  "answers": [{ "smiles": "CCCCCO", "label": "1-pentanol (chain extended by 1 C)" }],
+  "concepts": ["Grignard + formaldehyde", "chain extension"],
+  "explanation": "RMgBr + HCHO (formaldehyde) is the classic one-carbon chain extension strategy. The Grignard adds across the CHO giving a 1° alcohol one carbon longer than the original halide."
+}

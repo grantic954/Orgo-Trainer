@@ -1,0 +1,12 @@
+{
+  "id": "carbonyl-ad-006",
+  "topic": "carbonyl-ad",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Wittig reaction: cyclohexanone + methylenetriphenylphosphorane (Ph3P=CH2). Draw the alkene product.",
+  "reactants": ["O=C1CCCCC1"],
+  "reagents": ["Ph3P=CH2"],
+  "answers": [{ "smiles": "C=C1CCCCC1", "label": "methylenecyclohexane" }],
+  "concepts": ["Wittig olefination"],
+  "explanation": "Ylide carbon attacks the carbonyl, forms oxaphosphetane, which collapses to give an alkene (C=C where the C=O was) and Ph3P=O. Unstabilized ylides (like Ph3P=CH2) usually give the Z-alkene from acyclic ketones; here it's unambiguous because the C=C is exocyclic."
+}

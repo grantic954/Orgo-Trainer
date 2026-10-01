@@ -1,0 +1,13 @@
+{
+  "id": "alcohols-phenols-032",
+  "topic": "alcohols-phenols",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Oxymercuration of 3-methyl-1-butene with Hg(OAc)2 / H2O; then NaBH4. Draw the Markovnikov alcohol (no rearrangement).",
+  "reactants": ["CC(C)C=C"],
+  "reagents": ["Hg(OAc)2, H2O", "then NaBH4"],
+  "answers": [{ "smiles": "CC(C)C(C)O", "label": "3-methyl-2-butanol (Markovnikov, no cation shift)" }],
+  "traps": [{ "smiles": "CC(C)(C)CO", "trap": "rearrangement-ignored", "note": "Mercurinium ion prevents the 1,2-hydride shift to a 3° cation that would otherwise happen under H+/H2O." }],
+  "concepts": ["oxymercuration", "no rearrangement"],
+  "explanation": "H2SO4/H2O here would give a 2° cation that rearranges via H-shift to the more stable 3° cation → tert-amyl alcohol. The mercurinium bridge in oxymercuration prevents that shift, so the Markovnikov alcohol forms cleanly without rearrangement."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "alcohols-phenols-030",
+  "topic": "alcohols-phenols",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Hydroboration-oxidation of 1-methylcyclohexene (BH3·THF; then H2O2/NaOH). Draw the major alcohol product.",
+  "reactants": ["CC1=CCCCC1"],
+  "reagents": ["BH3·THF", "then H2O2, NaOH"],
+  "answers": [{ "smiles": "CC1CCCCC1O", "label": "trans-2-methylcyclohexanol (anti-Markovnikov, syn addition)" }],
+  "acceptable": [{ "smiles": "OC1CCCCC1C", "label": "same connectivity, different drawing", "credit": 1 }],
+  "concepts": ["hydroboration anti-Markovnikov", "cyclic alkene"],
+  "explanation": "BH3 attacks the less hindered alkene C with syn stereochemistry. Oxidation replaces B with OH, retaining position. Net: OH goes on the carbon with more H's (anti-Markovnikov), trans to the methyl group."
+}

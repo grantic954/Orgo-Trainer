@@ -1,0 +1,11 @@
+{
+  "id": "hnmr-006",
+  "topic": "hnmr",
+  "type": "count",
+  "difficulty": 2,
+  "prompt": "How many distinct ¹H NMR signals does 2,2-dimethylpropane (neopentane) give?",
+  "reactants": ["CC(C)(C)C"],
+  "answer": 1,
+  "concepts": ["symmetry", "equivalent H"],
+  "explanation": "All 12 hydrogens are on four equivalent methyl groups (by molecular Td symmetry). One signal (a singlet at δ ~0.9)."
+}

@@ -1,0 +1,17 @@
+{
+  "id": "conjugation-011",
+  "topic": "conjugation",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "Which diene can undergo Diels-Alder (needs s-cis conformation)?",
+  "reactants": ["C=CC=C", "C=C/C=C\\C", "C1=CC=CC1", "C=CC(=C)C"],
+  "options": [
+    { "id": "a", "label": "1,3-butadiene (free rotation; adopts s-cis)" },
+    { "id": "b", "label": "(2E,4E)-2,4-hexadiene (can rotate to s-cis)" },
+    { "id": "c", "label": "cyclopentadiene (locked s-cis — fastest!)" },
+    { "id": "d", "label": "All of the above react" }
+  ],
+  "correctOptionId": "d",
+  "concepts": ["s-cis requirement"],
+  "explanation": "All three dienes shown reach s-cis. Cyclopentadiene is locked s-cis by the ring and reacts fastest. Dienes stuck s-trans (e.g., (Z,Z)-2,4-hexadiene with cis-cis steric clash) can't reach s-cis and don't react."
+}

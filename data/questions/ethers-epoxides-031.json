@@ -1,0 +1,13 @@
+{
+  "id": "ethers-epoxides-031",
+  "topic": "ethers-epoxides",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Basic ring-opening: same 2-methyl-1,2-epoxypropane as before, but with NaOMe / MeOH. Draw the product.",
+  "reactants": ["CC1(C)CO1", "CO"],
+  "reagents": ["NaOMe", "MeOH"],
+  "answers": [{ "smiles": "CC(C)(O)COC", "label": "1-methoxy-2-methyl-2-propanol (methoxide attacked the LESS hindered C)" }],
+  "traps": [{ "smiles": "CC(C)(OC)CO", "trap": "regio-wrong", "note": "Under base, SN2-like steric control sends the Nu to the LESS substituted (primary) C." }],
+  "concepts": ["basic epoxide opening", "steric control"],
+  "explanation": "Under base, there's no cation; the Nu does SN2-like backside attack on the LESS hindered epoxide carbon (primary CH2 here). The methoxy ends up on the terminal CH2 and OH stays on the originally more substituted C."
+}

@@ -1,0 +1,12 @@
+{
+  "id": "alpha-carbon-007",
+  "topic": "alpha-carbon",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Claisen condensation: 2 eq ethyl acetate + NaOEt. Draw the β-keto ester product (after acidic workup).",
+  "reactants": ["CCOC(C)=O"],
+  "reagents": ["NaOEt", "then H3O+"],
+  "answers": [{ "smiles": "CCOC(=O)CC(C)=O", "label": "ethyl 3-oxobutanoate (ethyl acetoacetate)" }],
+  "concepts": ["Claisen condensation"],
+  "explanation": "NaOEt deprotonates α-C of one ester → enolate attacks C=O of the second ester → loss of OEt gives β-keto ester. Then NaOEt deprotonates the acidic α-H (pKa ~11, flanked by two C=O) driving the reaction forward thermodynamically. Workup gives acetoacetate."
+}

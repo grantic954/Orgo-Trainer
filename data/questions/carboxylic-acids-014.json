@@ -1,0 +1,17 @@
+{
+  "id": "carboxylic-acids-014",
+  "topic": "carboxylic-acids",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "Rank by reactivity toward nucleophilic acyl substitution (most reactive first):",
+  "reactants": ["CC(=O)Cl", "CC(=O)OC(C)=O", "CC(=O)OC", "CC(=O)N(C)C"],
+  "options": [
+    { "id": "a", "label": "acyl chloride > anhydride > ester > amide" },
+    { "id": "b", "label": "amide > ester > anhydride > acyl chloride" },
+    { "id": "c", "label": "anhydride > acyl chloride > ester > amide" },
+    { "id": "d", "label": "ester > acyl chloride > anhydride > amide" }
+  ],
+  "correctOptionId": "a",
+  "concepts": ["reactivity ladder of acyl derivatives"],
+  "explanation": "The classic ladder: Cl (great LG, no π donation) >> RCOO (OK LG, some π donation) > OR (poor LG, more π donation) >> NR2 (terrible LG, strongest π donation; most stable). Reactivity scales inversely with resonance stabilization of the C=O."
+}

@@ -1,0 +1,17 @@
+{
+  "id": "aromaticity-006",
+  "topic": "aromaticity",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "Which molecule is aromatic?",
+  "reactants": ["c1ccccc1", "C1=CC=CC=C1C", "C1=CCC=CC1", "C1=CC=C1"],
+  "options": [
+    { "id": "benzene", "label": "Benzene (6 π e⁻, planar, cyclic — 4n+2 with n=1)", "smiles": "c1ccccc1" },
+    { "id": "cyclohexadiene", "label": "1,3-cyclohexadiene (not fully conjugated, sp3 CH2 breaks it)", "smiles": "C1=CCC=CC1" },
+    { "id": "cyclobutadiene", "label": "Cyclobutadiene (4 π e⁻ — antiaromatic!)", "smiles": "C1=CC=C1" },
+    { "id": "cyclohexane", "label": "Cyclohexane (no π system)", "smiles": "C1CCCCC1" }
+  ],
+  "correctOptionId": "benzene",
+  "concepts": ["Huckel's rule", "aromatic criteria"],
+  "explanation": "Aromatic needs: (1) cyclic, (2) planar, (3) fully conjugated (every ring atom p-orbital), (4) 4n+2 π electrons. Benzene: 6 π e⁻ (n=1). Cyclobutadiene: 4 π e⁻ (antiaromatic). Cyclohexadiene: has sp3 carbons breaking conjugation."
+}

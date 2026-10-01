@@ -1,0 +1,17 @@
+{
+  "id": "hnmr-011",
+  "topic": "hnmr",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "Which proton is MOST deshielded (highest δ)?",
+  "reactants": ["CCO", "CC(=O)O", "O=Cc1ccccc1", "c1ccccc1"],
+  "options": [
+    { "id": "cooh", "label": "COOH of acetic acid (δ ~11-12)" },
+    { "id": "cho", "label": "CHO of benzaldehyde (δ ~9.9)" },
+    { "id": "arh", "label": "Aromatic H of benzene (δ ~7.3)" },
+    { "id": "oh", "label": "OH of ethanol (δ ~2-5, variable)" }
+  ],
+  "correctOptionId": "cooh",
+  "concepts": ["chemical shift extremes"],
+  "explanation": "Carboxylic acid OH sits far downfield (δ ~11-12) because of strong H-bonding and the EWG-rich environment. Aldehyde H is δ ~9.5-10. Aromatic H around 7. Alcohol OH varies (2-5) and is exchange-broadened."
+}

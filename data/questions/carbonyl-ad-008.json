@@ -1,0 +1,12 @@
+{
+  "id": "carbonyl-ad-008",
+  "topic": "carbonyl-ad",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Imine formation: 2-butanone + methylamine (CH3NH2), cat. H⁺. Draw the imine product.",
+  "reactants": ["CCC(C)=O", "CN"],
+  "reagents": ["H+ (cat)"],
+  "answers": [{ "smiles": "CCC(C)=NC", "label": "N-methyl-2-butanimine" }],
+  "concepts": ["imine (Schiff base) formation"],
+  "explanation": "Primary amine + ketone/aldehyde → imine (R2C=NR') + H2O. Mechanism: nucleophilic addition of amine → carbinolamine → dehydration gives the C=N. Secondary amines go to enamines instead."
+}

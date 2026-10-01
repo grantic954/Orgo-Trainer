@@ -1,0 +1,17 @@
+{
+  "id": "alcohols-phenols-031",
+  "topic": "alcohols-phenols",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "Rank these compounds by boiling point (lowest → highest). They have similar molecular weights (~70-75 g/mol).",
+  "reactants": ["CCCCC", "CCOCC", "CCCCO"],
+  "options": [
+    { "id": "a", "label": "pentane < diethyl ether < 1-butanol" },
+    { "id": "b", "label": "1-butanol < diethyl ether < pentane" },
+    { "id": "c", "label": "diethyl ether < pentane < 1-butanol" },
+    { "id": "d", "label": "pentane < 1-butanol < diethyl ether" }
+  ],
+  "correctOptionId": "a",
+  "concepts": ["intermolecular forces", "boiling point trends"],
+  "explanation": "Pentane (36 °C): only London dispersion. Diethyl ether (35 °C — nearly same as pentane): dipole-dipole but no H-bonding. 1-butanol (118 °C): H-bonding adds ~5 kcal/mol per bond → dramatically higher BP. H-bond donors + acceptors boil way above non-donors."
+}

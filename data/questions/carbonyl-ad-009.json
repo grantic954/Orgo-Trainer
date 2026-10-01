@@ -1,0 +1,15 @@
+{
+  "id": "carbonyl-ad-009",
+  "topic": "carbonyl-ad",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Enamine formation: cyclohexanone + pyrrolidine (secondary amine), cat. H+. Draw the enamine product.",
+  "reactants": ["O=C1CCCCC1", "C1CCNC1"],
+  "reagents": ["H+ (cat)"],
+  "answers": [{ "smiles": "C1(=CCCCC1)N1CCCC1", "label": "1-(cyclohex-1-en-1-yl)pyrrolidine (enamine)" }],
+  "acceptable": [
+    { "smiles": "N1(CCCC1)C1=CCCCC1", "label": "same enamine, different starting atom", "credit": 1 }
+  ],
+  "concepts": ["enamine from 2° amine"],
+  "explanation": "Secondary amines can't lose a second H from N (none to lose), so after carbinolamine dehydration, the double bond goes to the α-carbon side instead → enamine (C=C-NR2). Classic Stork reaction substrate."
+}

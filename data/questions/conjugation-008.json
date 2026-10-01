@@ -1,0 +1,13 @@
+{
+  "id": "conjugation-008",
+  "topic": "conjugation",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Add 1 equivalent HBr to 1,3-butadiene at -78 °C (kinetic conditions). Draw the MAJOR (1,2-addition) product.",
+  "reactants": ["C=CC=C"],
+  "reagents": ["HBr (1 eq)", "-78 °C"],
+  "answers": [{ "smiles": "CC(Br)C=C", "label": "3-bromo-1-butene (1,2 product — kinetic)" }],
+  "traps": [{ "smiles": "CC=CCBr", "trap": "regio-wrong", "note": "The 1,4-product (1-bromo-2-butene) is the thermodynamic product (internal alkene, higher temp). At -78 °C the 1,2-product wins kinetically." }],
+  "concepts": ["1,2 vs 1,4 addition", "kinetic vs thermodynamic"],
+  "explanation": "At -78 °C the allyl cation is trapped at whichever end is closer and lower-energy TS → 1,2-addition dominates (kinetic). Warm it up or reach equilibrium and the more-substituted internal alkene (1,4-product) wins thermodynamically."
+}
