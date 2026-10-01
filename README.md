@@ -12,7 +12,7 @@ Full plan lives in [`CLAUDE.md`](./CLAUDE.md).
 - [x] **Phase 3** — Question engine + MCQ + trap detector + 30 seed questions.
 - [x] **Phase 4** — Spectra (IR, ¹H, ¹³C+DEPT, MS) and `/sandbox`.
 - [x] **Phase 5** — AI tutor (`/api/tutor`, hint ladder, `<mol>` rendering, HintPanel + TutorChat wired into QuestionCard).
-- [ ] Phase 6 — Progress + SRS + dashboard + modes.
+- [x] **Phase 6** — Progress + FSRS SRS + dashboard + Practice/Exam/Drill/Mistakes modes.
 - [ ] Phase 7 — Content expansion + template generator.
 - [ ] Phase 8 — Mechanisms.
 - [ ] Phase 9 — Extras + deploy.
