@@ -32,6 +32,7 @@ export interface AttemptRecord {
 export interface QuestionCardProps {
   question: Question;
   onAttempt?: (record: AttemptRecord) => void;
+  hideHints?: boolean;
 }
 
 export function QuestionCard(props: QuestionCardProps) {
@@ -70,7 +71,11 @@ export function QuestionCard(props: QuestionCardProps) {
         question.type === "stereo_draw" ||
         question.type === "spectrum_id" ||
         question.type === "multistep") && (
-        <DrawBody {...props} question={question as StructureQuestion} />
+        <DrawBody
+          {...props}
+          question={question as StructureQuestion}
+          hideHints={props.hideHints}
+        />
       )}
     </article>
   );
@@ -255,12 +260,8 @@ function ReagentFillBody({
 
 // ---- Draw (structure) ----------------------------------------------------
 
-function DrawBody({
-  question,
-  onAttempt,
-}: {
-  question: StructureQuestion;
-} & QuestionCardProps) {
+function DrawBody(props: { question: StructureQuestion } & QuestionCardProps) {
+  const { question, onAttempt } = props;
   const ketcherRef = useRef<Ketcher | null>(null);
   const [busy, setBusy] = useState(false);
   const [result, setResult] = useState<GradeResult | null>(null);
@@ -342,14 +343,18 @@ function DrawBody({
         </details>
       )}
 
-      <HintPanel
-        question={tutorQuestion(question)}
-        attempt={tutorAttempt(result, submittedSmiles)}
-      />
-      <TutorChat
-        question={tutorQuestion(question)}
-        attempt={tutorAttempt(result, submittedSmiles)}
-      />
+      {!props.hideHints && (
+        <>
+          <HintPanel
+            question={tutorQuestion(question)}
+            attempt={tutorAttempt(result, submittedSmiles)}
+          />
+          <TutorChat
+            question={tutorQuestion(question)}
+            attempt={tutorAttempt(result, submittedSmiles)}
+          />
+        </>
+      )}
     </div>
   );
 }

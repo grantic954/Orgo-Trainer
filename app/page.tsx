@@ -1,13 +1,14 @@
 import Link from "next/link";
 
 const PHASE_LINKS = [
+  { href: "/practice", label: "Practice (hints on)", phase: "Phase 3" },
+  { href: "/exam", label: "Exam (timed, no hints)", phase: "Phase 6" },
+  { href: "/mistakes", label: "Mistakes (recent wrong answers)", phase: "Phase 6" },
+  { href: "/sandbox", label: "Spectra Sandbox", phase: "Phase 4" },
+  { href: "/dashboard", label: "Dashboard", phase: "Phase 6" },
   { href: "/demo", label: "Structure Demo (10 molecules)", phase: "Phase 1" },
   { href: "/demo/benzoic-acid", label: "Draw Benzoic Acid Demo", phase: "Phase 2" },
-  { href: "/practice", label: "Practice", phase: "Phase 3" },
-  { href: "/dashboard", label: "Dashboard", phase: "Phase 6" },
   { href: "/roadmap", label: "Reaction Roadmap", phase: "Phase 9" },
-  { href: "/review", label: "Review", phase: "Phase 6" },
-  { href: "/sandbox", label: "Spectra Sandbox", phase: "Phase 4" },
 ];
 
 export default function Home() {
