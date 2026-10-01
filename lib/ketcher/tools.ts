@@ -44,6 +44,14 @@ export type ToolId =
   | "ring-furan"
   | "ring-pyridine";
 
+// Molfile-standard bond type and stereo codes (from Bond.PATTERN in
+// ketcher-core; hardcoded here to avoid pulling ketcher-core into module
+// scope).
+const BOND_TYPE = { SINGLE: 1, DOUBLE: 2, TRIPLE: 3, AROMATIC: 4 } as const;
+const BOND_STEREO = { NONE: 0, UP: 1, DOWN: 6 } as const;
+// Reaction-arrow mode constants (matching Ketcher's RxnArrowMode enum).
+const RXN_ARROW_OPEN_ANGLE = "open-angle";
+
 export async function activateTool(k: Ketcher, id: ToolId): Promise<void> {
   const e = ed(k);
   switch (id) {
@@ -61,34 +69,34 @@ export async function activateTool(k: Ketcher, id: ToolId): Promise<void> {
       if (struct) e.tool("template", { struct });
       return;
     }
-    // Selection
+    // Selection — opts is a plain string ("rectangle" | "lasso" | "fragment").
     case "select-rect":
-      e.tool("select", { mode: "rectangle" });
+      e.tool("select", "rectangle");
       return;
     case "select-lasso":
-      e.tool("select", { mode: "lasso" });
+      e.tool("select", "lasso");
       return;
     case "erase":
-      e.tool("eraser");
+      e.tool("eraser", 1);
       return;
-    // Bonds
+    // Bonds — opts is { type, stereo } with molfile-standard numeric codes.
     case "bond-single":
-      e.tool("bond", { type: "single" });
+      e.tool("bond", { type: BOND_TYPE.SINGLE, stereo: BOND_STEREO.NONE });
       return;
     case "bond-double":
-      e.tool("bond", { type: "double" });
+      e.tool("bond", { type: BOND_TYPE.DOUBLE, stereo: BOND_STEREO.NONE });
       return;
     case "bond-triple":
-      e.tool("bond", { type: "triple" });
+      e.tool("bond", { type: BOND_TYPE.TRIPLE, stereo: BOND_STEREO.NONE });
       return;
     case "bond-aromatic":
-      e.tool("bond", { type: "aromatic" });
+      e.tool("bond", { type: BOND_TYPE.AROMATIC, stereo: BOND_STEREO.NONE });
       return;
     case "bond-up":
-      e.tool("bond", { stereo: "up", type: "single" });
+      e.tool("bond", { type: BOND_TYPE.SINGLE, stereo: BOND_STEREO.UP });
       return;
     case "bond-down":
-      e.tool("bond", { stereo: "down", type: "single" });
+      e.tool("bond", { type: BOND_TYPE.SINGLE, stereo: BOND_STEREO.DOWN });
       return;
     // Atoms
     case "atom-C":
@@ -103,22 +111,22 @@ export async function activateTool(k: Ketcher, id: ToolId): Promise<void> {
     case "atom-P":
       e.tool("atom", { label: id.slice(5) });
       return;
-    // Other
+    // Charges — opts is a signed integer (+1 or -1).
     case "charge-plus":
-      e.tool("charge", { mode: "plus" });
+      e.tool("charge", 1);
       return;
     case "charge-minus":
-      e.tool("charge", { mode: "minus" });
+      e.tool("charge", -1);
       return;
     case "reaction-arrow":
-      e.tool("reactionarrow", { mode: "reaction-arrow-open-angle" });
+      e.tool("reactionarrow", RXN_ARROW_OPEN_ANGLE);
       return;
     case "electron-pair":
-      // Ketcher exposes lone-pair drawing as a "chain" or "rgroup" — neither
-      // fits perfectly. As a Phase-1 UX, we no-op with a console hint so it's
-      // obvious this needs revisit for mechanism-arrow questions.
+      // Ketcher doesn't ship a dedicated lone-pair tool — mechanism arrows
+      // land in Phase 8 (MechanismCanvas). No-op with a console hint so it's
+      // obvious to developers.
       // eslint-disable-next-line no-console
-      console.info("electron-pair tool: use Ketcher's built-in R-group or charge tools; TODO wire.");
+      console.info("electron-pair tool is a Phase 8 placeholder.");
       return;
   }
 }
