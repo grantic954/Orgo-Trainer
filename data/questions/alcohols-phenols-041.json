@@ -1,0 +1,13 @@
+{
+  "id": "alcohols-phenols-041",
+  "topic": "alcohols-phenols",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Mild oxidation of a 1° alcohol to the aldehyde (NOT the acid): 1-hexanol with Dess-Martin periodinane (DMP) in CH2Cl2. Draw the product.",
+  "reactants": ["CCCCCCO"],
+  "reagents": ["DMP (Dess-Martin)", "CH2Cl2"],
+  "answers": [{ "smiles": "CCCCCC=O", "label": "hexanal" }],
+  "traps": [{ "smiles": "CCCCCC(=O)O", "trap": "over-reaction", "note": "DMP stops at aldehyde — doesn't over-oxidize to the acid. Jones (CrO3/H2SO4) would go all the way to hexanoic acid." }],
+  "concepts": ["DMP mild oxidation to aldehyde"],
+  "explanation": "DMP (and PCC, Swern) are MILD oxidants that stop at the aldehyde because they're anhydrous (no water to form the hydrate that would get oxidized further). Jones, KMnO4, CrO3 under aqueous conditions go all the way to carboxylic acid."
+}

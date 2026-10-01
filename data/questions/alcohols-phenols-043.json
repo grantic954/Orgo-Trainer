@@ -1,0 +1,15 @@
+{
+  "id": "alcohols-phenols-043",
+  "topic": "alcohols-phenols",
+  "type": "draw_product",
+  "difficulty": 4,
+  "prompt": "Protect an alcohol, do a reaction, deprotect. Starting material has a primary OH and we want to add a Grignard to a separate ester: 4-hydroxybutyl benzoate + (1) TMSCl/Et3N (protect OH as TMS ether); (2) 2 eq MeMgBr; (3) H3O+/TBAF (removes TMS). Draw the final product.",
+  "reactants": ["OCCCCOC(=O)c1ccccc1"],
+  "reagents": ["(1) TMSCl, Et3N", "(2) 2 eq MeMgBr", "(3) H3O+, TBAF"],
+  "answers": [{ "smiles": "OCCCCC(C)(C)O.Oc1ccccc1", "label": "A diol (ester reduced to 3° OH via 2 MeMgBr adds, phenol freed) and benzyl alcohol byproduct — but actually benzoyl side becomes PhC(Me)2OH" }],
+  "acceptable": [
+    { "smiles": "OCCCCO.CC(C)(O)c1ccccc1", "label": "clearer: 4-hydroxybutan-1-ol + 2-phenylpropan-2-ol", "credit": 1 }
+  ],
+  "concepts": ["protecting groups", "Grignard with incompatible OH"],
+  "explanation": "If you ran MeMgBr on the unprotected substrate, the free OH would quench the Grignard (acid-base). TMSCl protects the OH as a silyl ether (unreactive to Grignard). Then MeMgBr adds to the ester C=O twice: first add kicks out OR, second add gives a 3° alcohol. TBAF removes TMS. Products: 4-hydroxybutan-1-ol (the alcohol fragment that was the OR of the ester) + 2-phenyl-2-propanol (the newly formed 3° alcohol from the acyl side)."
+}

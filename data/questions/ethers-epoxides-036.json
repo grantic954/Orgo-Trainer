@@ -1,0 +1,12 @@
+{
+  "id": "ethers-epoxides-036",
+  "topic": "ethers-epoxides",
+  "type": "draw_product",
+  "difficulty": 4,
+  "prompt": "Make an epoxide from a halohydrin: 2-chloro-1-propanol + NaOH. Draw the epoxide (intramolecular SN2).",
+  "reactants": ["CC(Cl)CO"],
+  "reagents": ["NaOH"],
+  "answers": [{ "smiles": "CC1CO1", "label": "propylene oxide (2-methyloxirane)" }],
+  "concepts": ["intramolecular Williamson to form epoxide"],
+  "explanation": "NaOH deprotonates the OH → alkoxide, which then does intramolecular SN2 displacing Cl in an anti-periplanar backside attack. This is the key step in the halohydrin → epoxide conversion (and in biosynthesis of epoxides by halohydrin dehalogenase enzymes)."
+}

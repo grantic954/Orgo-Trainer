@@ -1,0 +1,15 @@
+{
+  "id": "ethers-epoxides-039",
+  "topic": "ethers-epoxides",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Alkene + mCPBA then H3O+/H2O: cyclohexene is treated with mCPBA (epoxidation), then dilute H2SO4/H2O. Draw the final trans-diol.",
+  "reactants": ["C1CCC=CC1"],
+  "reagents": ["mCPBA", "then H3O+, H2O"],
+  "answers": [{ "smiles": "O[C@@H]1CCCC[C@H]1O", "label": "trans-1,2-cyclohexanediol" }],
+  "acceptable": [
+    { "smiles": "OC1CCCCC1O", "label": "trans diol without stereo", "credit": 0.6 }
+  ],
+  "concepts": ["epoxide → trans diol (anti dihydroxylation)"],
+  "explanation": "mCPBA gives the epoxide syn across the alkene; acid-catalyzed water opening then goes anti (backside attack). Net: ANTI dihydroxylation → trans-diol. Compare with OsO4 → syn/cis diol. These two methods are the choices for setting diol stereochemistry."
+}

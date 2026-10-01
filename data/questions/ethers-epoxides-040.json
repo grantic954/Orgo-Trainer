@@ -1,0 +1,15 @@
+{
+  "id": "ethers-epoxides-040",
+  "topic": "ethers-epoxides",
+  "type": "draw_product",
+  "difficulty": 4,
+  "prompt": "Sharpless asymmetric epoxidation (conceptual): (E)-2-buten-1-ol + Ti(OiPr)4, (+)-DET, tBuOOH. Draw the (2S,3S)-epoxy alcohol product.",
+  "reactants": ["C/C=C/CO"],
+  "reagents": ["Ti(OiPr)4", "(+)-DET", "tBuOOH"],
+  "answers": [{ "smiles": "C[C@@H]1O[C@H]1CO", "label": "(2S,3S)-2,3-epoxybutan-1-ol" }],
+  "acceptable": [
+    { "smiles": "CC1OC1CO", "label": "trans epoxide, no absolute stereo", "credit": 0.5 }
+  ],
+  "concepts": ["Sharpless epoxidation", "allylic alcohols"],
+  "explanation": "Sharpless uses a chiral Ti/tartrate catalyst to epoxidize allylic alcohols with high enantioselectivity. (+)-DET delivers O to one face, (-)-DET to the other. Only works on allylic alcohols (the OH coordinates to Ti to deliver asymmetric selectivity)."
+}

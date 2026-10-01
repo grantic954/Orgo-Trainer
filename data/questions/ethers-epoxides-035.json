@@ -1,0 +1,12 @@
+{
+  "id": "ethers-epoxides-035",
+  "topic": "ethers-epoxides",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Epoxide opening with HBr: ethylene oxide + HBr. Draw the halohydrin product.",
+  "reactants": ["C1CO1"],
+  "reagents": ["HBr"],
+  "answers": [{ "smiles": "OCCBr", "label": "2-bromoethanol (bromoethanol)" }],
+  "concepts": ["halide opens epoxide"],
+  "explanation": "Protonated epoxide gets attacked by Br⁻ at either C (symmetric substrate here). Gives a halohydrin (OH + Br on adjacent C) in one step. Really useful because you can then do SN2 on the Br with another Nu."
+}

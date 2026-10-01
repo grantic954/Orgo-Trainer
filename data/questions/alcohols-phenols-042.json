@@ -1,0 +1,12 @@
+{
+  "id": "alcohols-phenols-042",
+  "topic": "alcohols-phenols",
+  "type": "draw_product",
+  "difficulty": 4,
+  "prompt": "Tosylation + SN2: 1-butanol + TsCl / pyridine (makes a tosylate); then NaCN in DMSO. Draw the final product.",
+  "reactants": ["CCCCO"],
+  "reagents": ["TsCl, pyridine", "then NaCN, DMSO"],
+  "answers": [{ "smiles": "CCCCC#N", "label": "pentanenitrile (chain extended by 1 C via tosylate SN2)" }],
+  "concepts": ["TsCl activation", "tosylate SN2"],
+  "explanation": "OH is a terrible leaving group — but OTs is excellent (tosylate anion is super-stable). Convert OH → OTs with TsCl/pyridine (no rearrangement!), then any good Nu does SN2. Here CN⁻ gives a nitrile — a classic chain-extension sequence."
+}

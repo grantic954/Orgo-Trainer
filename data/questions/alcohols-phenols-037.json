@@ -1,0 +1,13 @@
+{
+  "id": "alcohols-phenols-037",
+  "topic": "alcohols-phenols",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Grignard with an ester: methyl benzoate + 2 eq PhMgBr; then H3O+. Draw the final alcohol (TWO Grignards add, kicks out OMe).",
+  "reactants": ["COC(=O)c1ccccc1", "[Mg](Br)c1ccccc1"],
+  "reagents": ["2 eq PhMgBr", "then H3O+"],
+  "answers": [{ "smiles": "OC(c1ccccc1)(c1ccccc1)c1ccccc1", "label": "triphenylmethanol" }],
+  "traps": [{ "smiles": "OC(c1ccccc1)c1ccccc1", "trap": "under-reaction", "note": "Can't stop at the ketone with Grignard — the intermediate ketone is MORE reactive than the ester, so it immediately reacts with the second Grignard." }],
+  "concepts": ["Grignard + ester → 3° alcohol with 2 Grignards"],
+  "explanation": "Step 1: PhMgBr adds to ester, kicks out OMe → benzophenone (ketone). Step 2: The ketone is now MORE electrophilic than the ester, so the second PhMgBr adds immediately. Workup gives triphenylmethanol (classic textbook example)."
+}

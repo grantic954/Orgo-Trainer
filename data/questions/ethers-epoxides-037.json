@@ -1,0 +1,13 @@
+{
+  "id": "ethers-epoxides-037",
+  "topic": "ethers-epoxides",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "LAH opens an epoxide: 1,2-epoxybutane + LiAlH4; then H3O+. Draw the alcohol (H⁻ delivered to LESS hindered C).",
+  "reactants": ["CCC1CO1"],
+  "reagents": ["LiAlH4", "then H3O+"],
+  "answers": [{ "smiles": "CCC(O)C", "label": "2-butanol (hydride at terminal CH2 end, OH on 2°)" }],
+  "traps": [{ "smiles": "CCCCO", "trap": "regio-wrong", "note": "H⁻ attacks the LESS substituted end — gives the MORE substituted alcohol." }],
+  "concepts": ["LAH + epoxide → more substituted alcohol"],
+  "explanation": "LAH (hydride) is a Nu under basic conditions → SN2 attack at the less-hindered C. The 2° side keeps the alkoxide (then OH after workup). So reduction of a terminal epoxide with LAH gives the SECONDARY alcohol, not the primary. (DIBAL often gives the primary instead — different mechanism)."
+}

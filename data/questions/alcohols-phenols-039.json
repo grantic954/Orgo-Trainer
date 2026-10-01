@@ -1,0 +1,12 @@
+{
+  "id": "alcohols-phenols-039",
+  "topic": "alcohols-phenols",
+  "type": "draw_product",
+  "difficulty": 4,
+  "prompt": "Grignard + CO2 (dry ice): butylmagnesium bromide + CO2; then H3O+. Draw the acid.",
+  "reactants": ["CCCC[Mg]Br", "O=C=O"],
+  "reagents": ["CO2 (s)", "then H3O+"],
+  "answers": [{ "smiles": "CCCCC(=O)O", "label": "pentanoic acid (chain-extended by 1 C)" }],
+  "concepts": ["Grignard + CO2 → carboxylic acid"],
+  "explanation": "Grignard attacks CO2 giving a carboxylate; acidic workup gives the acid. Net: R-MgBr + CO2 → R-COOH, adding one carbon. The go-to synthesis for making carboxylic acids from alkyl halides when the chain needs to grow by exactly 1 C."
+}

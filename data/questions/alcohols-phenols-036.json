@@ -1,0 +1,12 @@
+{
+  "id": "alcohols-phenols-036",
+  "topic": "alcohols-phenols",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Grignard with a ketone: cyclohexanone + ethylmagnesium bromide (EtMgBr); then H3O+ workup. Draw the alcohol product.",
+  "reactants": ["O=C1CCCCC1", "CC[Mg]Br"],
+  "reagents": ["EtMgBr, dry Et2O", "then H3O+"],
+  "answers": [{ "smiles": "CCC1(O)CCCCC1", "label": "1-ethylcyclohexan-1-ol (tertiary alcohol)" }],
+  "concepts": ["Grignard + ketone → 3° alcohol"],
+  "explanation": "Grignard adds ethyl to the carbonyl C of the ketone, giving an alkoxide. Acidic workup protonates it to a 3° alcohol. The quaternary C bears the ring + original substituent + new ethyl + OH."
+}

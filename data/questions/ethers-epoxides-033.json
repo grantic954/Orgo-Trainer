@@ -1,0 +1,12 @@
+{
+  "id": "ethers-epoxides-033",
+  "topic": "ethers-epoxides",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Williamson ether synthesis: sodium phenoxide + 1-chloropropane. Draw the ether.",
+  "reactants": ["[O-]c1ccccc1.[Na+]", "CCCCl"],
+  "reagents": ["DMF, heat"],
+  "answers": [{ "smiles": "CCCOc1ccccc1", "label": "propyl phenyl ether (phenetole-like)" }],
+  "concepts": ["Williamson with phenoxide"],
+  "explanation": "Phenoxide (ArO⁻) is a soft, stabilized nucleophile. It attacks a 1° alkyl halide via SN2 to give an aryl alkyl ether. Note: aryl halides don't do Williamson the other way (ArX + RO⁻ fails — SNAr needs strong EWGs on the ring)."
+}

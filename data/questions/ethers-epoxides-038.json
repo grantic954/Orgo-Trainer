@@ -1,0 +1,15 @@
+{
+  "id": "ethers-epoxides-038",
+  "topic": "ethers-epoxides",
+  "type": "draw_product",
+  "difficulty": 4,
+  "prompt": "Thiol-type nucleophile opens epoxide: cyclohexene oxide + NaSEt (sodium ethanethiolate). Draw the trans product.",
+  "reactants": ["C1CCC2OC2C1"],
+  "reagents": ["NaSEt, EtOH"],
+  "answers": [{ "smiles": "CCS[C@@H]1CCCC[C@H]1O", "label": "trans-2-ethylthiocyclohexan-1-ol" }],
+  "acceptable": [
+    { "smiles": "CCSC1CCCCC1O", "label": "trans product without stereo", "credit": 0.6 }
+  ],
+  "concepts": ["thiolate opens epoxide", "anti stereochemistry"],
+  "explanation": "Thiolate (RS⁻) is a soft, strong Nu. SN2 backside attack on the epoxide C gives a trans product (new OH and new SR on opposite faces of the ring). Thiolates attack epoxides very cleanly — much faster than alkoxides."
+}

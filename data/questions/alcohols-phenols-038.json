@@ -1,0 +1,12 @@
+{
+  "id": "alcohols-phenols-038",
+  "topic": "alcohols-phenols",
+  "type": "draw_product",
+  "difficulty": 4,
+  "prompt": "Grignard + epoxide: ethylene oxide + propylmagnesium bromide; then H3O+. Draw the alcohol (chain-extended by 2 C).",
+  "reactants": ["C1CO1", "CCC[Mg]Br"],
+  "reagents": ["CH2CH2O (epoxide)", "then H3O+"],
+  "answers": [{ "smiles": "CCCCCO", "label": "1-pentanol" }],
+  "concepts": ["Grignard ring-opens epoxide"],
+  "explanation": "Grignard attacks the less-hindered C of the epoxide (SN2-like), ring opens to the alkoxide. H3O+ protonates. Net result: 2-carbon chain extension to a 1° alcohol. Great synthetic trick when you want OH two carbons away."
+}

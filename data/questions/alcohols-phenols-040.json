@@ -1,0 +1,13 @@
+{
+  "id": "alcohols-phenols-040",
+  "topic": "alcohols-phenols",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Dehydration: 2-methylcyclohexan-1-ol + H2SO4, heat. Draw the MAJOR alkene (Zaitsev).",
+  "reactants": ["OC1CCCCC1C"],
+  "reagents": ["H2SO4, heat"],
+  "answers": [{ "smiles": "CC1=CCCCC1", "label": "1-methylcyclohex-1-ene (Zaitsev — more substituted, trisubstituted alkene)" }],
+  "traps": [{ "smiles": "CC1CCCCC=1", "trap": "regio-wrong", "note": "Hofmann (less substituted) is minor here. H+/heat strongly prefers Zaitsev." }],
+  "concepts": ["E1 dehydration", "Zaitsev"],
+  "explanation": "E1 goes through a 2° carbocation; loss of H+ from the more substituted β-C gives the more stable trisubstituted alkene (1-methylcyclohexene). The other direction gives a disubstituted alkene (3-methylcyclohexene), minor."
+}
