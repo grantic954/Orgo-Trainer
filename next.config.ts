@@ -21,6 +21,20 @@ const nextConfig: NextConfig = {
       canvas: emptyShim,
     },
   },
+  // Long-lived cache headers for the big static assets we serve from /public.
+  // RDKit's WASM is content-addressed by filename (changes only when the
+  // npm package version changes), so a year-long immutable cache is safe —
+  // repeat visits don't re-download the 7 MB blob.
+  async headers() {
+    return [
+      {
+        source: "/RDKit_minimal.wasm",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;
