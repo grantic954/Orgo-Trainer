@@ -1,3 +1,202 @@
 {
-  "reagents": []
+  "reagents": [
+    {
+      "id": "nabh4",
+      "name": "NaBH4",
+      "fullName": "Sodium borohydride",
+      "whatItDoes": "Reduces aldehydes and ketones to alcohols. Does NOT reduce esters, amides, or carboxylic acids.",
+      "conditions": "MeOH or EtOH, room temperature",
+      "example": "R2C=O → R2CH–OH",
+      "topic": "carbonyls"
+    },
+    {
+      "id": "lah",
+      "name": "LiAlH4",
+      "fullName": "Lithium aluminum hydride",
+      "whatItDoes": "Strong hydride reducer: reduces aldehydes, ketones, esters, carboxylic acids, amides, nitriles, epoxides.",
+      "conditions": "Anhydrous Et2O or THF; acidic workup",
+      "example": "RCOOR' → RCH2OH + R'OH; RCN → RCH2NH2",
+      "topic": "acid-derivatives"
+    },
+    {
+      "id": "dibal",
+      "name": "DIBAL-H",
+      "fullName": "Diisobutylaluminum hydride",
+      "whatItDoes": "Selective 1-equivalent reducer. At −78 °C with 1 eq, stops ester reduction at the aldehyde.",
+      "conditions": "Toluene or hexanes, −78 °C, 1 eq",
+      "example": "RCOOR' → RCHO (not alcohol!)",
+      "topic": "acid-derivatives"
+    },
+    {
+      "id": "pcc",
+      "name": "PCC",
+      "fullName": "Pyridinium chlorochromate",
+      "whatItDoes": "Mild oxidant. 1° alcohols → aldehydes (stops there). 2° alcohols → ketones.",
+      "conditions": "CH2Cl2, anhydrous",
+      "example": "RCH2OH → RCHO",
+      "topic": "alcohols-ethers"
+    },
+    {
+      "id": "jones",
+      "name": "Jones (CrO3/H2SO4)",
+      "fullName": "Chromic acid in acetone/sulfuric acid",
+      "whatItDoes": "Strong oxidant. 1° alcohols → carboxylic acids. 2° alcohols → ketones.",
+      "conditions": "Acetone, H2SO4, aqueous",
+      "example": "RCH2OH → RCOOH",
+      "topic": "alcohols-ethers"
+    },
+    {
+      "id": "nbs",
+      "name": "NBS",
+      "fullName": "N-bromosuccinimide",
+      "whatItDoes": "Benzylic / allylic bromination via radicals. Supplies low [Br2].",
+      "conditions": "CCl4, hν or AIBN initiator",
+      "example": "Ph-CH3 → Ph-CH2Br",
+      "topic": "side-chain"
+    },
+    {
+      "id": "sncl2",
+      "name": "Sn/HCl (or Fe/HCl, H2/Pd)",
+      "fullName": "Tin or iron in acid; also H2/Pd",
+      "whatItDoes": "Reduces aromatic nitro groups to primary amines.",
+      "conditions": "HCl aqueous; basic workup liberates ArNH2",
+      "example": "Ar-NO2 → Ar-NH2",
+      "topic": "side-chain"
+    },
+    {
+      "id": "cuBr-diazonium",
+      "name": "CuBr / CuCl / CuCN (Sandmeyer)",
+      "fullName": "Copper(I) salts for Sandmeyer-type substitution",
+      "whatItDoes": "Replace ArN2+ with Br, Cl, or CN. Also H3PO2 → H, HBF4/heat → F (Schiemann).",
+      "conditions": "Ar-N2+ first prepared from Ar-NH2 + NaNO2/HCl at 0 °C",
+      "example": "Ar-N2+ → Ar-Br",
+      "topic": "side-chain"
+    },
+    {
+      "id": "lindlar",
+      "name": "Lindlar / H2",
+      "fullName": "Pd on CaCO3, poisoned with Pb and quinoline",
+      "whatItDoes": "Alkyne → Z-alkene (cis). Stops at the alkene; does not over-reduce.",
+      "conditions": "H2 atmosphere, Pd/CaCO3/Pb(OAc)2/quinoline",
+      "example": "RC≡CR' → cis-RHC=CHR'",
+      "topic": "synthesis"
+    },
+    {
+      "id": "na-nh3",
+      "name": "Na / NH3(l)",
+      "fullName": "Sodium in liquid ammonia (dissolving-metal)",
+      "whatItDoes": "Alkyne → E-alkene (trans). Also reduces aromatic rings (Birch) under proper conditions.",
+      "conditions": "Liquid NH3, Na metal; EtOH co-solvent for Birch",
+      "example": "RC≡CR' → trans-RHC=CHR'",
+      "topic": "synthesis"
+    },
+    {
+      "id": "wittig-reagent",
+      "name": "Ph3P=CR2 (Wittig)",
+      "fullName": "Phosphorus ylide",
+      "whatItDoes": "Converts aldehydes and ketones to alkenes via oxaphosphetane; byproduct Ph3P=O.",
+      "conditions": "THF, room temperature. Made from Ph3P + alkyl halide + strong base (n-BuLi).",
+      "example": "R2C=O + Ph3P=CH2 → R2C=CH2",
+      "topic": "carbonyls"
+    },
+    {
+      "id": "lda",
+      "name": "LDA",
+      "fullName": "Lithium diisopropylamide",
+      "whatItDoes": "Strong, bulky, non-nucleophilic base. Generates the KINETIC enolate at −78 °C.",
+      "conditions": "THF, −78 °C",
+      "example": "2-methylcyclohexanone + LDA → less-substituted enolate",
+      "topic": "alpha-carbon"
+    },
+    {
+      "id": "naome-enol",
+      "name": "NaOMe / NaOEt (equilibrating)",
+      "fullName": "Sodium alkoxides at elevated T",
+      "whatItDoes": "Equilibrating base — forms the THERMODYNAMIC enolate (more substituted).",
+      "conditions": "MeOH or EtOH, warm",
+      "example": "2-methylcyclohexanone + NaOEt → more-substituted enolate",
+      "topic": "alpha-carbon"
+    },
+    {
+      "id": "h2so4-h2o",
+      "name": "H3O+ (dilute)",
+      "fullName": "Aqueous acid workup",
+      "whatItDoes": "Protonates alkoxides/carbanions after a nucleophilic addition; hydrolyzes imines, acetals, enol ethers.",
+      "conditions": "Aqueous, mild",
+      "example": "After Grignard: R-O(MgBr) → R-OH",
+      "topic": "carbonyls"
+    },
+    {
+      "id": "socl2",
+      "name": "SOCl2",
+      "fullName": "Thionyl chloride",
+      "whatItDoes": "Converts carboxylic acids to acyl chlorides; alcohols to alkyl chlorides.",
+      "conditions": "Neat or in CH2Cl2; pyridine to scavenge HCl",
+      "example": "RCOOH → RCOCl; RCH2OH → RCH2Cl",
+      "topic": "acid-derivatives"
+    },
+    {
+      "id": "nancn",
+      "name": "NaCN (SN2 then hydrolyze)",
+      "fullName": "Sodium cyanide",
+      "whatItDoes": "SN2 on 1° alkyl halide → R-CN (one-carbon homologation). Hydrolyze to R-COOH.",
+      "conditions": "DMSO or DMF; then H3O+/H2O/heat",
+      "example": "R-X → R-CN → R-COOH",
+      "topic": "carboxylic-acids"
+    },
+    {
+      "id": "nabh3cn",
+      "name": "NaBH3CN",
+      "fullName": "Sodium cyanoborohydride",
+      "whatItDoes": "Mild hydride source for reductive amination. Reduces iminium ions preferentially over C=O at mildly acidic pH.",
+      "conditions": "MeOH, pH ~5 (AcOH)",
+      "example": "R2C=O + R'NH2 → R2CH-NHR'",
+      "topic": "amines"
+    },
+    {
+      "id": "naoh-ester",
+      "name": "NaOH (saponification)",
+      "fullName": "Sodium hydroxide, heat",
+      "whatItDoes": "Hydrolyzes esters to carboxylate + alcohol (irreversible, driven by deprotonation).",
+      "conditions": "Aqueous, heat",
+      "example": "RCOOR' + NaOH → RCOO-Na+ + R'OH",
+      "topic": "acid-derivatives"
+    },
+    {
+      "id": "fecl3-br2",
+      "name": "Br2 / FeBr3 (EAS)",
+      "fullName": "Bromine with iron(III) bromide catalyst",
+      "whatItDoes": "Electrophilic aromatic bromination of benzene and activated arenes.",
+      "conditions": "CH2Cl2 or neat; stoichiometric Br2, catalytic FeBr3",
+      "example": "Ph-H + Br2 → Ph-Br",
+      "topic": "eas"
+    },
+    {
+      "id": "hno3-h2so4",
+      "name": "HNO3 / H2SO4 (nitration)",
+      "fullName": "Nitric acid in sulfuric acid (generates NO2+)",
+      "whatItDoes": "Electrophilic aromatic nitration.",
+      "conditions": "Mix at 0 °C; add to arene",
+      "example": "Ph-H + HNO3/H2SO4 → Ph-NO2",
+      "topic": "eas"
+    },
+    {
+      "id": "alcl3-fc",
+      "name": "AlCl3 (Friedel–Crafts)",
+      "fullName": "Aluminum trichloride",
+      "whatItDoes": "Lewis acid catalyst for Friedel–Crafts acylation (RCOCl) and alkylation (RCl).",
+      "conditions": "CH2Cl2 or neat; anhydrous.",
+      "example": "Ph-H + RCOCl/AlCl3 → Ph-COR",
+      "topic": "eas"
+    },
+    {
+      "id": "nanh2",
+      "name": "NaNH2",
+      "fullName": "Sodium amide",
+      "whatItDoes": "Very strong base. Deprotonates terminal alkynes; triggers E2 and benzyne formation.",
+      "conditions": "Liquid NH3 or hexanes; anhydrous",
+      "example": "RC≡CH + NaNH2 → RC≡C-Na+",
+      "topic": "snar"
+    }
+  ]
 }

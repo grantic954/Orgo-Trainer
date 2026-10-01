@@ -13,9 +13,23 @@ Full plan lives in [`CLAUDE.md`](./CLAUDE.md).
 - [x] **Phase 4** — Spectra (IR, ¹H, ¹³C+DEPT, MS) and `/sandbox`.
 - [x] **Phase 5** — AI tutor (`/api/tutor`, hint ladder, `<mol>` rendering, HintPanel + TutorChat wired into QuestionCard).
 - [x] **Phase 6** — Progress + FSRS SRS + dashboard + Practice/Exam/Drill/Mistakes modes.
-- [ ] Phase 7 — Content expansion + template generator.
-- [ ] Phase 8 — Mechanisms.
-- [ ] Phase 9 — Extras + deploy.
+- [x] **Phase 7** — 103 seed questions across every core topic + reaction-template generator (10 reactions, 29 substrates, `/api/generate`).
+- [x] **Phase 8** — MechanismCanvas + 5 seed mechanisms at `/mechanism`.
+- [x] **Phase 9** — Reagent flashcards (`/reagents`), reaction roadmap (`/roadmap`), deploy notes (see below).
+
+## Deploying to Vercel
+
+1. Push the repo to GitHub.
+2. Import it on [vercel.com/new](https://vercel.com/new).
+3. Set the environment variable **`ANTHROPIC_API_KEY`** on the Vercel project (Production + Preview). Everything else is zero-config.
+4. First deploy will take a few minutes while Vercel downloads the RDKit WASM and installs Ketcher's peer deps.
+
+### Gotchas
+
+- **Turbopack + `ketcher-core` → `paper.js` → `jsdom`**: paper.js's `dist/node/canvas.js` statically requires `jsdom` for Node contexts. Browser builds normally skip it via paper's `browser` package.json field map, but Turbopack doesn't honor that map. `next.config.ts` aliases `jsdom`, `jsdom/lib/jsdom/living/generated/utils`, and `canvas` to a local empty shim (`shims/empty.js`). Don't delete those.
+- **React Strict Mode is disabled** (`reactStrictMode: false`). Ketcher's module-scope `ketcherProvider` keeps a map of mounted instances by id; Strict Mode's dev-only double-mount orphaned instance references and threw `"couldn't find ketcher instance N"`. Prod builds never double-mount.
+- **RDKit WASM** (`public/RDKit_minimal.wasm`, ~7 MB) is committed and served from `/public`. `scripts/copy-rdkit-wasm.mjs` keeps it in sync with the npm package on every `npm install`.
+- **The API key** must stay server-side. `/api/tutor` reads `ANTHROPIC_API_KEY` from env; it is never bundled into the client.
 
 ## Getting started
 
