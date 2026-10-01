@@ -25,14 +25,14 @@ export const CHAPTERS: Chapter[] = [
   {
     number: 12,
     title: "Alcohols and Phenols",
-    topics: ["alcohols-ethers"],
-    blurb: "Alcohol synthesis + reactions (shared with Ch. 13 for now).",
+    topics: ["alcohols-phenols"],
+    blurb: "Alcohol synthesis + reactions, phenol acidity.",
   },
   {
     number: 13,
     title: "Ethers and Epoxides; Thiols and Sulfides",
-    topics: ["alcohols-ethers"],
-    blurb: "Williamson, epoxide ring-opening, thiol chemistry.",
+    topics: ["ethers-epoxides"],
+    blurb: "Williamson, epoxide ring-opening (acid vs base), thiol chemistry.",
   },
   {
     number: 14,
