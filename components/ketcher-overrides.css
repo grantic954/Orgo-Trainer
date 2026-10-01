@@ -7,21 +7,17 @@
  *   "toolbar-left   canvas         toolbar-right"
  *   "toolbar-bottom toolbar-bottom toolbar-bottom"
  *
- * Strategy: don't mess with the grid tracks — just hide the toolbar
- * wrappers via `display: none`. Grid rows set to `auto` collapse to 0 when
- * their contents are hidden; the canvas cell naturally expands.
+ * Strategy: don't mess with the grid tracks and don't size `.orgo-editor`
+ * (its height comes from Tailwind's h-[520px] on the JSX). Just hide the
+ * toolbar wrappers via `display: none` — grid rows set to `auto` collapse
+ * to 0 when their contents are hidden, so the canvas (row 2, 1fr) takes
+ * the full area.
  *
- * All selectors are scoped to `.orgo-editor` so they cannot leak outside of
- * <StructureEditor>. The `App-module_...` prefixes are the stable semantic
- * hooks; the hash suffix changes per Ketcher build.
+ * All selectors are scoped to `.orgo-editor`. `App-module_...` prefixes
+ * are Ketcher's stable semantic hooks (hash suffix changes per build).
  */
 
-.orgo-editor {
-  height: 100%;
-  width: 100%;
-}
-
-/* Make sure Ketcher's grid parent gets a non-zero size. */
+/* Make sure Ketcher's grid parent fills our 520px container. */
 .orgo-editor .Ketcher-root,
 .orgo-editor .Ketcher-root [class*="App-module_app"] {
   height: 100% !important;
