@@ -1,0 +1,12 @@
+{
+  "id": "synthesis-032",
+  "topic": "synthesis",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Grignard reaction: cyclohexanone + PhMgBr, then H3O+ workup. Draw the alcohol.",
+  "reactants": ["O=C1CCCCC1"],
+  "reagents": ["PhMgBr", "then H3O+"],
+  "answers": [{ "smiles": "OC1(c2ccccc2)CCCCC1", "label": "1-phenylcyclohexanol" }],
+  "concepts": ["Grignard on ketone", "tertiary alcohol"],
+  "explanation": "Phenyl Grignard attacks the C=O; workup protonates the alkoxide. The sp² carbon becomes a quaternary sp³ carbon bearing Ph, OH, and the ring — a tertiary alcohol."
+}

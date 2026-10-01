@@ -1,0 +1,14 @@
+{
+  "id": "synthesis-024",
+  "topic": "synthesis",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Reduce 3-hexyne to cis-3-hexene using Lindlar catalyst. Draw the alkene.",
+  "reactants": ["CCC#CCC"],
+  "reagents": ["H2 / Lindlar (Pd/CaCO3/Pb, quinoline)"],
+  "answers": [{ "smiles": "CC/C=C\\CC", "label": "cis-3-hexene (Z)" }],
+  "acceptable": [{ "smiles": "CCC=CCC", "label": "no stereo specified", "credit": 0.5 }],
+  "traps": [{ "smiles": "CC/C=C/CC", "trap": "stereo-ignored", "note": "Lindlar gives Z; Na/NH3(l) gives E." }],
+  "concepts": ["Lindlar", "Z-alkene from alkyne"],
+  "explanation": "H2 / Lindlar is a 'poisoned' Pd catalyst that delivers both H's to the SAME face of the alkyne (syn), giving the Z (cis) alkene. For the E isomer, use Na/NH3(l) dissolving-metal reduction."
+}

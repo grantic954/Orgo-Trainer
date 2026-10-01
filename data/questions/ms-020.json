@@ -1,0 +1,18 @@
+{
+  "id": "ms-020",
+  "topic": "ms",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "The MS below shows a prominent M+2 peak at nearly 1:1 intensity with M⁺. Which heteroatom is present?",
+  "spectrumFromSmiles": "CCCBr",
+  "spectraKinds": ["ms"],
+  "options": [
+    { "id": "br", "label": "Bromine (⁷⁹Br:⁸¹Br ≈ 1:1 natural abundance)" },
+    { "id": "cl", "label": "Chlorine (M+2 would be ~1/3 of M)" },
+    { "id": "f", "label": "Fluorine (no M+2)" },
+    { "id": "i", "label": "Iodine (no M+2 isotope pattern)" }
+  ],
+  "correctOptionId": "br",
+  "concepts": ["Br isotope pattern 1:1"],
+  "explanation": "⁷⁹Br and ⁸¹Br have nearly equal natural abundance (~51:49), so a monobrominated compound shows M⁺ and M+2 at nearly equal intensities. ³⁵Cl:³⁷Cl is ~3:1 so Cl gives M+2 at ~1/3. F and I are monoisotopic."
+}

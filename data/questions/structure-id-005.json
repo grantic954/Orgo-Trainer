@@ -1,0 +1,18 @@
+{
+  "id": "structure-id-005",
+  "topic": "structure-id",
+  "type": "mcq",
+  "difficulty": 4,
+  "prompt": "A compound has formula C4H10O. The IR shows a broad O–H around 3350 cm⁻¹ and a strong C–O around 1050 cm⁻¹. The MS shows M⁺ = 74 and a loss of 18 (M−H2O = 56). Which compound fits?",
+  "spectrumFromSmiles": "CCCCO",
+  "spectraKinds": ["ir", "ms"],
+  "options": [
+    { "id": "1-butanol", "label": "1-butanol", "smiles": "CCCCO" },
+    { "id": "diethyl-ether", "label": "Diethyl ether (no O–H!)", "smiles": "CCOCC" },
+    { "id": "butanone", "label": "2-butanone (M+ = 72, no O–H)", "smiles": "CCC(C)=O" },
+    { "id": "methyl-propyl-ether", "label": "Methyl propyl ether (no O–H)", "smiles": "COCCC" }
+  ],
+  "correctOptionId": "1-butanol",
+  "concepts": ["O–H diagnostic", "alcohol loss of water"],
+  "explanation": "Broad O–H ~3350 immediately pins the FG as an alcohol (ethers lack O–H). C–O at 1050 confirms. MS loss of 18 (H2O) is diagnostic for alcohols in EI-MS. The formula and M+ = 74 fit butanol."
+}

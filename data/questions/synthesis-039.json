@@ -1,0 +1,13 @@
+{
+  "id": "synthesis-039",
+  "topic": "synthesis",
+  "type": "draw_product",
+  "difficulty": 4,
+  "prompt": "Methyl benzoate + excess CH3MgBr (then workup). Draw the tertiary alcohol product.",
+  "reactants": ["COC(=O)c1ccccc1"],
+  "reagents": ["CH3MgBr (excess)", "then H3O+"],
+  "answers": [{ "smiles": "CC(C)(O)c1ccccc1", "label": "2-phenyl-2-propanol" }],
+  "traps": [{ "smiles": "CC(=O)c1ccccc1", "trap": "under-reaction", "note": "Grignard adds TWICE to an ester (the ketone intermediate is more reactive than the ester)." }],
+  "concepts": ["double Grignard addition on ester", "tertiary alcohol"],
+  "explanation": "First Grignard addition kicks out OMe and gives acetophenone transiently; this ketone is more electrophilic than the ester, so a second equivalent of CH3MgBr adds immediately. Workup gives the tertiary alcohol."
+}

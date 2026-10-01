@@ -1,0 +1,12 @@
+{
+  "id": "synthesis-031",
+  "topic": "synthesis",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Williamson ether synthesis of sodium phenoxide + methyl iodide. Draw the ether product.",
+  "reactants": ["[O-]c1ccccc1", "CI"],
+  "reagents": ["(SN2)"],
+  "answers": [{ "smiles": "COc1ccccc1", "label": "anisole (methyl phenyl ether)" }],
+  "concepts": ["Williamson", "O-alkylation of phenoxide"],
+  "explanation": "Phenoxide (ArO⁻) is a good nucleophile for SN2 on CH3I. In polar aprotic solvent (DMF/acetone), O-alkylation dominates over C-alkylation. Simple, high-yielding ether synthesis."
+}

@@ -1,0 +1,12 @@
+{
+  "id": "synthesis-036",
+  "topic": "synthesis",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Oxidize cyclohexanol to cyclohexanone with PCC. Draw the product.",
+  "reactants": ["OC1CCCCC1"],
+  "reagents": ["PCC, CH2Cl2"],
+  "answers": [{ "smiles": "O=C1CCCCC1", "label": "cyclohexanone" }],
+  "concepts": ["PCC on 2° alcohol"],
+  "explanation": "PCC takes 2° alcohols to ketones. Mild and anhydrous — doesn't over-oxidize."
+}

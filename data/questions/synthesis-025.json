@@ -1,0 +1,14 @@
+{
+  "id": "synthesis-025",
+  "topic": "synthesis",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Reduce 3-hexyne to trans-3-hexene using Na / NH3(l). Draw the alkene.",
+  "reactants": ["CCC#CCC"],
+  "reagents": ["Na, NH3(l)"],
+  "answers": [{ "smiles": "CC/C=C/CC", "label": "trans-3-hexene (E)" }],
+  "acceptable": [{ "smiles": "CCC=CCC", "label": "no stereo specified", "credit": 0.5 }],
+  "traps": [{ "smiles": "CC/C=C\\CC", "trap": "stereo-ignored", "note": "Dissolving-metal reduction gives E." }],
+  "concepts": ["dissolving-metal reduction", "trans alkene from alkyne"],
+  "explanation": "Na/NH3(l) reduces the alkyne through a vinyl radical anion that equilibrates to the more stable trans configuration before trapping. Opposite stereochemistry of Lindlar."
+}

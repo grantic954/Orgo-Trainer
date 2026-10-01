@@ -1,0 +1,18 @@
+{
+  "id": "ir-020",
+  "topic": "ir",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "The IR spectrum below shows strong aromatic C=C bands near 1600 and 1500 cm⁻¹, aromatic C–H above 3000 cm⁻¹, and NO C=O. Which compound is it?",
+  "spectrumFromSmiles": "Cc1ccccc1",
+  "spectraKinds": ["ir"],
+  "options": [
+    { "id": "toluene", "label": "Toluene", "smiles": "Cc1ccccc1" },
+    { "id": "acetophenone", "label": "Acetophenone", "smiles": "CC(=O)c1ccccc1" },
+    { "id": "phenol", "label": "Phenol", "smiles": "Oc1ccccc1" },
+    { "id": "benzoic", "label": "Benzoic acid", "smiles": "OC(=O)c1ccccc1" }
+  ],
+  "correctOptionId": "toluene",
+  "concepts": ["aromatic IR", "no C=O / no O–H"],
+  "explanation": "Toluene: aromatic C=C around 1600/1500, aromatic C–H above 3000 cm⁻¹, sp³ C–H just below 3000, no C=O (rules out acetophenone/benzoic acid), no O–H (rules out phenol/benzoic acid)."
+}

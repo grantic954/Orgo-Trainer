@@ -1,0 +1,13 @@
+{
+  "id": "synthesis-035",
+  "topic": "synthesis",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Convert 1-hexanol to hexanoic acid in one step with Jones reagent. Draw the acid.",
+  "reactants": ["CCCCCCO"],
+  "reagents": ["CrO3, H2SO4, H2O, acetone"],
+  "answers": [{ "smiles": "CCCCCC(=O)O", "label": "hexanoic acid" }],
+  "traps": [{ "smiles": "CCCCCC=O", "trap": "under-reaction", "note": "Jones is strong + aqueous → goes to COOH. For aldehyde, use PCC." }],
+  "concepts": ["Jones oxidation"],
+  "explanation": "Aqueous CrO3/H2SO4 oxidizes 1° alcohols all the way to carboxylic acids. The intermediate aldehyde hydrates and gets re-oxidized."
+}

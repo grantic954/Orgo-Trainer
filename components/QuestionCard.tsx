@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import type { Ketcher } from "ketcher-core";
 import { StructureEditor } from "@/components/StructureEditor";
 import { StructureView } from "@/components/StructureView";
+import { SpectrumPanel } from "@/components/SpectrumPanel";
 import { HintPanel } from "@/components/HintPanel";
 import { TutorChat } from "@/components/TutorChat";
 import {
@@ -59,6 +60,10 @@ export function QuestionCard(props: QuestionCardProps) {
             <StructureView key={i} smiles={s} width={180} height={120} title={`reactant ${i + 1}`} />
           ))}
         </section>
+      )}
+
+      {question.spectrumFromSmiles && question.spectraKinds && question.spectraKinds.length > 0 && (
+        <SpectrumPanel smiles={question.spectrumFromSmiles} kinds={question.spectraKinds} />
       )}
 
       {question.type === "mcq" && <McqBody {...props} question={question} />}

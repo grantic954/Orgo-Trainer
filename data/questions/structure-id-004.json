@@ -1,0 +1,18 @@
+{
+  "id": "structure-id-004",
+  "topic": "structure-id",
+  "type": "mcq",
+  "difficulty": 4,
+  "prompt": "A compound has molecular formula C4H8O. The IR shows a strong C=O near 1715 cm⁻¹ (no O–H). The MS shows M⁺ = 72, base peak at m/z 43 (M−29), and a notable peak at m/z 57 (M−15). Which compound fits?",
+  "spectrumFromSmiles": "CCC(C)=O",
+  "spectraKinds": ["ir", "ms"],
+  "options": [
+    { "id": "mek", "label": "2-butanone (methyl ethyl ketone)", "smiles": "CCC(C)=O" },
+    { "id": "butanal", "label": "Butanal (would show aldehyde C–H ~2820/2720)", "smiles": "CCCC=O" },
+    { "id": "thf", "label": "Tetrahydrofuran (no C=O)", "smiles": "C1CCOC1" },
+    { "id": "iso", "label": "Isobutanal", "smiles": "CC(C)C=O" }
+  ],
+  "correctOptionId": "mek",
+  "concepts": ["combined IR+MS", "α-cleavage ketone"],
+  "explanation": "Formula C4H8O + ketone C=O at 1715 narrows to a ketone (not aldehyde — no 2720 cm⁻¹ aldehyde C–H). MS: loss of 15 (CH3) gives acylium at m/z 57 [CH3CH2-C≡O+]; loss of 29 (ethyl) gives m/z 43 [CH3-C≡O+]. Both α-cleavage products are hallmarks of 2-butanone."
+}

@@ -1,0 +1,18 @@
+{
+  "id": "ms-019",
+  "topic": "ms",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "The MS below shows M⁺ = 92 and a strong peak at m/z 91 (M−1). What compound is it?",
+  "spectrumFromSmiles": "Cc1ccccc1",
+  "spectraKinds": ["ms"],
+  "options": [
+    { "id": "toluene", "label": "Toluene (loses benzylic H → tropylium cation)", "smiles": "Cc1ccccc1" },
+    { "id": "cyclohex", "label": "Cyclohexane", "smiles": "C1CCCCC1" },
+    { "id": "benzene", "label": "Benzene (M+ = 78)", "smiles": "c1ccccc1" },
+    { "id": "pyridine", "label": "Pyridine (M+ = 79)", "smiles": "c1ccncc1" }
+  ],
+  "correctOptionId": "toluene",
+  "concepts": ["tropylium at 91", "benzylic fragmentation"],
+  "explanation": "The famous m/z 91 tropylium cation (C7H7+) comes from benzylic H loss followed by ring expansion to the aromatic tropylium ring. M+ 92 confirms toluene. Benzene is M+ 78, pyridine 79, cyclohexane 84. The 91 peak is a hallmark of any alkyl benzene."
+}

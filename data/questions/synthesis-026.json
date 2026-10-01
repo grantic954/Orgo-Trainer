@@ -1,0 +1,13 @@
+{
+  "id": "synthesis-026",
+  "topic": "synthesis",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Hydroboration-oxidation of 2-methyl-2-butene (BH3·THF; then H2O2/NaOH). Draw the alcohol product.",
+  "reactants": ["CC=C(C)C"],
+  "reagents": ["BH3·THF", "then H2O2 / NaOH"],
+  "answers": [{ "smiles": "CC(O)C(C)C", "label": "3-methyl-2-butanol (anti-Markovnikov relative to the LESS substituted alkene C)" }],
+  "traps": [{ "smiles": "CCC(C)(C)O", "trap": "wrong-director", "note": "Hydroboration gives anti-Markovnikov (OH on LESS substituted carbon)." }],
+  "concepts": ["hydroboration-oxidation", "anti-Markovnikov"],
+  "explanation": "BH3 adds syn across the alkene, with B on the less hindered carbon (steric control). H2O2/NaOH replaces B with OH, keeping its position. Net: anti-Markovnikov hydration, no rearrangement."
+}

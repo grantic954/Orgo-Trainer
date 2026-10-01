@@ -1,0 +1,13 @@
+{
+  "id": "synthesis-033",
+  "topic": "synthesis",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Markovnikov addition of HBr to 2-methylpropene (isobutylene). Draw the alkyl bromide.",
+  "reactants": ["CC(C)=C"],
+  "reagents": ["HBr"],
+  "answers": [{ "smiles": "CC(C)(C)Br", "label": "2-bromo-2-methylpropane (tert-butyl bromide)" }],
+  "traps": [{ "smiles": "CC(C)CBr", "trap": "wrong-director", "note": "Markovnikov: Br on the MORE substituted carbon (makes the more stable 3° cation)." }],
+  "concepts": ["Markovnikov", "stability of 3° cation"],
+  "explanation": "Protonation gives the more stable tertiary carbocation; Br⁻ attacks there → tert-butyl bromide. Without peroxides, HBr always adds Markovnikov."
+}

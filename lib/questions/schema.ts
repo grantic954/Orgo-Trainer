@@ -55,6 +55,12 @@ export const BaseQuestionSchema = z.object({
   reagents: z.array(z.string()).default([]),
   ignoreStereo: z.boolean().default(false),
   expectsRearrangement: z.boolean().default(false),
+  // Optional spectrum embed: when set, QuestionCard renders the specified
+  // spectra (generated client-side via RDKit) of this SMILES at the top of
+  // the question. Lets Ch 14 questions show "here is the IR / MS of the
+  // mystery compound — identify it".
+  spectrumFromSmiles: z.string().optional(),
+  spectraKinds: z.array(z.enum(["ir", "hnmr", "cnmr", "ms"])).optional(),
 });
 
 export const StructureQuestionSchema = BaseQuestionSchema.extend({

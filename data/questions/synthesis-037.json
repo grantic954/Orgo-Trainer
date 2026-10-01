@@ -1,0 +1,13 @@
+{
+  "id": "synthesis-037",
+  "topic": "synthesis",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Dehydrate 2-methyl-2-butanol with conc. H2SO4, heat. Draw the major (Zaitsev) alkene.",
+  "reactants": ["CCC(C)(C)O"],
+  "reagents": ["conc. H2SO4", "heat"],
+  "answers": [{ "smiles": "CC=C(C)C", "label": "2-methyl-2-butene (Zaitsev, trisubstituted)" }],
+  "traps": [{ "smiles": "C=CC(C)C", "trap": "wrong-director", "note": "That's 3-methyl-1-butene (Hofmann, disubstituted). Zaitsev wins under thermal acid dehydration." }],
+  "concepts": ["Zaitsev", "E1 dehydration"],
+  "explanation": "E1 via a 3° cation; β-H elimination gives the most substituted alkene (Zaitsev). 2-methyl-2-butene is trisubstituted, more stable than the terminal alkene from the other β-H."
+}

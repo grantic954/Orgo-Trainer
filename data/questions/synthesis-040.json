@@ -1,0 +1,14 @@
+{
+  "id": "synthesis-040",
+  "topic": "synthesis",
+  "type": "draw_product",
+  "difficulty": 4,
+  "prompt": "SOCl2/pyridine converts (R)-2-butanol to the alkyl chloride with INVERSION. Draw the product with correct stereochemistry.",
+  "reactants": ["C[C@@H](O)CC"],
+  "reagents": ["SOCl2, pyridine"],
+  "answers": [{ "smiles": "C[C@H](Cl)CC", "label": "(S)-2-chlorobutane (inversion)" }],
+  "acceptable": [{ "smiles": "CC(Cl)CC", "label": "connectivity correct, no stereo", "credit": 0.5 }],
+  "traps": [{ "smiles": "C[C@@H](Cl)CC", "trap": "stereo-ignored", "note": "SOCl2/pyridine goes with inversion (SN2-like); without pyridine it retains (SNi)." }],
+  "concepts": ["SOCl2 stereochemistry", "pyridine effect"],
+  "explanation": "SOCl2 forms a chlorosulfite R-O-SO-Cl, releasing HCl (scavenged by pyridine). Cl⁻ then displaces the OSOCl group via SN2 → inversion. Without a base, the Cl⁻ stays on the same face (SNi) and the product has retention."
+}

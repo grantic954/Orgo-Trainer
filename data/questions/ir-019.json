@@ -1,0 +1,18 @@
+{
+  "id": "ir-019",
+  "topic": "ir",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "The IR spectrum below shows a very broad band from ~2500–3300 cm⁻¹ overlapping C–H, and a strong C=O around 1710 cm⁻¹. Which compound matches?",
+  "spectrumFromSmiles": "CCCC(=O)O",
+  "spectraKinds": ["ir"],
+  "options": [
+    { "id": "cooh", "label": "Butanoic acid (COOH)", "smiles": "CCCC(=O)O" },
+    { "id": "alcohol", "label": "1-butanol", "smiles": "CCCCO" },
+    { "id": "ketone", "label": "2-butanone", "smiles": "CCC(C)=O" },
+    { "id": "ether", "label": "Diethyl ether", "smiles": "CCOCC" }
+  ],
+  "correctOptionId": "cooh",
+  "concepts": ["COOH signature", "very broad O–H"],
+  "explanation": "The extraordinarily broad O–H (2500–3300) from H-bonded COOH dimers overlapping with C–H is the DIAGNOSTIC signature of a carboxylic acid. Alcohols show a narrower, higher O–H (3200–3550). Ketones have no O–H. Ethers have no O–H and no C=O."
+}

@@ -1,0 +1,12 @@
+{
+  "id": "synthesis-030",
+  "topic": "synthesis",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Fischer esterification of propanoic acid + ethanol (H2SO4, heat). Draw the ester product.",
+  "reactants": ["CCC(=O)O", "CCO"],
+  "reagents": ["H2SO4 (cat)", "heat"],
+  "answers": [{ "smiles": "CCOC(=O)CC", "label": "ethyl propanoate" }],
+  "concepts": ["Fischer esterification"],
+  "explanation": "Acid-catalyzed condensation of a carboxylic acid + alcohol, losing water. Equilibrium — drive forward by excess alcohol or water removal (Dean–Stark trap)."
+}

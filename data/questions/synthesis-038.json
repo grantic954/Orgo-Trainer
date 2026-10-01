@@ -1,0 +1,12 @@
+{
+  "id": "synthesis-038",
+  "topic": "synthesis",
+  "type": "draw_product",
+  "difficulty": 4,
+  "prompt": "TWO-STEP: 1-butanol → (1) TsCl, pyridine, (2) NaCN, DMSO. Draw the final nitrile.",
+  "reactants": ["CCCCO"],
+  "reagents": ["TsCl, pyridine", "then NaCN, DMSO"],
+  "answers": [{ "smiles": "CCCCC#N", "label": "pentanenitrile (chain extended by one C)" }],
+  "concepts": ["tosylate → nitrile", "chain extension"],
+  "explanation": "TsCl converts OH to OTs (great LG). NaCN SN2 displaces OTs, adding one C to the chain. Hydrolysis in acid would then give pentanoic acid (full 1-carbon homologation sequence)."
+}

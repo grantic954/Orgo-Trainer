@@ -1,0 +1,13 @@
+{
+  "id": "synthesis-027",
+  "topic": "synthesis",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Oxymercuration-demercuration of styrene (Hg(OAc)2, H2O; then NaBH4). Draw the alcohol product.",
+  "reactants": ["C=Cc1ccccc1"],
+  "reagents": ["Hg(OAc)2, H2O", "then NaBH4"],
+  "answers": [{ "smiles": "CC(O)c1ccccc1", "label": "1-phenylethanol (Markovnikov; OH on benzylic C)" }],
+  "traps": [{ "smiles": "OCCc1ccccc1", "trap": "wrong-director", "note": "Markovnikov puts OH on the more substituted (here, benzylic) carbon." }],
+  "concepts": ["oxymercuration", "Markovnikov benzylic"],
+  "explanation": "The mercurinium bridge is attacked by water at the carbon that stabilizes positive character — the benzylic position here (Ph-stabilized cation character). No rearrangement."
+}

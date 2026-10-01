@@ -1,0 +1,15 @@
+{
+  "id": "synthesis-028",
+  "topic": "synthesis",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Reductive ozonolysis of 2-methyl-2-butene (O3; then DMS). Draw BOTH organic products.",
+  "reactants": ["CC=C(C)C"],
+  "reagents": ["O3, CH2Cl2, -78 C", "then DMS"],
+  "answers": [
+    { "smiles": "CC=O", "label": "acetaldehyde" },
+    { "smiles": "CC(C)=O", "label": "acetone" }
+  ],
+  "concepts": ["ozonolysis", "reductive workup"],
+  "explanation": "O3 cleaves the C=C into two C=O groups. The CH of the alkene becomes an aldehyde (acetaldehyde); the fully substituted C becomes a ketone (acetone). DMS workup stops at the aldehyde/ketone (H2O2 workup would push 1° to COOH)."
+}

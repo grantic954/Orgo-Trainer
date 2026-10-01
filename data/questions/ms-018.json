@@ -1,0 +1,18 @@
+{
+  "id": "ms-018",
+  "topic": "ms",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "The MS below shows M⁺ at m/z 58 and a strong base peak at m/z 43 (M−15). Which compound matches?",
+  "spectrumFromSmiles": "CC(C)=O",
+  "spectraKinds": ["ms"],
+  "options": [
+    { "id": "acetone", "label": "Acetone", "smiles": "CC(C)=O" },
+    { "id": "propanal", "label": "Propanal", "smiles": "CCC=O" },
+    { "id": "propanol", "label": "1-propanol (M+ = 60)", "smiles": "CCCO" },
+    { "id": "butane", "label": "Butane (M+ = 58, but no α-cleavage pattern)", "smiles": "CCCC" }
+  ],
+  "correctOptionId": "acetone",
+  "concepts": ["α-cleavage of ketone", "loss of methyl"],
+  "explanation": "M = 58 fits C3H6O (acetone or propanal). Loss of 15 (methyl) with 43 as base peak is characteristic of acetone's α-cleavage: [CH3-CO]+ acylium ion. Propanal would lose H (29 = CHO) more strongly. Butane has M+ 58 but fragments differently (no acylium pathway)."
+}

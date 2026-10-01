@@ -1,0 +1,18 @@
+{
+  "id": "ir-018",
+  "topic": "ir",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "A compound with molecular formula C4H8O2 shows the IR spectrum below. There is NO O–H stretch. Which compound is it?",
+  "spectrumFromSmiles": "CCOC(C)=O",
+  "spectraKinds": ["ir"],
+  "options": [
+    { "id": "etoac", "label": "Ethyl acetate (ester)", "smiles": "CCOC(C)=O" },
+    { "id": "butanoic", "label": "Butanoic acid", "smiles": "CCCC(=O)O" },
+    { "id": "diol", "label": "1,2-butanediol", "smiles": "CCC(O)CO" },
+    { "id": "mek", "label": "2-butanone", "smiles": "CCC(C)=O" }
+  ],
+  "correctOptionId": "etoac",
+  "concepts": ["ester IR signature", "no O–H rules out COOH/diol"],
+  "explanation": "The absence of O–H rules out COOH and diol. The strong C=O around 1735 cm⁻¹ with a strong C–O (ester second band ~1200) and sp3 C–H below 3000 is the ester pattern. 2-butanone would show C=O around 1715 but formula is C4H8O, not C4H8O2."
+}
