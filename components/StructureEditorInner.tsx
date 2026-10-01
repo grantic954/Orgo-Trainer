@@ -35,6 +35,28 @@ export default function StructureEditorInner({
     };
   }, []);
 
+  // Prevent Ketcher's canvas from capturing the mouse wheel. Default
+  // behavior is: wheel over the canvas pans / zooms Ketcher's internal view,
+  // which steals page scroll whenever the cursor happens to be over the
+  // editor. We swallow the wheel event in capture phase (and re-dispatch it
+  // to the window so the page scrolls instead), and only let it through
+  // when Ctrl / Cmd is held — that's the standard "zoom" shortcut and keeps
+  // Ketcher's zoom-to-fit UX intact.
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+    function onWheel(e: WheelEvent) {
+      if (e.ctrlKey || e.metaKey) return; // allow Ctrl+scroll zoom in Ketcher
+      e.stopImmediatePropagation();
+      // Let the browser handle the page scroll naturally.
+    }
+    el.addEventListener("wheel", onWheel, { capture: true, passive: true });
+    return () => {
+      el.removeEventListener("wheel", onWheel, { capture: true });
+    };
+  }, []);
+
   // Hold-Space to pan: switch to hand tool while held, restore prior tool on
   // release. Scoped to the window so it works regardless of focus.
   useEffect(() => {
@@ -75,7 +97,10 @@ export default function StructureEditorInner({
   }, []);
 
   return (
-    <div className="orgo-editor h-[520px] w-full overflow-hidden rounded border border-neutral-200 bg-white">
+    <div
+      ref={containerRef}
+      className="orgo-editor h-[520px] w-full overflow-hidden rounded border border-neutral-200 bg-white"
+    >
       <Editor
         staticResourcesUrl=""
         structServiceProvider={provider}
