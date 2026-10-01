@@ -1,0 +1,16 @@
+{
+  "id": "synthesis-017",
+  "topic": "synthesis",
+  "type": "mcq",
+  "difficulty": 5,
+  "prompt": "CHALLENGE: You want to selectively reduce the C=O of an α,β-unsaturated ketone (R-CO-CH=CH-R') to give the allylic alcohol — keeping the C=C intact. Which reagent?",
+  "options": [
+    { "id": "luche", "label": "NaBH₄ with CeCl₃ (Luche conditions) — selectively does 1,2-reduction" },
+    { "id": "h2pt", "label": "H₂ / Pt (reduces both C=C and C=O)" },
+    { "id": "lah", "label": "LiAlH₄ at room temp (gives mixtures; often conjugate reduction competes)" },
+    { "id": "nabh4-plain", "label": "Plain NaBH₄ (often gives 1,4-reduction)" }
+  ],
+  "correctOptionId": "luche",
+  "concepts": ["selective reduction", "soft vs hard nucleophiles"],
+  "explanation": "CeCl₃ activates the C=O (makes it harder, more electrophilic), so NaBH₄ (hard nucleophile) does 1,2-addition — reduces only the carbonyl, keeps the alkene. Plain NaBH₄ often gives Michael addition (1,4-reduction) with enones."
+}

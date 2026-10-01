@@ -1,0 +1,16 @@
+{
+  "id": "radicals-016",
+  "topic": "radicals",
+  "type": "mcq",
+  "difficulty": 5,
+  "prompt": "CHALLENGE: CFCs (e.g., CF₂Cl₂) deplete stratospheric ozone via radical chemistry. The first catalytic step involves:",
+  "options": [
+    { "id": "cl-attack", "label": "UV photolysis of a C–Cl bond releases Cl•, which then attacks O₃: Cl• + O₃ → ClO• + O₂." },
+    { "id": "c-f", "label": "Cl• attacks a C–F bond." },
+    { "id": "o3-direct", "label": "The whole CFC molecule reacts intact with O₃." },
+    { "id": "water", "label": "Hydrolysis of the CFC releases HCl." }
+  ],
+  "correctOptionId": "cl-attack",
+  "concepts": ["application: ozone depletion", "catalytic radical cycle"],
+  "explanation": "Stratospheric UV cleaves the weakest C–X in a CFC (C–Cl) to Cl•. Cl• then catalytically destroys O₃: Cl• + O₃ → ClO• + O₂; ClO• + O → Cl• + O₂. One Cl atom can destroy ~10⁵ O₃ molecules before being removed."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ms-012",
+  "topic": "ms",
+  "type": "mcq",
+  "difficulty": 5,
+  "prompt": "CHALLENGE: In drug metabolism studies, researchers often use deuterium (²H) labeling. If a drug's methyl group is replaced with CD₃, how does its MS fragmentation change?",
+  "options": [
+    { "id": "m-plus-3", "label": "Fragments containing the methyl group shift up by 3 mass units; fragments that lost the methyl are unchanged — the pattern reveals which fragments retain the methyl position." },
+    { "id": "no-change", "label": "No change — isotopes don't matter in MS." },
+    { "id": "doubles", "label": "The entire spectrum doubles in intensity." },
+    { "id": "ionizes", "label": "The drug ionizes differently." }
+  ],
+  "correctOptionId": "m-plus-3",
+  "concepts": ["application: isotope labeling", "mechanism elucidation"],
+  "explanation": "CD₃ is 3 Da heavier than CH₃. Any fragment still containing that methyl appears at m + 3; any fragment that lost the methyl is at the same m. This 'label scrambling' tracks mechanism and reveals where a group ends up in each fragment — standard in pharma metabolism studies."
+}

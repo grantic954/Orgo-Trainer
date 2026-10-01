@@ -1,0 +1,16 @@
+{
+  "id": "ir-009",
+  "topic": "ir",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "An IR shows a very broad O–H (2500–3300 cm⁻¹) overlapping with C–H, plus a C=O at 1710. The functional group is:",
+  "options": [
+    { "id": "cooh", "label": "Carboxylic acid (characteristic very broad O–H + C=O)" },
+    { "id": "alcohol", "label": "Alcohol with a separate ketone" },
+    { "id": "amide", "label": "Amide" },
+    { "id": "ester", "label": "Ester" }
+  ],
+  "correctOptionId": "cooh",
+  "concepts": ["COOH signature"],
+  "explanation": "The very broad O–H (from hydrogen-bonded carboxylic acid dimers) spanning 2500–3300 overlapping with C–H is COOH-specific. Combined with the C=O at ~1710, that's a diagnostic COOH pattern. Alcohols have a narrower O–H at 3200–3550."
+}

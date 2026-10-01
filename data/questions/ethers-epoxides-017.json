@@ -1,0 +1,16 @@
+{
+  "id": "ethers-epoxides-017",
+  "topic": "ethers-epoxides",
+  "type": "mcq",
+  "difficulty": 5,
+  "prompt": "CHALLENGE: Why is crown ether 18-crown-6 particularly effective at solubilizing K⁺ salts in nonpolar solvents?",
+  "options": [
+    { "id": "fit", "label": "The cavity size of 18-crown-6 is a near-perfect match for K⁺'s ionic radius; six ether oxygens coordinate the K⁺ while the hydrocarbon exterior is solvent-compatible." },
+    { "id": "charge", "label": "The crown ether is negatively charged." },
+    { "id": "reduce", "label": "It reduces K⁺ to K metal." },
+    { "id": "polar", "label": "The crown is more polar than most solvents." }
+  ],
+  "correctOptionId": "fit",
+  "concepts": ["application: crown ethers", "size-selective chelation"],
+  "explanation": "The '18' is the ring size; '6' is the number of oxygens. 18-crown-6 has a cavity (~2.6 Å) that matches K⁺ (~2.7 Å). It wraps around K⁺ like a lifesaver, exposing the hydrophobic CH₂CH₂ exterior to the solvent. 12-crown-4 fits Li⁺; 15-crown-5 fits Na⁺."
+}

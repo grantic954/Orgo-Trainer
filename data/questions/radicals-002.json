@@ -1,0 +1,16 @@
+{
+  "id": "radicals-002",
+  "topic": "radicals",
+  "type": "mcq",
+  "difficulty": 1,
+  "prompt": "Radical halogenation of alkanes proceeds via three mechanistic phases. In order, they are:",
+  "options": [
+    { "id": "ipt", "label": "Initiation → Propagation → Termination" },
+    { "id": "pit", "label": "Propagation → Initiation → Termination" },
+    { "id": "itp", "label": "Initiation → Termination → Propagation" },
+    { "id": "tip", "label": "Termination → Initiation → Propagation" }
+  ],
+  "correctOptionId": "ipt",
+  "concepts": ["chain mechanism", "radical phases"],
+  "explanation": "Initiation generates the first radicals (homolysis of X₂ under hν or heat). Propagation grows the chain (abstraction + halogen transfer). Termination couples two radicals and ends the chain."
+}

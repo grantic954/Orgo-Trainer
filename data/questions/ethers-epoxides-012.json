@@ -1,0 +1,16 @@
+{
+  "id": "ethers-epoxides-012",
+  "topic": "ethers-epoxides",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "Why are epoxides so much more reactive than typical ethers?",
+  "options": [
+    { "id": "strain", "label": "The 3-membered ring has ~27 kcal/mol of ring strain; relieving strain is a large driving force." },
+    { "id": "polar", "label": "The C–O bond is more polar." },
+    { "id": "res", "label": "Resonance stabilization of the open form." },
+    { "id": "o-charge", "label": "The oxygen has a formal + charge." }
+  ],
+  "correctOptionId": "strain",
+  "concepts": ["ring strain", "epoxide reactivity"],
+  "explanation": "Epoxides have significant angle strain (60° vs ideal 109.5°) and torsional strain. Opening the ring releases that strain, making epoxides reactive even with weak nucleophiles — unlike normal ethers."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "alcohols-phenols-014",
+  "topic": "alcohols-phenols",
+  "type": "mcq",
+  "difficulty": 4,
+  "prompt": "Why does a 1° alcohol undergo HBr conversion via SN2 while a 3° alcohol goes via SN1?",
+  "options": [
+    { "id": "cation-stability", "label": "The 3° carbocation is stable enough to form before Br⁻ attacks; the 1° carbocation is too unstable, so Br⁻ displaces water in a concerted step." },
+    { "id": "sterics", "label": "The 1° OH is less hindered." },
+    { "id": "polarity", "label": "The 3° OH is more polar." },
+    { "id": "ring", "label": "Only 3° alcohols form rings." }
+  ],
+  "correctOptionId": "cation-stability",
+  "concepts": ["mechanism dependence on substrate", "SN1 vs SN2"],
+  "explanation": "Both substrates are first protonated (good leaving group = H₂O). 3° gives a stable carbocation (SN1); 1° has no stable cation, so Br⁻ attacks concertedly with H₂O leaving (SN2). 2° can go either way."
+}

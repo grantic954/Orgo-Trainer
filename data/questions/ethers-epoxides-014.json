@@ -1,0 +1,13 @@
+{
+  "id": "ethers-epoxides-014",
+  "topic": "ethers-epoxides",
+  "type": "draw_product",
+  "difficulty": 4,
+  "prompt": "Williamson ether synthesis: NaOCH(CH₃)₂ (sodium isopropoxide) + 1-bromopentane. Draw the product.",
+  "reactants": ["CCCCCBr", "CC(C)O"],
+  "reagents": ["NaH (first)", "then combine"],
+  "answers": [{ "smiles": "CCCCCOC(C)C", "label": "isopropyl pentyl ether" }],
+  "traps": [{ "smiles": "CCCCCO", "trap": "wrong-director", "note": "That would be the alcohol product of SN2 by hydroxide, not alkoxide." }],
+  "concepts": ["Williamson strategy", "pick 1° halide"],
+  "explanation": "For an unsymmetrical ether, use the LESS hindered alkyl halide for SN2 and the more hindered alkoxide. Here: pentyl bromide (1°) + isopropoxide (2°) is the clean choice. Reversing (isopropyl bromide + pentyl alkoxide) risks E2."
+}

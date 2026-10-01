@@ -1,0 +1,16 @@
+{
+  "id": "ir-011",
+  "topic": "ir",
+  "type": "mcq",
+  "difficulty": 4,
+  "prompt": "Why does the C=O of a cyclopentanone (five-membered ring ketone) appear at ~1745 cm⁻¹, HIGHER than acetone (1715)?",
+  "options": [
+    { "id": "strain", "label": "Ring strain forces smaller internal angles at the carbonyl C, increasing s-character of the C=O bond and raising its force constant." },
+    { "id": "polar", "label": "Cyclopentanone is more polar." },
+    { "id": "res", "label": "Cyclopentanone has more resonance." },
+    { "id": "mass", "label": "The reduced mass is lower." }
+  ],
+  "correctOptionId": "strain",
+  "concepts": ["ring size vs C=O frequency"],
+  "explanation": "Smaller rings compress the C–C=O angle; the C must use more p-character for the ring σ bonds and MORE s-character for the C=O π/σ system → stiffer C=O → higher frequency. The trend: cyclohexanone 1715 ≈ acetone, cyclopentanone 1745, cyclobutanone 1780, cyclopropanone 1815."
+}

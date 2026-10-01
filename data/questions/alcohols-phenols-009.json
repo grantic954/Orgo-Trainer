@@ -1,0 +1,12 @@
+{
+  "id": "alcohols-phenols-009",
+  "topic": "alcohols-phenols",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Convert 1-butanol to 1-chlorobutane with SOCl₂ (and pyridine). Draw the product.",
+  "reactants": ["CCCCO"],
+  "reagents": ["SOCl2", "pyridine"],
+  "answers": [{ "smiles": "CCCCCl", "label": "1-chlorobutane" }],
+  "concepts": ["alcohol → alkyl halide", "SOCl2"],
+  "explanation": "SOCl₂ converts R-OH to R-Cl via a chlorosulfite intermediate. Pyridine scavenges HCl. SN2-like with retention or inversion depending on conditions."
+}

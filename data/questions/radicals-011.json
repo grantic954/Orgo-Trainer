@@ -1,0 +1,13 @@
+{
+  "id": "radicals-011",
+  "topic": "radicals",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Benzylic bromination of ethylbenzene with NBS/hν. Draw the major product.",
+  "reactants": ["CCc1ccccc1"],
+  "reagents": ["NBS", "hν"],
+  "answers": [{ "smiles": "CC(Br)c1ccccc1", "label": "(1-bromoethyl)benzene (α-bromoethylbenzene)" }],
+  "traps": [{ "smiles": "BrCCc1ccccc1", "trap": "regio-wrong", "note": "Br prefers the benzylic position (most stable radical)." }],
+  "concepts": ["benzylic bromination", "NBS"],
+  "explanation": "The benzylic C–H has the weakest bond and the resulting benzylic radical is highly stabilized by resonance into the ring. NBS supplies low [Br₂] and the benzylic position wins."
+}

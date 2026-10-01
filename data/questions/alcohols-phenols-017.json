@@ -1,0 +1,16 @@
+{
+  "id": "alcohols-phenols-017",
+  "topic": "alcohols-phenols",
+  "type": "mcq",
+  "difficulty": 5,
+  "prompt": "CHALLENGE: Industrial production of phenol via the cumene process involves radical autoxidation of cumene (isopropylbenzene) to cumene hydroperoxide, then acid-catalyzed Hock rearrangement. The acid step cleaves to:",
+  "options": [
+    { "id": "ph-acetone", "label": "Phenol + acetone" },
+    { "id": "cresol", "label": "p-cresol + methanol" },
+    { "id": "benzoic", "label": "Benzoic acid + propane" },
+    { "id": "styrene", "label": "Styrene + water" }
+  ],
+  "correctOptionId": "ph-acetone",
+  "concepts": ["application: industrial phenol", "Hock rearrangement"],
+  "explanation": "The cumene process is the dominant industrial phenol synthesis (~95% worldwide). Acid-catalyzed rearrangement of cumene hydroperoxide (Ph-C(CH₃)₂-OOH) cleaves to phenol + acetone. Both are valuable products — the economics only work because acetone is co-produced."
+}

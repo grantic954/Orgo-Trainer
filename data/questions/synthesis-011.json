@@ -1,0 +1,16 @@
+{
+  "id": "synthesis-011",
+  "topic": "synthesis",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "Target: 3-methyl-3-pentanol. Shortest route uses Grignard addition to which carbonyl?",
+  "options": [
+    { "id": "pent-two-eth", "label": "3-pentanone + CH₃MgBr" },
+    { "id": "two-but-eth", "label": "2-butanone + CH₃CH₂MgBr" },
+    { "id": "ace-two-prop", "label": "Acetone + 2× CH₃CH₂MgBr" },
+    { "id": "either_a_or_b", "label": "Either (A) or (B) works — both give 3-methyl-3-pentanol" }
+  ],
+  "correctOptionId": "either_a_or_b",
+  "concepts": ["Grignard disconnection", "tertiary alcohol"],
+  "explanation": "3-methyl-3-pentanol has three substituents on the C-OH: CH₃, CH₂CH₃, CH₂CH₃. You can disconnect either Me (from 3-pentanone + MeMgBr) or Et (from 2-butanone + EtMgBr) — both are valid one-step routes."
+}

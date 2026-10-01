@@ -1,0 +1,16 @@
+{
+  "id": "synthesis-009",
+  "topic": "synthesis",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "You want to turn 1-butyne into 2-butanone. Which sequence works?",
+  "options": [
+    { "id": "hyd-mark", "label": "H₂O, H₂SO₄, HgSO₄ (acid-catalyzed hydration gives Markovnikov → ketone)" },
+    { "id": "hyd-anti", "label": "BH₃·THF then H₂O₂/NaOH (anti-Markovnikov → aldehyde, not ketone)" },
+    { "id": "lindlar", "label": "H₂ / Lindlar (gives alkene, not ketone)" },
+    { "id": "ozone", "label": "O₃ then DMS (cleaves the triple bond)" }
+  ],
+  "correctOptionId": "hyd-mark",
+  "concepts": ["alkyne hydration", "Markovnikov vs anti-Markovnikov"],
+  "explanation": "Markovnikov hydration of a terminal alkyne (Hg²⁺ catalysis) places OH on the internal C, giving an enol that tautomerizes to the methyl ketone (2-butanone). The anti-Markovnikov (BH₃) route gives the aldehyde."
+}

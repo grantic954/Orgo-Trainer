@@ -1,0 +1,13 @@
+{
+  "id": "ethers-epoxides-011",
+  "topic": "ethers-epoxides",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Acidic ring-opening of propylene oxide with H₂O / H₂SO₄. Draw the major product.",
+  "reactants": ["CC1CO1"],
+  "reagents": ["H2O", "H2SO4 (cat)"],
+  "answers": [{ "smiles": "CC(O)CO", "label": "1,2-propanediol (Markovnikov-like: attack at more subst C)" }],
+  "acceptable": [{ "smiles": "CC(CO)O", "label": "same molecule, different drawing", "credit": 1 }],
+  "concepts": ["acid epoxide opening", "regioselectivity"],
+  "explanation": "Protonation of the epoxide gives partial cation character at the more substituted (2°) C. H₂O attacks there, giving 1,2-propanediol with OH on the originally substituted carbon."
+}

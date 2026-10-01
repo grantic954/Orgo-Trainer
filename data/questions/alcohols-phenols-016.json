@@ -1,0 +1,13 @@
+{
+  "id": "alcohols-phenols-016",
+  "topic": "alcohols-phenols",
+  "type": "draw_product",
+  "difficulty": 4,
+  "prompt": "Phenol + Br₂ (excess) in H₂O. Draw the major product (phenol is strongly activated).",
+  "reactants": ["Oc1ccccc1"],
+  "reagents": ["Br2 (excess)", "H2O"],
+  "answers": [{ "smiles": "Oc1c(Br)cc(Br)cc1Br", "label": "2,4,6-tribromophenol" }],
+  "traps": [{ "smiles": "Oc1ccc(Br)cc1", "trap": "under-reaction", "note": "Phenol is so activated that it over-brominates to the 2,4,6-tribromo product even without a Lewis acid." }],
+  "concepts": ["phenol over-activation", "polybromination"],
+  "explanation": "Phenol doesn't need FeBr₃ — the OH's lone pair strongly activates all three o/p positions. In H₂O with excess Br₂, all three positions get brominated to give 2,4,6-tribromophenol."
+}

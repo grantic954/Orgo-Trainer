@@ -1,0 +1,16 @@
+{
+  "id": "radicals-018",
+  "topic": "radicals",
+  "type": "mcq",
+  "difficulty": 5,
+  "prompt": "CHALLENGE: Diethyl ether and THF form peroxides on storage in air. Why is this dangerous?",
+  "options": [
+    { "id": "autox", "label": "The α-C–H to oxygen is weakened by lone-pair donation; O₂ abstracts it to form an α-hydroperoxide (ROOR'OOH) that can detonate on concentration (e.g., during distillation)." },
+    { "id": "polymer", "label": "They polymerize into solid plastics." },
+    { "id": "evaporate", "label": "They evaporate explosively." },
+    { "id": "o2-dissolve", "label": "They dissolve too much O₂." }
+  ],
+  "correctOptionId": "autox",
+  "concepts": ["application: autoxidation", "ether peroxides", "lab safety"],
+  "explanation": "Ether O lone pairs weaken the adjacent α-C–H by hyperconjugation. Over time, atmospheric O₂ abstracts those H's to form explosive α-hydroperoxides. This is why old ethers must never be distilled to dryness and are tested for peroxides before use."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "radicals-009",
+  "topic": "radicals",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Addition of HBr to propene in the presence of peroxides (ROOR). Draw the major product.",
+  "reactants": ["CC=C"],
+  "reagents": ["HBr", "ROOR (peroxide)", "hν"],
+  "answers": [{ "smiles": "CCCBr", "label": "1-bromopropane (anti-Markovnikov)" }],
+  "traps": [{ "smiles": "CC(Br)C", "trap": "wrong-director", "note": "Peroxides flip to anti-Markovnikov via radical mechanism; without peroxides, Markovnikov applies." }],
+  "concepts": ["peroxide effect", "anti-Markovnikov HBr", "radical addition"],
+  "explanation": "Peroxides initiate a radical chain. Br• adds to the less-substituted carbon (gives the more stable 2° C radical intermediate), then abstracts H from HBr → anti-Markovnikov product. Note: only HBr shows this effect, not HCl or HI."
+}

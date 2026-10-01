@@ -1,0 +1,16 @@
+{
+  "id": "synthesis-006",
+  "topic": "synthesis",
+  "type": "mcq",
+  "difficulty": 1,
+  "prompt": "The 'retrosynthetic' arrow (⇒) means:",
+  "options": [
+    { "id": "disc", "label": "This bond could be disconnected to simpler precursors; it is NOT a forward reaction." },
+    { "id": "fwd", "label": "A forward reaction, same as →." },
+    { "id": "eq", "label": "Equilibrium." },
+    { "id": "res", "label": "Resonance." }
+  ],
+  "correctOptionId": "disc",
+  "concepts": ["retrosynthesis notation"],
+  "explanation": "The retro arrow (⇒) points FROM the target TO its precursors. It asks: 'what simpler molecules could I combine to form this bond?' — the opposite direction of the actual synthesis."
+}

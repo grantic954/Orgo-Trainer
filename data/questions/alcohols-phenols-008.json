@@ -1,0 +1,13 @@
+{
+  "id": "alcohols-phenols-008",
+  "topic": "alcohols-phenols",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Dehydration of 2-butanol with H₂SO₄, heat. Draw the major alkene product (Zaitsev).",
+  "reactants": ["CCC(C)O"],
+  "reagents": ["H2SO4", "heat"],
+  "answers": [{ "smiles": "CC=CC", "label": "2-butene (more substituted, Zaitsev)" }],
+  "traps": [{ "smiles": "CCC=C", "trap": "wrong-director", "note": "Zaitsev favors the more substituted alkene (2-butene over 1-butene)." }],
+  "concepts": ["E1 dehydration", "Zaitsev"],
+  "explanation": "Acid dehydration proceeds through a 2° carbocation; β-H elimination gives the more substituted (and thermodynamically stable) 2-butene as the major product."
+}

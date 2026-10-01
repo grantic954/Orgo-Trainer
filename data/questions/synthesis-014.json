@@ -1,0 +1,16 @@
+{
+  "id": "synthesis-014",
+  "topic": "synthesis",
+  "type": "mcq",
+  "difficulty": 4,
+  "prompt": "Target: 1-pentanol starting from 1-butanol. Chain extension by one carbon is best done via:",
+  "options": [
+    { "id": "cn-route", "label": "1-butanol → 1-bromobutane (HBr) → butanenitrile (NaCN) → pentanoic acid (H₃O⁺) → 1-pentanol (LiAlH₄). Adds the CN carbon." },
+    { "id": "grig-formald", "label": "1-butanol → 1-bromobutane → BuMgBr → formaldehyde (HCHO), workup — adds one C via Grignard + HCHO" },
+    { "id": "both", "label": "Both (A) and (B) are valid chain-extension routes" },
+    { "id": "neither", "label": "Chain extension by one carbon isn't possible" }
+  ],
+  "correctOptionId": "both",
+  "concepts": ["chain extension", "retrosynthesis"],
+  "explanation": "Both are classic one-carbon chain extensions: nitrile hydrolysis adds the CN carbon (ultimately as -CH₂OH after full reduction); Grignard + formaldehyde adds HCHO's carbon. Grignard is usually shorter (2 steps vs 4)."
+}

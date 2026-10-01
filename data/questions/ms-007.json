@@ -1,0 +1,16 @@
+{
+  "id": "ms-007",
+  "topic": "ms",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "An unknown shows M⁺ at m/z = 78 and an M+2 peak about 1/3 the height of M⁺. The molecular formula is MOST likely:",
+  "options": [
+    { "id": "c6h6", "label": "C₆H₆ (benzene) — but no M+2 pattern" },
+    { "id": "cl", "label": "A chlorinated compound (M = 78 could be C₂H₇Cl)" },
+    { "id": "br", "label": "A brominated compound (would give ~1:1 M, M+2)" },
+    { "id": "n", "label": "Nitrogen-containing" }
+  ],
+  "correctOptionId": "cl",
+  "concepts": ["Cl isotope pattern"],
+  "explanation": "³⁵Cl : ³⁷Cl ≈ 3:1 natural abundance → M+2 is about 1/3 of M⁺. Benzene (78) has no M+2 pattern (just a tiny ¹³C-based M+1). Br would give nearly 1:1."
+}

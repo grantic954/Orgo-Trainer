@@ -1,0 +1,15 @@
+{
+  "id": "ms-009",
+  "topic": "ms",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "A compound with M⁺ = 59 shows strong fragments at 44 (M−15) and 29. These fragments suggest the compound is MOST likely:",
+  "options": [
+    { "id": "dmf", "label": "N,N-dimethylformamide (M = 73, no — mass doesn't fit)" },
+    { "id": "alde-amine", "label": "An aldehyde or amine (M = 59 fits propionamide HCONHCH3 or similar; losses of 15 (CH3) and 29 (CHO) are classic)" },
+    { "id": "ketone", "label": "Acetone (M = 58, close but off by 1)" }
+  ],
+  "correctOptionId": "alde-amine",
+  "concepts": ["fragment loss analysis"],
+  "explanation": "M = 59 with loss of 15 (CH₃) and 29 (CHO or C₂H₅) is characteristic of small amides/aldehydes. Nitrogen rule: odd M = odd number of N atoms, so a 1-N species like N-methylacetamide (CH₃CONHCH₃, M = 73 — no), or a smaller N compound fits."
+}

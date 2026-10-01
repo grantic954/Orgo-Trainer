@@ -1,0 +1,16 @@
+{
+  "id": "alcohols-phenols-007",
+  "topic": "alcohols-phenols",
+  "type": "mcq",
+  "difficulty": 1,
+  "prompt": "Which reagent reduces a ketone to a secondary alcohol?",
+  "options": [
+    { "id": "nabh4", "label": "NaBH₄ in MeOH" },
+    { "id": "pcc", "label": "PCC (oxidizes, not reduces)" },
+    { "id": "jones", "label": "CrO₃/H₂SO₄" },
+    { "id": "kmno4", "label": "KMnO₄, hot" }
+  ],
+  "correctOptionId": "nabh4",
+  "concepts": ["carbonyl reduction"],
+  "explanation": "NaBH₄ is a mild hydride source that reduces aldehydes and ketones to the corresponding alcohols. PCC, Jones, and KMnO₄ oxidize alcohols — the opposite direction."
+}

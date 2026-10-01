@@ -1,0 +1,16 @@
+{
+  "id": "ms-010",
+  "topic": "ms",
+  "type": "mcq",
+  "difficulty": 4,
+  "prompt": "The McLafferty rearrangement produces an even-mass fragment via:",
+  "options": [
+    { "id": "concerted", "label": "A concerted 6-membered transition state in which the γ-H migrates to the C=O oxygen while the α,β bond cleaves, giving an alkene + enol radical cation." },
+    { "id": "sn2", "label": "SN2 displacement at the α-carbon." },
+    { "id": "beta-elim", "label": "Simple β-elimination." },
+    { "id": "retro-aldol", "label": "A retro-aldol." }
+  ],
+  "correctOptionId": "concerted",
+  "concepts": ["McLafferty mechanism"],
+  "explanation": "McLafferty: γ-H is transferred to the C=O oxygen through a 6-membered TS; the α-β C–C bond cleaves. The products are a neutral alkene + an enol-form radical cation. Diagnostic for aldehydes/ketones/esters with γ-H."
+}

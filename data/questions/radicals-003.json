@@ -1,0 +1,16 @@
+{
+  "id": "radicals-003",
+  "topic": "radicals",
+  "type": "rank",
+  "difficulty": 2,
+  "prompt": "Rank these carbon radicals by stability (least → most stable):",
+  "items": [
+    { "id": "methyl", "label": "•CH₃ (methyl)" },
+    { "id": "primary", "label": "Primary (1°) alkyl radical" },
+    { "id": "secondary", "label": "Secondary (2°) alkyl radical" },
+    { "id": "tertiary", "label": "Tertiary (3°) alkyl radical" }
+  ],
+  "correctOrder": ["methyl", "primary", "secondary", "tertiary"],
+  "concepts": ["radical stability", "hyperconjugation"],
+  "explanation": "Alkyl groups stabilize radicals by hyperconjugation (overlap of σ C–H bonds with the half-filled p orbital). More alkyl groups → more stabilization. Same trend as carbocations."
+}

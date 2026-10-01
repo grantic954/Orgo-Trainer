@@ -1,0 +1,12 @@
+{
+  "id": "ethers-epoxides-008",
+  "topic": "ethers-epoxides",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Cleavage of diethyl ether with HI (excess, hot). Draw the major alkyl halide products.",
+  "reactants": ["CCOCC"],
+  "reagents": ["HI (excess)", "heat"],
+  "answers": [{ "smiles": "CCI", "label": "ethyl iodide (×2 after full cleavage)" }],
+  "concepts": ["acid cleavage of ethers", "HI/HBr"],
+  "explanation": "Hot HI protonates the ether O; I⁻ (strong nucleophile, SN2) displaces to give one alkyl iodide + one alcohol. Excess HI converts the alcohol too, giving two equivalents of EtI."
+}

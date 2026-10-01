@@ -1,6 +1,6 @@
 {
   "id": "alcohols-ethers-001",
-  "topic": "alcohols-ethers",
+  "topic": "alcohols-phenols",
   "type": "draw_product",
   "difficulty": 2,
   "prompt": "Predict the product of acid-catalyzed hydration (water + H₂SO₄) of propene.",

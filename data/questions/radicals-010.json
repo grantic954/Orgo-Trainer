@@ -1,0 +1,16 @@
+{
+  "id": "radicals-010",
+  "topic": "radicals",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "In which of these radical reactions does propagation NOT regenerate a chain carrier?",
+  "options": [
+    { "id": "rec", "label": "R• + R'• → R–R' (two radicals combine)" },
+    { "id": "abs", "label": "R• + Cl₂ → R–Cl + Cl• (halogen transfer)" },
+    { "id": "add", "label": "Br• + CH₂=CHR → Br–CH₂–CHR• (addition)" },
+    { "id": "habs", "label": "Cl• + R–H → H–Cl + R• (H abstraction)" }
+  ],
+  "correctOptionId": "rec",
+  "concepts": ["termination vs propagation"],
+  "explanation": "Combining two radicals consumes both and gives a closed-shell molecule — that is TERMINATION. Propagation steps always produce exactly one radical from one radical (net chain carrier conserved)."
+}

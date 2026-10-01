@@ -1,0 +1,12 @@
+{
+  "id": "alcohols-phenols-011",
+  "topic": "alcohols-phenols",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Dess–Martin periodinane (DMP) oxidation of 2-pentanol. Draw the product.",
+  "reactants": ["CCCC(C)O"],
+  "reagents": ["DMP", "CH2Cl2"],
+  "answers": [{ "smiles": "CCCC(C)=O", "label": "2-pentanone" }],
+  "concepts": ["DMP oxidation", "2° alcohol → ketone"],
+  "explanation": "DMP is a mild, neutral oxidant that converts 2° alcohols to ketones (and 1° alcohols to aldehydes, like PCC) under anhydrous conditions."
+}

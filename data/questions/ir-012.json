@@ -1,0 +1,16 @@
+{
+  "id": "ir-012",
+  "topic": "ir",
+  "type": "mcq",
+  "difficulty": 5,
+  "prompt": "CHALLENGE: Why can IR spectroscopy be used in real-time breath analysis to monitor patient blood alcohol levels?",
+  "options": [
+    { "id": "etoh-band", "label": "Ethanol has a strong, characteristic C–O stretch (~1050) and sharp O–H that quantitatively correlate with concentration in exhaled vapor; absorbance is proportional to concentration (Beer's law)." },
+    { "id": "fluor", "label": "Ethanol fluoresces in IR." },
+    { "id": "o2", "label": "IR measures O₂ consumption." },
+    { "id": "fingerprint", "label": "Ethanol has a unique fingerprint region only." }
+  ],
+  "correctOptionId": "etoh-band",
+  "concepts": ["application: breathalyzer", "Beer–Lambert law"],
+  "explanation": "Modern infrared breathalyzers use a specific wavelength around ethanol's C–O stretch. Beer's law makes the absorbance linear with concentration; the blood/breath ratio (~2100:1) converts breath to blood level. Reliable, non-invasive, and specific."
+}

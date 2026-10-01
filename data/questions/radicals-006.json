@@ -1,0 +1,13 @@
+{
+  "id": "radicals-006",
+  "topic": "radicals",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Monobromination of 2-methylpropane (isobutane) with Br₂/hν. Draw the major product.",
+  "reactants": ["CC(C)C"],
+  "reagents": ["Br2", "hν"],
+  "answers": [{ "smiles": "CC(C)(Br)C", "label": "2-bromo-2-methylpropane (tert-butyl bromide)" }],
+  "traps": [{ "smiles": "CC(C)CBr", "trap": "regio-wrong", "note": "Br₂ is highly selective for the 3° position (stable radical)." }],
+  "concepts": ["radical bromination", "selectivity", "3° preference"],
+  "explanation": "Br₂ is weak and selective — it strongly prefers the most stable radical (3°). The sole 3° C–H gives nearly all of the product as tert-butyl bromide."
+}

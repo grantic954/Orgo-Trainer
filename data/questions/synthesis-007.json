@@ -1,0 +1,12 @@
+{
+  "id": "synthesis-007",
+  "topic": "synthesis",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Convert propene to 1-bromopropane in one step. Draw the product (reagents given).",
+  "reactants": ["CC=C"],
+  "reagents": ["HBr", "ROOR (peroxide)"],
+  "answers": [{ "smiles": "CCCBr", "label": "1-bromopropane" }],
+  "concepts": ["anti-Markovnikov HBr", "radical addition"],
+  "explanation": "HBr with peroxides gives anti-Markovnikov addition (radical mechanism) — Br on the less substituted carbon."
+}

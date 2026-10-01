@@ -1,0 +1,16 @@
+{
+  "id": "alcohols-phenols-012",
+  "topic": "alcohols-phenols",
+  "type": "rank",
+  "difficulty": 3,
+  "prompt": "Rank these substituted phenols by acidity (least → most acidic). Lower pKa = more acidic.",
+  "items": [
+    { "id": "p-OMe", "label": "p-methoxyphenol (EDG by resonance)" },
+    { "id": "phenol", "label": "Phenol" },
+    { "id": "p-Cl", "label": "p-chlorophenol (weak EWG)" },
+    { "id": "p-NO2", "label": "p-nitrophenol (strong EWG by resonance)" }
+  ],
+  "correctOrder": ["p-OMe", "phenol", "p-Cl", "p-NO2"],
+  "concepts": ["substituent effects on phenol acidity"],
+  "explanation": "EDGs (OMe) destabilize phenoxide → less acidic. EWGs stabilize phenoxide → more acidic. Nitro (p or o) stabilizes by resonance (not just induction) → pKa drops by ~3 units."
+}

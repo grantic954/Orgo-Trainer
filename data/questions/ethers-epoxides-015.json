@@ -1,0 +1,16 @@
+{
+  "id": "ethers-epoxides-015",
+  "topic": "ethers-epoxides",
+  "type": "mcq",
+  "difficulty": 4,
+  "prompt": "Thiols (R-SH, pKa ~10) are MORE acidic than alcohols (R-OH, pKa ~16). Why?",
+  "options": [
+    { "id": "size", "label": "S is a larger atom; its lone pair in the thiolate (RS⁻) is spread over a bigger volume, stabilizing the negative charge." },
+    { "id": "electroneg", "label": "S is more electronegative than O." },
+    { "id": "res", "label": "Thiolate is resonance-stabilized." },
+    { "id": "hbond", "label": "Thiols H-bond more strongly." }
+  ],
+  "correctOptionId": "size",
+  "concepts": ["acidity down a group", "size effect"],
+  "explanation": "Going down a group, atoms get larger. The conjugate base's negative charge is distributed over a larger volume = less concentrated = more stable. Trumps the lower electronegativity of S vs O. Same reason HI > HBr > HCl > HF acidity."
+}

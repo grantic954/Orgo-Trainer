@@ -1,0 +1,16 @@
+{
+  "id": "alcohols-phenols-018",
+  "topic": "alcohols-phenols",
+  "type": "mcq",
+  "difficulty": 5,
+  "prompt": "CHALLENGE: Why does ethanol boil (78 °C) more than 100 °C higher than ethane (−89 °C), despite similar molecular weights?",
+  "options": [
+    { "id": "hbond", "label": "Hydrogen bonding between OH groups creates a network that requires energy to break." },
+    { "id": "mass", "label": "Ethanol is heavier." },
+    { "id": "shape", "label": "Ethanol has a different shape." },
+    { "id": "polar", "label": "Only polarity matters, not H-bonding specifically." }
+  ],
+  "correctOptionId": "hbond",
+  "concepts": ["H-bonding", "boiling points"],
+  "explanation": "Each OH can act as both an H-bond donor and acceptor, so ethanol molecules form 2D networks. Breaking those H-bonds (~5 kcal/mol each) requires significant energy — hence the ~170 K boiling point difference vs ethane which has only London forces."
+}

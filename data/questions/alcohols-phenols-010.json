@@ -1,0 +1,16 @@
+{
+  "id": "alcohols-phenols-010",
+  "topic": "alcohols-phenols",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "Phenol (PhOH, pKa ~10) is much more acidic than cyclohexanol (pKa ~17). Why?",
+  "options": [
+    { "id": "res", "label": "The phenoxide anion is resonance-stabilized — the negative charge delocalizes over the ortho and para positions of the ring." },
+    { "id": "ind", "label": "Phenol has a smaller alpha carbon." },
+    { "id": "polar", "label": "Phenol dissolves in water better." },
+    { "id": "sp2", "label": "The O–H bond in phenol is weaker because O is attached to sp² C." }
+  ],
+  "correctOptionId": "res",
+  "concepts": ["phenol acidity", "resonance stabilization"],
+  "explanation": "Deprotonation gives phenoxide, where the negative charge delocalizes into the ring (ortho and para). This resonance stabilization lowers phenol's pKa by about 7 units vs an aliphatic alcohol."
+}

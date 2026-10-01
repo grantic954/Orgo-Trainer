@@ -1,0 +1,16 @@
+{
+  "id": "synthesis-013",
+  "topic": "synthesis",
+  "type": "mcq",
+  "difficulty": 4,
+  "prompt": "You want to Grignard-add to a ketone that has a free OH elsewhere in the molecule. What should you do first?",
+  "options": [
+    { "id": "protect", "label": "Protect the OH (TBS-Cl, imidazole), run the Grignard, then deprotect (TBAF)." },
+    { "id": "excess-rmgx", "label": "Use excess Grignard (one eq is consumed by the OH; one more adds to the ketone)." },
+    { "id": "reduce", "label": "Reduce the ketone to alcohol first." },
+    { "id": "skip", "label": "Just run the reaction; the Grignard tolerates OH." }
+  ],
+  "correctOptionId": "protect",
+  "concepts": ["protecting groups", "Grignard incompatibility"],
+  "explanation": "Free OH deprotonates the Grignard (R–MgBr + ROH → R–H + ROMgBr), wasting it entirely. Protecting the OH as a silyl ether (TBS, TBDPS) makes it inert; TBAF cleaves it back after. Excess Grignard works but is wasteful/unclean."
+}

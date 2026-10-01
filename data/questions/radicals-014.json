@@ -1,0 +1,16 @@
+{
+  "id": "radicals-014",
+  "topic": "radicals",
+  "type": "mcq",
+  "difficulty": 4,
+  "prompt": "Bond dissociation energies (BDE): for toluene (PhCH₃), the benzylic C–H BDE is ~90 kcal/mol vs ~104 kcal/mol for methane. The difference reflects:",
+  "options": [
+    { "id": "stab", "label": "Resonance stabilization of the benzyl radical by the π system of the ring (~14 kcal/mol)." },
+    { "id": "sigma", "label": "A weaker σ C–H bond in toluene." },
+    { "id": "polar", "label": "Polarity of the C–H bond in toluene." },
+    { "id": "ind", "label": "Inductive donation by the ring." }
+  ],
+  "correctOptionId": "stab",
+  "concepts": ["BDE", "resonance stabilization", "benzyl radical"],
+  "explanation": "BDE measures the energy to form R• + H•. Lower BDE at benzylic C–H means the resulting radical is more stable — the ring's π system delocalizes the unpaired electron over four positions."
+}

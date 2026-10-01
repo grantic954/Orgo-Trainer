@@ -1,0 +1,16 @@
+{
+  "id": "radicals-001",
+  "topic": "radicals",
+  "type": "mcq",
+  "difficulty": 1,
+  "prompt": "Which species is a radical?",
+  "options": [
+    { "id": "methyl-rad", "label": "•CH₃ (methyl radical, 7 valence electrons on C)" },
+    { "id": "methyl-cat", "label": "CH₃⁺ (methyl cation)" },
+    { "id": "methyl-an", "label": "CH₃⁻ (methyl anion)" },
+    { "id": "methyl-mol", "label": "CH₄ (methane)" }
+  ],
+  "correctOptionId": "methyl-rad",
+  "concepts": ["radical definition", "odd electron count"],
+  "explanation": "A radical has an unpaired electron. The methyl radical has 7 valence electrons on carbon (3 bonds + 1 unpaired), while cations have 6 and anions have 8."
+}

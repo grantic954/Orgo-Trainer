@@ -1,6 +1,7 @@
 {
   "$schema": "./topics.schema.json",
   "topics": [
+    { "id": "radicals", "name": "Radical reactions", "prereqs": [] },
     { "id": "ir", "name": "IR spectroscopy", "prereqs": [] },
     { "id": "ms", "name": "Mass spectrometry", "prereqs": [] },
     { "id": "hnmr", "name": "¹H NMR", "prereqs": [] },
@@ -11,7 +12,9 @@
     { "id": "eas", "name": "Electrophilic aromatic substitution", "prereqs": ["aromaticity"] },
     { "id": "snar", "name": "SNAr and benzyne", "prereqs": ["aromaticity"] },
     { "id": "side-chain", "name": "Side-chain / benzylic reactions", "prereqs": ["eas"] },
-    { "id": "alcohols-ethers", "name": "Alcohols, phenols, ethers, epoxides, thiols", "prereqs": [] },
+    { "id": "alcohols-ethers", "name": "Alcohols, phenols, ethers, epoxides, thiols (legacy shared)", "prereqs": [] },
+    { "id": "alcohols-phenols", "name": "Alcohols and phenols", "prereqs": [] },
+    { "id": "ethers-epoxides", "name": "Ethers, epoxides, thiols, sulfides", "prereqs": [] },
     { "id": "carbonyls", "name": "Aldehydes & ketones", "prereqs": [] },
     { "id": "carboxylic-acids", "name": "Carboxylic acids", "prereqs": ["carbonyls"] },
     { "id": "acid-derivatives", "name": "Acid derivatives", "prereqs": ["carboxylic-acids"] },

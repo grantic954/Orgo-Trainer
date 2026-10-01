@@ -1,0 +1,16 @@
+{
+  "id": "ir-006",
+  "topic": "ir",
+  "type": "mcq",
+  "difficulty": 1,
+  "prompt": "The IR 'fingerprint region' is which wavenumber range?",
+  "options": [
+    { "id": "fp", "label": "~400–1500 cm⁻¹ (complex bending/stretching, molecule-specific)" },
+    { "id": "fg", "label": "~1500–4000 cm⁻¹ (functional group region)" },
+    { "id": "oh", "label": "~3200–3600 cm⁻¹ (O–H only)" },
+    { "id": "co", "label": "~1700 cm⁻¹ (C=O only)" }
+  ],
+  "correctOptionId": "fp",
+  "concepts": ["fingerprint vs functional group region"],
+  "explanation": "The functional group region (1500–4000) is where diagnostic stretches live (O–H, C=O, C≡N, C–H). The fingerprint region (400–1500) is dense and molecule-specific — useful for confirming identity against a reference."
+}

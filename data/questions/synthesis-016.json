@@ -1,0 +1,16 @@
+{
+  "id": "synthesis-016",
+  "topic": "synthesis",
+  "type": "mcq",
+  "difficulty": 5,
+  "prompt": "CHALLENGE: Which disconnection of 2-methyl-2-hexanol most cleanly uses commercially available starting materials?",
+  "options": [
+    { "id": "me-hex", "label": "CH₃MgBr + 2-hexanone (ketone + methyl Grignard; both common)" },
+    { "id": "pent-ace", "label": "n-pentyl-MgBr + acetone (less common pentyl halide; acetone is cheap)" },
+    { "id": "but-but", "label": "n-butyl-MgBr + 2-butanone (works chemically — produces 2-methyl-2-hexanol)" },
+    { "id": "all-equal", "label": "All three disconnections give the same target; (A) uses the most common inputs" }
+  ],
+  "correctOptionId": "all-equal",
+  "concepts": ["retrosynthesis trade-offs", "practical considerations"],
+  "explanation": "All three are correct chemically — pick the disconnection where both halves are cheap and commercial. (A) uses MeMgBr (cheap, standard) + 2-hexanone (standard ketone). Trade-off questions in retrosynthesis go beyond 'does it work' to 'what's actually buyable'."
+}

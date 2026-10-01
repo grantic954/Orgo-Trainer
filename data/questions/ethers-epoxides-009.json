@@ -1,0 +1,12 @@
+{
+  "id": "ethers-epoxides-009",
+  "topic": "ethers-epoxides",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Epoxidation of cis-2-butene with mCPBA. Draw the product (ignore stereochem).",
+  "reactants": ["CC=CC"],
+  "reagents": ["mCPBA", "CH2Cl2"],
+  "answers": [{ "smiles": "CC1OC1C", "label": "2,3-epoxybutane" }],
+  "concepts": ["mCPBA epoxidation", "concerted syn addition"],
+  "explanation": "mCPBA delivers an oxygen to the C=C face in a concerted syn fashion, giving an epoxide. The alkene's geometry is preserved (cis-alkene → cis-epoxide)."
+}

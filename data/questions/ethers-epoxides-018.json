@@ -1,0 +1,16 @@
+{
+  "id": "ethers-epoxides-018",
+  "topic": "ethers-epoxides",
+  "type": "mcq",
+  "difficulty": 5,
+  "prompt": "CHALLENGE: Many drugs are formulated as thioethers (R-S-R'). What is one practical advantage of S over O in these linkers?",
+  "options": [
+    { "id": "metab", "label": "Thioether S can be oxidized by cytochrome P450 to sulfoxide or sulfone — tunable metabolism and solubility handles." },
+    { "id": "size", "label": "S is smaller than O." },
+    { "id": "charge", "label": "S always carries a formal charge." },
+    { "id": "aromatic", "label": "Thioethers are always aromatic." }
+  ],
+  "correctOptionId": "metab",
+  "concepts": ["application: medicinal chemistry", "oxidation to sulfoxide"],
+  "explanation": "Thioethers are oxidized in vivo by cytochrome P450 to sulfoxides and then to sulfones — a well-studied metabolic handle. Omeprazole (Prilosec) exploits this: it's a prodrug activated in acidic environments by oxidation of its thioether."
+}

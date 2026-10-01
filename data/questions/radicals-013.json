@@ -1,0 +1,16 @@
+{
+  "id": "radicals-013",
+  "topic": "radicals",
+  "type": "mcq",
+  "difficulty": 4,
+  "prompt": "Why do allylic radicals typically give TWO products via the same intermediate?",
+  "options": [
+    { "id": "res", "label": "The allyl radical has two resonance structures; the unpaired electron sits on either terminal carbon, and attack by X• at either carbon gives distinct products." },
+    { "id": "spin", "label": "Spin-flipping of the radical electron." },
+    { "id": "homo", "label": "One is kinetic and one is thermodynamic from different TS geometries." },
+    { "id": "rearr", "label": "The allyl radical rearranges before trapping." }
+  ],
+  "correctOptionId": "res",
+  "concepts": ["allylic resonance", "radical rearrangement vs resonance"],
+  "explanation": "The allyl radical is delocalized — you don't 'move' atoms, the single electron is spread across both terminal carbons. Attack at either terminal carbon gives a different product, often as a mix (ratio depends on steric and electronic factors)."
+}

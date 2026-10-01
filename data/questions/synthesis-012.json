@@ -1,0 +1,16 @@
+{
+  "id": "synthesis-012",
+  "topic": "synthesis",
+  "type": "mcq",
+  "difficulty": 4,
+  "prompt": "Goal: make benzyl ethyl ether (Ph-CH₂-O-CH₂CH₃) from benzyl alcohol. The CLEAN route is:",
+  "options": [
+    { "id": "wms", "label": "PhCH₂OH + NaH → PhCH₂O⁻, then + CH₃CH₂Br (Williamson, SN2 on 1° halide)" },
+    { "id": "acid-dehyd", "label": "PhCH₂OH + EtOH + H₂SO₄, heat (acid-catalyzed; gives mixtures)" },
+    { "id": "oxy-mer", "label": "Oxymercuration" },
+    { "id": "hcl", "label": "PhCH₂OH + CH₃CH₂Cl, pyridine" }
+  ],
+  "correctOptionId": "wms",
+  "concepts": ["Williamson", "deprotonation with NaH"],
+  "explanation": "Deprotonate the alcohol with NaH to get a strong nucleophile, then SN2 with a primary alkyl halide. Acid-catalyzed dehydration gives a mix of symmetrical and unsymmetrical ethers plus alkenes."
+}

@@ -1,0 +1,12 @@
+{
+  "id": "ethers-epoxides-013",
+  "topic": "ethers-epoxides",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Open ethylene oxide (CH₂-CH₂-O ring) with CH₃MgBr, then H₃O⁺ workup. Draw the product.",
+  "reactants": ["C1CO1"],
+  "reagents": ["CH3MgBr", "H3O+"],
+  "answers": [{ "smiles": "CCCO", "label": "1-propanol" }],
+  "concepts": ["Grignard + epoxide", "ring-opening synthesis"],
+  "explanation": "Grignard attacks the less hindered carbon of ethylene oxide (SN2-like), opening the ring. Workup protonates the resulting alkoxide → 1-propanol. This is a classic 'chain extension by two carbons' strategy."
+}

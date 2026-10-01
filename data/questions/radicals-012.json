@@ -1,0 +1,16 @@
+{
+  "id": "radicals-012",
+  "topic": "radicals",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "Chlorination of propane gives roughly a 1:1 mix of 1-chloropropane and 2-chloropropane despite having 6 primary H's vs only 2 secondary H's. What does this tell you?",
+  "options": [
+    { "id": "sel", "label": "Cl₂ shows modest selectivity — the per-H rate at 2° is about 3× faster than at 1°, roughly canceling the statistical advantage of 1° H's." },
+    { "id": "nosel", "label": "Cl₂ is not selective at all — product distribution is purely statistical." },
+    { "id": "steric", "label": "Steric hindrance prevents attack at 2°." },
+    { "id": "polar", "label": "The C–H bond polarity determines selectivity." }
+  ],
+  "correctOptionId": "sel",
+  "concepts": ["selectivity ratios", "statistical vs selectivity"],
+  "explanation": "Cl• H-abstraction is ~3.8× faster at a 2° H than at a 1° H. With 6 × 1 vs 2 × 3.8 = 6 vs 7.6, the two products are roughly equal — a classic illustration of modest Cl₂ selectivity."
+}

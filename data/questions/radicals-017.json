@@ -1,0 +1,16 @@
+{
+  "id": "radicals-017",
+  "topic": "radicals",
+  "type": "mcq",
+  "difficulty": 5,
+  "prompt": "CHALLENGE: Vitamin E (α-tocopherol) is a biological antioxidant. By what mechanism does it protect cell membranes from lipid peroxidation?",
+  "options": [
+    { "id": "donate-h", "label": "Its phenolic O–H donates H• to lipid peroxyl radicals (ROO•), giving ROOH and a resonance-stabilized tocopheroxyl radical that is too unreactive to propagate." },
+    { "id": "scavenge-o2", "label": "It consumes molecular O₂." },
+    { "id": "metal-chelate", "label": "It chelates transition metals." },
+    { "id": "enz", "label": "It activates an enzyme that cleans up radicals." }
+  ],
+  "correctOptionId": "donate-h",
+  "concepts": ["application: antioxidants", "phenolic H-atom transfer", "chain-breaking"],
+  "explanation": "Phenols with electron-rich rings are excellent H-atom donors because the resulting phenoxyl radical is heavily resonance-stabilized across the ring. The tocopheroxyl radical is persistent enough that it waits for another ROO• rather than propagating a new chain — chain-breaking antioxidant."
+}

@@ -1,6 +1,6 @@
 {
   "id": "alcohols-ethers-004",
-  "topic": "alcohols-ethers",
+  "topic": "ethers-epoxides",
   "type": "draw_product",
   "difficulty": 3,
   "prompt": "Epoxide ring opening: propylene oxide + CH₃O⁻. Draw the major product (basic conditions, attack at less hindered carbon).",

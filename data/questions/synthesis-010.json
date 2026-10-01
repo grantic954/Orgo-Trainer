@@ -1,0 +1,16 @@
+{
+  "id": "synthesis-010",
+  "topic": "synthesis",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "To make the ether CH₃–O–CH(CH₃)₂ by Williamson synthesis, which combination is BEST?",
+  "options": [
+    { "id": "me-ox", "label": "CH₃ONa + (CH₃)₂CHBr → likely E2 (secondary halide, strong base)" },
+    { "id": "ipr-ox", "label": "(CH₃)₂CHONa + CH₃Br → clean SN2 on 1° methyl halide" },
+    { "id": "both", "label": "Either works equally" },
+    { "id": "none", "label": "Williamson can't make this ether" }
+  ],
+  "correctOptionId": "ipr-ox",
+  "concepts": ["Williamson strategy", "SN2 vs E2"],
+  "explanation": "For an unsymmetrical ether, pick the combination with the LESS hindered alkyl halide (SN2 wants 1° > 2° > 3°). Methyl halides are ideal. The alkoxide can be any size — only the alkyl halide needs to be unhindered."
+}

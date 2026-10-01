@@ -1,6 +1,6 @@
 {
   "id": "alcohols-ethers-005",
-  "topic": "alcohols-ethers",
+  "topic": "alcohols-phenols",
   "type": "rank",
   "difficulty": 3,
   "prompt": "Rank these alcohols by acidity (least → most acidic, lowest → highest pKa in reverse):",

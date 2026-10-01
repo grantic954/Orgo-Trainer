@@ -1,0 +1,16 @@
+{
+  "id": "radicals-004",
+  "topic": "radicals",
+  "type": "rank",
+  "difficulty": 2,
+  "prompt": "Rank these radicals by stability (least → most stable):",
+  "items": [
+    { "id": "vinyl", "label": "Vinyl radical (sp² C=C–•)" },
+    { "id": "alkyl3", "label": "Tertiary alkyl" },
+    { "id": "allyl", "label": "Allylic (CH₂=CH–CH₂•)" },
+    { "id": "benzyl", "label": "Benzylic (Ph–CH₂•)" }
+  ],
+  "correctOrder": ["vinyl", "alkyl3", "allyl", "benzyl"],
+  "concepts": ["allylic/benzylic resonance", "vinyl instability"],
+  "explanation": "Vinyl radicals (sp² hybridized adjacent to a π bond but no delocalization) are least stable. Tertiary > allylic (one resonance structure) > benzylic (multiple resonance structures across the ring) — benzylic is the most stabilized."
+}

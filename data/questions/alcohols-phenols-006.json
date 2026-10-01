@@ -1,0 +1,16 @@
+{
+  "id": "alcohols-phenols-006",
+  "topic": "alcohols-phenols",
+  "type": "mcq",
+  "difficulty": 1,
+  "prompt": "Which of these is a 2° (secondary) alcohol?",
+  "options": [
+    { "id": "a", "label": "2-propanol", "smiles": "CC(C)O" },
+    { "id": "b", "label": "1-propanol", "smiles": "CCCO" },
+    { "id": "c", "label": "tert-butanol", "smiles": "CC(C)(C)O" },
+    { "id": "d", "label": "Methanol", "smiles": "CO" }
+  ],
+  "correctOptionId": "a",
+  "concepts": ["alcohol classification", "1°/2°/3°"],
+  "explanation": "A 2° alcohol has the OH-bearing carbon bonded to exactly 2 other carbons. 2-propanol fits. 1-propanol = 1°; tert-butanol = 3°; methanol = 0° (methyl)."
+}

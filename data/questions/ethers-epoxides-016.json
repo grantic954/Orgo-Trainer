@@ -1,0 +1,12 @@
+{
+  "id": "ethers-epoxides-016",
+  "topic": "ethers-epoxides",
+  "type": "draw_product",
+  "difficulty": 4,
+  "prompt": "Open an epoxide with LiAlH₄ (then workup): propylene oxide → ?",
+  "reactants": ["CC1CO1"],
+  "reagents": ["LiAlH4", "H3O+"],
+  "answers": [{ "smiles": "CC(C)O", "label": "2-propanol (H⁻ attacks less hindered carbon)" }],
+  "concepts": ["LiAlH4 epoxide opening"],
+  "explanation": "LiAlH₄ delivers H⁻ as a nucleophile to the LESS hindered carbon of the epoxide (basic/hydride conditions, SN2-like). H ends up on the terminal CH₂, OH on the internal carbon → 2-propanol."
+}

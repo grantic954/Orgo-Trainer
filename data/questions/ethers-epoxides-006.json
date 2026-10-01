@@ -1,0 +1,16 @@
+{
+  "id": "ethers-epoxides-006",
+  "topic": "ethers-epoxides",
+  "type": "mcq",
+  "difficulty": 1,
+  "prompt": "What functional group is R–O–R'?",
+  "options": [
+    { "id": "ether", "label": "Ether" },
+    { "id": "ester", "label": "Ester" },
+    { "id": "alcohol", "label": "Alcohol" },
+    { "id": "epoxide", "label": "Epoxide (requires a 3-membered ring)" }
+  ],
+  "correctOptionId": "ether",
+  "concepts": ["functional group identification"],
+  "explanation": "R–O–R' is an acyclic (or cyclic non-strained) ether. An epoxide is a specific cyclic ether — a 3-membered ring containing O. Esters have a C=O adjacent to the O."
+}

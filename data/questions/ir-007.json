@@ -1,0 +1,16 @@
+{
+  "id": "ir-007",
+  "topic": "ir",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "IR absorption occurs when a bond's vibrational frequency matches the IR photon's frequency AND:",
+  "options": [
+    { "id": "dipole", "label": "There is a change in dipole moment during the vibration." },
+    { "id": "mass", "label": "The reduced mass is above a threshold." },
+    { "id": "bond", "label": "The bond is a σ bond." },
+    { "id": "aromatic", "label": "The compound is aromatic." }
+  ],
+  "correctOptionId": "dipole",
+  "concepts": ["IR selection rule"],
+  "explanation": "The dipole-moment change is required. Symmetric stretches of nonpolar bonds (e.g., C=C in symmetric alkenes) are IR-inactive. All asymmetric vibrations of polar bonds show up."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "alcohols-phenols-015",
+  "topic": "alcohols-phenols",
+  "type": "mcq",
+  "difficulty": 4,
+  "prompt": "Oxymercuration-demercuration of propene vs acid-catalyzed hydration: both give 2-propanol (Markovnikov), but oxymercuration is preferred for synthesis. Why?",
+  "options": [
+    { "id": "nocation", "label": "Oxymercuration avoids a free carbocation intermediate (goes through a bridged mercurinium ion), so there are no rearrangements." },
+    { "id": "faster", "label": "It is faster." },
+    { "id": "mark", "label": "It is more Markovnikov." },
+    { "id": "stereo", "label": "It gives stereochemistry." }
+  ],
+  "correctOptionId": "nocation",
+  "concepts": ["mercurinium ion", "no rearrangement"],
+  "explanation": "Acid-catalyzed hydration goes through a carbocation that can hydride- or methyl-shift to a more stable cation (wrong product). Oxymercuration goes through a bridged mercurinium ion that cannot rearrange — much cleaner for synthesis."
+}

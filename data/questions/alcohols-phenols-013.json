@@ -1,0 +1,16 @@
+{
+  "id": "alcohols-phenols-013",
+  "topic": "alcohols-phenols",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "Pinacol rearrangement: a vicinal diol under acid gives a ketone/aldehyde via:",
+  "options": [
+    { "id": "shift", "label": "Loss of water → carbocation → 1,2-hydride or methyl shift → loss of H⁺ gives C=O." },
+    { "id": "elim", "label": "Simple E1 to give an alkene." },
+    { "id": "ox", "label": "Oxidation by H₂SO₄." },
+    { "id": "sn", "label": "SN1 substitution of OH by H." }
+  ],
+  "correctOptionId": "shift",
+  "concepts": ["pinacol rearrangement", "1,2-shifts", "carbocation"],
+  "explanation": "A vicinal diol protonates and loses one water to form a carbocation. The adjacent C–C or C–H bond migrates with its electrons to the cation; the oxygen's lone pair stabilizes the new cation and loses H⁺ to give a C=O."
+}

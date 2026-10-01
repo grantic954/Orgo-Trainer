@@ -1,0 +1,16 @@
+{
+  "id": "synthesis-015",
+  "topic": "synthesis",
+  "type": "mcq",
+  "difficulty": 5,
+  "prompt": "CHALLENGE: You need to make 4-aminobenzoic acid (p-amino) from toluene. What is the correct order of transformations?",
+  "options": [
+    { "id": "right", "label": "Nitrate (gets p-NO₂ because CH₃ is o/p director) → oxidize CH₃ to COOH (KMnO₄, heat) → reduce NO₂ to NH₂ (Sn/HCl)" },
+    { "id": "reduce-first", "label": "Reduce the nitro group first — fails because there's no nitro to reduce yet" },
+    { "id": "ox-first", "label": "Oxidize to COOH first; now NO₂ goes meta, giving the wrong isomer" },
+    { "id": "all-work", "label": "Order doesn't matter" }
+  ],
+  "correctOptionId": "right",
+  "concepts": ["EAS ordering", "director inversion"],
+  "explanation": "CH₃ is o/p director — do EAS nitration while CH₃ is still there to get para-NO₂. Then oxidize CH₃ to COOH (now a meta director, but we're done with EAS). Finally reduce NO₂ → NH₂. Doing the ox first would put NO₂ meta."
+}

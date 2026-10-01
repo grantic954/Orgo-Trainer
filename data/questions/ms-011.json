@@ -1,0 +1,16 @@
+{
+  "id": "ms-011",
+  "topic": "ms",
+  "type": "mcq",
+  "difficulty": 4,
+  "prompt": "A high-resolution MS gives M⁺ = 180.0423. Which molecular formula fits best?",
+  "options": [
+    { "id": "c6h12o6", "label": "C₆H₁₂O₆ (exact mass 180.0634) — doesn't fit" },
+    { "id": "c9h8o4", "label": "C₉H₈O₄ (exact mass 180.0423) — matches aspirin!" },
+    { "id": "c10h4n2", "label": "C₁₀H₄N₂O₂ (exact mass ~184.03)" },
+    { "id": "either", "label": "Can't distinguish without low-resolution data" }
+  ],
+  "correctOptionId": "c9h8o4",
+  "concepts": ["exact mass / high-res MS", "mass defect"],
+  "explanation": "High-resolution MS distinguishes formulas with the same nominal mass by their exact mass (via mass defects of C, H, N, O). C₉H₈O₄ = 180.0423 (aspirin's formula) vs C₆H₁₂O₆ = 180.0634 (glucose) — HRMS can tell them apart to 0.001 amu."
+}

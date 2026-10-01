@@ -1,0 +1,16 @@
+{
+  "id": "ethers-epoxides-010",
+  "topic": "ethers-epoxides",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "Epoxide ring-opening regiochemistry: under STRONG ACID with a nucleophile like H₂O, the nucleophile attacks:",
+  "options": [
+    { "id": "more", "label": "The MORE substituted carbon (positive character developed there in the TS; carbocation-like)" },
+    { "id": "less", "label": "The LESS substituted carbon (basic conditions)" },
+    { "id": "either", "label": "Either carbon equally" },
+    { "id": "neither", "label": "Neither — epoxides don't open in acid" }
+  ],
+  "correctOptionId": "more",
+  "concepts": ["acid vs base epoxide opening"],
+  "explanation": "In acid, the protonated epoxide develops carbocation character at the more substituted C (more stable). The nucleophile attacks there. In base, the nucleophile does an SN2-like attack on the LESS hindered carbon."
+}

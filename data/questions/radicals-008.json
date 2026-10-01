@@ -1,0 +1,13 @@
+{
+  "id": "radicals-008",
+  "topic": "radicals",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Allylic bromination of cyclohexene with NBS (CCl₄, hν or peroxide). Draw the major product.",
+  "reactants": ["C1CCC=CC1"],
+  "reagents": ["NBS", "CCl4", "hν"],
+  "answers": [{ "smiles": "BrC1CCCC=C1", "label": "3-bromocyclohex-1-ene" }],
+  "traps": [{ "smiles": "BrC1CCC=CC1", "trap": "regio-wrong", "note": "H is abstracted at the allylic position, not the vinyl position." }],
+  "concepts": ["NBS", "allylic bromination", "allylic radical"],
+  "explanation": "NBS provides a low steady-state [Br₂], favoring allylic over addition. H is abstracted from the sp³ C adjacent to the double bond, giving an allyl radical captured by Br."
+}

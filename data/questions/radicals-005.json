@@ -1,0 +1,16 @@
+{
+  "id": "radicals-005",
+  "topic": "radicals",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "Which bond is broken during the INITIATION step of methane chlorination (CH₄ + Cl₂, hν)?",
+  "options": [
+    { "id": "cl-cl", "label": "Cl–Cl (homolysis under hν)" },
+    { "id": "c-h", "label": "C–H in methane" },
+    { "id": "both", "label": "Both simultaneously" },
+    { "id": "c-cl", "label": "C–Cl (there isn't one yet)" }
+  ],
+  "correctOptionId": "cl-cl",
+  "concepts": ["initiation", "homolysis"],
+  "explanation": "Cl₂ has the weakest bond and absorbs UV; it homolytically cleaves into two Cl• radicals. These then abstract H from CH₄ in propagation."
+}

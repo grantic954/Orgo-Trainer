@@ -1,0 +1,16 @@
+{
+  "id": "ir-010",
+  "topic": "ir",
+  "type": "mcq",
+  "difficulty": 4,
+  "prompt": "Compare: how do the C=O frequencies of acetone, acetyl chloride, and acetamide order (lowest → highest cm⁻¹)?",
+  "options": [
+    { "id": "amd-ket-cl", "label": "amide (~1680) < ketone (~1715) < acyl chloride (~1800)" },
+    { "id": "ket-amd-cl", "label": "ketone < amide < acyl chloride" },
+    { "id": "all-same", "label": "All near 1715" },
+    { "id": "reverse", "label": "acyl chloride < ketone < amide" }
+  ],
+  "correctOptionId": "amd-ket-cl",
+  "concepts": ["C=O frequency vs substituent", "resonance vs induction"],
+  "explanation": "N donates lone pair into C=O by resonance → lower bond order → lower frequency. Cl is a strong σ-withdrawer (inductive effect dominates over its weak π-donation) → increases C=O force constant → higher frequency."
+}

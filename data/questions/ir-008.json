@@ -1,0 +1,16 @@
+{
+  "id": "ir-008",
+  "topic": "ir",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "A compound shows IR bands at 3300 (sharp), 2100 (weak). What functional group is present?",
+  "options": [
+    { "id": "term-alk", "label": "Terminal alkyne (≡C–H + C≡C)" },
+    { "id": "int-alk", "label": "Internal alkyne" },
+    { "id": "alcohol", "label": "Alcohol" },
+    { "id": "nitrile", "label": "Nitrile" }
+  ],
+  "correctOptionId": "term-alk",
+  "concepts": ["terminal alkyne IR", "sp C–H"],
+  "explanation": "Terminal alkynes have a sharp ≡C–H stretch at ~3300 and a weak C≡C stretch at ~2100. Internal alkynes have no sp C–H and often invisible C≡C (no dipole change). Nitriles are sharper and higher (~2250)."
+}

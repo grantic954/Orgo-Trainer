@@ -1,0 +1,16 @@
+{
+  "id": "synthesis-008",
+  "topic": "synthesis",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "To convert a 1° alcohol to a carboxylic acid without going through the aldehyde, use:",
+  "options": [
+    { "id": "cro3", "label": "CrO₃ / H₂SO₄ (Jones) — aqueous, goes all the way to COOH" },
+    { "id": "pcc", "label": "PCC (stops at aldehyde)" },
+    { "id": "dmp", "label": "Dess–Martin periodinane (stops at aldehyde)" },
+    { "id": "lah", "label": "LiAlH₄ (reduces, doesn't oxidize)" }
+  ],
+  "correctOptionId": "cro3",
+  "concepts": ["oxidation level control", "chromium oxidants"],
+  "explanation": "Jones is strong + aqueous → the aldehyde intermediate hydrates and gets re-oxidized to the acid. For stopping at the aldehyde, use anhydrous PCC or DMP."
+}
