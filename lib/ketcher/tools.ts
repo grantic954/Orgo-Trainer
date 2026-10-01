@@ -14,11 +14,13 @@ function ed(k: Ketcher): EditorAny {
 export type ToolId =
   | "select-rect"
   | "select-lasso"
+  | "select-fragment" // click an atom to select the whole molecule it belongs to
+  | "hand"            // pan the canvas (drag to move the view)
   | "erase"
+  | "chain"          // draw a variable-length chain (click + drag)
   | "bond-single"
   | "bond-double"
   | "bond-triple"
-  | "bond-aromatic"
   | "bond-up"        // wedge up (stereo)
   | "bond-down"      // hashed down (stereo)
   | "atom-C"
@@ -34,20 +36,18 @@ export type ToolId =
   | "charge-plus"
   | "charge-minus"
   | "reaction-arrow"
-  | "electron-pair"
+  | "lone-pair"
   | "ring-benzene"
   | "ring-cyclohexane"
   | "ring-cyclopentane"
   | "ring-cyclobutane"
   | "ring-cyclopropane"
-  | "ring-cycloheptane"
-  | "ring-furan"
-  | "ring-pyridine";
+  | "ring-cycloheptane";
 
 // Molfile-standard bond type and stereo codes (from Bond.PATTERN in
 // ketcher-core; hardcoded here to avoid pulling ketcher-core into module
 // scope).
-const BOND_TYPE = { SINGLE: 1, DOUBLE: 2, TRIPLE: 3, AROMATIC: 4 } as const;
+const BOND_TYPE = { SINGLE: 1, DOUBLE: 2, TRIPLE: 3 } as const;
 const BOND_STEREO = { NONE: 0, UP: 1, DOWN: 6 } as const;
 // Reaction-arrow mode constants (matching Ketcher's RxnArrowMode enum).
 const RXN_ARROW_OPEN_ANGLE = "open-angle";
@@ -62,9 +62,7 @@ export async function activateTool(k: Ketcher, id: ToolId): Promise<void> {
     case "ring-cyclopentane":
     case "ring-cyclobutane":
     case "ring-cyclopropane":
-    case "ring-cycloheptane":
-    case "ring-furan":
-    case "ring-pyridine": {
+    case "ring-cycloheptane": {
       const struct = await getRingStruct(id);
       if (struct) e.tool("template", { struct });
       return;
@@ -76,8 +74,22 @@ export async function activateTool(k: Ketcher, id: ToolId): Promise<void> {
     case "select-lasso":
       e.tool("select", "lasso");
       return;
+    case "select-fragment":
+      // Click an atom → selects the entire connected fragment it belongs to.
+      // Useful for picking up and moving / deleting / re-labeling a whole
+      // molecule.
+      e.tool("select", "fragment");
+      return;
+    case "hand":
+      // Pan the canvas by dragging. Does not modify the structure.
+      e.tool("hand");
+      return;
     case "erase":
       e.tool("eraser", 1);
+      return;
+    // Chain — draw a variable-length chain of carbons (click + drag).
+    case "chain":
+      e.tool("chain");
       return;
     // Bonds — opts is { type, stereo } with molfile-standard numeric codes.
     case "bond-single":
@@ -88,9 +100,6 @@ export async function activateTool(k: Ketcher, id: ToolId): Promise<void> {
       return;
     case "bond-triple":
       e.tool("bond", { type: BOND_TYPE.TRIPLE, stereo: BOND_STEREO.NONE });
-      return;
-    case "bond-aromatic":
-      e.tool("bond", { type: BOND_TYPE.AROMATIC, stereo: BOND_STEREO.NONE });
       return;
     case "bond-up":
       e.tool("bond", { type: BOND_TYPE.SINGLE, stereo: BOND_STEREO.UP });
@@ -121,12 +130,18 @@ export async function activateTool(k: Ketcher, id: ToolId): Promise<void> {
     case "reaction-arrow":
       e.tool("reactionarrow", RXN_ARROW_OPEN_ANGLE);
       return;
-    case "electron-pair":
-      // Ketcher doesn't ship a dedicated lone-pair tool — mechanism arrows
-      // land in Phase 8 (MechanismCanvas). No-op with a console hint so it's
-      // obvious to developers.
-      // eslint-disable-next-line no-console
-      console.info("electron-pair tool is a Phase 8 placeholder.");
+    case "lone-pair":
+      // Ketcher doesn't ship a dedicated lone-pair annotation tool and lone
+      // pairs aren't a drawing primitive in the molfile format. On
+      // heteroatoms (O / N / S) they're always implicit from valence and
+      // show automatically where needed; explicit lone-pair curly-arrows
+      // for mechanism drawing land in Phase 8 (MechanismCanvas).
+      // eslint-disable-next-line no-alert
+      alert(
+        "Lone pairs on O / N / S heteroatoms are implicit (based on valence) " +
+          "and don't need to be drawn. Explicit lone-pair annotations for " +
+          "mechanism arrows will be in the Mechanism canvas (Phase 8)."
+      );
       return;
   }
 }

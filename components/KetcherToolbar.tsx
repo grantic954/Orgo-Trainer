@@ -2,7 +2,9 @@
 
 import { useState } from "react";
 import type { Ketcher } from "ketcher-core";
+import { StructureView } from "@/components/StructureView";
 import { activateTool, clearCanvas, redo, undo, type ToolId } from "@/lib/ketcher/tools";
+import { RING_SMILES } from "@/lib/ketcher/templates";
 
 interface ToolDef {
   id: ToolId;
@@ -10,22 +12,25 @@ interface ToolDef {
   hint?: string;
 }
 
-const RING_TOOLS: ToolDef[] = [
-  { id: "ring-benzene", label: "Ph", hint: "Benzene" },
-  { id: "ring-cyclohexane", label: "6", hint: "Cyclohexane" },
-  { id: "ring-cyclopentane", label: "5", hint: "Cyclopentane" },
-  { id: "ring-cyclobutane", label: "4", hint: "Cyclobutane" },
-  { id: "ring-cyclopropane", label: "3", hint: "Cyclopropane" },
-  { id: "ring-cycloheptane", label: "7", hint: "Cycloheptane" },
-  { id: "ring-furan", label: "Fu", hint: "Furan" },
-  { id: "ring-pyridine", label: "Py", hint: "Pyridine" },
+interface TemplateDef {
+  id: ToolId;
+  name: string;
+}
+
+const TEMPLATE_TOOLS: TemplateDef[] = [
+  { id: "ring-benzene", name: "Benzene" },
+  { id: "ring-cyclohexane", name: "Cyclohexane" },
+  { id: "ring-cyclopentane", name: "Cyclopentane" },
+  { id: "ring-cyclobutane", name: "Cyclobutane" },
+  { id: "ring-cyclopropane", name: "Cyclopropane" },
+  { id: "ring-cycloheptane", name: "Cycloheptane" },
 ];
 
 const BOND_TOOLS: ToolDef[] = [
   { id: "bond-single", label: "—", hint: "Single bond" },
   { id: "bond-double", label: "=", hint: "Double bond" },
   { id: "bond-triple", label: "≡", hint: "Triple bond" },
-  { id: "bond-aromatic", label: "◊", hint: "Aromatic bond" },
+  { id: "chain", label: "⌇", hint: "Chain — click and drag to draw any length" },
   { id: "bond-up", label: "▲", hint: "Wedge up (stereo)" },
   { id: "bond-down", label: "⋮", hint: "Hashed down (stereo)" },
 ];
@@ -46,12 +51,14 @@ const ATOM_TOOLS: ToolDef[] = [
 const OTHER_TOOLS: ToolDef[] = [
   { id: "charge-plus", label: "+", hint: "Positive charge" },
   { id: "charge-minus", label: "−", hint: "Negative charge" },
-  { id: "electron-pair", label: "··", hint: "Lone pair" },
+  { id: "lone-pair", label: "··", hint: "Lone pair" },
   { id: "reaction-arrow", label: "→", hint: "Reaction arrow" },
 ];
 
 const SELECTION_TOOLS: ToolDef[] = [
-  { id: "select-rect", label: "▭", hint: "Select (drag to lasso)" },
+  { id: "select-rect", label: "▭", hint: "Rectangle select (drag)" },
+  { id: "select-fragment", label: "⬡", hint: "Fragment select — click a molecule to select the whole thing" },
+  { id: "hand", label: "✋", hint: "Pan the canvas (drag to scroll)" },
   { id: "erase", label: "⌫", hint: "Erase" },
 ];
 
@@ -66,14 +73,14 @@ export function KetcherToolbar({ ketcher, allow }: KetcherToolbarProps) {
   function has(id: ToolId): boolean {
     return allow.has(id);
   }
-  function section(defs: ToolDef[]): ToolDef[] {
+  function filter<T extends { id: ToolId }>(defs: T[]): T[] {
     return defs.filter((d) => has(d.id));
   }
-  const rings = section(RING_TOOLS);
-  const bonds = section(BOND_TOOLS);
-  const atoms = section(ATOM_TOOLS);
-  const other = section(OTHER_TOOLS);
-  const selection = section(SELECTION_TOOLS);
+  const templates = filter(TEMPLATE_TOOLS);
+  const bonds = filter(BOND_TOOLS);
+  const atoms = filter(ATOM_TOOLS);
+  const other = filter(OTHER_TOOLS);
+  const selection = filter(SELECTION_TOOLS);
 
   async function click(id: ToolId) {
     if (!ketcher) return;
@@ -83,42 +90,67 @@ export function KetcherToolbar({ ketcher, allow }: KetcherToolbarProps) {
 
   return (
     <div className="flex flex-wrap items-stretch gap-3 rounded-md border border-neutral-200 bg-white p-2 text-sm">
-      {rings.length > 0 && <Section title="Templates" tools={rings} active={active} onClick={click} />}
+      {templates.length > 0 && (
+        <TemplateSection templates={templates} active={active} onClick={click} />
+      )}
       {bonds.length > 0 && <Section title="Bonds" tools={bonds} active={active} onClick={click} />}
       {atoms.length > 0 && <Section title="Atoms" tools={atoms} active={active} onClick={click} />}
       {other.length > 0 && <Section title="Other" tools={other} active={active} onClick={click} />}
       {selection.length > 0 && (
         <Section title="Select" tools={selection} active={active} onClick={click} />
       )}
-      <Section
-        title="Undo"
-        tools={[]}
-        active={active}
-        onClick={click}
-        extra={
-          <>
-            <ToolButton
-              label="↶"
-              hint="Undo"
-              onClick={() => ketcher && undo(ketcher)}
-              active={false}
-            />
-            <ToolButton
-              label="↷"
-              hint="Redo"
-              onClick={() => ketcher && redo(ketcher)}
-              active={false}
-            />
-            <ToolButton
-              label="Clear"
-              hint="Clear canvas"
-              onClick={() => ketcher && clearCanvas(ketcher)}
-              active={false}
-              wide
-            />
-          </>
-        }
-      />
+      <div className="flex flex-col gap-1">
+        <div className="text-[10px] font-semibold uppercase tracking-wider text-neutral-500">Undo</div>
+        <div className="flex flex-wrap gap-0.5">
+          <ToolButton label="↶" hint="Undo" onClick={() => ketcher && undo(ketcher)} active={false} />
+          <ToolButton label="↷" hint="Redo" onClick={() => ketcher && redo(ketcher)} active={false} />
+          <ToolButton
+            label="Clear"
+            hint="Clear canvas"
+            onClick={() => ketcher && clearCanvas(ketcher)}
+            active={false}
+            wide
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function TemplateSection({
+  templates,
+  active,
+  onClick,
+}: {
+  templates: TemplateDef[];
+  active: ToolId | null;
+  onClick: (id: ToolId) => void;
+}) {
+  return (
+    <div className="flex flex-col gap-1">
+      <div className="text-[10px] font-semibold uppercase tracking-wider text-neutral-500">Templates</div>
+      <div className="flex flex-wrap gap-0.5">
+        {templates.map((t) => {
+          const smiles = RING_SMILES[t.id];
+          const isActive = active === t.id;
+          return (
+            <button
+              key={t.id}
+              type="button"
+              title={t.name}
+              aria-label={t.name}
+              onClick={() => onClick(t.id)}
+              className={`flex h-14 w-14 items-center justify-center rounded border p-0.5 transition ${
+                isActive
+                  ? "border-blue-500 bg-blue-50"
+                  : "border-neutral-200 bg-white hover:bg-neutral-100"
+              }`}
+            >
+              {smiles ? <StructureView smiles={smiles} width={50} height={46} /> : t.name}
+            </button>
+          );
+        })}
+      </div>
     </div>
   );
 }
@@ -128,13 +160,11 @@ function Section({
   tools,
   active,
   onClick,
-  extra,
 }: {
   title: string;
   tools: ToolDef[];
   active: ToolId | null;
   onClick: (id: ToolId) => void;
-  extra?: React.ReactNode;
 }) {
   return (
     <div className="flex flex-col gap-1">
@@ -149,7 +179,6 @@ function Section({
             onClick={() => onClick(t.id)}
           />
         ))}
-        {extra}
       </div>
     </div>
   );

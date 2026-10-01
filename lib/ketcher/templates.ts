@@ -21,8 +21,6 @@ export const RING_SMILES: Partial<Record<ToolId, string>> = {
   "ring-cyclobutane": "C1CCC1",
   "ring-cyclopropane": "C1CC1",
   "ring-cycloheptane": "C1CCCCCC1",
-  "ring-furan": "c1ccoc1",
-  "ring-pyridine": "c1ccncc1",
 };
 
 const cache = new Map<string, Struct>();

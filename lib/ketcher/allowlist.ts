@@ -11,20 +11,19 @@ const RINGS: ToolId[] = [
   "ring-cyclobutane",
   "ring-cyclopropane",
   "ring-cycloheptane",
-  "ring-furan",
-  "ring-pyridine",
 ];
 
-const BONDS_BASIC: ToolId[] = ["bond-single", "bond-double", "bond-triple", "bond-aromatic"];
+const BONDS_BASIC: ToolId[] = ["bond-single", "bond-double", "bond-triple", "chain"];
 const BONDS_STEREO: ToolId[] = ["bond-up", "bond-down"];
 
 const ATOMS_COMMON: ToolId[] = ["atom-C", "atom-H", "atom-O", "atom-N", "atom-Br", "atom-Cl"];
 const ATOMS_EXTRA: ToolId[] = ["atom-F", "atom-I", "atom-S", "atom-P"];
 
 const OTHER_CHARGES: ToolId[] = ["charge-plus", "charge-minus"];
-const OTHER_MECH: ToolId[] = ["reaction-arrow", "electron-pair"];
+const OTHER_LONE_PAIR: ToolId[] = ["lone-pair"];
+const OTHER_MECH: ToolId[] = ["reaction-arrow"];
 
-const SELECTION: ToolId[] = ["select-rect", "select-lasso", "erase"];
+const SELECTION: ToolId[] = ["select-rect", "select-fragment", "hand", "erase"];
 
 export function toolsForQuestionType(type: QuestionType): Set<ToolId> {
   const s = new Set<ToolId>([...RINGS, ...SELECTION]);
@@ -37,6 +36,7 @@ export function toolsForQuestionType(type: QuestionType): Set<ToolId> {
       ATOMS_COMMON.forEach((t) => s.add(t));
       ATOMS_EXTRA.forEach((t) => s.add(t));
       OTHER_CHARGES.forEach((t) => s.add(t));
+      OTHER_LONE_PAIR.forEach((t) => s.add(t));
       break;
     case "stereo_draw":
       BONDS_BASIC.forEach((t) => s.add(t));
@@ -44,11 +44,13 @@ export function toolsForQuestionType(type: QuestionType): Set<ToolId> {
       ATOMS_COMMON.forEach((t) => s.add(t));
       ATOMS_EXTRA.forEach((t) => s.add(t));
       OTHER_CHARGES.forEach((t) => s.add(t));
+      OTHER_LONE_PAIR.forEach((t) => s.add(t));
       break;
     case "mechanism":
       BONDS_BASIC.forEach((t) => s.add(t));
       ATOMS_COMMON.forEach((t) => s.add(t));
       OTHER_CHARGES.forEach((t) => s.add(t));
+      OTHER_LONE_PAIR.forEach((t) => s.add(t));
       OTHER_MECH.forEach((t) => s.add(t));
       break;
     default:
@@ -67,5 +69,6 @@ export const ALL_TOOLS: Set<ToolId> = new Set<ToolId>([
   ...ATOMS_COMMON,
   ...ATOMS_EXTRA,
   ...OTHER_CHARGES,
+  ...OTHER_LONE_PAIR,
   ...OTHER_MECH,
 ]);
