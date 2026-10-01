@@ -1,0 +1,16 @@
+{
+  "id": "ms-017",
+  "topic": "ms",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "A conjugated enone (α,β-unsaturated ketone) shows its C=O IR band around 1680 cm⁻¹, LOWER than a non-conjugated ketone at ~1715. Why?",
+  "options": [
+    { "id": "conj", "label": "Conjugation delocalizes the C=O π electrons across the enone system, reducing C=O bond order (partial double-bond character) and lowering the force constant → lower frequency." },
+    { "id": "mass", "label": "Reduced mass is larger" },
+    { "id": "polar", "label": "Dipole moment is smaller" },
+    { "id": "sp2", "label": "sp² carbons are heavier" }
+  ],
+  "correctOptionId": "conj",
+  "concepts": ["conjugation lowers C=O IR frequency"],
+  "explanation": "Conjugation (C=C adjacent to C=O) delocalizes the π system. The C=O gains some single-bond character (electrons spread to C=C). Weaker effective C=O bond → lower stretching frequency by ~30 cm⁻¹. This is diagnostic: if C=O is unusually LOW (~1680), suspect conjugation."
+}

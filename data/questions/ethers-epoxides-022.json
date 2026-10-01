@@ -1,0 +1,16 @@
+{
+  "id": "ethers-epoxides-022",
+  "topic": "ethers-epoxides",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "Alkoxymercuration-demercuration of an alkene with Hg(OAc)₂ / ROH, then NaBH₄, produces:",
+  "options": [
+    { "id": "ether", "label": "A Markovnikov ether (RO on more substituted C; alkoxymercurinium bridge prevents rearrangement)" },
+    { "id": "alcohol", "label": "A Markovnikov alcohol (same as oxymercuration-demercuration with H₂O)" },
+    { "id": "epoxide", "label": "An epoxide" },
+    { "id": "anti-mark", "label": "An anti-Markovnikov ether" }
+  ],
+  "correctOptionId": "ether",
+  "concepts": ["alkoxymercuration", "ether synthesis without rearrangement"],
+  "explanation": "Hg(OAc)₂ bridges the alkene; the alcohol opens the bridge at the more substituted C (Markovnikov). NaBH₄ removes Hg. Net: Markovnikov ether, no carbocation, no rearrangement — unlike Williamson, this doesn't need an alkoxide, so it's compatible with tertiary ethers."
+}

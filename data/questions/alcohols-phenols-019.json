@@ -1,0 +1,16 @@
+{
+  "id": "alcohols-phenols-019",
+  "topic": "alcohols-phenols",
+  "type": "mcq",
+  "difficulty": 5,
+  "prompt": "CHALLENGE: You add 0.3 equivalents of CH₃MgBr to a solution containing BOTH 2-butanone (a ketone) and methyl benzoate (an ester). Which product forms predominantly, and in what ratio?",
+  "options": [
+    { "id": "ketone-adducted", "label": "Mostly starting material (both carbonyls remain) + ~30% of the Grignard-adducted 2-butanone (tertiary alkoxide, becomes 2-methyl-2-butanol on workup). The ketone is more electrophilic than the ester, so the limited Grignard preferentially attacks the ketone." },
+    { "id": "both-equal", "label": "Equal amounts of adducts on ketone and ester." },
+    { "id": "ester-wins", "label": "Mostly ester adducted (ester is more reactive)." },
+    { "id": "nothing", "label": "No reaction — too dilute." }
+  ],
+  "correctOptionId": "ketone-adducted",
+  "concepts": ["chemoselectivity under limiting reagent", "ketone > ester reactivity"],
+  "explanation": "Ketones are more electrophilic than esters at the carbonyl C because esters have resonance donation from the -OR oxygen that reduces the δ+ on C. With a limited (0.3 eq) nucleophile, chemoselectivity emerges: the faster-reacting ketone absorbs almost all the Grignard. Great diagnostic question for 'which C=O is more reactive'."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "radicals-021",
+  "topic": "radicals",
+  "type": "mcq",
+  "difficulty": 5,
+  "prompt": "CHALLENGE: Why must radical chlorination of methane use EXCESS methane (CH₄ as the limiting reactant for Cl₂, not the other way around)?",
+  "options": [
+    { "id": "polyhal", "label": "Once CH₃Cl forms, it still has 3 C–H bonds that Cl• can abstract. With limited CH₄, further chlorination gives CH₂Cl₂, CHCl₃, CCl₄ — a mix of over-halogenated products." },
+    { "id": "heat", "label": "The reaction is too exothermic without excess." },
+    { "id": "radical-die", "label": "Radicals die without excess substrate." },
+    { "id": "solvent", "label": "Methane acts as the solvent." }
+  ],
+  "correctOptionId": "polyhal",
+  "concepts": ["polyhalogenation", "statistical competition"],
+  "explanation": "Each halogenation product (CH₃Cl, CH₂Cl₂, CHCl₃) still has abstractable H's — they can all keep reacting with Cl•. With excess CH₄, Cl• statistically hits unreacted methane most often. Industrial production of CHCl₃ or CCl₄ deliberately uses the opposite ratio to drive over-halogenation."
+}

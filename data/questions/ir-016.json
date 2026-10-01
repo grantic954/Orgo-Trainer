@@ -1,0 +1,16 @@
+{
+  "id": "ir-016",
+  "topic": "ir",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "Why does the symmetric C=C stretch of 2-butene (CH₃CH=CHCH₃) NOT appear in the IR?",
+  "options": [
+    { "id": "dipole", "label": "The symmetric stretch doesn't change the molecular dipole moment (both ends move in opposite directions symmetrically) — no dipole change → IR-inactive." },
+    { "id": "mass", "label": "The C=C bond is too strong." },
+    { "id": "freq", "label": "The frequency is out of IR range." },
+    { "id": "degen", "label": "The vibration is degenerate." }
+  ],
+  "correctOptionId": "dipole",
+  "concepts": ["IR selection rule", "symmetric vibrations"],
+  "explanation": "IR absorption requires a change in dipole moment during the vibration. In a symmetric internal alkene (like trans-2-butene), stretching C=C symmetrically doesn't change the overall dipole — the band is IR-inactive even though the vibration happens. Terminal and unsymmetric alkenes DO show C=C around 1640."
+}

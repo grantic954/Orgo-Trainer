@@ -1,0 +1,16 @@
+{
+  "id": "synthesis-020",
+  "topic": "synthesis",
+  "type": "mcq",
+  "difficulty": 5,
+  "prompt": "CHALLENGE: Target: p-bromoaniline (BrC₆H₄NH₂) from benzene. Which sequence works?",
+  "options": [
+    { "id": "nit-first", "label": "Nitrate (gives nitrobenzene) → reduce to aniline → protect NH₂ as acetanilide (Ac₂O) → brominate (acetamide is o/p director, gives para) → hydrolyze acetamide back to NH₂." },
+    { "id": "br-first-wrong", "label": "Brominate first (gives bromobenzene) → nitrate (NO₂ is meta director — gives meta, not para) → reduce — wrong isomer." },
+    { "id": "nit-then-br", "label": "Nitrate → brominate (NO₂ is meta director; gives m-bromonitrobenzene) → reduce — wrong isomer." },
+    { "id": "br-nh2-direct", "label": "Treat benzene with HBr and NaNH₂ simultaneously." }
+  ],
+  "correctOptionId": "nit-first",
+  "concepts": ["protecting NH₂ for EAS", "amide o/p direction"],
+  "explanation": "Free NH₂ oxidizes under Br₂/FeBr₃ conditions and over-brominates. Protect as the acetamide (-NHCOCH₃) first — still o/p directing (through resonance), but tames reactivity. One Br goes para. Hydrolyze back to NH₂. Classic 5-step aromatic synthesis."
+}

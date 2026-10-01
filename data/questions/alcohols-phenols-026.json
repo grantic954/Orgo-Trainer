@@ -1,0 +1,14 @@
+{
+  "id": "alcohols-phenols-026",
+  "topic": "alcohols-phenols",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "An (R)-2-butanol is treated with TsCl/py, then NaBr. Draw the organic product and its stereochemistry.",
+  "reactants": ["C[C@@H](O)CC"],
+  "reagents": ["TsCl, py", "then NaBr"],
+  "answers": [{ "smiles": "C[C@H](Br)CC", "label": "(S)-2-bromobutane (inversion)" }],
+  "acceptable": [{ "smiles": "CC(Br)CC", "label": "same connectivity, no stereo specified", "credit": 0.5 }],
+  "traps": [{ "smiles": "C[C@@H](Br)CC", "trap": "stereo-ignored", "note": "SN2 at the OTs carbon inverts stereochemistry." }],
+  "concepts": ["tosylate SN2", "stereochemistry inversion"],
+  "explanation": "Tosylate formation preserves stereochemistry at the carbon (O–H bond breaks, not the C–O bond). The subsequent SN2 displacement by Br⁻ inverts the stereocenter. Net result: R → S."
+}

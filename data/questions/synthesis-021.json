@@ -1,0 +1,16 @@
+{
+  "id": "synthesis-021",
+  "topic": "synthesis",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "To MOVE a halogen from one carbon to an adjacent one (e.g., 2-bromopentane → 3-bromopentane), you can use:",
+  "options": [
+    { "id": "elim-add", "label": "Elimination (strong base, E2) to the alkene, then addition of HBr with peroxides (anti-Markovnikov) or without (Markovnikov) to install the Br on the new carbon" },
+    { "id": "sn1", "label": "Direct SN1 with no reagents" },
+    { "id": "lah", "label": "LiAlH₄" },
+    { "id": "not-poss", "label": "Not possible" }
+  ],
+  "correctOptionId": "elim-add",
+  "concepts": ["functional group migration", "elim/add strategy"],
+  "explanation": "A classic synthesis motif: eliminate to get rid of the FG → add it back on a different carbon. For halide migration: E2 to alkene, then HBr addition. Choice of peroxide-vs-not controls regio (M vs anti-M). Similar logic moves double bonds (add then eliminate differently)."
+}

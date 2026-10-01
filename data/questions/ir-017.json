@@ -1,0 +1,16 @@
+{
+  "id": "ir-017",
+  "topic": "ir",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "A sample's IR shows a sharp, narrow O–H at ~3620 cm⁻¹. The sample is MOST likely:",
+  "options": [
+    { "id": "dilute", "label": "A dilute solution of an alcohol in CCl₄ (isolated, non-H-bonded O–H gives a sharp signal; concentrated or neat gives the broad H-bonded signal)." },
+    { "id": "cooh", "label": "A carboxylic acid" },
+    { "id": "water", "label": "Water" },
+    { "id": "amine", "label": "An amine" }
+  ],
+  "correctOptionId": "dilute",
+  "concepts": ["H-bonding vs sharpness", "concentration effects"],
+  "explanation": "Isolated O–H (gas phase or dilute non-polar solvent) is a sharp, narrow band at higher wavenumber (~3620). H-bonded O–H (neat or concentrated) is broader and lower (3200-3550) because the H-bond weakens the O–H bond. This is a diagnostic to tell solvent/concentration effects."
+}

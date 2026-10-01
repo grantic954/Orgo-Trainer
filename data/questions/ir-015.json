@@ -1,0 +1,16 @@
+{
+  "id": "ir-015",
+  "topic": "ir",
+  "type": "mcq",
+  "difficulty": 1,
+  "prompt": "An IR signal LEFT of 3000 cm⁻¹ (3000-3100) indicates:",
+  "options": [
+    { "id": "sp2", "label": "sp² C–H bonds (vinyl or aromatic)" },
+    { "id": "sp3", "label": "sp³ C–H bonds (right of 3000)" },
+    { "id": "oh", "label": "O–H only" },
+    { "id": "co", "label": "C=O" }
+  ],
+  "correctOptionId": "sp2",
+  "concepts": ["sp² vs sp³ C–H position"],
+  "explanation": "sp² C–H stretches sit just above 3000 cm⁻¹ (around 3050-3100). sp³ C–H sits just below 3000 (around 2850-2950). This 3000 cm⁻¹ 'dividing line' is a quick way to spot alkene/aromatic character."
+}

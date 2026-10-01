@@ -1,0 +1,12 @@
+{
+  "id": "ethers-epoxides-023",
+  "topic": "ethers-epoxides",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Acid cleavage of methyl phenyl ether (anisole) with excess HI, heat. Draw the two organic products.",
+  "reactants": ["COc1ccccc1"],
+  "reagents": ["HI (excess)", "heat"],
+  "answers": [{ "smiles": "Oc1ccccc1", "label": "phenol" }, { "smiles": "CI", "label": "methyl iodide" }],
+  "concepts": ["aryl ether cleavage", "regio-specific"],
+  "explanation": "Protonation of OAr; iodide attacks the SP³ methyl carbon (easy SN2), not the aromatic ring. Products are the phenol (Ar-OH) and methyl iodide. Aryl ethers always cleave on the alkyl side."
+}

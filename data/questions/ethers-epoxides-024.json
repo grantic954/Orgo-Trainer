@@ -1,0 +1,15 @@
+{
+  "id": "ethers-epoxides-024",
+  "topic": "ethers-epoxides",
+  "type": "rank",
+  "difficulty": 2,
+  "prompt": "Rank by oxidation state of sulfur (lowest → highest):",
+  "items": [
+    { "id": "sulfide", "label": "Sulfide (R-S-R)" },
+    { "id": "sulfoxide", "label": "Sulfoxide (R-S(=O)-R)" },
+    { "id": "sulfone", "label": "Sulfone (R-S(=O)(=O)-R)" }
+  ],
+  "correctOrder": ["sulfide", "sulfoxide", "sulfone"],
+  "concepts": ["S oxidation states"],
+  "explanation": "Oxidation adds one O at a time: sulfide → sulfoxide (NaIO₄, mild) → sulfone (H₂O₂ or mCPBA, excess). Each step is a two-electron oxidation of S."
+}

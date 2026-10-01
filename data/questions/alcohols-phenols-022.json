@@ -1,0 +1,16 @@
+{
+  "id": "alcohols-phenols-022",
+  "topic": "alcohols-phenols",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "What is the role of NaH in alcohol chemistry?",
+  "options": [
+    { "id": "deprot", "label": "Deprotonate the alcohol to give an alkoxide (R-O⁻ Na⁺) with release of H₂ gas." },
+    { "id": "oxidize", "label": "Oxidize the alcohol to a ketone." },
+    { "id": "reduce", "label": "Reduce the alcohol to an alkane." },
+    { "id": "subs", "label": "Substitute OH with H." }
+  ],
+  "correctOptionId": "deprot",
+  "concepts": ["alkoxide formation", "NaH as base"],
+  "explanation": "NaH is a strong, non-nucleophilic base that quantitatively deprotonates alcohols: R-OH + NaH → R-O⁻Na⁺ + H₂↑. It's the standard way to generate an alkoxide for Williamson ether synthesis."
+}

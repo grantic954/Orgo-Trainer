@@ -1,0 +1,16 @@
+{
+  "id": "alcohols-phenols-020",
+  "topic": "alcohols-phenols",
+  "type": "mcq",
+  "difficulty": 5,
+  "prompt": "CHALLENGE: You add 1.0 eq CH₃MgBr to methyl benzoate (PhCOOMe). What is the major isolated product after aqueous workup — the ketone (acetophenone) or the tertiary alcohol (2-phenyl-2-propanol)?",
+  "options": [
+    { "id": "tertiary-alcohol", "label": "The tertiary alcohol (2-phenyl-2-propanol), with ~50% unreacted ester left over. The ketone intermediate (acetophenone) is MORE reactive than the ester, so once a bit of ketone forms, it consumes any available Grignard faster than the ester does." },
+    { "id": "ketone-main", "label": "The ketone, acetophenone, as the major product (clean 1-eq stop)." },
+    { "id": "half-half", "label": "50:50 ketone and alcohol." },
+    { "id": "ester-only", "label": "Only recovered ester (reaction fails)." }
+  ],
+  "correctOptionId": "tertiary-alcohol",
+  "concepts": ["double addition to esters", "intermediate reactivity"],
+  "explanation": "This is why Grignard + ester always 'adds twice' — the ketone intermediate is more electrophilic than the ester, so sub-stoichiometric Grignard still over-adds. To stop at a ketone, use a less reactive nucleophile like a Weinreb amide (RC(=O)N(OMe)Me) or Gilman reagent (R₂CuLi)."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ethers-epoxides-021",
+  "topic": "ethers-epoxides",
+  "type": "mcq",
+  "difficulty": 5,
+  "prompt": "CHALLENGE: Phenoxide (PhO⁻) + CH₂=CH-CH₂-Br (allyl bromide) can react at O (SN2) OR at the ortho/para ring carbon (C-alkylation via enolate-like resonance). Which usually dominates in polar aprotic solvent, and why?",
+  "options": [
+    { "id": "o-alk", "label": "O-alkylation dominates in polar aprotic solvents like DMF or acetone — the hard-charged O is the site of highest HOMO coefficient; soft C sites favored only in protic solvents that cluster around O." },
+    { "id": "c-alk", "label": "C-alkylation always dominates." },
+    { "id": "either", "label": "Equal mix always." },
+    { "id": "none", "label": "No reaction." }
+  ],
+  "correctOptionId": "o-alk",
+  "concepts": ["ambident nucleophile", "O vs C alkylation", "solvent effects"],
+  "explanation": "Phenoxide is ambident. In polar aprotic solvents (DMF, acetone), charge sits on O (highest HOMO there) → O-alkylation to allyl phenyl ether. In protic (H₂O, EtOH), O is H-bonded and softer C becomes the main site → C-alkylation. Allyl halides are 'softer' electrophiles and amplify this trend. Classic Hard/Soft Acid-Base (HSAB) problem."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ethers-epoxides-025",
+  "topic": "ethers-epoxides",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "Two equivalents of a thiol (2 RSH) are oxidized (NaOH/H₂O/Br₂) to give what?",
+  "options": [
+    { "id": "disulfide", "label": "A disulfide, R-S-S-R, with reduction of Br₂ to 2 Br⁻" },
+    { "id": "sulfoxide", "label": "A sulfoxide" },
+    { "id": "sulfone", "label": "A sulfone" },
+    { "id": "thiolate", "label": "Just the thiolate R-S⁻" }
+  ],
+  "correctOptionId": "disulfide",
+  "concepts": ["disulfide formation"],
+  "explanation": "Thiols are easily oxidized to disulfides (2 R-SH → R-S-S-R + 2 e⁻ + 2 H⁺). Biologically crucial — this is the chemistry of cysteine → cystine, which stabilizes protein tertiary structure (e.g., insulin). Reduction (Zn/HCl, DTT, or TCEP) regenerates thiols."
+}

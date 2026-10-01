@@ -1,0 +1,16 @@
+{
+  "id": "synthesis-023",
+  "topic": "synthesis",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "You are planning a synthesis. Your two FIRST questions should be:",
+  "options": [
+    { "id": "two-q", "label": "(1) Does the carbon skeleton change (bond forming or breaking)? (2) Does the functional group identity or location change?" },
+    { "id": "yield", "label": "How much yield can I get?" },
+    { "id": "cost", "label": "What are the cheapest reagents?" },
+    { "id": "fast", "label": "Which step is fastest?" }
+  ],
+  "correctOptionId": "two-q",
+  "concepts": ["synthesis planning"],
+  "explanation": "Any multistep synthesis analysis starts by comparing target and starting material: Does the C-skeleton need building or breaking? Where/what is the FG? Those two questions split the problem into (1) C-C bond strategy and (2) FG strategy, each with their own standard moves."
+}

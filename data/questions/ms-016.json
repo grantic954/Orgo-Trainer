@@ -1,0 +1,16 @@
+{
+  "id": "ms-016",
+  "topic": "ms",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "An MS shows a tall peak at M⁺ = 72 and a strong fragment at m/z = 57 (M − 15). What group was lost?",
+  "options": [
+    { "id": "methyl", "label": "A methyl group (CH₃, mass 15)" },
+    { "id": "ethyl", "label": "An ethyl group (29)" },
+    { "id": "water", "label": "Water (18)" },
+    { "id": "co", "label": "CO (28)" }
+  ],
+  "correctOptionId": "methyl",
+  "concepts": ["loss of 15 = methyl"],
+  "explanation": "Common neutral losses to memorize: 15 = CH₃•, 18 = H₂O, 28 = CO or C₂H₄, 29 = CHO or C₂H₅, 43 = C₃H₇ or CH₃CO. Loss of 15 is diagnostic for α-cleavage next to a group that would stabilize the resulting cation (e.g., in 2-butanone, loss of methyl gives the acylium ion [CH₃CO]⁺ at 43)."
+}

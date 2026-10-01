@@ -1,0 +1,16 @@
+{
+  "id": "synthesis-018",
+  "topic": "synthesis",
+  "type": "mcq",
+  "difficulty": 5,
+  "prompt": "CHALLENGE: You attempt Williamson synthesis of tert-butyl methyl ether (Me-O-tBu) by combining NaOCH₃ + (CH₃)₃C-Br. What do you actually get, and what's the fix?",
+  "options": [
+    { "id": "e2", "label": "You get isobutylene (E2 wins — strong base + 3° halide). Fix: flip the reagents to NaOC(CH₃)₃ + CH₃Br — SN2 on methyl halide works perfectly, and even a bulky base is irrelevant on CH₃Br." },
+    { "id": "sn1", "label": "You get a mix of SN1 ether and tert-butanol." },
+    { "id": "works", "label": "You get Me-O-tBu cleanly." },
+    { "id": "nothing", "label": "No reaction." }
+  ],
+  "correctOptionId": "e2",
+  "concepts": ["Williamson pitfall", "SN2 vs E2 substrate choice"],
+  "explanation": "3° halide + strong base = E2 every time. The correct Williamson disconnection ALWAYS puts the alkoxide on the more hindered side and the alkyl halide on the LESS hindered side. Here: tert-butoxide + methyl iodide — unambiguous SN2 on the primary (methyl) halide."
+}

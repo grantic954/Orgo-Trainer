@@ -1,0 +1,16 @@
+{
+  "id": "ethers-epoxides-026",
+  "topic": "ethers-epoxides",
+  "type": "mcq",
+  "difficulty": 5,
+  "prompt": "CHALLENGE: The Sharpless asymmetric epoxidation uses Ti(OiPr)₄, (CH₃)₃COOH, and a chiral DET ((+) or (−)-diethyl tartrate) to convert an allylic alcohol into a chiral epoxide. What determines which enantiomer forms?",
+  "options": [
+    { "id": "det", "label": "The chirality of DET (D vs L / + vs −). (+)-DET gives one epoxide enantiomer; (−)-DET gives the other. The chiral Ti complex delivers oxygen to a specific face of the alkene." },
+    { "id": "temp", "label": "Temperature" },
+    { "id": "solvent", "label": "Choice of solvent" },
+    { "id": "random", "label": "Random — gives a racemate" }
+  ],
+  "correctOptionId": "det",
+  "concepts": ["asymmetric synthesis", "Sharpless epoxidation", "chiral catalysis"],
+  "explanation": "Sharpless' Nobel-winning method only works on allylic alcohols — the OH coordinates to Ti, directing the oxygen delivery face. The DET enantiomer dictates which face. Predictable rule: with the allylic alcohol drawn with OH down and alkene to the right, (−)-DET gives O above the plane, (+)-DET gives O below."
+}

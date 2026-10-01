@@ -1,0 +1,16 @@
+{
+  "id": "synthesis-019",
+  "topic": "synthesis",
+  "type": "mcq",
+  "difficulty": 5,
+  "prompt": "CHALLENGE: Target: 2-methyl-2-butanol. You have ONLY methylmagnesium bromide (CH₃MgBr) available as the organometallic. From which carbonyl precursor can you build the target?",
+  "options": [
+    { "id": "butanone", "label": "2-butanone (CH₃COCH₂CH₃) + CH₃MgBr → 2-methyl-2-butanol. The ethyl group comes 'free' from the ketone side." },
+    { "id": "acetone", "label": "Acetone + CH₃MgBr gives 2-methyl-2-propanol (tert-butanol), not the target." },
+    { "id": "ester", "label": "Methyl propanoate + CH₃MgBr — gives 2-methyl-2-butanol only via DOUBLE addition of CH₃ (6 carbons wouldn't fit)." },
+    { "id": "impossible", "label": "Impossible with only methyl Grignard." }
+  ],
+  "correctOptionId": "butanone",
+  "concepts": ["disconnection with limited reagents", "which bond to break"],
+  "explanation": "Retrosynthesis gives you three C–C disconnections on a tertiary alcohol. Only two require ethyl Grignard (which you lack). The 'add methyl to 2-butanone' disconnect uses just CH₃MgBr. Learning to see which bond you CAN disconnect given reagent limits is the heart of synthesis."
+}

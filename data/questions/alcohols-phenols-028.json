@@ -1,0 +1,15 @@
+{
+  "id": "alcohols-phenols-028",
+  "topic": "alcohols-phenols",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "Which oxidation of a 2° alcohol gives a KETONE (not over-oxidation)?",
+  "options": [
+    { "id": "cr", "label": "Na₂Cr₂O₇ / H₂SO₄ / H₂O — 2° alcohols stop at ketone (no α-H on the C=O to re-oxidize)" },
+    { "id": "always-cooh", "label": "All oxidations go all the way to COOH" },
+    { "id": "reverse", "label": "The ketone is not stable; it hydrates" }
+  ],
+  "correctOptionId": "cr",
+  "concepts": ["2° alcohol → ketone", "no over-oxidation"],
+  "explanation": "Oxidation of a 2° alcohol gives a ketone, and the ketone has no C–H bond on the carbonyl C to further oxidize. Chromium, Jones, and PCC all work. 1° alcohols with aqueous Cr(VI) over-oxidize (through aldehyde hydrate) to COOH."
+}

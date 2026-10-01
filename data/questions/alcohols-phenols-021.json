@@ -1,0 +1,16 @@
+{
+  "id": "alcohols-phenols-021",
+  "topic": "alcohols-phenols",
+  "type": "mcq",
+  "difficulty": 5,
+  "prompt": "CHALLENGE: Acid-catalyzed dehydration of 3,3-dimethyl-2-butanol (also called pinacolyl alcohol, (CH₃)₃C-CH(OH)-CH₃) gives 2,3-dimethyl-2-butene as the major alkene — NOT 3,3-dimethyl-1-butene. Why?",
+  "options": [
+    { "id": "shift", "label": "Loss of water gives a 2° carbocation adjacent to a quaternary carbon; a 1,2-methyl shift forms a more stable 3° carbocation; β-H loss then gives the tetrasubstituted alkene 2,3-dimethyl-2-butene." },
+    { "id": "zaitsev", "label": "Zaitsev's rule alone — no rearrangement needed." },
+    { "id": "cis", "label": "The reaction is stereospecific." },
+    { "id": "no-rearr", "label": "Carbocation rearrangements don't happen with 3° neighbors." }
+  ],
+  "correctOptionId": "shift",
+  "concepts": ["carbocation rearrangement", "methyl shift"],
+  "explanation": "The 2° cation at C2 has a 3° neighbor (C3) that can migrate a methyl group. The resulting 3° cation at C2 is lower in energy. β-H elimination gives the fully-substituted alkene. This is Markovnikov's & Zaitsev's rules on steroids — ALWAYS check for rearrangement when a 2° cation is next to a 3° or quaternary carbon."
+}

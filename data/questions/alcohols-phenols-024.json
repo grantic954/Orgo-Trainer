@@ -1,0 +1,12 @@
+{
+  "id": "alcohols-phenols-024",
+  "topic": "alcohols-phenols",
+  "type": "draw_product",
+  "difficulty": 2,
+  "prompt": "Convert 1-butanol to 1-bromobutane with PBr₃. Draw the product.",
+  "reactants": ["CCCCO"],
+  "reagents": ["PBr3"],
+  "answers": [{ "smiles": "CCCCBr", "label": "1-bromobutane" }],
+  "concepts": ["alcohol → alkyl halide", "PBr3"],
+  "explanation": "PBr₃ converts 1° and 2° alcohols to alkyl bromides with inversion of configuration. Mechanism: OH attacks P, kicking out Br⁻; Br⁻ then does SN2 on the activated carbon. Milder and more selective than HBr for sensitive substrates."
+}

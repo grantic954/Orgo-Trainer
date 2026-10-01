@@ -1,0 +1,16 @@
+{
+  "id": "radicals-020",
+  "topic": "radicals",
+  "type": "mcq",
+  "difficulty": 5,
+  "prompt": "CHALLENGE: Toluene (PhCH₃) + Cl₂/hν gives ~95% benzyl chloride (PhCH₂Cl) and essentially no ring chlorination. Yet Cl₂ is normally considered an UNSELECTIVE radical halogenator. Why the dramatic selectivity here?",
+  "options": [
+    { "id": "res-vs-arom", "label": "Benzylic C–H BDE (~90 kcal/mol) is ~15 kcal/mol WEAKER than aromatic C–H and well below typical sp³ C–H. The benzylic radical is heavily resonance-stabilized, so even 'unselective' Cl• strongly prefers the benzylic position." },
+    { "id": "steric", "label": "Chlorine is too big for the ring." },
+    { "id": "polar", "label": "Toluene's methyl group is polar." },
+    { "id": "no-arom", "label": "Cl₂ requires FeCl₃ to do ring halogenation; without a Lewis acid, no ring reaction can happen." }
+  ],
+  "correctOptionId": "res-vs-arom",
+  "concepts": ["BDE-driven selectivity", "benzylic resonance"],
+  "explanation": "Cl• is 'unselective' only when comparing closely-matched sp³ C–H bonds. Benzylic C–H is in a different league because the resulting benzyl radical delocalizes into the ring (4 resonance structures). The energetic preference overwhelms Cl₂'s early TS. Ring chlorination also fails without a Lewis acid catalyst."
+}

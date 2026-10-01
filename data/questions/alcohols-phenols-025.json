@@ -1,0 +1,16 @@
+{
+  "id": "alcohols-phenols-025",
+  "topic": "alcohols-phenols",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "Why convert an alcohol to its tosylate (TsCl, pyridine) BEFORE a substitution or elimination?",
+  "options": [
+    { "id": "lg", "label": "OTs is a much better leaving group than OH (OH⁻ is a poor LG; OTs⁻ is a resonance-stabilized sulfonate). Converting first lets you use strong nucleophiles or bases that wouldn't attack a plain alcohol." },
+    { "id": "mass", "label": "Tosylates weigh more." },
+    { "id": "color", "label": "Tosylates are colored." },
+    { "id": "ring", "label": "Tosylates form rings." }
+  ],
+  "correctOptionId": "lg",
+  "concepts": ["tosylate activation", "leaving group ability"],
+  "explanation": "Alcohols can't do SN2 or E2 directly — OH⁻ is a terrible leaving group. Tosylation (TsCl + pyridine) converts R-OH to R-OTs; now OTs⁻ (pKa of TsOH ~ −3) is an excellent LG, and you can do SN2 (e.g., with NaBr), E2 (with t-BuOK), or anything a halide can do."
+}

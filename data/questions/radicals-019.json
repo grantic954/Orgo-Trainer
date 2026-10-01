@@ -1,0 +1,16 @@
+{
+  "id": "radicals-019",
+  "topic": "radicals",
+  "type": "mcq",
+  "difficulty": 5,
+  "prompt": "CHALLENGE: Peroxide + HBr gives anti-Markovnikov addition to alkenes. But peroxide + HCl does NOT work the same way. Why does the radical chain fail with HCl?",
+  "options": [
+    { "id": "bde", "label": "The propagation step 'R• + H–Cl → R–H + Cl•' is endothermic (H–Cl bond is much stronger than H–Br), so the chain can't propagate — Cl• can't abstract H from HCl fast enough." },
+    { "id": "chlorine", "label": "Chlorine atoms are too small to react." },
+    { "id": "peroxide", "label": "Peroxides don't dissociate in the presence of HCl." },
+    { "id": "polar", "label": "HCl is more polar than HBr." }
+  ],
+  "correctOptionId": "bde",
+  "concepts": ["radical chain thermochemistry", "BDE constraints"],
+  "explanation": "For a radical chain: both propagation steps must be viable. H–Br BDE is ~87 kcal/mol (feasible for Br•-based abstraction). H–Cl is ~103, which makes the needed step too endothermic. HI's other steps are too slow. Only HBr threads the needle — a classic 'why only HBr' result."
+}

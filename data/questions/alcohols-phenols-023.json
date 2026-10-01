@@ -1,0 +1,16 @@
+{
+  "id": "alcohols-phenols-023",
+  "topic": "alcohols-phenols",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "An alcohol is treated with TMSCl / Et₃N to form R-OTMS. To remove the TMS group later, which reagent is used?",
+  "options": [
+    { "id": "tbaf", "label": "TBAF (tetrabutylammonium fluoride) — F⁻ cleaves the Si–O bond selectively; also H₂O works for TMS specifically" },
+    { "id": "lah", "label": "LiAlH₄" },
+    { "id": "pcc", "label": "PCC" },
+    { "id": "pbr3", "label": "PBr₃" }
+  ],
+  "correctOptionId": "tbaf",
+  "concepts": ["TMS protection and deprotection"],
+  "explanation": "F⁻ has an enormous affinity for Si (very strong Si–F bond, ~135 kcal/mol). TBAF cleaves silyl ethers back to the free alcohol under mild, orthogonal conditions. TMS specifically is also labile to water; bulkier silyl groups (TBS, TBDPS) need TBAF."
+}

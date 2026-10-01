@@ -1,0 +1,12 @@
+{
+  "id": "alcohols-phenols-027",
+  "topic": "alcohols-phenols",
+  "type": "draw_product",
+  "difficulty": 3,
+  "prompt": "Oxidation of phenol with Na₂Cr₂O₇ / H₂SO₄ gives what notable product?",
+  "reactants": ["Oc1ccccc1"],
+  "reagents": ["Na2Cr2O7", "H2SO4"],
+  "answers": [{ "smiles": "O=C1C=CC(=O)C=C1", "label": "1,4-benzoquinone (p-benzoquinone)" }],
+  "concepts": ["phenol oxidation", "quinone"],
+  "explanation": "Phenol oxidizes to 1,4-benzoquinone — the two C–H bonds para to each other are replaced by C=O. Quinones are important biological redox partners (e.g., ubiquinone in the electron transport chain)."
+}
