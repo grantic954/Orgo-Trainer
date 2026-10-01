@@ -80,12 +80,11 @@ export async function POST(req: NextRequest) {
   }));
 
   const messages: Anthropic.MessageParam[] = [
-    {
-      role: "user",
-      content: `${questionContext(body)}\n\n${userTurnFor(body.action)}`,
-    },
     ...priorTurns,
+    { role: "user", content: userTurnFor(body.action) },
   ];
+
+  const systemWithContext = `${TUTOR_SYSTEM_PROMPT}\n\n${questionContext(body)}`;
 
   const encoder = new TextEncoder();
   const stream = new ReadableStream<Uint8Array>({
@@ -94,7 +93,7 @@ export async function POST(req: NextRequest) {
         const anthropicStream = client.messages.stream({
           model: "claude-opus-4-7",
           max_tokens: 8000,
-          system: TUTOR_SYSTEM_PROMPT,
+          system: systemWithContext,
           thinking: { type: "adaptive" },
           output_config: { effort: "medium" },
           messages,
