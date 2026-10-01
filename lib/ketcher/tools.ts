@@ -2,6 +2,7 @@
 // ketcher.editor.tool(name, opts) so our custom toolbar doesn't have to
 // know Ketcher's tool-name conventions.
 import type { Ketcher } from "ketcher-core";
+import { getRingStruct } from "./templates";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type EditorAny = any;
@@ -43,31 +44,11 @@ export type ToolId =
   | "ring-furan"
   | "ring-pyridine";
 
-// SMILES for common ring templates. Clicking a ring template pastes the
-// ring on the canvas at the origin (Ketcher will lay it out automatically).
-const RING_SMILES: Partial<Record<ToolId, string>> = {
-  "ring-benzene": "c1ccccc1",
-  "ring-cyclohexane": "C1CCCCC1",
-  "ring-cyclopentane": "C1CCCC1",
-  "ring-cyclobutane": "C1CCC1",
-  "ring-cyclopropane": "C1CC1",
-  "ring-cycloheptane": "C1CCCCCC1",
-  "ring-furan": "c1ccoc1",
-  "ring-pyridine": "c1ccncc1",
-};
-
-async function pasteFragmentFromSmiles(k: Ketcher, smiles: string): Promise<void> {
-  // Concatenate current SMILES with the new fragment so we add rather than
-  // replace. Ketcher's dot separator = disconnected fragments.
-  const current = (await k.getSmiles()).trim();
-  const next = current ? `${current}.${smiles}` : smiles;
-  await k.setMolecule(next);
-}
-
 export async function activateTool(k: Ketcher, id: ToolId): Promise<void> {
   const e = ed(k);
   switch (id) {
-    // Rings
+    // Rings — activate Ketcher's template tool with the ring Struct so the
+    // user clicks on the canvas to place it (or fuses onto an existing bond).
     case "ring-benzene":
     case "ring-cyclohexane":
     case "ring-cyclopentane":
@@ -76,8 +57,8 @@ export async function activateTool(k: Ketcher, id: ToolId): Promise<void> {
     case "ring-cycloheptane":
     case "ring-furan":
     case "ring-pyridine": {
-      const smiles = RING_SMILES[id];
-      if (smiles) await pasteFragmentFromSmiles(k, smiles);
+      const struct = await getRingStruct(id);
+      if (struct) e.tool("template", { struct });
       return;
     }
     // Selection
