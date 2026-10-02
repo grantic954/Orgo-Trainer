@@ -3,14 +3,14 @@
   "topic": "ir",
   "type": "mcq",
   "difficulty": 5,
-  "prompt": "CHALLENGE: Why can IR spectroscopy be used in real-time breath analysis to monitor patient blood alcohol levels?",
+  "prompt": "Why can IR spectroscopy be used in real-time breathalyzer devices to monitor blood alcohol levels?",
   "options": [
-    { "id": "etoh-band", "label": "Ethanol has a strong, characteristic C–O stretch (~1050) and sharp O–H that quantitatively correlate with concentration in exhaled vapor; absorbance is proportional to concentration (Beer's law)." },
-    { "id": "fluor", "label": "Ethanol fluoresces in IR." },
-    { "id": "o2", "label": "IR measures O₂ consumption." },
-    { "id": "fingerprint", "label": "Ethanol has a unique fingerprint region only." }
+    { "id": "etoh-band", "label": "Ethanol absorbs strongly at a specific C–O frequency (~1050 cm⁻¹); absorbance is linear with concentration via Beer's law." },
+    { "id": "fluor", "label": "Ethanol fluoresces when exposed to infrared radiation, and the emission intensity scales with concentration." },
+    { "id": "o2", "label": "IR measures the oxygen depletion caused by ethanol metabolism in the lungs, which correlates to BAC." },
+    { "id": "fingerprint", "label": "Ethanol's unique fingerprint region (below 1500 cm⁻¹) is pattern-matched against a reference library to quantify it." }
   ],
   "correctOptionId": "etoh-band",
   "concepts": ["application: breathalyzer", "Beer–Lambert law"],
-  "explanation": "Modern infrared breathalyzers use a specific wavelength around ethanol's C–O stretch. Beer's law makes the absorbance linear with concentration; the blood/breath ratio (~2100:1) converts breath to blood level. Reliable, non-invasive, and specific."
+  "explanation": "IR breathalyzers lock onto ethanol's characteristic C–O stretch (~1050 cm⁻¹). Beer–Lambert makes absorbance linear with concentration; the breath/blood ratio (~2100:1) converts breath reading to BAC. Fluorescence (UV/Vis) and O₂ consumption don't apply here."
 }

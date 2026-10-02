@@ -3,14 +3,14 @@
   "topic": "ethers-epoxides",
   "type": "mcq",
   "difficulty": 5,
-  "prompt": "CHALLENGE: The Sharpless asymmetric epoxidation uses Ti(OiPr)₄, (CH₃)₃COOH, and a chiral DET ((+) or (−)-diethyl tartrate) to convert an allylic alcohol into a chiral epoxide. What determines which enantiomer forms?",
+  "prompt": "The Sharpless asymmetric epoxidation uses Ti(OiPr)₄, tBuOOH, and a chiral tartrate (DET) on an allylic alcohol. What determines which enantiomer of epoxide forms?",
   "options": [
-    { "id": "det", "label": "The chirality of DET (D vs L / + vs −). (+)-DET gives one epoxide enantiomer; (−)-DET gives the other. The chiral Ti complex delivers oxygen to a specific face of the alkene." },
-    { "id": "temp", "label": "Temperature" },
-    { "id": "solvent", "label": "Choice of solvent" },
-    { "id": "random", "label": "Random — gives a racemate" }
+    { "id": "det", "label": "The chirality of the DET ligand ((+)-DET vs (−)-DET) — the chiral Ti complex delivers O to a specific face of the alkene." },
+    { "id": "temp", "label": "Reaction temperature — lower T favors one face, higher T the other, via different TS energies." },
+    { "id": "solvent", "label": "Solvent polarity — polar solvents stabilize one TS over the other, flipping the facial selectivity." },
+    { "id": "oh-config", "label": "The configuration of the allylic alcohol's OH stereocenter — the substrate's chirality overrides the catalyst's." }
   ],
   "correctOptionId": "det",
   "concepts": ["asymmetric synthesis", "Sharpless epoxidation", "chiral catalysis"],
-  "explanation": "Sharpless' Nobel-winning method only works on allylic alcohols — the OH coordinates to Ti, directing the oxygen delivery face. The DET enantiomer dictates which face. Predictable rule: with the allylic alcohol drawn with OH down and alkene to the right, (−)-DET gives O above the plane, (+)-DET gives O below."
+  "explanation": "Sharpless' Nobel-winning method works on allylic alcohols — the OH coordinates to Ti, orienting the substrate so the chiral DET dictates which alkene face gets oxidized. (+)-DET and (−)-DET give opposite enantiomers predictably. If the starting alcohol is racemic/achiral, DET still controls the product chirality."
 }

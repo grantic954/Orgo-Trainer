@@ -5,12 +5,12 @@
   "difficulty": 4,
   "prompt": "Why does a 1° alcohol undergo HBr conversion via SN2 while a 3° alcohol goes via SN1?",
   "options": [
-    { "id": "cation-stability", "label": "The 3° carbocation is stable enough to form before Br⁻ attacks; the 1° carbocation is too unstable, so Br⁻ displaces water in a concerted step." },
-    { "id": "sterics", "label": "The 1° OH is less hindered." },
-    { "id": "polarity", "label": "The 3° OH is more polar." },
-    { "id": "ring", "label": "Only 3° alcohols form rings." }
+    { "id": "cation-stability", "label": "A 3° carbocation is stable enough to form freely; a 1° carbocation is too unstable, forcing concerted backside attack." },
+    { "id": "sterics", "label": "A 1° alcohol has less steric hindrance at carbon, so Br⁻ can reach it concertedly, while 3° is too hindered for backside attack." },
+    { "id": "basicity", "label": "A 3° OH is more basic than a 1° OH, so it's protonated more readily and ionizes to the cation first." },
+    { "id": "bond-str", "label": "The C–O bond is weaker in 3° alcohols than in 1°, so it breaks ionically before Br⁻ attacks." }
   ],
   "correctOptionId": "cation-stability",
   "concepts": ["mechanism dependence on substrate", "SN1 vs SN2"],
-  "explanation": "Both substrates are first protonated (good leaving group = H₂O). 3° gives a stable carbocation (SN1); 1° has no stable cation, so Br⁻ attacks concertedly with H₂O leaving (SN2). 2° can go either way."
+  "explanation": "Both substrates protonate first (H₂O becomes the LG). 3° gives a stable 3° carbocation → SN1. 1° can't support an unstable 1° cation, so Br⁻ attacks concertedly as H₂O leaves → SN2. Both A and B are factors — but cation stability is the dominant driver. 2° can go either way."
 }

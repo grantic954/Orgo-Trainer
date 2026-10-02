@@ -3,14 +3,14 @@
   "topic": "ethers-epoxides",
   "type": "mcq",
   "difficulty": 5,
-  "prompt": "CHALLENGE: Why is crown ether 18-crown-6 particularly effective at solubilizing K⁺ salts in nonpolar solvents?",
+  "prompt": "Why is 18-crown-6 particularly effective at solubilizing K⁺ salts in nonpolar solvents?",
   "options": [
-    { "id": "fit", "label": "The cavity size of 18-crown-6 is a near-perfect match for K⁺'s ionic radius; six ether oxygens coordinate the K⁺ while the hydrocarbon exterior is solvent-compatible." },
-    { "id": "charge", "label": "The crown ether is negatively charged." },
-    { "id": "reduce", "label": "It reduces K⁺ to K metal." },
-    { "id": "polar", "label": "The crown is more polar than most solvents." }
+    { "id": "fit", "label": "The crown's cavity size matches K⁺'s ionic radius; six ether O's coordinate K⁺ while the CH₂ exterior dissolves in nonpolar solvent." },
+    { "id": "charge", "label": "18-crown-6 bears a partial negative charge that pairs tightly with K⁺ and shields it from the solvent." },
+    { "id": "reduce", "label": "The crown reduces K⁺ to neutral K, which is small and nonpolar enough to dissolve in hydrocarbons." },
+    { "id": "polar", "label": "The crown's dipole moment is higher than the solvent's, allowing it to extract the K⁺ via dipole-ion attraction." }
   ],
   "correctOptionId": "fit",
   "concepts": ["application: crown ethers", "size-selective chelation"],
-  "explanation": "The '18' is the ring size; '6' is the number of oxygens. 18-crown-6 has a cavity (~2.6 Å) that matches K⁺ (~2.7 Å). It wraps around K⁺ like a lifesaver, exposing the hydrophobic CH₂CH₂ exterior to the solvent. 12-crown-4 fits Li⁺; 15-crown-5 fits Na⁺."
+  "explanation": "'18' = ring size, '6' = number of ether O's. 18-crown-6 cavity (~2.6 Å) fits K⁺ (~2.7 Å) like a lifesaver, exposing hydrophobic CH₂ outside → soluble in nonpolar solvent. Different crown sizes fit different cations (12-crown-4 for Li⁺, 15-crown-5 for Na⁺). The crown is neutral — no charge or redox involved."
 }

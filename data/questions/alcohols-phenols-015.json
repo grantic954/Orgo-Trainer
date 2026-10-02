@@ -3,14 +3,14 @@
   "topic": "alcohols-phenols",
   "type": "mcq",
   "difficulty": 4,
-  "prompt": "Oxymercuration-demercuration of propene vs acid-catalyzed hydration: both give 2-propanol (Markovnikov), but oxymercuration is preferred for synthesis. Why?",
+  "prompt": "Both oxymercuration (Hg(OAc)₂/H₂O, then NaBH₄) and acid-catalyzed hydration (H₂SO₄, H₂O) give the Markovnikov alcohol from propene. Why is oxymercuration preferred for synthesis?",
   "options": [
-    { "id": "nocation", "label": "Oxymercuration avoids a free carbocation intermediate (goes through a bridged mercurinium ion), so there are no rearrangements." },
-    { "id": "faster", "label": "It is faster." },
-    { "id": "mark", "label": "It is more Markovnikov." },
-    { "id": "stereo", "label": "It gives stereochemistry." }
+    { "id": "nocation", "label": "Oxymercuration goes through a bridged mercurinium ion (no free cation), so no hydride/methyl shifts can occur." },
+    { "id": "faster", "label": "Oxymercuration proceeds at room temperature with faster kinetics, giving cleaner conversion." },
+    { "id": "mark", "label": "Oxymercuration is MORE strictly Markovnikov; acid hydration gives some anti-Markovnikov product." },
+    { "id": "stereo", "label": "Oxymercuration gives stereospecific syn addition, while acid hydration gives a racemic mixture." }
   ],
   "correctOptionId": "nocation",
   "concepts": ["mercurinium ion", "no rearrangement"],
-  "explanation": "Acid-catalyzed hydration goes through a carbocation that can hydride- or methyl-shift to a more stable cation (wrong product). Oxymercuration goes through a bridged mercurinium ion that cannot rearrange — much cleaner for synthesis."
+  "explanation": "H₂SO₄/H₂O goes through a free carbocation — which can rearrange via H⁻ or CH₃⁻ shifts to a more stable cation, giving the wrong product. The mercurinium bridge in oxymercuration locks the structure in place, preventing shifts. For 3-methyl-1-butene, acid gives mostly tert-amyl alcohol (rearranged); oxymercuration gives clean 3-methyl-2-butanol."
 }

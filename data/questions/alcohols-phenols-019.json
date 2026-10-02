@@ -3,14 +3,15 @@
   "topic": "alcohols-phenols",
   "type": "mcq",
   "difficulty": 5,
-  "prompt": "CHALLENGE: You add 0.3 equivalents of CH₃MgBr to a solution containing BOTH 2-butanone (a ketone) and methyl benzoate (an ester). Which product forms predominantly, and in what ratio?",
+  "prompt": "You add 0.3 equivalents of CH₃MgBr to a solution containing BOTH 2-butanone (a ketone) and methyl benzoate (an ester). Which carbonyl absorbs most of the Grignard?",
+  "reactants": ["CCC(C)=O", "COC(=O)c1ccccc1"],
   "options": [
-    { "id": "ketone-adducted", "label": "Mostly starting material (both carbonyls remain) + ~30% of the Grignard-adducted 2-butanone (tertiary alkoxide, becomes 2-methyl-2-butanol on workup). The ketone is more electrophilic than the ester, so the limited Grignard preferentially attacks the ketone." },
-    { "id": "both-equal", "label": "Equal amounts of adducts on ketone and ester." },
-    { "id": "ester-wins", "label": "Mostly ester adducted (ester is more reactive)." },
-    { "id": "nothing", "label": "No reaction — too dilute." }
+    { "id": "ketone-adducted", "label": "The ketone — it's more electrophilic than the ester, so the limited Grignard reacts with it preferentially." },
+    { "id": "both-equal", "label": "Both equally — the carbonyl carbons have similar electrophilicity, so statistical distribution." },
+    { "id": "ester-wins", "label": "The ester — the π-donating OR group makes the ester carbon more polarized and more reactive." },
+    { "id": "nothing", "label": "Neither — at 0.3 eq the Grignard is quenched by trace moisture before any addition occurs." }
   ],
   "correctOptionId": "ketone-adducted",
   "concepts": ["chemoselectivity under limiting reagent", "ketone > ester reactivity"],
-  "explanation": "Ketones are more electrophilic than esters at the carbonyl C because esters have resonance donation from the -OR oxygen that reduces the δ+ on C. With a limited (0.3 eq) nucleophile, chemoselectivity emerges: the faster-reacting ketone absorbs almost all the Grignard. Great diagnostic question for 'which C=O is more reactive'."
+  "explanation": "Esters have resonance donation from the -OR oxygen that spreads the C=O π density and LOWERS electrophilicity at carbon. Ketones have no such donor → more electrophilic. With sub-stoichiometric Grignard, chemoselectivity emerges: ketone wins."
 }

@@ -5,12 +5,12 @@
   "difficulty": 3,
   "prompt": "Why convert an alcohol to its tosylate (TsCl, pyridine) BEFORE a substitution or elimination?",
   "options": [
-    { "id": "lg", "label": "OTs is a much better leaving group than OH (OH⁻ is a poor LG; OTs⁻ is a resonance-stabilized sulfonate). Converting first lets you use strong nucleophiles or bases that wouldn't attack a plain alcohol." },
-    { "id": "mass", "label": "Tosylates weigh more." },
-    { "id": "color", "label": "Tosylates are colored." },
-    { "id": "ring", "label": "Tosylates form rings." }
+    { "id": "lg", "label": "OTs⁻ is a resonance-stabilized leaving group, enabling SN2/E2 that plain OH⁻ cannot support." },
+    { "id": "mass", "label": "Adding the heavy tosyl group makes the molecule less volatile and easier to isolate after reaction." },
+    { "id": "stereo", "label": "Tosylation inverts the stereocenter, which is required for subsequent SN2 to give the correct product." },
+    { "id": "protect", "label": "Tosylation protects the hydroxyl from reacting with the nucleophile added in the next step." }
   ],
   "correctOptionId": "lg",
   "concepts": ["tosylate activation", "leaving group ability"],
-  "explanation": "Alcohols can't do SN2 or E2 directly — OH⁻ is a terrible leaving group. Tosylation (TsCl + pyridine) converts R-OH to R-OTs; now OTs⁻ (pKa of TsOH ~ −3) is an excellent LG, and you can do SN2 (e.g., with NaBr), E2 (with t-BuOK), or anything a halide can do."
+  "explanation": "Alcohols can't do SN2/E2 directly because OH⁻ is a terrible leaving group (pKa of H₂O ~16). TsCl/pyridine converts R-OH → R-OTs; now OTs⁻ (pKa of TsOH ~−3) is an excellent LG. Tosylation itself proceeds with RETENTION at the C-O bond — the inversion happens in the following SN2, not the tosylation."
 }

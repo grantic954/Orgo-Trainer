@@ -3,14 +3,15 @@
   "topic": "ethers-epoxides",
   "type": "mcq",
   "difficulty": 5,
-  "prompt": "CHALLENGE: Styrene oxide (PhCH-CH₂-O, phenyl-substituted epoxide) opens with methanol. Under ACIDIC conditions, OMe goes to the BENZYLIC carbon. Under BASIC conditions, OMe goes to the TERMINAL CH₂. Why does the regiochemistry flip?",
+  "prompt": "Styrene oxide (phenyl-substituted epoxide) opens with methanol. Under ACID, OMe ends up on the benzylic carbon; under BASE, OMe ends up on the terminal CH₂. Why does the regiochemistry flip?",
+  "reactants": ["c1ccc(cc1)C1CO1"],
   "options": [
-    { "id": "ts", "label": "In acid, the TS has significant carbocation character at the benzylic C (stabilized by Ph), so the nucleophile attacks there. In base, SN2-like attack prefers the less hindered terminal CH₂ (standard steric control)." },
-    { "id": "bond", "label": "Different C–O bonds break in each case." },
-    { "id": "nothing", "label": "Both give the same product." },
-    { "id": "res", "label": "Methanol itself has different structures." }
+    { "id": "ts", "label": "Acid TS has cation character at the benzylic C (Ph-stabilized), so Nu attacks there; base is SN2-like and attacks the less hindered C." },
+    { "id": "bond", "label": "Acid cleaves the C–O bond to the terminal C; base cleaves the C–O bond to the benzylic C — the Nu replaces whichever bond breaks." },
+    { "id": "nu", "label": "Under acid, protonated methanol is a weak Nu that only attacks the easier primary C; under base, methoxide is strong enough to attack the hindered benzylic C." },
+    { "id": "stability", "label": "Both pathways give the same product initially, but acid conditions equilibrate to the thermodynamically more stable benzylic ether." }
   ],
   "correctOptionId": "ts",
   "concepts": ["acid vs base regio inversion", "benzylic cation stabilization"],
-  "explanation": "This is the textbook demonstration: acid makes the more-substituted (or stabilized) C the attack site because its C–O is more cleaved in the TS. Base makes the LESS-substituted C the attack site because sterics win in an SN2-like TS. Styrene oxide is dramatic because Ph strongly stabilizes the benzylic cation."
+  "explanation": "Under acid, the TS has significant carbocation character — stabilized at the benzylic C by Ph. Nu attacks the C where positive character is highest. Under base, no cation; TS is SN2-like and sterics win → Nu attacks the LESS substituted CH₂. Classic regio flip, dramatically shown by styrene oxide."
 }

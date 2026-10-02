@@ -3,14 +3,14 @@
   "topic": "ir",
   "type": "mcq",
   "difficulty": 5,
-  "prompt": "CHALLENGE: An unknown shows IR bands at 3400 cm⁻¹ (broad, two 'teeth' visible), 1660 cm⁻¹ (strong). What functional group is MOST likely, and how do you distinguish it from a primary amine + a ketone?",
+  "prompt": "An unknown shows IR bands at 3400 cm⁻¹ (broad, two 'teeth' visible) and 1660 cm⁻¹ (strong). What functional group fits BEST?",
   "options": [
-    { "id": "primary-amide", "label": "A primary amide (–CONH₂). The two 'teeth' at 3400 are the asym + sym N–H stretches of NH₂, and 1660 is the amide C=O (lowered by N lone-pair donation vs 1715 for ketones). An amine + separate ketone would show C=O closer to 1715, not 1660." },
-    { "id": "amine-ketone", "label": "A primary amine with a separate ketone." },
-    { "id": "alcohol-ketone", "label": "An alcohol with a ketone." },
-    { "id": "cooh", "label": "A carboxylic acid." }
+    { "id": "primary-amide", "label": "A primary amide (–CONH₂) — the two N–H stretches give the double tooth, and C=O is lowered to 1660 by amide resonance." },
+    { "id": "amine-ketone", "label": "A primary amine + a separate ketone — the NH₂ gives two bands and the ketone gives the strong C=O." },
+    { "id": "alcohol-ketone", "label": "An alcohol + a ketone — the broad band is O–H and the strong one is C=O." },
+    { "id": "cooh", "label": "A carboxylic acid — the broad band is the dimer O–H and 1660 is the lowered conjugated C=O." }
   ],
   "correctOptionId": "primary-amide",
   "concepts": ["amide signature", "C=O frequency diagnostic", "distinguishing composite groups"],
-  "explanation": "The LOWERED C=O (1660 vs 1715) is the key clue. In an amide, N's lone pair donates into C=O by resonance, weakening the double bond character. Only amides show this ~55 cm⁻¹ downshift. The two sharp NH₂ peaks (3400/3200) are the second confirmation. A ketone in the same molecule as an amine would show BOTH signals (C=O at 1715, N-H at 3400) separately — not merged this way."
+  "explanation": "The LOWERED C=O at 1660 is the key — in an amide, N's lone pair donates into the C=O by resonance, weakening the double bond (lowers ν ~55 cm⁻¹ vs ketone). A ketone + amine would show C=O at 1715, not 1660. COOH C=O is 1710-1720. Only amides land at 1660."
 }

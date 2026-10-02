@@ -3,14 +3,14 @@
   "topic": "ir",
   "type": "mcq",
   "difficulty": 5,
-  "prompt": "CHALLENGE: Why does a carboxylic acid show a VERY broad O–H band stretching from 2500–3300 cm⁻¹, while an alcohol's O–H is only moderately broad (3200–3550)?",
+  "prompt": "Why does a carboxylic acid show a VERY broad O–H band from 2500–3300 cm⁻¹, while an alcohol's O–H is only moderately broad (3200–3550)?",
   "options": [
-    { "id": "dimer", "label": "In solution, carboxylic acids form H-bonded cyclic DIMERS with two short, strong H-bonds. The O–H in these dimers samples a wide range of distances/strengths, giving an extremely broad band. Alcohols form more disordered H-bond chains (narrower spread)." },
-    { "id": "hyd-bond", "label": "Alcohols don't H-bond." },
-    { "id": "mass", "label": "Carboxylic acids have higher molecular weight." },
-    { "id": "ene", "label": "COOH is more electron-rich." }
+    { "id": "dimer", "label": "COOH exists as H-bonded cyclic dimers; the two strong H-bonds span a wide range of O–H distances, broadening the band." },
+    { "id": "mass", "label": "The COOH O–H sits next to a heavier C=O, which lowers its reduced mass and spreads the frequency range." },
+    { "id": "exchange", "label": "COOH protons exchange rapidly between neighbors, averaging shifts across a broad window." },
+    { "id": "chains", "label": "Alcohols form ordered H-bonded hexamers, giving sharp bands; carboxylic acids form random long chains with varied H-bond strengths." }
   ],
   "correctOptionId": "dimer",
   "concepts": ["H-bond strength → bandwidth", "COOH dimer"],
-  "explanation": "Stronger, shorter H-bonds give broader IR bands (the force constant varies more across the vibrational motion). COOH dimers have very strong 'double H-bonds' with large anharmonicity → extremely wide absorption. This is why the broad COOH stretch is diagnostic — no other common group produces it."
+  "explanation": "COOH forms cyclic H-bonded DIMERS held together by two strong, short H-bonds. The large anharmonicity means O–H samples many bond lengths → extremely wide absorption (2500–3300). Alcohols just H-bond in disordered chains with narrower spread. Rapid exchange and reduced mass don't explain the width."
 }

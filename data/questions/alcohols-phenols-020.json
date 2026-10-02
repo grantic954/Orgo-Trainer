@@ -3,14 +3,15 @@
   "topic": "alcohols-phenols",
   "type": "mcq",
   "difficulty": 5,
-  "prompt": "CHALLENGE: You add 1.0 eq CH₃MgBr to methyl benzoate (PhCOOMe). What is the major isolated product after aqueous workup — the ketone (acetophenone) or the tertiary alcohol (2-phenyl-2-propanol)?",
+  "prompt": "You add 1.0 eq CH₃MgBr to methyl benzoate (PhCOOMe) and quench. What's the major product?",
+  "reactants": ["COC(=O)c1ccccc1"],
   "options": [
-    { "id": "tertiary-alcohol", "label": "The tertiary alcohol (2-phenyl-2-propanol), with ~50% unreacted ester left over. The ketone intermediate (acetophenone) is MORE reactive than the ester, so once a bit of ketone forms, it consumes any available Grignard faster than the ester does." },
-    { "id": "ketone-main", "label": "The ketone, acetophenone, as the major product (clean 1-eq stop)." },
-    { "id": "half-half", "label": "50:50 ketone and alcohol." },
-    { "id": "ester-only", "label": "Only recovered ester (reaction fails)." }
+    { "id": "tertiary-alcohol", "label": "2-phenyl-2-propanol (3° alcohol) with ~half the ester unreacted — the ketone intermediate outcompetes the ester for Grignard." },
+    { "id": "ketone-main", "label": "Acetophenone (ketone), formed cleanly by one Grignard addition that stops at the ester-to-ketone stage." },
+    { "id": "half-half", "label": "A 1:1 mixture of acetophenone and 2-phenyl-2-propanol, since 1 eq statistically splits between the two stages." },
+    { "id": "ester-only", "label": "Unreacted methyl benzoate — esters are too unreactive toward Grignard reagents without stronger activation." }
   ],
   "correctOptionId": "tertiary-alcohol",
   "concepts": ["double addition to esters", "intermediate reactivity"],
-  "explanation": "This is why Grignard + ester always 'adds twice' — the ketone intermediate is more electrophilic than the ester, so sub-stoichiometric Grignard still over-adds. To stop at a ketone, use a less reactive nucleophile like a Weinreb amide (RC(=O)N(OMe)Me) or Gilman reagent (R₂CuLi)."
+  "explanation": "Grignard adds once to the ester → ketone intermediate (acetophenone) which is MORE electrophilic than the starting ester. Any ketone that forms is consumed by remaining Grignard faster than more ester reacts, giving the tertiary alcohol + ~half unreacted ester. To stop at the ketone, use Weinreb amide or Gilman reagent."
 }
