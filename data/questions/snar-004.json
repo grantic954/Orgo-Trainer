@@ -3,13 +3,15 @@
   "topic": "snar",
   "type": "mcq",
   "difficulty": 3,
-  "prompt": "4-bromotoluene + NaNH₂/NH₃ gives a mixture of 3- and 4-aminotoluenes. What does this tell you?",
+  "prompt": "4-bromotoluene + NaNH₂/NH₃ gives a MIXTURE of 3- and 4-aminotoluenes. What does this tell you?",
+  "reactants": ["Cc1ccc(Br)cc1"],
   "options": [
-    { "id": "benzyne", "label": "The reaction goes through a benzyne intermediate; nucleophile adds at either of the two sp carbons." },
-    { "id": "snar", "label": "SNAr with activation by methyl." },
-    { "id": "sn1", "label": "SN1 at the aromatic ring." }
+    { "id": "benzyne", "label": "The reaction goes through a benzyne intermediate; NH₃ attacks either sp carbon of the triple-bond-like system" },
+    { "id": "snar", "label": "SNAr with activation by the methyl group's weak +I effect, giving regiochemistry at both positions" },
+    { "id": "sn1", "label": "SN1 at the aromatic ring — Br⁻ leaves to form a phenyl cation that NH₃ attacks at the most accessible site" },
+    { "id": "radical", "label": "Radical mechanism — Br• leaves, NH₂• from amide adds at ortho or ipso with roughly equal probability" }
   ],
   "correctOptionId": "benzyne",
   "concepts": ["benzyne regiochemistry"],
-  "explanation": "The benzyne intermediate from 4-bromotoluene has sp-hybridized carbons at positions 3 and 4 of the original ring; NH₃ attacks either, giving a mix of 3- and 4-aminotoluenes."
+  "explanation": "SNAr needs EWGs — toluene has only a methyl (+I donor, deactivating for SNAr). Strong NaNH₂ deprotonates the H adjacent to Br, then E2-like loss of HBr gives benzyne (sp-carbons at positions 3 and 4). NH₃ attacks EITHER sp carbon → mixture of 3- and 4-aminotoluenes. Diagnostic of benzyne."
 }

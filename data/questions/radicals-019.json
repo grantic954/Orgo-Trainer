@@ -3,14 +3,14 @@
   "topic": "radicals",
   "type": "mcq",
   "difficulty": 5,
-  "prompt": "CHALLENGE: Peroxide + HBr gives anti-Markovnikov addition to alkenes. But peroxide + HCl does NOT work the same way. Why does the radical chain fail with HCl?",
+  "prompt": "Peroxide + HBr gives anti-Markovnikov addition to alkenes via a radical chain. But peroxide + HCl does NOT. Why does the chain fail with HCl?",
   "options": [
-    { "id": "bde", "label": "The propagation step 'R• + H–Cl → R–H + Cl•' is endothermic (H–Cl bond is much stronger than H–Br), so the chain can't propagate — Cl• can't abstract H from HCl fast enough." },
-    { "id": "chlorine", "label": "Chlorine atoms are too small to react." },
-    { "id": "peroxide", "label": "Peroxides don't dissociate in the presence of HCl." },
-    { "id": "polar", "label": "HCl is more polar than HBr." }
+    { "id": "bde", "label": "H-Cl is too strong (~103 kcal/mol) — the step 'R• + HCl → RH + Cl•' is endothermic and can't propagate" },
+    { "id": "chlorine", "label": "Cl• is too small — it rebounds off the alkene without adding, breaking the chain at the first propagation step" },
+    { "id": "peroxide", "label": "Peroxides don't initiate with HCl because the ROOH + HCl acid-base reaction quenches the initiator" },
+    { "id": "polar", "label": "HCl is too polar — it adds ionically Markovnikov before any radical chain can get started" }
   ],
   "correctOptionId": "bde",
   "concepts": ["radical chain thermochemistry", "BDE constraints"],
-  "explanation": "For a radical chain: both propagation steps must be viable. H–Br BDE is ~87 kcal/mol (feasible for Br•-based abstraction). H–Cl is ~103, which makes the needed step too endothermic. HI's other steps are too slow. Only HBr threads the needle — a classic 'why only HBr' result."
+  "explanation": "Both propagation steps must be feasible. H-Br BDE (~87 kcal/mol) is low enough that Br• can abstract H from HBr and keep the chain going. H-Cl BDE is ~103 — the needed step is too endothermic. HI has the opposite problem (I• addition is too slow). Only HBr threads the needle — a classic 'why only HBr' result."
 }

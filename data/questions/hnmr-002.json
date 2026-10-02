@@ -3,14 +3,15 @@
   "topic": "hnmr",
   "type": "mcq",
   "difficulty": 2,
-  "prompt": "Ethyl acetate (CH₃COOCH₂CH₃) has how many ¹H NMR signals, and what are their multiplicities?",
+  "prompt": "Ethyl acetate (CH₃-CO-O-CH₂-CH₃) has how many ¹H NMR signals, and what are their multiplicities?",
+  "reactants": ["CCOC(C)=O"],
   "options": [
-    { "id": "a", "label": "3 signals: singlet (3H), quartet (2H), triplet (3H)" },
-    { "id": "b", "label": "2 signals: singlet, quartet" },
-    { "id": "c", "label": "4 signals: all singlets" },
-    { "id": "d", "label": "3 signals: all triplets" }
+    { "id": "a", "label": "3 signals: a singlet (3H, acetyl CH₃), a quartet (2H, OCH₂), a triplet (3H, CH₃)" },
+    { "id": "b", "label": "2 signals: a singlet (3H, acetyl CH₃) and a quartet (5H, OCH₂CH₃ as one multiplet)" },
+    { "id": "c", "label": "4 signals: all singlets, because the ester O prevents through-bond coupling" },
+    { "id": "d", "label": "3 signals: a singlet (CH₃), a doublet (OCH₂), a triplet (CH₃)" }
   ],
   "correctOptionId": "a",
   "concepts": ["n+1 rule", "signal counting"],
-  "explanation": "Acetyl methyl (no neighbors) = singlet, OCH₂ coupled to CH₃ (n=3) = quartet, terminal CH₃ coupled to CH₂ (n=2) = triplet."
+  "explanation": "Three environments. The acetyl CH₃ has no adjacent H's → singlet. The OCH₂ is coupled to the terminal CH₃ (n=3) → quartet. The terminal CH₃ is coupled to OCH₂ (n=2) → triplet. The ester O does not insulate coupling between the OCH₂CH₃ hydrogens — they couple normally."
 }

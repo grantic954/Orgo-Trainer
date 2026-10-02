@@ -3,14 +3,14 @@
   "topic": "carboxylic-acids",
   "type": "mcq",
   "difficulty": 3,
-  "prompt": "Why is a carboxylic acid much more acidic than an alcohol?",
+  "prompt": "Why is a carboxylic acid much more acidic (pKa ~4-5) than an alcohol (pKa ~16)?",
   "options": [
-    { "id": "res", "label": "The conjugate base (carboxylate) is resonance-stabilized across both oxygens." },
-    { "id": "sterics", "label": "COOH is smaller than ROH." },
-    { "id": "ind", "label": "The sp² C–O is a stronger inductive donor." },
-    { "id": "polar", "label": "Water solvates COOH better than ROH." }
+    { "id": "res", "label": "The carboxylate conjugate base delocalizes negative charge over TWO equivalent oxygens by resonance" },
+    { "id": "ind", "label": "The sp² C in COOH is more electronegative than sp³, pulling electron density off O-H" },
+    { "id": "hbond", "label": "COOH forms stronger intermolecular H-bonds that pre-polarize the O-H bond" },
+    { "id": "size", "label": "The additional O atom in COOH increases its molecular size, stabilizing the extra charge" }
   ],
   "correctOptionId": "res",
   "concepts": ["carboxylic acid acidity", "resonance"],
-  "explanation": "Carboxylate's negative charge is delocalized over two equivalent oxygens — much more stable than an alkoxide."
+  "explanation": "Carboxylate (R-COO⁻) delocalizes the negative charge equally across two oxygens via resonance — enormously stabilizing. Alkoxide (R-O⁻) has nowhere to put the charge. The ~12 pKa gap reflects that resonance stabilization. Induction and H-bonding contribute slightly but resonance dominates."
 }

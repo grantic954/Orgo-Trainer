@@ -3,14 +3,14 @@
   "topic": "radicals",
   "type": "mcq",
   "difficulty": 5,
-  "prompt": "CHALLENGE: CFCs (e.g., CF₂Cl₂) deplete stratospheric ozone via radical chemistry. The first catalytic step involves:",
+  "prompt": "CFCs (e.g., CF₂Cl₂) deplete stratospheric ozone via radical chemistry. The first catalytic step involves:",
   "options": [
-    { "id": "cl-attack", "label": "UV photolysis of a C–Cl bond releases Cl•, which then attacks O₃: Cl• + O₃ → ClO• + O₂." },
-    { "id": "c-f", "label": "Cl• attacks a C–F bond." },
-    { "id": "o3-direct", "label": "The whole CFC molecule reacts intact with O₃." },
-    { "id": "water", "label": "Hydrolysis of the CFC releases HCl." }
+    { "id": "cl-attack", "label": "UV photolysis releases Cl•, which then attacks O₃: Cl• + O₃ → ClO• + O₂" },
+    { "id": "c-f", "label": "UV photolysis releases F• (weaker C-F bond), which attacks O₃: F• + O₃ → FO• + O₂" },
+    { "id": "o3-direct", "label": "O₃ reacts directly with the intact CFC, abstracting a Cl to form ClO• + CF₂Cl•" },
+    { "id": "water", "label": "Atmospheric water hydrolyzes CFC to HCl, which protonates O₃ into unstable HO₃" }
   ],
   "correctOptionId": "cl-attack",
   "concepts": ["application: ozone depletion", "catalytic radical cycle"],
-  "explanation": "Stratospheric UV cleaves the weakest C–X in a CFC (C–Cl) to Cl•. Cl• then catalytically destroys O₃: Cl• + O₃ → ClO• + O₂; ClO• + O → Cl• + O₂. One Cl atom can destroy ~10⁵ O₃ molecules before being removed."
+  "explanation": "Stratospheric UV cleaves the WEAKEST C–X in a CFC — that's C-Cl (~81 kcal/mol), not C-F (~115). Cl• then catalytically destroys O₃: Cl• + O₃ → ClO• + O₂; ClO• + O → Cl• + O₂. One Cl atom can destroy ~10⁵ O₃ molecules before being removed."
 }

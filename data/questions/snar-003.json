@@ -5,12 +5,12 @@
   "difficulty": 3,
   "prompt": "The benzyne mechanism (elimination–addition) requires:",
   "options": [
-    { "id": "strong_base", "label": "A very strong base (e.g., NaNH₂) and no activating EWGs" },
-    { "id": "ewg", "label": "Strong EWGs ortho/para" },
-    { "id": "radicals", "label": "A radical initiator" },
-    { "id": "weak_base", "label": "Weak base + protic solvent" }
+    { "id": "strong_base", "label": "A very strong base like NaNH₂, and no EWG activation on the ring" },
+    { "id": "ewg", "label": "Strong EWGs ortho/para to the halide (same conditions as SNAr)" },
+    { "id": "radicals", "label": "A radical initiator and photolysis to initiate the chain" },
+    { "id": "weak_base", "label": "A weak base and polar protic solvent to stabilize the carbanion intermediate" }
   ],
   "correctOptionId": "strong_base",
   "concepts": ["benzyne", "elimination–addition"],
-  "explanation": "Benzyne requires deprotonation ortho to the halide (strong base, e.g. NaNH₂) to form the benzyne triple-bond-ish intermediate, which is then attacked by a nucleophile at either carbon."
+  "explanation": "Benzyne needs STRONG base (NaNH₂, LDA, t-BuOK) to deprotonate ortho to the halide, then eliminate X⁻ → benzyne (strained triple-bond-like intermediate). Then Nu adds to either sp carbon → mixture of products. SNAr needs EWG activation; benzyne needs NO activation (just strong base)."
 }

@@ -3,14 +3,14 @@
   "topic": "radicals",
   "type": "mcq",
   "difficulty": 3,
-  "prompt": "Which halogenation reagent is more SELECTIVE for the most stable radical, and why?",
+  "prompt": "Which halogen (Cl₂ or Br₂) is MORE SELECTIVE for the most stable radical, and why?",
   "options": [
-    { "id": "br-sel", "label": "Br₂ is more selective — its endothermic abstraction step has a late, product-like transition state." },
-    { "id": "cl-sel", "label": "Cl₂ is more selective because Cl• is less reactive." },
-    { "id": "f-sel", "label": "F₂ is most selective — strongest X–X bond." },
-    { "id": "same", "label": "Both are equally selective." }
+    { "id": "br-sel", "label": "Br₂ — its endothermic H-abstraction has a late, product-like TS that reflects radical stability" },
+    { "id": "cl-sel", "label": "Cl₂ — its exothermic H-abstraction has a late TS and gives high selectivity" },
+    { "id": "same", "label": "Both equally — selectivity depends only on the C-H bond strength, not the halogen" },
+    { "id": "f-sel", "label": "F₂ is actually most selective because the F-F bond is the strongest" }
   ],
   "correctOptionId": "br-sel",
   "concepts": ["Hammond postulate", "selectivity vs reactivity"],
-  "explanation": "By Hammond's postulate, the endothermic H-abstraction by Br• has a late TS that resembles the (alkyl radical) product, so radical stability differences are felt strongly in the TS energies → high selectivity. Cl• reacts exothermically with an early TS and barely discriminates → poor selectivity."
+  "explanation": "Hammond's postulate: endothermic H-abstraction by Br• has a late, product-like TS → radical stability differences are strongly felt → high selectivity (3° >> 2° >> 1°). Cl• reacts exothermically with an EARLY TS (reactant-like) → barely discriminates (~5:4:3). F₂ is TOO reactive — it's indiscriminate AND dangerous."
 }

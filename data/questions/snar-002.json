@@ -4,13 +4,14 @@
   "type": "mcq",
   "difficulty": 3,
   "prompt": "Why doesn't chlorobenzene undergo SNAr with NaOMe under mild conditions, while 2,4-dinitrochlorobenzene does?",
+  "reactants": ["Clc1ccccc1", "O=[N+]([O-])c1ccc(Cl)c([N+](=O)[O-])c1"],
   "options": [
-    { "id": "ewg", "label": "The nitro groups stabilize the Meisenheimer (negative) intermediate via resonance." },
-    { "id": "steric", "label": "The nitro groups block attack." },
-    { "id": "ind", "label": "NO₂ is purely inductive." },
-    { "id": "polar", "label": "DMSO solvates NO₂ specifically." }
+    { "id": "ewg", "label": "The nitro groups stabilize the negatively-charged Meisenheimer intermediate via resonance" },
+    { "id": "steric", "label": "The nitro groups push the chlorine out, making the C-Cl bond easier to break" },
+    { "id": "ind", "label": "Nitro's inductive effect weakens the aromatic C-Cl bond enough for displacement" },
+    { "id": "polar", "label": "Nitro groups make the ring more polar, which attracts the methoxide more strongly" }
   ],
   "correctOptionId": "ewg",
   "concepts": ["SNAr", "resonance stabilization"],
-  "explanation": "SNAr requires stabilization of the negative Meisenheimer intermediate. Nitro groups ortho/para to the leaving group accept the charge via resonance; chlorobenzene has no such stabilization."
+  "explanation": "SNAr proceeds via a NEGATIVELY CHARGED Meisenheimer intermediate (Nu added, sp³ C still bearing Cl). Nitro groups ortho/para accept this negative charge by resonance — stabilizing the TS and intermediate. Chlorobenzene has no such stabilization; its Meisenheimer would be too high in energy."
 }

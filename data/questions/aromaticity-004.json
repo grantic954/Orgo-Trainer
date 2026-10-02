@@ -3,13 +3,14 @@
   "topic": "aromaticity",
   "type": "mcq",
   "difficulty": 3,
-  "prompt": "Pyridine's nitrogen contributes how many π electrons?",
+  "prompt": "In pyridine, how many π electrons does the nitrogen contribute to the aromatic ring?",
+  "reactants": ["c1ccncc1"],
   "options": [
-    { "id": "one", "label": "1 (one electron in the p orbital)" },
-    { "id": "two", "label": "2" },
-    { "id": "zero", "label": "0" }
+    { "id": "one", "label": "1 — one electron in a p orbital, like each ring carbon" },
+    { "id": "two", "label": "2 — the N lone pair occupies a p orbital that joins the π system" },
+    { "id": "zero", "label": "0 — the N lone pair stays in-plane, and the N uses no π electrons" }
   ],
   "correctOptionId": "one",
   "concepts": ["heteroaromatics", "pyridine basicity"],
-  "explanation": "Pyridine's N is sp² with ONE electron in a p orbital (contributing to the π system) and a lone pair in an sp² orbital in the ring plane — hence pyridine is basic (lone pair available) and aromatic."
+  "explanation": "Pyridine's N is sp² with ONE electron in a p-orbital (part of the π system) and the LONE PAIR in an sp² orbital in the ring plane (NOT part of π). That's why pyridine is basic: the sp² lone pair is available. Contrast with pyrrole: N's lone pair IS in the π system (contributing 2 e⁻), making pyrrole aromatic but non-basic."
 }

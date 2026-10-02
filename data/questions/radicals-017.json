@@ -3,14 +3,14 @@
   "topic": "radicals",
   "type": "mcq",
   "difficulty": 5,
-  "prompt": "CHALLENGE: Vitamin E (α-tocopherol) is a biological antioxidant. By what mechanism does it protect cell membranes from lipid peroxidation?",
+  "prompt": "Vitamin E (α-tocopherol) protects cell membranes from lipid peroxidation. By what mechanism?",
   "options": [
-    { "id": "donate-h", "label": "Its phenolic O–H donates H• to lipid peroxyl radicals (ROO•), giving ROOH and a resonance-stabilized tocopheroxyl radical that is too unreactive to propagate." },
-    { "id": "scavenge-o2", "label": "It consumes molecular O₂." },
-    { "id": "metal-chelate", "label": "It chelates transition metals." },
-    { "id": "enz", "label": "It activates an enzyme that cleans up radicals." }
+    { "id": "donate-h", "label": "Donates its phenolic O-H to ROO• (lipid peroxyl radical), giving a stable, non-propagating tocopheroxyl radical" },
+    { "id": "scavenge-o2", "label": "Consumes molecular O₂ before it can react with the lipid, blocking the initiation step" },
+    { "id": "metal-chelate", "label": "Chelates Fe/Cu ions that would otherwise catalyze Fenton-type production of lipid radicals" },
+    { "id": "enz", "label": "Allosterically activates glutathione peroxidase, which enzymatically reduces lipid peroxides" }
   ],
   "correctOptionId": "donate-h",
   "concepts": ["application: antioxidants", "phenolic H-atom transfer", "chain-breaking"],
-  "explanation": "Phenols with electron-rich rings are excellent H-atom donors because the resulting phenoxyl radical is heavily resonance-stabilized across the ring. The tocopheroxyl radical is persistent enough that it waits for another ROO• rather than propagating a new chain — chain-breaking antioxidant."
+  "explanation": "Electron-rich phenols are excellent H• donors. Tocopherol's O-H gives H• to ROO•, quenching the chain. The resulting tocopheroxyl radical is heavily resonance-stabilized across the aromatic ring and is too unreactive to abstract H from a new lipid → chain-breaking. Metal chelation (vitamin C does this partly) and enzyme activation are different mechanisms."
 }

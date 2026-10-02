@@ -5,12 +5,12 @@
   "difficulty": 2,
   "prompt": "Hückel's rule requires how many π electrons for aromaticity?",
   "options": [
-    { "id": "a", "label": "4n + 2 (where n = 0, 1, 2, ...)" },
-    { "id": "b", "label": "4n" },
-    { "id": "c", "label": "An even number, any count" },
-    { "id": "d", "label": "6 only" }
+    { "id": "a", "label": "4n + 2 (so 2, 6, 10, 14, ...)" },
+    { "id": "b", "label": "4n (so 4, 8, 12, ...)" },
+    { "id": "c", "label": "Any even number of π electrons" },
+    { "id": "d", "label": "Exactly 6 π electrons" }
   ],
   "correctOptionId": "a",
   "concepts": ["Hückel's rule", "aromaticity"],
-  "explanation": "4n+2 π electrons in a planar, cyclic, fully conjugated system → aromatic. 4n = antiaromatic."
+  "explanation": "4n+2 π e⁻ (2, 6, 10, 14) in a planar, cyclic, fully conjugated system → AROMATIC. 4n (4, 8, 12) → ANTIAROMATIC (destabilizing). Benzene has 6 (n=1), [10]annulene has 10 (n=2), cyclopentadienyl anion has 6, tropylium has 6."
 }
