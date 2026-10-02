@@ -3,7 +3,7 @@
   "topic": "conjugation",
   "type": "draw_product",
   "difficulty": 3,
-  "prompt": "Add 1 equivalent HBr to 1,3-butadiene at -78 °C (kinetic conditions). Draw the MAJOR (1,2-addition) product.",
+  "prompt": "Add 1 equivalent HBr to 1,3-butadiene at -78 °C. Draw the MAJOR product.",
   "reactants": ["C=CC=C"],
   "reagents": ["HBr (1 eq)", "-78 °C"],
   "answers": [{ "smiles": "CC(Br)C=C", "label": "3-bromo-1-butene (1,2 product — kinetic)" }],

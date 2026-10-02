@@ -3,7 +3,7 @@
   "topic": "conjugation",
   "type": "draw_product",
   "difficulty": 3,
-  "prompt": "Same 1,3-butadiene + 1 eq HBr, but at 40 °C (thermodynamic conditions). Draw the MAJOR (1,4-addition) product.",
+  "prompt": "1,3-butadiene + 1 eq HBr at 40 °C (reaction run to equilibrium). Draw the MAJOR product.",
   "reactants": ["C=CC=C"],
   "reagents": ["HBr (1 eq)", "40 °C"],
   "answers": [{ "smiles": "CC=CCBr", "label": "1-bromo-2-butene (1,4 product — thermodynamic)" }],

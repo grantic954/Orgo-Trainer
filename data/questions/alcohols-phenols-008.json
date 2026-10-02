@@ -3,7 +3,7 @@
   "topic": "alcohols-phenols",
   "type": "draw_product",
   "difficulty": 2,
-  "prompt": "Dehydration of 2-butanol with H₂SO₄, heat. Draw the major alkene product (Zaitsev).",
+  "prompt": "Dehydration of 2-butanol with H₂SO₄, heat. Draw the MAJOR alkene product.",
   "reactants": ["CCC(C)O"],
   "reagents": ["H2SO4", "heat"],
   "answers": [{ "smiles": "CC=CC", "label": "2-butene (more substituted, Zaitsev)" }],

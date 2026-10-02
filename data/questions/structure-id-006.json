@@ -1,0 +1,18 @@
+{
+  "id": "structure-id-006",
+  "topic": "structure-id",
+  "type": "mcq",
+  "difficulty": 4,
+  "prompt": "An unknown with formula C₄H₈O₂ shows IR with a strong band at ~1735 cm⁻¹ (NO broad O-H) and a strong band in the 1000-1300 cm⁻¹ region. MS shows M⁺ at 88 and a strong m/z = 43 fragment (acylium CH₃C≡O⁺). Which structure fits?",
+  "spectrumFromSmiles": "CCOC(C)=O",
+  "spectraKinds": ["ir", "ms"],
+  "options": [
+    { "id": "etoac", "label": "Ethyl acetate (CH₃CO-O-CH₂CH₃)", "smiles": "CCOC(C)=O" },
+    { "id": "butyric", "label": "Butanoic acid (would show broad O-H)", "smiles": "CCCC(=O)O" },
+    { "id": "mep", "label": "Methyl propanoate (α-cleavage would give m/z=57 acylium CH₃CH₂C≡O⁺)", "smiles": "COC(=O)CC" },
+    { "id": "diol", "label": "2,3-butanediol (would show broad O-H, no C=O)", "smiles": "CC(O)C(O)C" }
+  ],
+  "correctOptionId": "etoac",
+  "concepts": ["combined IR + MS", "ester identification"],
+  "explanation": "IR 1735 + no broad O-H → ester (not acid or alcohol). Strong C-O at 1000-1300 confirms. The m/z=43 fragment comes from α-cleavage giving the acetyl cation (CH₃C≡O⁺, mass 43). Methyl propanoate would give the propanoyl cation (CH₃CH₂C≡O⁺, mass 57) instead."
+}

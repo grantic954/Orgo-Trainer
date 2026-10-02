@@ -3,7 +3,7 @@
   "topic": "side-chain",
   "type": "draw_product",
   "difficulty": 4,
-  "prompt": "Sandmeyer reaction: aniline → chlorobenzene via diazonium. Draw the final product.",
+  "prompt": "Aniline is treated with NaNO2 / HCl at 0 °C, then CuCl. Draw the final product.",
   "reactants": ["Nc1ccccc1"],
   "reagents": ["NaNO2", "HCl (0 C)", "CuCl"],
   "answers": [{ "smiles": "Clc1ccccc1", "label": "chlorobenzene" }],

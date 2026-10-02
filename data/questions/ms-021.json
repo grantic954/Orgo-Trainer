@@ -1,0 +1,18 @@
+{
+  "id": "ms-021",
+  "topic": "ms",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "A mass spectrum shows M⁺ at 108 and M+2 at 110 with roughly EQUAL intensity (1:1). What does this suggest?",
+  "spectrumFromSmiles": "CCCCBr",
+  "spectraKinds": ["ms"],
+  "options": [
+    { "id": "br", "label": "Compound contains bromine (⁷⁹Br/⁸¹Br ~ 1:1 natural abundance)" },
+    { "id": "cl", "label": "Compound contains chlorine (M+2 would be ~1/3 of M⁺, 3:1)" },
+    { "id": "s", "label": "Compound contains sulfur (M+2 is ~4% of M⁺)" },
+    { "id": "no-halogen", "label": "No halogen — just random noise" }
+  ],
+  "correctOptionId": "br",
+  "concepts": ["isotope patterns", "Br vs Cl"],
+  "explanation": "⁷⁹Br and ⁸¹Br are nearly 50:50 in nature → M⁺ and M+2 come in with ~1:1 intensity. For Cl, ³⁵Cl:³⁷Cl ≈ 3:1, so M+2 is ~1/3 of M⁺. For sulfur, M+2 is ~4%."
+}

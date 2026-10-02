@@ -1,0 +1,18 @@
+{
+  "id": "ir-023",
+  "topic": "ir",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "An IR has a strong C=O at ~1730 cm⁻¹ PLUS a diagnostic doublet near 2720 and 2820 cm⁻¹. What functional group?",
+  "spectrumFromSmiles": "CCCCC=O",
+  "spectraKinds": ["ir"],
+  "options": [
+    { "id": "aldehyde", "label": "Aldehyde (aldehyde C-H gives doublet near 2720/2820)" },
+    { "id": "ketone", "label": "Ketone (no distinct aldehyde C-H doublet)" },
+    { "id": "ester", "label": "Ester (C=O ~1735 but no aldehyde doublet)" },
+    { "id": "acid", "label": "Carboxylic acid (would show broad O-H)" }
+  ],
+  "correctOptionId": "aldehyde",
+  "concepts": ["aldehyde C-H diagnostic doublet"],
+  "explanation": "Aldehydes have a unique pair of C-H stretches at ~2720 and ~2820 cm⁻¹ (Fermi doublet from the aldehyde C-H). Combined with a C=O at ~1725, this nails it as an aldehyde — no other functional group shows that doublet pattern."
+}

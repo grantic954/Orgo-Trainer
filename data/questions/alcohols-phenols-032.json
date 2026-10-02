@@ -3,7 +3,7 @@
   "topic": "alcohols-phenols",
   "type": "draw_product",
   "difficulty": 3,
-  "prompt": "Oxymercuration of 3-methyl-1-butene with Hg(OAc)2 / H2O; then NaBH4. Draw the Markovnikov alcohol (no rearrangement).",
+  "prompt": "3-methyl-1-butene is treated with Hg(OAc)2 / H2O, then NaBH4. Draw the alcohol product (watch for rearrangements vs none).",
   "reactants": ["CC(C)C=C"],
   "reagents": ["Hg(OAc)2, H2O", "then NaBH4"],
   "answers": [{ "smiles": "CC(C)C(C)O", "label": "3-methyl-2-butanol (Markovnikov, no cation shift)" }],

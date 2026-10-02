@@ -3,7 +3,7 @@
   "topic": "acid-derivatives",
   "type": "draw_product",
   "difficulty": 2,
-  "prompt": "Fischer esterification: acetic acid + ethanol + H⁺. Draw the product.",
+  "prompt": "Acetic acid + ethanol, cat. H⁺. Draw the organic product.",
   "reactants": ["CC(=O)O", "CCO"],
   "reagents": ["H2SO4 (cat)", "heat"],
   "answers": [{ "smiles": "CCOC(C)=O", "label": "ethyl acetate" }],

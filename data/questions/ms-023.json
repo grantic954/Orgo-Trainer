@@ -1,0 +1,18 @@
+{
+  "id": "ms-023",
+  "topic": "ms",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "A ketone with molecular formula C₆H₁₂O (M⁺ = 100) shows a strong fragment at m/z = 58. What rearrangement explains this loss of 42?",
+  "spectrumFromSmiles": "CCCCC(C)=O",
+  "spectraKinds": ["ms"],
+  "options": [
+    { "id": "mclafferty", "label": "McLafferty rearrangement (loses propene, gives enol fragment m/z=58)" },
+    { "id": "alpha", "label": "α-cleavage (would give an acylium ion at ~43 or so)" },
+    { "id": "water", "label": "Loss of water (gives M-18)" },
+    { "id": "methyl", "label": "Loss of methyl (gives M-15)" }
+  ],
+  "correctOptionId": "mclafferty",
+  "concepts": ["McLafferty rearrangement"],
+  "explanation": "McLafferty: carbonyl with γ-H → 6-membered TS, transfers γ-H to O, cleaves α-β bond, loses an alkene. For 2-hexanone (M=100), losing propene (42) gives an enol cation at m/z=58. Classic diagnostic for carbonyl compounds with γ-hydrogens."
+}

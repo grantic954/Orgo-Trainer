@@ -1,0 +1,18 @@
+{
+  "id": "ms-024",
+  "topic": "ms",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "An aromatic hydrocarbon shows M⁺ at 92 and a huge peak at m/z = 91 (loss of 1 H). What is going on?",
+  "spectrumFromSmiles": "Cc1ccccc1",
+  "spectraKinds": ["ms"],
+  "options": [
+    { "id": "tropylium", "label": "Toluene → benzyl cation → aromatic tropylium (C₇H₇⁺, m/z 91) — super stable, dominant peak" },
+    { "id": "benzyne", "label": "Loses H₂ to form benzyne" },
+    { "id": "random", "label": "Random H loss, not structural" },
+    { "id": "contamination", "label": "Sample contamination" }
+  ],
+  "correctOptionId": "tropylium",
+  "concepts": ["tropylium cation", "aromatic MS fragmentation"],
+  "explanation": "Toluene (M=92) loses H to give the benzyl cation (C₆H₅-CH₂⁺) which rapidly rearranges to the TROPYLIUM cation — a 7-membered aromatic ring with 6 π electrons (Hückel). Super stable → m/z=91 is often the base peak. Diagnostic for alkylbenzenes."
+}

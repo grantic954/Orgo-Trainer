@@ -3,7 +3,7 @@
   "topic": "conjugation",
   "type": "draw_product",
   "difficulty": 2,
-  "prompt": "Diels-Alder: (E)-1,3-pentadiene + methyl acrylate (CH₂=CH-COOMe), heat. Draw the major cycloadduct (ortho rule).",
+  "prompt": "(E)-1,3-pentadiene + methyl acrylate (CH₂=CH-COOMe), heat. Draw the major cycloadduct.",
   "reactants": ["C/C=C/C=C", "C=CC(=O)OC"],
   "reagents": ["heat"],
   "answers": [{ "smiles": "COC(=O)C1CCC(C)=CC1", "label": "methyl 6-methyl-3-cyclohexenecarboxylate (ortho orientation)" }],

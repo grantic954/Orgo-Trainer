@@ -3,7 +3,7 @@
   "topic": "carbonyl-ad",
   "type": "draw_product",
   "difficulty": 2,
-  "prompt": "Wittig reaction: cyclohexanone + methylenetriphenylphosphorane (Ph3P=CH2). Draw the alkene product.",
+  "prompt": "Cyclohexanone + methylenetriphenylphosphorane (Ph3P=CH2). Draw the product.",
   "reactants": ["O=C1CCCCC1"],
   "reagents": ["Ph3P=CH2"],
   "answers": [{ "smiles": "C=C1CCCCC1", "label": "methylenecyclohexane" }],

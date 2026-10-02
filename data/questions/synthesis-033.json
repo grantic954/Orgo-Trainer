@@ -3,7 +3,7 @@
   "topic": "synthesis",
   "type": "draw_product",
   "difficulty": 2,
-  "prompt": "Markovnikov addition of HBr to 2-methylpropene (isobutylene). Draw the alkyl bromide.",
+  "prompt": "2-methylpropene (isobutylene) + HBr (no peroxides). Draw the alkyl bromide product.",
   "reactants": ["CC(C)=C"],
   "reagents": ["HBr"],
   "answers": [{ "smiles": "CC(C)(C)Br", "label": "2-bromo-2-methylpropane (tert-butyl bromide)" }],

@@ -3,7 +3,7 @@
   "topic": "alcohols-phenols",
   "type": "draw_product",
   "difficulty": 3,
-  "prompt": "Dehydration: 2-methylcyclohexan-1-ol + H2SO4, heat. Draw the MAJOR alkene (Zaitsev).",
+  "prompt": "2-methylcyclohexan-1-ol is treated with H2SO4, heat. Draw the MAJOR alkene.",
   "reactants": ["OC1CCCCC1C"],
   "reagents": ["H2SO4, heat"],
   "answers": [{ "smiles": "CC1=CCCCC1", "label": "1-methylcyclohex-1-ene (Zaitsev — more substituted, trisubstituted alkene)" }],

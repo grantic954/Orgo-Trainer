@@ -1,0 +1,18 @@
+{
+  "id": "ms-025",
+  "topic": "ms",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "An alcohol with M⁺ = 74 shows a prominent peak at m/z = 56 (loss of 18). What's the fragmentation pathway?",
+  "spectrumFromSmiles": "CCCCO",
+  "spectraKinds": ["ms"],
+  "options": [
+    { "id": "water", "label": "Loss of H₂O (18 amu) — classic dehydration from alcohol M⁺" },
+    { "id": "nh3", "label": "Loss of NH₃ (17 amu) — not relevant here" },
+    { "id": "methyl", "label": "Loss of CH₃ (15 amu)" },
+    { "id": "co", "label": "Loss of CO (28 amu)" }
+  ],
+  "correctOptionId": "water",
+  "concepts": ["alcohol loss of water in MS"],
+  "explanation": "Alcohols readily lose H₂O (mass 18) in the mass spectrum via E1-type cleavage from M⁺•, giving an alkene cation. M-18 is a hallmark peak for alcohols. If also α-cleavage happens, you see M-R' alkyl loss too."
+}

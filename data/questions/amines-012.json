@@ -3,7 +3,7 @@
   "topic": "amines",
   "type": "draw_product",
   "difficulty": 3,
-  "prompt": "Hofmann elimination: trimethyl(butyl)ammonium hydroxide (CH3CH2CH2CH2-N⁺Me3 OH⁻), heat. Draw the alkene product.",
+  "prompt": "Trimethyl(butyl)ammonium hydroxide (CH3CH2CH2CH2-N⁺Me3 OH⁻) is heated. Draw the MAJOR alkene product.",
   "reactants": ["CCCC[N+](C)(C)C.[OH-]"],
   "reagents": ["heat"],
   "answers": [{ "smiles": "C=CCC", "label": "1-butene (Hofmann: LESS substituted alkene)" }],

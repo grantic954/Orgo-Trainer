@@ -1,0 +1,18 @@
+{
+  "id": "ir-021",
+  "topic": "ir",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "Study the IR spectrum below. The broad band at ~3300 cm⁻¹ (very wide, overlapping sp³ C-H) and the strong band at ~1715 cm⁻¹ point to which functional group?",
+  "spectrumFromSmiles": "CCCC(=O)O",
+  "spectraKinds": ["ir"],
+  "options": [
+    { "id": "cooh", "label": "Carboxylic acid (very broad O-H 2500-3300, C=O ~1710)" },
+    { "id": "oh", "label": "Simple alcohol (broad O-H 3200-3550, no C=O)" },
+    { "id": "ketone", "label": "Ketone (C=O ~1715, no broad O-H)" },
+    { "id": "amine", "label": "Primary amine (two sharp N-H bands 3300-3500)" }
+  ],
+  "correctOptionId": "cooh",
+  "concepts": ["IR of carboxylic acid"],
+  "explanation": "Carboxylic acids show a hallmark VERY broad O-H band from 2500-3300 cm⁻¹ (H-bonded dimer) that often covers the C-H region, combined with a strong C=O ~1710. If you see broad O-H + C=O together, it's almost always a carboxylic acid."
+}

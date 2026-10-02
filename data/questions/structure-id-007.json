@@ -1,0 +1,18 @@
+{
+  "id": "structure-id-007",
+  "topic": "structure-id",
+  "type": "mcq",
+  "difficulty": 4,
+  "prompt": "Unknown C₃H₆O. IR: strong C=O at ~1715 cm⁻¹, NO broad O-H, NO aldehyde doublet at 2720/2820. MS: M⁺ = 58, base peak at m/z = 43. Identify.",
+  "spectrumFromSmiles": "CC(C)=O",
+  "spectraKinds": ["ir", "ms"],
+  "options": [
+    { "id": "acetone", "label": "Acetone (ketone — fits all data)", "smiles": "CC(C)=O" },
+    { "id": "propanal", "label": "Propanal (would show aldehyde C-H doublet)", "smiles": "CCC=O" },
+    { "id": "allyl-oh", "label": "Allyl alcohol (would show broad O-H, no C=O)", "smiles": "C=CCO" },
+    { "id": "oxirane", "label": "Methyloxirane (no C=O at 1715)", "smiles": "CC1CO1" }
+  ],
+  "correctOptionId": "acetone",
+  "concepts": ["ruling out aldehyde vs ketone"],
+  "explanation": "C=O at 1715 narrows to carbonyl. No aldehyde doublet (2720/2820) rules out propanal. No broad O-H rules out allyl alcohol. M⁺=58 fits C₃H₆O. m/z=43 is loss of methyl (M-15), giving the acetyl cation (CH₃C≡O⁺). All consistent with acetone."
+}

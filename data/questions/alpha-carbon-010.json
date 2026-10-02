@@ -3,7 +3,7 @@
   "topic": "alpha-carbon",
   "type": "draw_product",
   "difficulty": 3,
-  "prompt": "Michael addition: diethyl malonate (CH2(COOEt)2) + methyl vinyl ketone (CH2=CH-COCH3), NaOEt (cat.). Draw the Michael adduct.",
+  "prompt": "Diethyl malonate (CH2(COOEt)2) + methyl vinyl ketone (CH2=CH-COCH3), NaOEt (cat.). Draw the organic product.",
   "reactants": ["CCOC(=O)CC(=O)OCC", "C=CC(C)=O"],
   "reagents": ["NaOEt (cat.)"],
   "answers": [{ "smiles": "CCOC(=O)C(CCC(C)=O)C(=O)OCC", "label": "1,5-dicarbonyl Michael adduct" }],

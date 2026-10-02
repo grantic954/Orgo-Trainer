@@ -3,7 +3,7 @@
   "topic": "amines",
   "type": "draw_product",
   "difficulty": 2,
-  "prompt": "Gabriel synthesis of butylamine: potassium phthalimide + 1-bromobutane, then hydrazine (NH2NH2). Draw the amine product.",
+  "prompt": "Potassium phthalimide + 1-bromobutane; then hydrazine (NH2NH2). Draw the amine product.",
   "reactants": ["O=C1c2ccccc2C(=O)N1[K]", "CCCCBr"],
   "reagents": ["SN2", "then NH2NH2"],
   "answers": [{ "smiles": "CCCCN", "label": "1-butanamine (butylamine)" }],

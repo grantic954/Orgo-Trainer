@@ -3,7 +3,7 @@
   "topic": "synthesis",
   "type": "draw_product",
   "difficulty": 2,
-  "prompt": "Oxymercuration-demercuration of styrene (Hg(OAc)2, H2O; then NaBH4). Draw the alcohol product.",
+  "prompt": "Styrene is treated with Hg(OAc)2, H2O; then NaBH4. Draw the alcohol product.",
   "reactants": ["C=Cc1ccccc1"],
   "reagents": ["Hg(OAc)2, H2O", "then NaBH4"],
   "answers": [{ "smiles": "CC(O)c1ccccc1", "label": "1-phenylethanol (Markovnikov; OH on benzylic C)" }],

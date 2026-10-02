@@ -3,7 +3,7 @@
   "topic": "radicals",
   "type": "draw_product",
   "difficulty": 2,
-  "prompt": "Anti-Markovnikov addition of HBr to 2-methyl-2-butene using peroxides (radical conditions). Draw the alkyl bromide.",
+  "prompt": "HBr is added to 2-methyl-2-butene in the presence of peroxides (ROOR) and light. Draw the alkyl bromide product.",
   "reactants": ["CC=C(C)C"],
   "reagents": ["HBr", "ROOR peroxide", "hν"],
   "answers": [{ "smiles": "CC(Br)C(C)C", "label": "2-bromo-3-methylbutane (anti-Markovnikov; Br on LESS substituted alkene C)" }],

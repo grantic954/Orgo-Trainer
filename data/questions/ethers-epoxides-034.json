@@ -3,7 +3,7 @@
   "topic": "ethers-epoxides",
   "type": "draw_product",
   "difficulty": 4,
-  "prompt": "Grignard opens an epoxide: 2,2-dimethyloxirane (an epoxide with one more-substituted C) + CH3MgBr; then H3O+. Draw the alcohol (Grignard attacks LESS hindered C).",
+  "prompt": "2,2-dimethyloxirane + CH3MgBr; then H3O+. Draw the alcohol product.",
   "reactants": ["CC1(C)CO1", "C[Mg]Br"],
   "reagents": ["CH3MgBr, Et2O", "then H3O+"],
   "answers": [{ "smiles": "CC(C)(O)CC", "label": "2-methyl-2-butanol (Me added to the LESS hindered CH2 end, OH on the tert-C)" }],

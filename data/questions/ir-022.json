@@ -1,0 +1,18 @@
+{
+  "id": "ir-022",
+  "topic": "ir",
+  "type": "mcq",
+  "difficulty": 2,
+  "prompt": "An IR shows a sharp strong band at ~2250 cm⁻¹ and NO C=O. What is it?",
+  "spectrumFromSmiles": "CCCC#N",
+  "spectraKinds": ["ir"],
+  "options": [
+    { "id": "nitrile", "label": "Nitrile (C≡N ~2200-2260, sharp)" },
+    { "id": "alkyne", "label": "Terminal alkyne (C≡C ~2100-2260, usually weaker; also sharp sp C-H ~3300)" },
+    { "id": "aldehyde", "label": "Aldehyde (C=O ~1725 + doublet at 2720/2820)" },
+    { "id": "ester", "label": "Ester (C=O ~1735 + C-O 1000-1300)" }
+  ],
+  "correctOptionId": "nitrile",
+  "concepts": ["IR of nitriles vs alkynes"],
+  "explanation": "~2250 cm⁻¹ is the characteristic C≡N stretch of a nitrile — stronger than alkyne C≡C. If you see a sharp band around 2200-2260 AND a C=O, think nitrile. Terminal alkynes would also show a sharp sp C-H at ~3300."
+}

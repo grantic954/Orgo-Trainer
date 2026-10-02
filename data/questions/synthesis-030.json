@@ -3,7 +3,7 @@
   "topic": "synthesis",
   "type": "draw_product",
   "difficulty": 3,
-  "prompt": "Fischer esterification of propanoic acid + ethanol (H2SO4, heat). Draw the ester product.",
+  "prompt": "Propanoic acid + ethanol, cat. H2SO4, heat. Draw the organic product.",
   "reactants": ["CCC(=O)O", "CCO"],
   "reagents": ["H2SO4 (cat)", "heat"],
   "answers": [{ "smiles": "CCOC(=O)CC", "label": "ethyl propanoate" }],

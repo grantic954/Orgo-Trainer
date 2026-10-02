@@ -1,0 +1,18 @@
+{
+  "id": "ir-025",
+  "topic": "ir",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "Compare the IR of these two carbonyls — one is a normal ketone, the other is an α,β-unsaturated ketone. Which pair of C=O frequencies is correct?",
+  "spectrumFromSmiles": "CC(=O)C=C",
+  "spectraKinds": ["ir"],
+  "options": [
+    { "id": "a", "label": "Normal ketone ~1715; conjugated enone ~1680 (conjugation lowers C=O)" },
+    { "id": "b", "label": "Normal ketone ~1680; conjugated enone ~1715 (reversed)" },
+    { "id": "c", "label": "Both at ~1715 (no difference)" },
+    { "id": "d", "label": "Both at ~1680" }
+  ],
+  "correctOptionId": "a",
+  "concepts": ["conjugation lowers C=O frequency"],
+  "explanation": "Conjugation of C=O with an adjacent C=C (or aryl ring) delocalizes the π bond → lowers bond order of the C=O slightly → lower stretching frequency. Normal ketone ~1715; α,β-unsaturated ~1680; aryl ketone ~1685. The same shift happens with ester (1735→1715 if conjugated)."
+}
