@@ -1,0 +1,18 @@
+{
+  "id": "cnmr-009",
+  "topic": "cnmr",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "The ¹³C NMR + DEPT spectrum below shows: δ 170 (gray/quaternary), δ 60 (CH₂), δ 21 (CH₃), δ 14 (CH₃). Molecular formula is C₄H₈O₂. Identify.",
+  "spectrumFromSmiles": "CCOC(C)=O",
+  "spectraKinds": ["cnmr"],
+  "options": [
+    { "id": "etoac", "label": "Ethyl acetate (CH₃-CO-O-CH₂CH₃)", "smiles": "CCOC(C)=O" },
+    { "id": "diox", "label": "1,4-dioxane (would show only one CH₂ signal)", "smiles": "C1COCCO1" },
+    { "id": "cooh", "label": "Butanoic acid (would show no OCH₂, and C=O at ~180)", "smiles": "CCCC(=O)O" },
+    { "id": "diol", "label": "2,3-butanediol (would show two CH signals, not quaternary + CH₂)", "smiles": "CC(O)C(O)C" }
+  ],
+  "correctOptionId": "etoac",
+  "concepts": ["ester ¹³C NMR identification"],
+  "explanation": "The δ 170 (quaternary from DEPT) is the ester C=O. δ 60 (CH₂, deshielded by O) is the OCH₂. δ 21 (CH₃) is the acetyl methyl. δ 14 (CH₃) is the terminal methyl of the ethoxy. Four distinct carbons = ethyl acetate."
+}

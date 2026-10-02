@@ -1,0 +1,18 @@
+{
+  "id": "ir-026",
+  "topic": "ir",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "A compound with molecular formula C₆H₅NO₂ gives the IR below. Identify the main functional group.",
+  "spectrumFromSmiles": "O=[N+]([O-])c1ccccc1",
+  "spectraKinds": ["ir"],
+  "options": [
+    { "id": "nitro", "label": "Nitro group (two strong bands at ~1520 and ~1345 cm⁻¹, asym + sym N-O)" },
+    { "id": "amide", "label": "Primary amide (C=O ~1660 + two N-H bands at 3300-3500)" },
+    { "id": "nitrile", "label": "Nitrile (sharp band at ~2250 cm⁻¹ for C≡N)" },
+    { "id": "amine", "label": "Primary amine with carbonyl impurity (N-H bands + C=O at 1715)" }
+  ],
+  "correctOptionId": "nitro",
+  "concepts": ["nitro group IR signature"],
+  "explanation": "The ArNO₂ group has TWO characteristic strong bands: ~1520 (asymmetric N-O stretch) and ~1345 (symmetric N-O stretch) cm⁻¹. These are hard to miss and don't overlap with anything else. Nitriles show C≡N at 2250, not nitro's 1520+1345. Nitrobenzene formula C₆H₅NO₂ fits — only one N, two O's."
+}

@@ -1,0 +1,18 @@
+{
+  "id": "hnmr-012",
+  "topic": "hnmr",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "The ¹H NMR spectrum below has two peaks. Molecular formula is C₈H₁₀. Which compound is it?",
+  "spectrumFromSmiles": "Cc1ccc(C)cc1",
+  "spectraKinds": ["hnmr"],
+  "options": [
+    { "id": "pxylene", "label": "p-xylene (1,4-dimethylbenzene)", "smiles": "Cc1ccc(C)cc1" },
+    { "id": "oxylene", "label": "o-xylene (1,2-dimethylbenzene)", "smiles": "Cc1ccccc1C" },
+    { "id": "etbz", "label": "ethylbenzene (3 signals expected)", "smiles": "CCc1ccccc1" },
+    { "id": "styrene", "label": "styrene (would show vinyl signals)", "smiles": "C=Cc1ccccc1" }
+  ],
+  "correctOptionId": "pxylene",
+  "concepts": ["symmetry simplifies ¹H NMR"],
+  "explanation": "p-xylene has C2v symmetry: 2 equivalent methyls (one singlet, 6H) and 4 equivalent aromatic H (one singlet, 4H) — just TWO signals. o-xylene would also show 2 singlets but at slightly different shifts. Ethylbenzene shows 3 signals (CH₃ triplet, CH₂ quartet, aromatic multiplet). Styrene shows vinyl H's at δ 5-7."
+}

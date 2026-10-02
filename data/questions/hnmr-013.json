@@ -1,0 +1,18 @@
+{
+  "id": "hnmr-013",
+  "topic": "hnmr",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "The ¹H NMR spectrum below shows: δ 1.0 (t, 3H), δ 1.6 (m, 2H), δ 4.1 (t, 2H), δ 2.0 (s, 3H). Molecular formula is C₅H₁₀O₂. Which compound fits?",
+  "spectrumFromSmiles": "CCCOC(C)=O",
+  "spectraKinds": ["hnmr"],
+  "options": [
+    { "id": "propoac", "label": "n-propyl acetate (CH₃COOCH₂CH₂CH₃)", "smiles": "CCCOC(C)=O" },
+    { "id": "etprop", "label": "ethyl propanoate (CH₃CH₂COOCH₂CH₃)", "smiles": "CCOC(=O)CC" },
+    { "id": "pentanoic", "label": "pentanoic acid", "smiles": "CCCCC(=O)O" },
+    { "id": "mep", "label": "methyl butanoate", "smiles": "COC(=O)CCC" }
+  ],
+  "correctOptionId": "propoac",
+  "concepts": ["ester identification by NMR"],
+  "explanation": "The δ 2.0 singlet is diagnostic for an acetyl methyl (CH₃-CO-). The δ 4.1 triplet is OCH₂ (strongly deshielded). The pattern (3H triplet + 2H sextet + 2H triplet + 3H singlet) matches n-propyl acetate. Ethyl propanoate would show the CH₃ α to C=O as a triplet (not singlet) and the OCH₂ as a quartet. Pentanoic acid would show a very broad OH at δ 10-12."
+}

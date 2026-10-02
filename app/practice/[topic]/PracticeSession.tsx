@@ -49,16 +49,25 @@ export function PracticeSession({
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex items-center justify-between text-sm text-neutral-500">
+      <div className="flex items-center justify-between gap-3 text-sm text-neutral-500">
         <span>
           Question {i + 1} of {questions.length}
           <span className="ml-2 rounded bg-neutral-100 px-2 py-0.5 text-xs font-medium uppercase tracking-wider">
             {mode}
           </span>
         </span>
-        <span>
-          Score: {history.filter((h) => h.verdict === "correct").length} / {history.length}
-        </span>
+        <div className="flex items-center gap-3">
+          <span>
+            Score: {history.filter((h) => h.verdict === "correct").length} / {history.length}
+          </span>
+          <button
+            type="button"
+            onClick={next}
+            className="rounded-md border border-neutral-300 bg-white px-3 py-1 text-sm font-medium hover:bg-neutral-50"
+          >
+            Next →
+          </button>
+        </div>
       </div>
 
       {remaining !== null && (

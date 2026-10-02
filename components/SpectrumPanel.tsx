@@ -74,13 +74,13 @@ export function SpectrumPanel({
         kinds.map((k) => {
           const content =
             k === "ir" && state.ir ? (
-              <SpectrumPlot data={{ kind: "ir", spectrum: state.ir }} />
+              <SpectrumPlot data={{ kind: "ir", spectrum: state.ir }} hideMarkers />
             ) : k === "ms" && state.ms ? (
-              <SpectrumPlot data={{ kind: "ms", spectrum: state.ms }} />
+              <SpectrumPlot data={{ kind: "ms", spectrum: state.ms }} hideMarkers />
             ) : k === "hnmr" && state.hnmr ? (
-              <SpectrumPlot data={{ kind: "hnmr", spectrum: state.hnmr }} />
+              <SpectrumPlot data={{ kind: "hnmr", spectrum: state.hnmr }} hideMarkers />
             ) : k === "cnmr" && state.cnmr ? (
-              <SpectrumPlot data={{ kind: "cnmr", spectrum: state.cnmr }} />
+              <SpectrumPlot data={{ kind: "cnmr", spectrum: state.cnmr }} hideMarkers />
             ) : null;
           return (
             <div key={k} className="rounded border border-neutral-100 bg-white p-2">

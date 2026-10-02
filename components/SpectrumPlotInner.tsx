@@ -23,10 +23,11 @@ export interface SpectrumPlotInnerProps {
   data: SpectrumData;
   onPeakClick?: (payload: { label: string; atomIndices?: number[] }) => void;
   onPeakHover?: (payload: { label: string; atomIndices?: number[] } | null) => void;
+  hideMarkers?: boolean;
 }
 
-export default function SpectrumPlotInner({ data, onPeakClick, onPeakHover }: SpectrumPlotInnerProps) {
-  const { plotData, layout } = useMemo(() => buildPlot(data), [data]);
+export default function SpectrumPlotInner({ data, onPeakClick, onPeakHover, hideMarkers }: SpectrumPlotInnerProps) {
+  const { plotData, layout } = useMemo(() => buildPlot(data, { hideMarkers }), [data, hideMarkers]);
   return (
     <Plot
       data={plotData as unknown as never}
@@ -59,28 +60,34 @@ const SHARED_LAYOUT = {
   hoverlabel: { bgcolor: "#111", font: { color: "#fff", size: 12 } },
 };
 
-function buildPlot(data: SpectrumData): { plotData: unknown[]; layout: Record<string, unknown> } {
+function buildPlot(
+  data: SpectrumData,
+  opts: { hideMarkers?: boolean } = {},
+): { plotData: unknown[]; layout: Record<string, unknown> } {
   if (data.kind === "ir") {
     const s = data.spectrum;
+    const traces: unknown[] = [
+      {
+        x: s.xs,
+        y: s.ys,
+        mode: "lines",
+        line: { color: "#111", width: 1.2 },
+        hovertemplate: "%{x:.0f} cm⁻¹ · %{y:.0f}% T<extra></extra>",
+      },
+    ];
+    if (!opts.hideMarkers) {
+      traces.push({
+        x: s.bands.map((b) => b.peak),
+        y: s.bands.map(() => 4),
+        mode: "markers",
+        marker: { color: "rgba(37,99,235,0.55)", size: 7 },
+        text: s.bands.map((b) => b.label),
+        customdata: s.bands.map((b) => ({ label: b.label, atomIndices: b.atomIndices })),
+        hovertemplate: "%{text}<br>%{x} cm⁻¹<extra></extra>",
+      });
+    }
     return {
-      plotData: [
-        {
-          x: s.xs,
-          y: s.ys,
-          mode: "lines",
-          line: { color: "#111", width: 1.2 },
-          hovertemplate: "%{x:.0f} cm⁻¹ · %{y:.0f}% T<extra></extra>",
-        },
-        {
-          x: s.bands.map((b) => b.peak),
-          y: s.bands.map(() => 4),
-          mode: "markers",
-          marker: { color: "rgba(37,99,235,0.55)", size: 7 },
-          text: s.bands.map((b) => b.label),
-          customdata: s.bands.map((b) => ({ label: b.label, atomIndices: b.atomIndices })),
-          hovertemplate: "%{text}<br>%{x} cm⁻¹<extra></extra>",
-        },
-      ],
+      plotData: traces,
       layout: {
         ...SHARED_LAYOUT,
         margin: { l: 55, r: 20, t: 12, b: 48 },
@@ -103,28 +110,31 @@ function buildPlot(data: SpectrumData): { plotData: unknown[]; layout: Record<st
   if (data.kind === "hnmr") {
     const s = data.spectrum;
     const yMax = Math.max(1, ...s.ys) * 1.1;
+    const traces: unknown[] = [
+      {
+        x: s.xs,
+        y: s.ys,
+        mode: "lines",
+        line: { color: "#111", width: 1.2 },
+        hoverinfo: "skip",
+      },
+    ];
+    if (!opts.hideMarkers) {
+      traces.push({
+        x: s.peaks.map((p) => p.shift),
+        y: s.peaks.map(() => yMax * 0.02),
+        mode: "markers",
+        marker: { color: "rgba(220,38,38,0.7)", size: 8 },
+        text: s.peaks.map((p) => `${p.integration}H ${p.multiplicity} @ δ${p.shift}`),
+        customdata: s.peaks.map((p) => ({
+          label: `${p.integration}H ${p.multiplicity} δ${p.shift}${p.note ? ` (${p.note})` : ""}`,
+          atomIndices: p.atomIndices,
+        })),
+        hovertemplate: "%{text}<extra></extra>",
+      });
+    }
     return {
-      plotData: [
-        {
-          x: s.xs,
-          y: s.ys,
-          mode: "lines",
-          line: { color: "#111", width: 1.2 },
-          hoverinfo: "skip",
-        },
-        {
-          x: s.peaks.map((p) => p.shift),
-          y: s.peaks.map(() => yMax * 0.02),
-          mode: "markers",
-          marker: { color: "rgba(220,38,38,0.7)", size: 8 },
-          text: s.peaks.map((p) => `${p.integration}H ${p.multiplicity} @ δ${p.shift}`),
-          customdata: s.peaks.map((p) => ({
-            label: `${p.integration}H ${p.multiplicity} δ${p.shift}${p.note ? ` (${p.note})` : ""}`,
-            atomIndices: p.atomIndices,
-          })),
-          hovertemplate: "%{text}<extra></extra>",
-        },
-      ],
+      plotData: traces,
       layout: {
         ...SHARED_LAYOUT,
         margin: { l: 55, r: 20, t: 12, b: 48 },

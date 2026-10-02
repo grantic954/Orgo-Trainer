@@ -1,0 +1,12 @@
+{
+  "id": "cnmr-008",
+  "topic": "cnmr",
+  "type": "count",
+  "difficulty": 2,
+  "prompt": "How many distinct ¹³C signals does acetone give? (See the C NMR + DEPT below for reference.)",
+  "spectrumFromSmiles": "CC(C)=O",
+  "spectraKinds": ["cnmr"],
+  "answer": 2,
+  "concepts": ["symmetry in ¹³C NMR"],
+  "explanation": "Acetone (CH₃-CO-CH₃) has C2v symmetry — the two methyl carbons are equivalent (one signal at ~30 ppm) and the carbonyl C is unique (one signal at ~206 ppm). Two signals total. DEPT distinguishes them: methyl is CH₃ (green/up), carbonyl is quaternary (gray)."
+}

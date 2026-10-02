@@ -1,0 +1,18 @@
+{
+  "id": "ir-027",
+  "topic": "ir",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "A compound C₃H₆O₂ shows the IR below. The C=O appears at ~1735, and there's a strong band in the 1000-1300 range. No broad O-H. Identify the structure.",
+  "spectrumFromSmiles": "COC(C)=O",
+  "spectraKinds": ["ir"],
+  "options": [
+    { "id": "ester", "label": "Methyl formate / methyl acetate (ester, C=O ~1735 + C-O 1000-1300)", "smiles": "COC(C)=O" },
+    { "id": "acid", "label": "Propanoic acid (would show very broad O-H 2500-3300)", "smiles": "CCC(=O)O" },
+    { "id": "ketol", "label": "Hydroxyacetone (would show broad O-H at 3200-3550)", "smiles": "OCC(C)=O" },
+    { "id": "diester", "label": "Glycerol monoester (would show broad O-H + ester C=O)", "smiles": "OCC(O)COC=O" }
+  ],
+  "correctOptionId": "ester",
+  "concepts": ["ester IR signature"],
+  "explanation": "C=O at 1735 cm⁻¹ is ester-range (acids are 1710, ketones 1715, aldehydes 1725, esters 1735). Strong C-O stretch at 1000-1300 confirms ester (the C-O-C of the ester linkage). Absence of broad O-H rules out COOH, alcohols. Methyl acetate fits C₃H₆O₂."
+}

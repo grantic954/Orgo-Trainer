@@ -1,0 +1,18 @@
+{
+  "id": "ms-027",
+  "topic": "ms",
+  "type": "mcq",
+  "difficulty": 3,
+  "prompt": "The MS below has M⁺ = 60 and a prominent M-18 peak at m/z 42, plus m/z 31 (small). Identify.",
+  "spectrumFromSmiles": "CCCO",
+  "spectraKinds": ["ms"],
+  "options": [
+    { "id": "propanol", "label": "1-propanol (M⁺ 60, loses H₂O → 42; α-cleavage gives m/z 31 CH₂=OH⁺)", "smiles": "CCCO" },
+    { "id": "propanal", "label": "Propanal (M⁺ 58, not 60; loses CHO → m/z 29)", "smiles": "CCC=O" },
+    { "id": "aceticacid", "label": "Acetic acid (M⁺ 60; loses OH → 43 and COOH → 15; no M-18)", "smiles": "CC(=O)O" },
+    { "id": "ethylformate", "label": "Ethyl formate (M⁺ 74, formate ester)", "smiles": "CCOC=O" }
+  ],
+  "correctOptionId": "propanol",
+  "concepts": ["alcohol M-H2O", "α-cleavage"],
+  "explanation": "M⁺ 60 fits 1-propanol or acetic acid (both C₃H₈O-ish). The M-18 (loss of H₂O) is a hallmark of alcohols; acetic acid loses OH (17) or COOH (45), NOT H₂O. The m/z 31 (CH₂=OH⁺, hydroxymethyl cation) comes from α-cleavage next to OH — another alcohol diagnostic. Propanal has M⁺ 58, not 60."
+}

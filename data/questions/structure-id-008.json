@@ -1,0 +1,18 @@
+{
+  "id": "structure-id-008",
+  "topic": "structure-id",
+  "type": "mcq",
+  "difficulty": 4,
+  "prompt": "An unknown with molecular formula C₅H₁₀O gives the IR, ¹H NMR, and MS below. Identify the compound.",
+  "spectrumFromSmiles": "CCCCC=O",
+  "spectraKinds": ["ir", "hnmr", "ms"],
+  "options": [
+    { "id": "pentanal", "label": "Pentanal (C₄H₉-CHO)", "smiles": "CCCCC=O" },
+    { "id": "pentan2one", "label": "2-pentanone (CH₃-CO-C₃H₇)", "smiles": "CCCC(C)=O" },
+    { "id": "pentan3one", "label": "3-pentanone (symmetric, Et-CO-Et)", "smiles": "CCC(=O)CC" },
+    { "id": "pentenol", "label": "4-penten-1-ol (would show broad OH, no C=O)", "smiles": "C=CCCCO" }
+  ],
+  "correctOptionId": "pentanal",
+  "concepts": ["combined IR + NMR + MS for structure ID"],
+  "explanation": "The aldehyde Fermi doublet (2720/2820 cm⁻¹) in IR + aldehyde H near δ 9.7 in NMR nails it as an aldehyde (pentanal). Ketones show C=O at the same frequency but no doublet in IR and no δ 9.7 in NMR. 2-pentanone's acetyl methyl would be a singlet at δ 2.1 (singlet, 3H). 3-pentanone shows symmetric 2 signals in NMR. The 4-pentenol would show vinyl H's and OH."
+}

@@ -1,0 +1,18 @@
+{
+  "id": "structure-id-009",
+  "topic": "structure-id",
+  "type": "mcq",
+  "difficulty": 4,
+  "prompt": "An unknown with molecular formula C₃H₇N gives the IR and ¹H NMR below. Identify.",
+  "spectrumFromSmiles": "CCCN",
+  "spectraKinds": ["ir", "hnmr"],
+  "options": [
+    { "id": "prop1amine", "label": "1-propylamine (CH₃CH₂CH₂NH₂, 1° amine with 2 N-H)", "smiles": "CCCN" },
+    { "id": "etmeN", "label": "N-methylethylamine (CH₃CH₂NHCH₃, 2° amine)", "smiles": "CCNC" },
+    { "id": "triNme", "label": "Trimethylamine ((CH₃)₃N, 3° amine, no N-H)", "smiles": "CN(C)C" },
+    { "id": "aziridine", "label": "2-methylaziridine (strained 3-ring amine)", "smiles": "CC1CN1" }
+  ],
+  "correctOptionId": "prop1amine",
+  "concepts": ["amine IR + NMR classification"],
+  "explanation": "C₃H₇N fits all four, but IR distinguishes them: 1° amine shows TWO N-H bands near 3300-3500 (sym + asym stretch); 2° amine shows ONE N-H band; 3° amine shows NO N-H band. NMR: 1-propylamine gives triplet (3H, CH₃), sextet (2H, mid-CH₂), triplet (2H, CH₂N), and a broad 2H NH₂."
+}
