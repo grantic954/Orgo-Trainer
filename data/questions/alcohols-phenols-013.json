@@ -3,14 +3,14 @@
   "topic": "alcohols-phenols",
   "type": "mcq",
   "difficulty": 3,
-  "prompt": "Pinacol rearrangement: a vicinal diol under acid gives a ketone/aldehyde via:",
+  "prompt": "A vicinal diol under acid undergoes a pinacol rearrangement to give a ketone/aldehyde. What is the mechanism?",
   "options": [
-    { "id": "shift", "label": "Loss of water → carbocation → 1,2-hydride or methyl shift → loss of H⁺ gives C=O." },
-    { "id": "elim", "label": "Simple E1 to give an alkene." },
-    { "id": "ox", "label": "Oxidation by H₂SO₄." },
-    { "id": "sn", "label": "SN1 substitution of OH by H." }
+    { "id": "shift", "label": "Protonation, loss of H₂O to a cation, 1,2-shift of H or R, loss of H⁺ to form C=O." },
+    { "id": "elim", "label": "Protonation of one OH, E1 loss of water to give an alkene, then air oxidation to the carbonyl." },
+    { "id": "ox", "label": "Protonation activates one OH as a leaving group; the other OH is oxidized by H₂SO₄ to C=O." },
+    { "id": "sn", "label": "One OH leaves as water; a hydride from the adjacent C migrates intramolecularly via a 3-membered ring TS." }
   ],
   "correctOptionId": "shift",
   "concepts": ["pinacol rearrangement", "1,2-shifts", "carbocation"],
-  "explanation": "A vicinal diol protonates and loses one water to form a carbocation. The adjacent C–C or C–H bond migrates with its electrons to the cation; the oxygen's lone pair stabilizes the new cation and loses H⁺ to give a C=O."
+  "explanation": "Protonation of one OH → loss of H₂O gives a carbocation on the adjacent C. The remaining C–C or C–H bond on the OTHER (OH-bearing) carbon migrates to the cation. The now-cationic O-bearing C is stabilized by the oxygen's lone pair, which then kicks off H⁺ to give the carbonyl. Net: 1,2-shift + rearrangement to C=O."
 }

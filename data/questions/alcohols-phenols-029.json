@@ -3,14 +3,14 @@
   "topic": "alcohols-phenols",
   "type": "mcq",
   "difficulty": 3,
-  "prompt": "Swern oxidation (DMSO / oxalyl chloride (COCl)₂ / Et₃N, −78 °C) is a popular alternative to PCC for making aldehydes. What is its main practical advantage?",
+  "prompt": "Swern oxidation (DMSO / (COCl)₂ / Et₃N, −78 °C) is a popular alternative to PCC for making aldehydes. What is its main practical advantage?",
   "options": [
-    { "id": "no-metal", "label": "No chromium byproducts — all byproducts (DMS, CO, CO₂) are volatile; useful for pharmaceutical synthesis where metal contamination is a concern." },
-    { "id": "faster", "label": "Faster than PCC" },
-    { "id": "rings", "label": "Only Swern can make cyclic ketones" },
-    { "id": "water", "label": "Swern tolerates water" }
+    { "id": "no-metal", "label": "No toxic metal byproducts — all byproducts (dimethyl sulfide, CO, CO₂) are volatile and easily removed." },
+    { "id": "faster", "label": "Much faster than PCC — reaction complete in minutes vs hours at room temperature." },
+    { "id": "rings", "label": "Only Swern can oxidize ring alcohols to cyclic ketones; PCC fails on 5- and 6-membered rings." },
+    { "id": "water", "label": "Swern tolerates water in the reaction mixture, unlike PCC which decomposes in moist conditions." }
   ],
   "correctOptionId": "no-metal",
   "concepts": ["Swern oxidation", "practical oxidation"],
-  "explanation": "Swern is a 'green-ish' alternative to Cr(VI). The activated DMSO abstracts the alcohol H, generating R-CHO + dimethyl sulfide + CO + CO₂ — all volatile. No chromium disposal issues. Downsides: must run at −78 °C, and the characteristic DMS smell is unpleasant."
+  "explanation": "Swern avoids chromium entirely — the activated DMSO oxidizes the alcohol, releasing DMS + CO + CO₂, all volatile. Big win for pharma (no Cr contamination). Downsides: must run at −78 °C and the DMS smell. Swern is strictly anhydrous (not water-tolerant), and PCC also works on cyclic alcohols fine."
 }

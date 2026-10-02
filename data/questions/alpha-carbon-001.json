@@ -3,14 +3,14 @@
   "topic": "alpha-carbon",
   "type": "mcq",
   "difficulty": 2,
-  "prompt": "The α-hydrogen of a ketone has pKa ~20. Why is it so much more acidic than a comparable sp³ C–H (pKa ~50)?",
+  "prompt": "The α-hydrogen of a ketone has pKa ~20, dramatically more acidic than an ordinary sp³ C–H (pKa ~50). Why?",
   "options": [
-    { "id": "enol", "label": "The resulting enolate is resonance-stabilized by the adjacent C=O." },
-    { "id": "ind", "label": "The α-C is more electronegative." },
-    { "id": "sterics", "label": "α-C has less steric strain." },
-    { "id": "hyper", "label": "Hyperconjugation stabilizes the anion." }
+    { "id": "enol", "label": "The enolate anion is resonance-stabilized with negative charge on the adjacent carbonyl oxygen." },
+    { "id": "ind", "label": "The α-carbon is sp² hybridized and the extra s-character makes its H more acidic." },
+    { "id": "sterics", "label": "The α-position has reduced steric strain, releasing bond energy on deprotonation." },
+    { "id": "hyper", "label": "Hyperconjugation from the C=O donates into the C-H σ*, polarizing the bond." }
   ],
   "correctOptionId": "enol",
   "concepts": ["α-H acidity", "enolate"],
-  "explanation": "Deprotonation gives an enolate; the negative charge delocalizes onto the carbonyl oxygen via resonance, which is a huge stabilizing effect."
+  "explanation": "Deprotonation gives an enolate: the negative charge delocalizes from the α-carbon onto the carbonyl oxygen via resonance. Oxygen is much happier holding the charge → huge stabilization → much weaker conjugate acid (lower pKa). The α-C is still sp³ in the ketone; sp² is only after deprotonation (in the enolate itself)."
 }

@@ -3,13 +3,14 @@
   "topic": "amines",
   "type": "mcq",
   "difficulty": 3,
-  "prompt": "A diazonium salt (ArN₂⁺) can be used to install which groups? (pick the FULL list)",
+  "prompt": "A diazonium salt (ArN₂⁺) can be converted to which of these ArX groups?",
   "options": [
-    { "id": "all", "label": "Cl (CuCl), Br (CuBr), CN (CuCN), OH (H₂O/heat), H (H₃PO₂), F (HBF₄/Δ)" },
-    { "id": "halo_only", "label": "Only Cl and Br" },
-    { "id": "oh_only", "label": "Only OH" }
+    { "id": "all", "label": "Cl, Br, CN, OH, H, and F — via different reagents (CuX, H₂O, H₃PO₂, HBF₄)" },
+    { "id": "halo_only", "label": "Only Cl and Br (via Sandmeyer with CuCl/CuBr) — nothing else works" },
+    { "id": "no_f", "label": "Cl, Br, CN, OH, H — but NOT F (no good diazonium → ArF method exists)" },
+    { "id": "no_h", "label": "Cl, Br, CN, OH, F — but NOT H (removing an aryl group is impossible)" }
   ],
   "correctOptionId": "all",
   "concepts": ["diazonium", "Sandmeyer", "Schiemann"],
-  "explanation": "Diazonium salts are enormously versatile: Sandmeyer (Cu-based: Cl/Br/CN), Schiemann (F via ArN₂⁺BF₄⁻ then heat), reduction with H₃PO₂ (H replacement), and H₂O/heat for OH."
+  "explanation": "ArN₂⁺ is enormously versatile: CuCl → ArCl, CuBr → ArBr, CuCN → ArCN (Sandmeyer); HBF₄ then heat → ArF (Schiemann); H₃PO₂ → ArH (reductive dediazonation, strips N₂ with H); H₂O/heat → ArOH. All six are standard."
 }

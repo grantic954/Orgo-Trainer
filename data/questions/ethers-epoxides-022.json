@@ -3,14 +3,14 @@
   "topic": "ethers-epoxides",
   "type": "mcq",
   "difficulty": 2,
-  "prompt": "Alkoxymercuration-demercuration of an alkene with Hg(OAc)₂ / ROH, then NaBH₄, produces:",
+  "prompt": "An alkene is treated with Hg(OAc)₂ in ROH, then NaBH₄. What's the product?",
   "options": [
-    { "id": "ether", "label": "A Markovnikov ether (RO on more substituted C; alkoxymercurinium bridge prevents rearrangement)" },
-    { "id": "alcohol", "label": "A Markovnikov alcohol (same as oxymercuration-demercuration with H₂O)" },
-    { "id": "epoxide", "label": "An epoxide" },
-    { "id": "anti-mark", "label": "An anti-Markovnikov ether" }
+    { "id": "ether", "label": "A Markovnikov ether — RO goes on the more substituted C, no cation rearrangement" },
+    { "id": "alcohol", "label": "A Markovnikov alcohol — the ROH acts only as solvent; H₂O attacks instead" },
+    { "id": "epoxide", "label": "An epoxide — Hg(OAc)₂ oxidizes the alkene across both faces syn" },
+    { "id": "anti-mark", "label": "An anti-Markovnikov ether — the bridged mercurinium forces attack at the less hindered C" }
   ],
   "correctOptionId": "ether",
   "concepts": ["alkoxymercuration", "ether synthesis without rearrangement"],
-  "explanation": "Hg(OAc)₂ bridges the alkene; the alcohol opens the bridge at the more substituted C (Markovnikov). NaBH₄ removes Hg. Net: Markovnikov ether, no carbocation, no rearrangement — unlike Williamson, this doesn't need an alkoxide, so it's compatible with tertiary ethers."
+  "explanation": "Hg(OAc)₂ bridges the alkene (mercurinium); the alcohol (ROH, not solvent) opens it at the MORE substituted C (positive-character site). NaBH₄ removes Hg → Markovnikov ether. No free cation → no rearrangements. This is how you make 3° ethers that Williamson can't deliver (3° RX + alkoxide = E2)."
 }

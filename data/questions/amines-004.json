@@ -3,14 +3,14 @@
   "topic": "amines",
   "type": "mcq",
   "difficulty": 3,
-  "prompt": "Hofmann elimination of a quaternary ammonium hydroxide typically gives:",
+  "prompt": "Heating a quaternary ammonium hydroxide (R-NR₃⁺ OH⁻) typically gives:",
   "options": [
-    { "id": "less", "label": "The LESS substituted alkene (anti-Zaitsev)" },
-    { "id": "more", "label": "The MORE substituted alkene (Zaitsev)" },
-    { "id": "alcohol", "label": "An alcohol" },
-    { "id": "enol", "label": "An enamine" }
+    { "id": "less", "label": "The less substituted alkene (hydroxide abstracts the most accessible β-H)" },
+    { "id": "more", "label": "The more substituted alkene (standard Zaitsev product via most-stable alkene)" },
+    { "id": "alcohol", "label": "An alcohol (hydroxide displaces the amine via SN2 at the α-carbon)" },
+    { "id": "amine", "label": "A rearranged amine (methyl migrates from N to a β-carbon)" }
   ],
   "correctOptionId": "less",
   "concepts": ["Hofmann elimination"],
-  "explanation": "Bulky NMe₃⁺ leaving group means the base abstracts the most accessible (least hindered) β-H → Hofmann (anti-Zaitsev) alkene."
+  "explanation": "The bulky NR₃⁺ leaving group and the required anti-periplanar geometry force the base to grab the least-hindered β-H, giving the LESS substituted alkene — the opposite of Zaitsev. This is 'Hofmann elimination': anti-Zaitsev regiochemistry driven by steric effects at the leaving-group end."
 }

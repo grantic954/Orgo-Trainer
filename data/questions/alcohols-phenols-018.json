@@ -3,14 +3,14 @@
   "topic": "alcohols-phenols",
   "type": "mcq",
   "difficulty": 5,
-  "prompt": "CHALLENGE: Why does ethanol boil (78 °C) more than 100 °C higher than ethane (−89 °C), despite similar molecular weights?",
+  "prompt": "Why does ethanol boil at 78 °C — more than 160 °C higher than ethane (−89 °C) — despite similar molecular weights (46 vs 30)?",
   "options": [
-    { "id": "hbond", "label": "Hydrogen bonding between OH groups creates a network that requires energy to break." },
-    { "id": "mass", "label": "Ethanol is heavier." },
-    { "id": "shape", "label": "Ethanol has a different shape." },
-    { "id": "polar", "label": "Only polarity matters, not H-bonding specifically." }
+    { "id": "hbond", "label": "The OH group forms a hydrogen-bond network between molecules that must break for boiling." },
+    { "id": "mass", "label": "Ethanol's extra oxygen adds 16 g/mol, enough to significantly raise its BP via London forces." },
+    { "id": "shape", "label": "Ethanol is more linear than ethane, giving a larger surface area for van der Waals contact." },
+    { "id": "dipole", "label": "The C–O bond dipole raises ethanol's BP by dipole-dipole alignment between molecules." }
   ],
   "correctOptionId": "hbond",
   "concepts": ["H-bonding", "boiling points"],
-  "explanation": "Each OH can act as both an H-bond donor and acceptor, so ethanol molecules form 2D networks. Breaking those H-bonds (~5 kcal/mol each) requires significant energy — hence the ~170 K boiling point difference vs ethane which has only London forces."
+  "explanation": "H-bonds (~5 kcal/mol each) are specifically what account for the huge BP jump. Dipole-dipole alone would raise BP maybe 20 K (like diethyl ether vs pentane — nearly the same BP). The ~170 K difference points to specific H-bond donor+acceptor chemistry, not just a dipole or mass effect."
 }

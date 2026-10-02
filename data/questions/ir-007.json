@@ -3,14 +3,14 @@
   "topic": "ir",
   "type": "mcq",
   "difficulty": 2,
-  "prompt": "IR absorption occurs when a bond's vibrational frequency matches the IR photon's frequency AND:",
+  "prompt": "IR absorption requires that the photon match the bond's vibrational frequency AND that:",
   "options": [
-    { "id": "dipole", "label": "There is a change in dipole moment during the vibration." },
-    { "id": "mass", "label": "The reduced mass is above a threshold." },
-    { "id": "bond", "label": "The bond is a σ bond." },
-    { "id": "aromatic", "label": "The compound is aromatic." }
+    { "id": "dipole", "label": "The vibration changes the molecule's dipole moment during the stretch/bend" },
+    { "id": "mass", "label": "The reduced mass of the vibrating atoms falls above a threshold value" },
+    { "id": "bond", "label": "The bond being probed is a σ bond rather than a π bond" },
+    { "id": "sym", "label": "The vibration is symmetric with respect to the molecular point group" }
   ],
   "correctOptionId": "dipole",
   "concepts": ["IR selection rule"],
-  "explanation": "The dipole-moment change is required. Symmetric stretches of nonpolar bonds (e.g., C=C in symmetric alkenes) are IR-inactive. All asymmetric vibrations of polar bonds show up."
+  "explanation": "The IR selection rule: a vibration is active ONLY if it causes a dipole-moment change. Symmetric stretches of nonpolar bonds (e.g., C=C in symmetric alkenes like 2,3-dimethyl-2-butene) have zero dipole change → IR-silent. Asymmetric stretches and polar bonds are always IR-active."
 }
