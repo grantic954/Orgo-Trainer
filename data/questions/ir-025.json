@@ -3,16 +3,16 @@
   "topic": "ir",
   "type": "mcq",
   "difficulty": 3,
-  "prompt": "Compare the IR of these two carbonyls — one is a normal ketone, the other is an α,β-unsaturated ketone. Which pair of C=O frequencies is correct?",
+  "prompt": "Which pair of C=O IR frequencies is correct for a normal ketone vs an α,β-unsaturated ketone?",
   "spectrumFromSmiles": "CC(=O)C=C",
   "spectraKinds": ["ir"],
   "options": [
-    { "id": "a", "label": "Normal ketone ~1715; conjugated enone ~1680 (conjugation lowers C=O)" },
-    { "id": "b", "label": "Normal ketone ~1680; conjugated enone ~1715 (reversed)" },
-    { "id": "c", "label": "Both at ~1715 (no difference)" },
-    { "id": "d", "label": "Both at ~1680" }
+    { "id": "a", "label": "Normal ketone ~1715; conjugated enone ~1680 (conjugation lowers C=O frequency)" },
+    { "id": "b", "label": "Normal ketone ~1680; conjugated enone ~1715 (conjugation raises C=O frequency)" },
+    { "id": "c", "label": "Both at ~1715 (conjugation changes intensity but not frequency)" },
+    { "id": "d", "label": "Both at ~1735 (ketones all fall near the standard C=O frequency)" }
   ],
   "correctOptionId": "a",
   "concepts": ["conjugation lowers C=O frequency"],
-  "explanation": "Conjugation of C=O with an adjacent C=C (or aryl ring) delocalizes the π bond → lowers bond order of the C=O slightly → lower stretching frequency. Normal ketone ~1715; α,β-unsaturated ~1680; aryl ketone ~1685. The same shift happens with ester (1735→1715 if conjugated)."
+  "explanation": "Conjugation of C=O with an adjacent C=C or aryl delocalizes the π bond → lowers C=O bond order → lower frequency by ~30 cm⁻¹. Normal ketone ~1715; α,β-unsaturated ~1680; aryl ketone ~1685. Same shift happens with esters (1735 → 1715 if conjugated)."
 }

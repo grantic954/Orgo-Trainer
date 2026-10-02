@@ -3,14 +3,14 @@
   "topic": "ms",
   "type": "mcq",
   "difficulty": 3,
-  "prompt": "A GC-MS run shows two peaks on the chromatogram at retention times 4.2 and 6.7 min. The mass spectra of each peak are different. This tells you:",
+  "prompt": "A GC-MS run shows TWO peaks in the chromatogram at retention times 4.2 and 6.7 min. The mass spectra at the two peaks are different. What does this mean?",
   "options": [
-    { "id": "two-comp", "label": "The sample contains at least two components — GC separates them by their affinity for the stationary phase, and MS fingerprints each one separately." },
-    { "id": "same", "label": "They are the same compound" },
-    { "id": "degraded", "label": "The sample degraded in GC" },
-    { "id": "isomers", "label": "Must be isomers" }
+    { "id": "two-comp", "label": "The sample is a multi-component mixture — GC separated them and MS fingerprinted each separately" },
+    { "id": "same", "label": "The same compound is eluting twice due to detector overload, giving two artifactual peaks" },
+    { "id": "degraded", "label": "The sample degraded on-column; the second peak is a thermal decomposition product of the first" },
+    { "id": "isomers", "label": "The compounds are structural isomers that give the same fragmentation pattern but different retention times" }
   ],
   "correctOptionId": "two-comp",
   "concepts": ["GC-MS", "chromatogram + spectrum pairs"],
-  "explanation": "GC-MS marries two techniques: GC separates by boiling point/stationary-phase affinity (giving retention time), and MS identifies each eluted compound. A chromatogram with multiple peaks each giving distinct mass spectra = multi-component mixture. Standard in forensic and environmental analysis."
+  "explanation": "GC-MS = GC separates by volatility/polarity (retention time), MS identifies each eluted compound by its unique fragmentation pattern. DIFFERENT mass spectra at the two peaks means they're DIFFERENT compounds. If they were isomers with the same MS (option d), you couldn't tell by MS alone — but then option d would say 'same' spectra."
 }

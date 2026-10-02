@@ -3,14 +3,14 @@
   "topic": "ms",
   "type": "mcq",
   "difficulty": 4,
-  "prompt": "The McLafferty rearrangement produces an even-mass fragment via:",
+  "prompt": "The McLafferty rearrangement produces an even-mass fragment through what mechanism?",
   "options": [
-    { "id": "concerted", "label": "A concerted 6-membered transition state in which the γ-H migrates to the C=O oxygen while the α,β bond cleaves, giving an alkene + enol radical cation." },
-    { "id": "sn2", "label": "SN2 displacement at the α-carbon." },
-    { "id": "beta-elim", "label": "Simple β-elimination." },
-    { "id": "retro-aldol", "label": "A retro-aldol." }
+    { "id": "concerted", "label": "A 6-membered TS where γ-H transfers to C=O oxygen and the α-β C-C bond cleaves, giving an alkene + enol cation" },
+    { "id": "sn2", "label": "Nucleophilic displacement at the α-carbon by the carbonyl oxygen, releasing the alkyl fragment" },
+    { "id": "beta-elim", "label": "Simple β-elimination from the α-carbon, giving an alkene and a stabilized acylium cation" },
+    { "id": "retro-aldol", "label": "A retro-aldol cleavage between α and β carbons, splitting the molecule at the enolate" }
   ],
   "correctOptionId": "concerted",
   "concepts": ["McLafferty mechanism"],
-  "explanation": "McLafferty: γ-H is transferred to the C=O oxygen through a 6-membered TS; the α-β C–C bond cleaves. The products are a neutral alkene + an enol-form radical cation. Diagnostic for aldehydes/ketones/esters with γ-H."
+  "explanation": "McLafferty is a concerted [1,5] H-shift through a 6-membered cyclic TS: γ-H migrates to C=O oxygen (forming an enol) while the α-β bond cleaves to release a neutral alkene. Even-mass fragment (both electrons stayed with the alkene). Needs a γ-H; diagnostic for aldehydes, ketones, esters, amides."
 }

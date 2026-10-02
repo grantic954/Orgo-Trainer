@@ -3,15 +3,15 @@
   "topic": "aromaticity",
   "type": "mcq",
   "difficulty": 3,
-  "prompt": "The cyclopentadienyl anion (C5H5⁻) is aromatic. Why does cyclopentadiene (C5H6, neutral) tend to lose a proton more easily (pKa ~16) than typical hydrocarbons (pKa ~44)?",
+  "prompt": "The cyclopentadienyl anion (C₅H₅⁻) is aromatic. Why does cyclopentadiene (C₅H₆, neutral) lose a proton much more easily (pKa ~16) than typical hydrocarbons (pKa ~44)?",
   "reactants": ["C1=CCC=C1", "[cH-]1cccc1"],
   "options": [
-    { "id": "a", "label": "The resulting anion is aromatic (6 π e⁻ in the planar 5-ring) — huge stabilization" },
-    { "id": "b", "label": "The sp3 CH₂ H's are polarized" },
-    { "id": "c", "label": "H-bonding stabilizes the anion" },
-    { "id": "d", "label": "The ring strain pushes H out" }
+    { "id": "a", "label": "The resulting anion is aromatic (6 π e⁻ in a planar cyclic system) — huge resonance stabilization" },
+    { "id": "b", "label": "The sp³ CH₂ H's are made acidic by hyperconjugation with the two adjacent π bonds" },
+    { "id": "c", "label": "The anion is stabilized by H-bonding from the remaining ring hydrogens to the negative charge" },
+    { "id": "d", "label": "Ring strain in cyclopentadiene is relieved on deprotonation, making the proton loss thermodynamically favorable" }
   ],
   "correctOptionId": "a",
   "concepts": ["aromatic stabilization of anion", "pKa"],
-  "explanation": "Deprotonating the sp3 CH₂ gives Cp⁻ with 6 π e⁻ in a planar 5-ring: aromatic! That aromatic stabilization lowers the pKa by ~28 units (16 vs 44 for cyclopentane). Compare: cycloheptatriene has pKa ~44 (losing H gives antiaromatic 8 π e⁻), while cycloheptatrienyl cation is super-stabilized (6 π e⁻)."
+  "explanation": "Deprotonating the sp³ CH₂ gives Cp⁻: 6 π e⁻ in a planar 5-ring = AROMATIC (Hückel's rule). That stabilization lowers the pKa by ~28 units (16 vs 44 for cyclopentane). Compare: cycloheptatriene has pKa ~44 because its anion would be antiaromatic (8 π e⁻)."
 }

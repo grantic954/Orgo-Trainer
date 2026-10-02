@@ -3,14 +3,14 @@
   "topic": "ms",
   "type": "mcq",
   "difficulty": 3,
-  "prompt": "A ketone with a γ-hydrogen often shows a fragment from loss of 42. What rearrangement explains this?",
+  "prompt": "A ketone with a γ-hydrogen often shows a fragment at M-42 (loss of a C₃H₆ unit). What rearrangement explains this?",
   "options": [
-    { "id": "mcl", "label": "McLafferty rearrangement (loss of a neutral alkene from the γ-position)" },
-    { "id": "alpha", "label": "α-cleavage next to the carbonyl" },
-    { "id": "retro", "label": "Retro-Diels–Alder" },
-    { "id": "dec", "label": "Loss of CO₂" }
+    { "id": "mcl", "label": "McLafferty rearrangement — γ-H migrates to C=O, α-β bond cleaves, releasing a neutral alkene" },
+    { "id": "alpha", "label": "α-cleavage next to C=O, releasing an acyl radical and forming a resonance-stabilized cation" },
+    { "id": "retro", "label": "A retro-Diels-Alder, cleaving the enone framework into a diene and dienophile" },
+    { "id": "dec", "label": "Loss of CO₂ (decarboxylation), which contributes 44 mass units with a neutral radical loss" }
   ],
   "correctOptionId": "mcl",
   "concepts": ["McLafferty"],
-  "explanation": "The McLafferty rearrangement transfers a γ-H to the carbonyl O, cleaving the α,β bond and expelling a neutral alkene — a classic diagnostic of ketones/aldehydes with γ-H."
+  "explanation": "McLafferty: γ-H transfers to C=O oxygen (6-membered TS), α-β C-C bond cleaves, releasing a neutral alkene. Loss of C₃H₆ = 42 Da (propene fragment). Diagnostic of ketones/aldehydes/esters with γ-H. α-cleavage (option b) also happens, but produces different mass losses (R group as radical)."
 }

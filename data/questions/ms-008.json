@@ -3,14 +3,14 @@
   "topic": "ms",
   "type": "mcq",
   "difficulty": 3,
-  "prompt": "Why do ethers often show a strong fragment from α-cleavage?",
+  "prompt": "Why do ethers often show a strong fragment from α-cleavage next to the oxygen?",
   "options": [
-    { "id": "ether-cat", "label": "Loss of an alkyl group from the α-carbon gives an oxocarbenium ion (R-O⁺=CHR') stabilized by O's lone pair." },
-    { "id": "no-c-o", "label": "The C–O bond is especially weak." },
-    { "id": "ring", "label": "Ethers always form rings." },
-    { "id": "water", "label": "Ethers lose water." }
+    { "id": "ether-cat", "label": "α-cleavage gives an oxocarbenium ion (R-O⁺=CHR'), stabilized by O's lone pair" },
+    { "id": "no-c-o", "label": "The C–O bond is much weaker than C-C, so it breaks preferentially" },
+    { "id": "ring", "label": "Ethers rearrange to 3-membered oxiranes before ionizing, giving the ring-opened fragment" },
+    { "id": "water", "label": "Ethers lose water in MS the way alcohols do, giving an M-18 base peak" }
   ],
   "correctOptionId": "ether-cat",
   "concepts": ["α-cleavage of ethers"],
-  "explanation": "α-cleavage next to the ether O gives a resonance-stabilized oxocarbenium ion (R-O⁺=CHR' ↔ R-O-CHR'⁺) — much more stable than a plain carbocation. This is a diagnostic MS fragment for ethers."
+  "explanation": "α-cleavage next to the ether O gives a resonance-stabilized oxocarbenium ion (R-O⁺=CHR' ↔ R-O-CHR'⁺) — much more stable than a plain alkyl cation. Diagnostic for ethers. The C-O bond is actually comparable in strength to C-C; the driver is cation stability of the product, not bond weakness."
 }

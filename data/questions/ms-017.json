@@ -3,14 +3,14 @@
   "topic": "ms",
   "type": "mcq",
   "difficulty": 3,
-  "prompt": "A conjugated enone (α,β-unsaturated ketone) shows its C=O IR band around 1680 cm⁻¹, LOWER than a non-conjugated ketone at ~1715. Why?",
+  "prompt": "A conjugated enone (α,β-unsaturated ketone) shows its C=O IR band at ~1680 cm⁻¹, LOWER than a non-conjugated ketone (~1715). Why?",
   "options": [
-    { "id": "conj", "label": "Conjugation delocalizes the C=O π electrons across the enone system, reducing C=O bond order (partial double-bond character) and lowering the force constant → lower frequency." },
-    { "id": "mass", "label": "Reduced mass is larger" },
-    { "id": "polar", "label": "Dipole moment is smaller" },
-    { "id": "sp2", "label": "sp² carbons are heavier" }
+    { "id": "conj", "label": "Conjugation delocalizes the C=O π electrons, lowering the bond's force constant and its stretching frequency" },
+    { "id": "mass", "label": "The adjacent C=C adds mass to the oscillator, increasing reduced mass and lowering ν" },
+    { "id": "polar", "label": "Conjugation reduces the C=O dipole moment, which couples to a lower IR absorption frequency" },
+    { "id": "sp2", "label": "The α-carbon is sp² in the enone, which pulls the C=O frequency down by hybridization" }
   ],
   "correctOptionId": "conj",
   "concepts": ["conjugation lowers C=O IR frequency"],
-  "explanation": "Conjugation (C=C adjacent to C=O) delocalizes the π system. The C=O gains some single-bond character (electrons spread to C=C). Weaker effective C=O bond → lower stretching frequency by ~30 cm⁻¹. This is diagnostic: if C=O is unusually LOW (~1680), suspect conjugation."
+  "explanation": "Conjugation delocalizes π electrons from the C=O into the C=C, giving the C=O partial single-bond character. Weaker effective bond → lower force constant → lower stretching frequency (by ~30 cm⁻¹). Reduced mass and dipole moment don't drive the shift — bond strength does."
 }

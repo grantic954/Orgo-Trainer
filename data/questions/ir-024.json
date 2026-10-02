@@ -7,12 +7,12 @@
   "spectrumFromSmiles": "CCCCN",
   "spectraKinds": ["ir"],
   "options": [
-    { "id": "primary", "label": "A primary amine (R-NH₂ has symmetric + asymmetric N-H stretches)" },
-    { "id": "secondary", "label": "A secondary amine (only ONE N-H band)" },
-    { "id": "tertiary", "label": "A tertiary amine (NO N-H)" },
-    { "id": "amide", "label": "A tertiary amide (NO N-H)" }
+    { "id": "primary", "label": "A primary amine (R-NH₂) — two N-H bonds give symmetric + asymmetric stretches" },
+    { "id": "secondary", "label": "A secondary amine (R₂NH) — the single N-H couples with C-N stretch to split into two bands" },
+    { "id": "tertiary", "label": "A tertiary amine (R₃N) — the lone pair on N produces characteristic double absorption near 3400" },
+    { "id": "amide", "label": "A tertiary amide (RCON(R')R'') — amide resonance generates two sharp N-H-like bands" }
   ],
   "correctOptionId": "primary",
   "concepts": ["counting N-H bands by amine class"],
-  "explanation": "1° amines have 2 N-H → 2 bands (one symmetric, one asymmetric stretch). 2° amines have 1 N-H → 1 band. 3° amines have 0 N-H → no N-H band. 1° amides also show 2 N-H bands but combined with the strong amide C=O at ~1650."
+  "explanation": "1° amines: 2 N-H bonds → 2 stretches (symmetric + asymmetric). 2° amines: 1 N-H → 1 band. 3° amines: no N-H → nothing in that region. 3° amides also no N-H. 1° amides WOULD show 2 N-H bands plus the amide C=O at ~1650."
 }

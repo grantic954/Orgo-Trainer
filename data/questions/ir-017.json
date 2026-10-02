@@ -3,14 +3,14 @@
   "topic": "ir",
   "type": "mcq",
   "difficulty": 3,
-  "prompt": "A sample's IR shows a sharp, narrow O–H at ~3620 cm⁻¹. The sample is MOST likely:",
+  "prompt": "A sample's IR shows a sharp, narrow O–H band at ~3620 cm⁻¹ (not the usual broad peak at 3200-3550). The sample is MOST likely:",
   "options": [
-    { "id": "dilute", "label": "A dilute solution of an alcohol in CCl₄ (isolated, non-H-bonded O–H gives a sharp signal; concentrated or neat gives the broad H-bonded signal)." },
-    { "id": "cooh", "label": "A carboxylic acid" },
-    { "id": "water", "label": "Water" },
-    { "id": "amine", "label": "An amine" }
+    { "id": "dilute", "label": "A dilute solution of an alcohol in a nonpolar solvent (isolated non-H-bonded O-H)" },
+    { "id": "cooh", "label": "A pure carboxylic acid showing the sharp monomer form rather than the dimer" },
+    { "id": "water", "label": "Water, whose O-H appears sharper at this wavenumber due to its small size" },
+    { "id": "phenol", "label": "A phenol — the aromatic ring's rigidity sharpens the O-H band" }
   ],
   "correctOptionId": "dilute",
   "concepts": ["H-bonding vs sharpness", "concentration effects"],
-  "explanation": "Isolated O–H (gas phase or dilute non-polar solvent) is a sharp, narrow band at higher wavenumber (~3620). H-bonded O–H (neat or concentrated) is broader and lower (3200-3550) because the H-bond weakens the O–H bond. This is a diagnostic to tell solvent/concentration effects."
+  "explanation": "H-bonded O-H is broad (because the H-bond varies in strength → range of O-H frequencies). Non-H-bonded O-H is sharp and higher (~3620). You get this by diluting the alcohol in CCl₄ or CS₂ (nonpolar, no acceptor). Pure COOH, water, and phenol all H-bond strongly and give broad peaks."
 }
