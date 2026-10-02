@@ -38,15 +38,23 @@ export function StructureEditor({
   const [ketcher, setKetcher] = useState<Ketcher | null>(null);
   return (
     <div className="flex flex-col gap-2">
-      {!hideToolbar && <KetcherToolbar ketcher={ketcher} allow={tools} />}
-      <StructureEditorInner
-        initialSmiles={initialSmiles}
-        onChange={onChange}
-        onInit={(k) => {
-          setKetcher(k);
-          onInit?.(k);
-        }}
-      />
+      <div className="flex flex-col gap-2 md:flex-row md:items-stretch">
+        {!hideToolbar && (
+          <div className="md:w-44 md:flex-shrink-0">
+            <KetcherToolbar ketcher={ketcher} allow={tools} layout="side" />
+          </div>
+        )}
+        <div className="min-w-0 flex-1">
+          <StructureEditorInner
+            initialSmiles={initialSmiles}
+            onChange={onChange}
+            onInit={(k) => {
+              setKetcher(k);
+              onInit?.(k);
+            }}
+          />
+        </div>
+      </div>
       {!hideToolbar && (
         <p className="text-xs text-neutral-500">
           Drag on the canvas to draw. Hold{" "}

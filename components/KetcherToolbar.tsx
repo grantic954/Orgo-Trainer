@@ -63,9 +63,11 @@ const SELECTION_TOOLS: ToolDef[] = [
 export interface KetcherToolbarProps {
   ketcher: Ketcher | null;
   allow: Set<ToolId>;
+  /** "side" → vertical column (toolbar on left of canvas); default is horizontal. */
+  layout?: "top" | "side";
 }
 
-export function KetcherToolbar({ ketcher, allow }: KetcherToolbarProps) {
+export function KetcherToolbar({ ketcher, allow, layout = "top" }: KetcherToolbarProps) {
   const [active, setActive] = useState<ToolId | null>("bond-single");
 
   function has(id: ToolId): boolean {
@@ -86,8 +88,13 @@ export function KetcherToolbar({ ketcher, allow }: KetcherToolbarProps) {
     await activateTool(ketcher, id);
   }
 
+  const containerCls =
+    layout === "side"
+      ? "flex max-h-[520px] flex-col gap-3 overflow-y-auto rounded-md border border-neutral-200 bg-white p-2 text-sm"
+      : "flex flex-wrap items-stretch gap-3 rounded-md border border-neutral-200 bg-white p-2 text-sm";
+
   return (
-    <div className="flex flex-wrap items-stretch gap-3 rounded-md border border-neutral-200 bg-white p-2 text-sm">
+    <div className={containerCls}>
       {templates.length > 0 && (
         <TemplateSection templates={templates} active={active} onClick={click} />
       )}
