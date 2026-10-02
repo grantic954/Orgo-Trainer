@@ -3,7 +3,7 @@
   "topic": "ir",
   "type": "mcq",
   "difficulty": 3,
-  "prompt": "A compound with molecular formula C4H8O2 shows the IR spectrum below. There is NO O–H stretch. Which compound is it?",
+  "prompt": "A compound with molecular formula C4H8O2 shows the IR spectrum below. Which compound is it?",
   "spectrumFromSmiles": "CCOC(C)=O",
   "spectraKinds": ["ir"],
   "options": [
