@@ -7,12 +7,12 @@
   "spectrumFromSmiles": "CCCC(=O)O",
   "spectraKinds": ["ir"],
   "options": [
-    { "id": "cooh", "label": "Butanoic acid (COOH)", "smiles": "CCCC(=O)O" },
-    { "id": "alcohol", "label": "1-butanol", "smiles": "CCCCO" },
-    { "id": "ketone", "label": "2-butanone", "smiles": "CCC(C)=O" },
-    { "id": "ether", "label": "Diethyl ether", "smiles": "CCOCC" }
+    { "id": "cooh", "label": "Butanoic acid (carboxylic acid)", "smiles": "CCCC(=O)O" },
+    { "id": "alcohol", "label": "1-butanol (primary alcohol)", "smiles": "CCCCO" },
+    { "id": "ketone", "label": "2-butanone (methyl ethyl ketone)", "smiles": "CCC(C)=O" },
+    { "id": "amide", "label": "Butanamide (primary amide)", "smiles": "CCCC(N)=O" }
   ],
   "correctOptionId": "cooh",
   "concepts": ["COOH signature", "very broad O–H"],
-  "explanation": "The extraordinarily broad O–H (2500–3300) from H-bonded COOH dimers overlapping with C–H is the DIAGNOSTIC signature of a carboxylic acid. Alcohols show a narrower, higher O–H (3200–3550). Ketones have no O–H. Ethers have no O–H and no C=O."
+  "explanation": "The extraordinarily broad O–H (2500–3300) from H-bonded COOH dimers overlapping with C–H is DIAGNOSTIC for carboxylic acid. Alcohols show narrower O–H (3200–3550). Ketones have NO O–H. Amides C=O is ~1660, not 1710, plus they show sharp N-H bands."
 }

@@ -3,16 +3,16 @@
   "topic": "ms",
   "type": "mcq",
   "difficulty": 3,
-  "prompt": "The MS below shows M⁺ = 92 and a strong peak at m/z 91 (M−1). What compound is it?",
+  "prompt": "The MS below shows M⁺ = 92 and a huge peak at m/z 91 (M−1). Which compound is it?",
   "spectrumFromSmiles": "Cc1ccccc1",
   "spectraKinds": ["ms"],
   "options": [
-    { "id": "toluene", "label": "Toluene (loses benzylic H → tropylium cation)", "smiles": "Cc1ccccc1" },
-    { "id": "cyclohex", "label": "Cyclohexane", "smiles": "C1CCCCC1" },
-    { "id": "benzene", "label": "Benzene (M+ = 78)", "smiles": "c1ccccc1" },
-    { "id": "pyridine", "label": "Pyridine (M+ = 79)", "smiles": "c1ccncc1" }
+    { "id": "toluene", "label": "Toluene (M⁺ 92, loses benzylic H → aromatic tropylium at 91)", "smiles": "Cc1ccccc1" },
+    { "id": "cyclohex", "label": "Methylenecyclohexane (M⁺ 96, loses CH₃ → m/z 81)", "smiles": "C=C1CCCCC1" },
+    { "id": "aniline", "label": "Aniline (M⁺ 93, loses H → 92; distinctive N-containing fragment)", "smiles": "Nc1ccccc1" },
+    { "id": "furan", "label": "Methylfuran (M⁺ 82, loses CHO → 53; m/z 91 wouldn't appear)", "smiles": "Cc1ccco1" }
   ],
   "correctOptionId": "toluene",
   "concepts": ["tropylium at 91", "benzylic fragmentation"],
-  "explanation": "The famous m/z 91 tropylium cation (C7H7+) comes from benzylic H loss followed by ring expansion to the aromatic tropylium ring. M+ 92 confirms toluene. Benzene is M+ 78, pyridine 79, cyclohexane 84. The 91 peak is a hallmark of any alkyl benzene."
+  "explanation": "The famous m/z 91 TROPYLIUM cation (C₇H₇⁺) comes from benzylic H loss followed by ring expansion to the 7-membered aromatic tropylium. M⁺ 92 confirms toluene (C₇H₈). m/z 91 is a hallmark of any alkylbenzene. Benzene is M⁺ 78; aniline is 93, not 92."
 }

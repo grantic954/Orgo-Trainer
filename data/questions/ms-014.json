@@ -3,14 +3,14 @@
   "topic": "ms",
   "type": "mcq",
   "difficulty": 2,
-  "prompt": "A compound has molecular formula C₆H₁₂. What is its degree of unsaturation (also called hydrogen deficiency index, HDI)?",
+  "prompt": "A compound has molecular formula C₆H₁₂. What is its degree of unsaturation (hydrogen deficiency index, HDI)?",
   "options": [
-    { "id": "one", "label": "1 (either one ring or one π bond)" },
-    { "id": "zero", "label": "0" },
-    { "id": "two", "label": "2" },
-    { "id": "three", "label": "3" }
+    { "id": "one", "label": "1 — either one ring OR one π bond" },
+    { "id": "zero", "label": "0 — a saturated acyclic compound with no rings or π bonds" },
+    { "id": "two", "label": "2 — one ring and one π bond, or two rings, or two π bonds" },
+    { "id": "three", "label": "3 — three π bonds, or a mix of rings and π bonds" }
   ],
   "correctOptionId": "one",
   "concepts": ["degree of unsaturation", "HDI formula"],
-  "explanation": "HDI = (2n + 2 − H) / 2 for CₙHₕ. (2·6 + 2 − 12)/2 = 2/2 = 1. One DoU means either a ring OR a π bond. C₆H₁₂ fits cyclohexane (ring) or 1-hexene (π). Rules of thumb: a saturated acyclic CₙH₂ₙ₊₂; each DoU subtracts 2 H."
+  "explanation": "HDI = (2n + 2 − H) / 2 for CₙHₕ. (2·6 + 2 − 12)/2 = 2/2 = 1. One DoU means either a ring OR a π bond. C₆H₁₂ fits cyclohexane (ring) or 1-hexene (π). Rule of thumb: saturated acyclic CₙH₂ₙ₊₂; each DoU subtracts 2 H."
 }

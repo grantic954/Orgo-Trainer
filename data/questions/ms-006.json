@@ -3,14 +3,14 @@
   "topic": "ms",
   "type": "mcq",
   "difficulty": 1,
-  "prompt": "In electron-impact MS, the molecular ion (M⁺•) is formed by:",
+  "prompt": "In electron-impact (EI) MS, the molecular ion (M⁺•) is formed by:",
   "options": [
-    { "id": "electron-eject", "label": "Ejection of one electron by a 70-eV electron beam (radical cation)." },
-    { "id": "proton-add", "label": "Addition of a proton." },
-    { "id": "fragment", "label": "Fragmentation into pieces." },
-    { "id": "ionize-twice", "label": "Loss of two electrons." }
+    { "id": "electron-eject", "label": "Ejection of ONE electron by a 70-eV electron beam (giving a radical cation)" },
+    { "id": "proton-add", "label": "Protonation by a chemical reagent gas (giving [M+H]⁺)" },
+    { "id": "fragment", "label": "Direct fragmentation of the molecule into charged pieces by the electron beam" },
+    { "id": "ionize-twice", "label": "Ejection of TWO electrons, forming a stable dication (M²⁺)" }
   ],
   "correctOptionId": "electron-eject",
   "concepts": ["EI ionization", "radical cation"],
-  "explanation": "A 70-eV electron collides with the molecule and knocks out a valence electron, giving a radical cation M⁺•. The charge isn't localized — it's officially 'odd-electron' positive species that can further fragment."
+  "explanation": "A 70-eV electron collides with the molecule and knocks out ONE valence electron, giving an odd-electron radical cation M⁺•. (Protonation [M+H]⁺ is chemical ionization CI, not EI. Dications are rare.) The radical cation then fragments to give the characteristic spectrum."
 }

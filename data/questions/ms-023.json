@@ -3,16 +3,16 @@
   "topic": "ms",
   "type": "mcq",
   "difficulty": 3,
-  "prompt": "A ketone with molecular formula C₆H₁₂O (M⁺ = 100) shows a strong fragment at m/z = 58. What rearrangement explains this loss of 42?",
+  "prompt": "A ketone with molecular formula C₆H₁₂O (M⁺ = 100) shows a strong fragment at m/z = 58. What rearrangement explains the loss of 42?",
   "spectrumFromSmiles": "CCCCC(C)=O",
   "spectraKinds": ["ms"],
   "options": [
-    { "id": "mclafferty", "label": "McLafferty rearrangement (loses propene, gives enol fragment m/z=58)" },
-    { "id": "alpha", "label": "α-cleavage (would give an acylium ion at ~43 or so)" },
-    { "id": "water", "label": "Loss of water (gives M-18)" },
-    { "id": "methyl", "label": "Loss of methyl (gives M-15)" }
+    { "id": "mclafferty", "label": "McLafferty rearrangement — loses a propene (C₃H₆, 42 Da) via γ-H transfer" },
+    { "id": "alpha", "label": "α-cleavage — releases a C₃H₇ radical (43 Da), giving the complementary acylium" },
+    { "id": "water", "label": "Loss of water + ethylene — H₂O (18) + C₂H₄ (28) = 46, close to 42" },
+    { "id": "retro", "label": "Retro-aldol — splits the ketone into enolate + aldehyde fragments, losing 42" }
   ],
   "correctOptionId": "mclafferty",
   "concepts": ["McLafferty rearrangement"],
-  "explanation": "McLafferty: carbonyl with γ-H → 6-membered TS, transfers γ-H to O, cleaves α-β bond, loses an alkene. For 2-hexanone (M=100), losing propene (42) gives an enol cation at m/z=58. Classic diagnostic for carbonyl compounds with γ-hydrogens."
+  "explanation": "McLafferty: carbonyl with γ-H → 6-membered TS, γ-H migrates to O, α-β bond cleaves, releases a neutral alkene (here propene = 42). The remaining enol-form radical cation lands at m/z 58. α-cleavage would lose 43 (not 42) and gives an acylium. Textbook diagnostic for carbonyls with γ-H."
 }

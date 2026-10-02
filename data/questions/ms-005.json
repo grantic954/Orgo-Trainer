@@ -3,14 +3,14 @@
   "topic": "ms",
   "type": "mcq",
   "difficulty": 2,
-  "prompt": "Nitrogen rule: a molecular ion at an ODD m/z suggests…",
+  "prompt": "Nitrogen rule: an ODD molecular ion m/z (M⁺) tells you:",
   "options": [
     { "id": "odd_n", "label": "An odd number of nitrogens in the molecule" },
-    { "id": "even_n", "label": "An even number of nitrogens" },
-    { "id": "halogen", "label": "A halogen is present" },
-    { "id": "oxygen", "label": "An oxygen is present" }
+    { "id": "even_n", "label": "An even number of nitrogens (0, 2, 4, …)" },
+    { "id": "halogen", "label": "A halogen is present (Cl, Br, I give odd mass)" },
+    { "id": "oxygen", "label": "An oxygen is present (O-containing compounds have odd M+)" }
   ],
   "correctOptionId": "odd_n",
   "concepts": ["nitrogen rule"],
-  "explanation": "Odd M⁺ ↔ odd number of N atoms (because C, H, O, halogens contribute even mass totals to normal-valence molecules; each N shifts parity)."
+  "explanation": "C, H, O, S, halogens all have even total mass contributions for normal valences. N (14, valence 3) breaks this symmetry: each N shifts parity by 1. Odd M⁺ → odd number of N (1, 3, 5…). Even M⁺ → 0 or even number of N."
 }

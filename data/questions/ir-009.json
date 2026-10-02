@@ -3,14 +3,14 @@
   "topic": "ir",
   "type": "mcq",
   "difficulty": 3,
-  "prompt": "An IR shows a very broad O–H (2500–3300 cm⁻¹) overlapping with C–H, plus a C=O at 1710. The functional group is:",
+  "prompt": "An IR shows a very broad O–H band (2500–3300 cm⁻¹) overlapping with C–H, plus a C=O at 1710 cm⁻¹. The functional group is:",
   "options": [
-    { "id": "cooh", "label": "Carboxylic acid (characteristic very broad O–H + C=O)" },
-    { "id": "alcohol", "label": "Alcohol with a separate ketone" },
-    { "id": "amide", "label": "Amide" },
-    { "id": "ester", "label": "Ester" }
+    { "id": "cooh", "label": "Carboxylic acid — very broad dimer O-H + C=O at 1710" },
+    { "id": "alcohol", "label": "An alcohol with a separate ketone — broad O-H + ketone C=O" },
+    { "id": "amide", "label": "A primary amide — N-H bands broaden with H-bonding, amide C=O at 1710" },
+    { "id": "ester", "label": "An ester with an acidic α-H — enolized form shows O-H + C=O" }
   ],
   "correctOptionId": "cooh",
   "concepts": ["COOH signature"],
-  "explanation": "The very broad O–H (from hydrogen-bonded carboxylic acid dimers) spanning 2500–3300 overlapping with C–H is COOH-specific. Combined with the C=O at ~1710, that's a diagnostic COOH pattern. Alcohols have a narrower O–H at 3200–3550."
+  "explanation": "The hallmark of a carboxylic acid is the EXTRAORDINARILY broad O-H (2500–3300) from H-bonded cyclic dimers, overlapping with the C-H region. Alcohols have a narrower O-H (3200–3550). Amide C=O is ~1660, not 1710. Esters normally aren't enolized under IR conditions."
 }
