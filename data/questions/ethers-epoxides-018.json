@@ -3,14 +3,14 @@
   "topic": "ethers-epoxides",
   "type": "mcq",
   "difficulty": 5,
-  "prompt": "CHALLENGE: Many drugs are formulated as thioethers (R-S-R'). What is one practical advantage of S over O in these linkers?",
+  "prompt": "Many drugs contain thioether (R-S-R') linkages. What's one practical advantage of a thioether over an ether in drug design?",
   "options": [
-    { "id": "metab", "label": "Thioether S can be oxidized by cytochrome P450 to sulfoxide or sulfone — tunable metabolism and solubility handles." },
-    { "id": "size", "label": "S is smaller than O." },
-    { "id": "charge", "label": "S always carries a formal charge." },
-    { "id": "aromatic", "label": "Thioethers are always aromatic." }
+    { "id": "metab", "label": "Thioether S is oxidized in vivo (cytochrome P450) to sulfoxide or sulfone — a tunable metabolic handle" },
+    { "id": "size", "label": "S is smaller than O, so thioether linkers fit tighter active sites than ether linkers" },
+    { "id": "charge", "label": "The thioether S carries a partial negative charge that improves binding to cationic protein residues" },
+    { "id": "stab", "label": "Thioethers are more stable to stomach acid than ethers, so oral bioavailability improves" }
   ],
   "correctOptionId": "metab",
   "concepts": ["application: medicinal chemistry", "oxidation to sulfoxide"],
-  "explanation": "Thioethers are oxidized in vivo by cytochrome P450 to sulfoxides and then to sulfones — a well-studied metabolic handle. Omeprazole (Prilosec) exploits this: it's a prodrug activated in acidic environments by oxidation of its thioether."
+  "explanation": "Thioethers can be oxidized by cytochrome P450 to sulfoxides and then sulfones in vivo — a well-studied metabolic handle. Omeprazole (Prilosec) is a famous example: it's a prodrug that activates via sulfur oxidation in acidic environments. S is actually LARGER than O (0.104 vs 0.066 nm), not smaller."
 }

@@ -5,12 +5,12 @@
   "difficulty": 3,
   "prompt": "To MOVE a π bond (alkene) from one position to another (e.g., 1-pentene → 2-pentene), the general strategy is:",
   "options": [
-    { "id": "add-elim", "label": "Addition of HX or H₂O (Markovnikov) to the π bond, then elimination (E2 with a strong base) in a different direction to form the new π bond on an adjacent position" },
-    { "id": "none", "label": "π bonds can't be moved" },
-    { "id": "just-heat", "label": "Just heat" },
-    { "id": "lah", "label": "LiAlH₄" }
+    { "id": "add-elim", "label": "Add HX or H₂O to the π bond, then eliminate (E2) in a different direction to form the new alkene" },
+    { "id": "none", "label": "π bonds can't be moved — the position of a C=C is fixed once formed" },
+    { "id": "just-heat", "label": "Heat alone — thermal isomerization moves alkenes to the thermodynamically most stable position" },
+    { "id": "lah", "label": "LiAlH₄ migrates π bonds by hydride shuttle across the molecule" }
   ],
   "correctOptionId": "add-elim",
   "concepts": ["functional group migration", "add then eliminate"],
-  "explanation": "To move a π bond, convert it to an sp³ intermediate (halide or alcohol) and then eliminate again. The new elimination can go toward a different β-H, moving the alkene one carbon over. Hofmann vs Zaitsev choice tunes which direction."
+  "explanation": "Convert the π bond to an sp³ intermediate (alkyl halide or alcohol), then eliminate to form the new π bond on an adjacent position. Choice of Zaitsev vs Hofmann elimination tunes direction. Simple heat doesn't isomerize alkenes under neutral conditions (needs acid/base catalyst)."
 }

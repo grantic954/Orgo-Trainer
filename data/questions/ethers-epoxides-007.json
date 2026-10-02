@@ -3,14 +3,14 @@
   "topic": "ethers-epoxides",
   "type": "mcq",
   "difficulty": 2,
-  "prompt": "Ethers are generally UNREACTIVE in the lab compared to alcohols because:",
+  "prompt": "Why are ethers generally UNREACTIVE in the lab compared to alcohols?",
   "options": [
-    { "id": "no-oh", "label": "No O–H bond; the C–O bond is strong; O is a poor leaving group as OR⁻." },
-    { "id": "nonpolar", "label": "Ethers are nonpolar." },
-    { "id": "aromatic", "label": "All ethers are aromatic." },
-    { "id": "no-electrons", "label": "The O has no lone pairs." }
+    { "id": "no-oh", "label": "No acidic O-H bond, strong C-O bond, and OR⁻ is a poor leaving group" },
+    { "id": "nonpolar", "label": "Ethers are essentially nonpolar — no dipole for nucleophiles to grip" },
+    { "id": "symmetric", "label": "The lone pairs on O are symmetrically placed, canceling their nucleophilicity" },
+    { "id": "no-electrons", "label": "The ether O's lone pairs are tied up in σ hyperconjugation with adjacent C-H bonds" }
   ],
   "correctOptionId": "no-oh",
   "concepts": ["ether stability"],
-  "explanation": "Ethers have no acidic H and no good leaving group. They're used as solvents (Et₂O, THF, dioxane) precisely because they're unreactive — just H-bond acceptors."
+  "explanation": "Ethers lack the acidic O-H of alcohols AND lack a good leaving group (OR⁻ is terrible — pKa of ROH ~16). They're used as solvents (Et₂O, THF, dioxane) precisely BECAUSE they're inert — they just H-bond accept. Only strong acids (HI, HBr), epoxides' ring strain, or peroxide chemistry disrupt them."
 }

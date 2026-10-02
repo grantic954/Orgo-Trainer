@@ -3,15 +3,15 @@
   "topic": "ethers-epoxides",
   "type": "mcq",
   "difficulty": 2,
-  "prompt": "Rank by rate of ring-opening with hydroxide (fastest → slowest):",
+  "prompt": "Rank these epoxides by rate of ring-opening with HO⁻ (fastest → slowest):",
   "reactants": ["C1CO1", "CC1CO1", "CC1(C)CO1"],
   "options": [
-    { "id": "a", "label": "ethylene oxide > methyloxirane > 2,2-dimethyloxirane (steric hindrance slows it down)" },
-    { "id": "b", "label": "2,2-dimethyloxirane > methyloxirane > ethylene oxide" },
-    { "id": "c", "label": "All about the same" },
-    { "id": "d", "label": "Methyloxirane fastest" }
+    { "id": "a", "label": "Ethylene oxide > 2-methyloxirane > 2,2-dimethyloxirane (steric hindrance slows SN2)" },
+    { "id": "b", "label": "2,2-dimethyloxirane > 2-methyloxirane > ethylene oxide (methyl donation stabilizes TS)" },
+    { "id": "c", "label": "All three react at roughly the same rate (strain dominates, substitution doesn't matter)" },
+    { "id": "d", "label": "2-methyloxirane fastest, with the other two tied (middle substitution gives optimal reactivity)" }
   ],
   "correctOptionId": "a",
   "concepts": ["steric effects on SN2 epoxide opening"],
-  "explanation": "Under base, Nu attacks the less hindered C via SN2-like TS. Adding methyl groups increases steric hindrance → slower reaction. Under acid, the trend reverses (the more substituted C bears more + character and attacks faster)."
+  "explanation": "Under BASE, Nu attacks the less-hindered C in SN2-like fashion. More methyls → more steric hindrance → slower reaction. Under ACID, the trend REVERSES (because the more substituted C bears more cation character and attacks faster). This question is base conditions."
 }

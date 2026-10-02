@@ -3,14 +3,14 @@
   "topic": "ethers-epoxides",
   "type": "mcq",
   "difficulty": 2,
-  "prompt": "Two equivalents of a thiol (2 RSH) are oxidized (NaOH/H₂O/Br₂) to give what?",
+  "prompt": "Two equivalents of a thiol (2 RSH) are treated with mild oxidant (I₂ or Br₂, base). What's the product?",
   "options": [
-    { "id": "disulfide", "label": "A disulfide, R-S-S-R, with reduction of Br₂ to 2 Br⁻" },
-    { "id": "sulfoxide", "label": "A sulfoxide" },
-    { "id": "sulfone", "label": "A sulfone" },
-    { "id": "thiolate", "label": "Just the thiolate R-S⁻" }
+    { "id": "disulfide", "label": "A disulfide (R-S-S-R) — two S's covalently linked, oxidant is reduced to X⁻" },
+    { "id": "sulfoxide", "label": "A sulfoxide (R-S(=O)-R) — one S has become doubly bonded to oxygen" },
+    { "id": "sulfone", "label": "A sulfone (R-SO₂-R) — one S has been oxidized all the way to the S(VI) oxidation state" },
+    { "id": "thiolate", "label": "Just the deprotonated thiolate R-S⁻ with X⁻ counterion — oxidation requires harsher conditions" }
   ],
   "correctOptionId": "disulfide",
   "concepts": ["disulfide formation"],
-  "explanation": "Thiols are easily oxidized to disulfides (2 R-SH → R-S-S-R + 2 e⁻ + 2 H⁺). Biologically crucial — this is the chemistry of cysteine → cystine, which stabilizes protein tertiary structure (e.g., insulin). Reduction (Zn/HCl, DTT, or TCEP) regenerates thiols."
+  "explanation": "Thiols oxidize easily to disulfides (2 R-SH + I₂ → R-S-S-R + 2 HI). This is the Cys → cystine chemistry in proteins (crucial for stabilizing tertiary structure, e.g., insulin). Reduction (Zn/HCl, DTT, TCEP) reverses it. Sulfoxide and sulfone require harsher oxidants (mCPBA, H₂O₂)."
 }

@@ -3,14 +3,14 @@
   "topic": "synthesis",
   "type": "mcq",
   "difficulty": 3,
-  "prompt": "Target: 3-methyl-3-pentanol. Shortest route uses Grignard addition to which carbonyl?",
+  "prompt": "Target: 3-methyl-3-pentanol (3° alcohol with CH₃, Et, Et on the OH carbon). The shortest Grignard disconnection uses:",
   "options": [
-    { "id": "pent-two-eth", "label": "3-pentanone + CH₃MgBr" },
-    { "id": "two-but-eth", "label": "2-butanone + CH₃CH₂MgBr" },
-    { "id": "ace-two-prop", "label": "Acetone + 2× CH₃CH₂MgBr" },
-    { "id": "either_a_or_b", "label": "Either (A) or (B) works — both give 3-methyl-3-pentanol" }
+    { "id": "pent-two-eth", "label": "3-pentanone + CH₃MgBr (adds methyl to the 3° position)" },
+    { "id": "two-but-eth", "label": "2-butanone + CH₃CH₂MgBr (adds ethyl to the 3° position)" },
+    { "id": "ace-two-prop", "label": "Acetone + 2 eq CH₃CH₂MgBr (double Grignard adds both ethyls)" },
+    { "id": "either_a_or_b", "label": "Either (A) 3-pentanone + MeMgBr OR (B) 2-butanone + EtMgBr — both work in one step" }
   ],
   "correctOptionId": "either_a_or_b",
   "concepts": ["Grignard disconnection", "tertiary alcohol"],
-  "explanation": "3-methyl-3-pentanol has three substituents on the C-OH: CH₃, CH₂CH₃, CH₂CH₃. You can disconnect either Me (from 3-pentanone + MeMgBr) or Et (from 2-butanone + EtMgBr) — both are valid one-step routes."
+  "explanation": "3-methyl-3-pentanol has CH₃ + Et + Et on the C-OH. You can disconnect either way: 3-pentanone (Et-CO-Et) + MeMgBr adds the methyl, OR 2-butanone (Me-CO-Et) + EtMgBr adds the ethyl. Both single-step. Option C (acetone + 2 eq EtMgBr) wouldn't work — you can't add 2 Grignards to a ketone (only 1), you'd need an ester."
 }

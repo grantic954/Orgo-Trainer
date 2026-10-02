@@ -3,14 +3,14 @@
   "topic": "synthesis",
   "type": "mcq",
   "difficulty": 4,
-  "prompt": "Target: cis-3-hexene. Starting from 1-butyne, which reduction gives Z-alkene cleanly?",
+  "prompt": "To cleanly convert 1-butyne to cis-1-butene (Z-alkene), which reagent set works?",
   "options": [
-    { "id": "lindlar", "label": "H₂ / Lindlar catalyst (poisoned Pd/CaCO₃/quinoline)" },
-    { "id": "naq", "label": "Na / NH₃(l) (gives trans)" },
-    { "id": "h2pd", "label": "H₂ / Pd (over-reduces to alkane)" },
-    { "id": "lah", "label": "LiAlH₄" }
+    { "id": "lindlar", "label": "H₂ with Lindlar's catalyst (Pd/CaCO₃ poisoned with quinoline)" },
+    { "id": "naq", "label": "Na in liquid NH₃ at −33 °C (dissolving metal reduction)" },
+    { "id": "h2pd", "label": "H₂ with Pd/C at atmospheric pressure" },
+    { "id": "lah", "label": "LiAlH₄ in dry ether, then aqueous workup" }
   ],
   "correctOptionId": "lindlar",
   "concepts": ["alkyne reduction", "stereoselectivity"],
-  "explanation": "Lindlar (poisoned Pd) stops at the Z-alkene; Na/NH₃(l) gives E; H₂/Pd goes all the way to alkane."
+  "explanation": "Lindlar (poisoned Pd) stops cleanly at the Z-alkene (syn-addition of H₂ with no over-reduction). Na/NH₃(l) gives the E-alkene (anti-addition via radical anion). H₂/Pd goes all the way to the alkane. LiAlH₄ doesn't reduce alkynes."
 }

@@ -3,14 +3,14 @@
   "topic": "synthesis",
   "type": "mcq",
   "difficulty": 5,
-  "prompt": "CHALLENGE: You attempt Williamson synthesis of tert-butyl methyl ether (Me-O-tBu) by combining NaOCH₃ + (CH₃)₃C-Br. What do you actually get, and what's the fix?",
+  "prompt": "You try to make tert-butyl methyl ether by combining NaOCH₃ + (CH₃)₃C-Br. What actually happens, and what's the fix?",
   "options": [
-    { "id": "e2", "label": "You get isobutylene (E2 wins — strong base + 3° halide). Fix: flip the reagents to NaOC(CH₃)₃ + CH₃Br — SN2 on methyl halide works perfectly, and even a bulky base is irrelevant on CH₃Br." },
-    { "id": "sn1", "label": "You get a mix of SN1 ether and tert-butanol." },
-    { "id": "works", "label": "You get Me-O-tBu cleanly." },
-    { "id": "nothing", "label": "No reaction." }
+    { "id": "e2", "label": "You get isobutylene (E2 wins) — fix: use NaOC(CH₃)₃ + CH₃Br instead (SN2 on 1° halide)" },
+    { "id": "sn1", "label": "You get a mix of SN1 ether and tert-butanol — fix: use anhydrous conditions and polar aprotic solvent" },
+    { "id": "works", "label": "You get the desired ether in moderate yield — fix: just increase the temperature to improve conversion" },
+    { "id": "nothing", "label": "No reaction occurs — fix: switch to a stronger base like NaH to deprotonate methanol first" }
   ],
   "correctOptionId": "e2",
   "concepts": ["Williamson pitfall", "SN2 vs E2 substrate choice"],
-  "explanation": "3° halide + strong base = E2 every time. The correct Williamson disconnection ALWAYS puts the alkoxide on the more hindered side and the alkyl halide on the LESS hindered side. Here: tert-butoxide + methyl iodide — unambiguous SN2 on the primary (methyl) halide."
+  "explanation": "Strong alkoxide + 3° halide → E2 (always). You get isobutylene + NaBr + MeOH, no ether. Correct Williamson disconnection puts the alkoxide on the MORE hindered side (as t-butoxide) and the halide on the LESS hindered side (as methyl bromide) — SN2 is trivial on methyl, no competing E2."
 }

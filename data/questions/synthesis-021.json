@@ -3,14 +3,14 @@
   "topic": "synthesis",
   "type": "mcq",
   "difficulty": 3,
-  "prompt": "To MOVE a halogen from one carbon to an adjacent one (e.g., 2-bromopentane → 3-bromopentane), you can use:",
+  "prompt": "To MOVE a halogen from one carbon to an adjacent one (e.g., 2-bromopentane → 3-bromopentane), what strategy works?",
   "options": [
-    { "id": "elim-add", "label": "Elimination (strong base, E2) to the alkene, then addition of HBr with peroxides (anti-Markovnikov) or without (Markovnikov) to install the Br on the new carbon" },
-    { "id": "sn1", "label": "Direct SN1 with no reagents" },
-    { "id": "lah", "label": "LiAlH₄" },
-    { "id": "not-poss", "label": "Not possible" }
+    { "id": "elim-add", "label": "E2 to the alkene (strong base), then add HBr back (with/without peroxides) at the new carbon" },
+    { "id": "sn1", "label": "SN1 ionization to a cation that rearranges, then Br⁻ attacks the rearranged carbocation" },
+    { "id": "lah", "label": "LiAlH₄ reduces the C-Br bond; the hydride ends up adjacent, pushing Br to the new position" },
+    { "id": "not-poss", "label": "Not possible — halogens can't be migrated between carbons without changing the carbon skeleton" }
   ],
   "correctOptionId": "elim-add",
   "concepts": ["functional group migration", "elim/add strategy"],
-  "explanation": "A classic synthesis motif: eliminate to get rid of the FG → add it back on a different carbon. For halide migration: E2 to alkene, then HBr addition. Choice of peroxide-vs-not controls regio (M vs anti-M). Similar logic moves double bonds (add then eliminate differently)."
+  "explanation": "The classic eliminate-then-add strategy: E2 removes HBr to form the alkene (losing the halogen entirely), then HBr addition puts it on a different C. Choice of Markovnikov vs anti-Markovnikov (peroxides or not) controls which C gets the Br. SN1 rearrangements are possible but unreliable."
 }

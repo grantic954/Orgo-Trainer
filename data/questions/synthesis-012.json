@@ -3,14 +3,14 @@
   "topic": "synthesis",
   "type": "mcq",
   "difficulty": 4,
-  "prompt": "Goal: make benzyl ethyl ether (Ph-CH₂-O-CH₂CH₃) from benzyl alcohol. The CLEAN route is:",
+  "prompt": "Goal: make benzyl ethyl ether (PhCH₂-O-CH₂CH₃) from benzyl alcohol. The CLEAN route is:",
   "options": [
-    { "id": "wms", "label": "PhCH₂OH + NaH → PhCH₂O⁻, then + CH₃CH₂Br (Williamson, SN2 on 1° halide)" },
-    { "id": "acid-dehyd", "label": "PhCH₂OH + EtOH + H₂SO₄, heat (acid-catalyzed; gives mixtures)" },
-    { "id": "oxy-mer", "label": "Oxymercuration" },
-    { "id": "hcl", "label": "PhCH₂OH + CH₃CH₂Cl, pyridine" }
+    { "id": "wms", "label": "PhCH₂OH + NaH → alkoxide; then + EtBr (Williamson, SN2 on 1° halide)" },
+    { "id": "acid-dehyd", "label": "PhCH₂OH + EtOH + H₂SO₄, heat (acid-catalyzed condensation of two alcohols)" },
+    { "id": "oxy-mer", "label": "PhCH₂OH + ethylene + Hg(OAc)₂, then NaBH₄ (alkoxymercuration)" },
+    { "id": "hcl", "label": "PhCH₂OH + EtCl, pyridine (pyridine helps displace Cl via SN2)" }
   ],
   "correctOptionId": "wms",
   "concepts": ["Williamson", "deprotonation with NaH"],
-  "explanation": "Deprotonate the alcohol with NaH to get a strong nucleophile, then SN2 with a primary alkyl halide. Acid-catalyzed dehydration gives a mix of symmetrical and unsymmetrical ethers plus alkenes."
+  "explanation": "Williamson is clean when the alkyl halide is primary (benzyl alcohol → alkoxide + EtBr). Acid condensation would give symmetric and mixed ethers + alkenes — messy. Alkoxymercuration adds to alkenes, not alcohols. EtCl is poorly reactive and pyridine doesn't make 1° alcohols nucleophilic enough on their own."
 }
