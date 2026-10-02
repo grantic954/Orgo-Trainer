@@ -3,7 +3,7 @@
   "topic": "structure-id",
   "type": "mcq",
   "difficulty": 4,
-  "prompt": "An unknown with formula C₄H₈O₂ shows IR with a strong band at ~1735 cm⁻¹ (NO broad O-H) and a strong band in the 1000-1300 cm⁻¹ region. MS shows M⁺ at 88 and a strong m/z = 43 fragment (acylium CH₃C≡O⁺). Which structure fits?",
+  "prompt": "An unknown with molecular formula C₄H₈O₂ gives the IR and MS below. Which structure fits?",
   "spectrumFromSmiles": "CCOC(C)=O",
   "spectraKinds": ["ir", "ms"],
   "options": [

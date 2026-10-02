@@ -3,7 +3,7 @@
   "topic": "ir",
   "type": "mcq",
   "difficulty": 2,
-  "prompt": "An IR shows a sharp strong band at ~2250 cm⁻¹ and NO C=O. What is it?",
+  "prompt": "A compound with molecular formula C4H7N shows the IR spectrum below. What functional group is present?",
   "spectrumFromSmiles": "CCCC#N",
   "spectraKinds": ["ir"],
   "options": [

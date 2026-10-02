@@ -3,7 +3,7 @@
   "topic": "hnmr",
   "type": "mcq",
   "difficulty": 3,
-  "prompt": "An aromatic compound shows ¹H NMR: δ 2.3 (s, 3H), δ 7.1 (m, 4H). The IR shows no C=O. Which compound is it?",
+  "prompt": "A hydrocarbon with molecular formula C7H8 shows the ¹H NMR spectrum below (δ 2.3 s, 3H; δ 7.1 m, 5H). Which compound is it?",
   "spectrumFromSmiles": "Cc1ccccc1",
   "spectraKinds": ["hnmr"],
   "options": [

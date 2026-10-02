@@ -3,7 +3,7 @@
   "topic": "structure-id",
   "type": "mcq",
   "difficulty": 4,
-  "prompt": "Unknown C₃H₆O. IR: strong C=O at ~1715 cm⁻¹, NO broad O-H, NO aldehyde doublet at 2720/2820. MS: M⁺ = 58, base peak at m/z = 43. Identify.",
+  "prompt": "An unknown with molecular formula C₃H₆O gives the IR and MS spectra below. Identify the compound.",
   "spectrumFromSmiles": "CC(C)=O",
   "spectraKinds": ["ir", "ms"],
   "options": [
